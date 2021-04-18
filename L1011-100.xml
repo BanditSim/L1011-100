@@ -1,0 +1,8 @@
+<Project Version="2" Name="L1011-100" FolderName="Packages">
+	<OutputDirectory>.</OutputDirectory>
+	<TemporaryOutputDirectory>_PackageInt</TemporaryOutputDirectory>
+	<Packages>
+		<Package>PackageDefinitions\banditsim-aircraft-lockheed-l1011.xml</Package>
+	</Packages>
+</Project>
+

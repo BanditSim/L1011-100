@@ -1,0 +1,39 @@
+<AssetPackage Name="banditsim-aircraft-lockheed-l1011" Version="0.0.1">
+	<ItemSettings>
+		<ContentType>AIRCRAFT</ContentType>
+		<Title>L1011-100 Tristar</Title>
+		<Manufacturer>Lockheed</Manufacturer>
+		<Creator>BanditSim</Creator>
+	</ItemSettings>
+	<Flags>
+		<VisibleInStore>true</VisibleInStore>
+		<CanBeReferenced>true</CanBeReferenced>
+	</Flags>
+	<AssetGroups>
+		<AssetGroup Name="ContentInfo">
+			<Type>Copy</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageDefinitions\banditsim-aircraft-lockheed-l1011\ContentInfo\</AssetDir>
+			<OutputDir>ContentInfo\banditsim-aircraft-lockheed-l1011\</OutputDir>
+		</AssetGroup>
+		<AssetGroup Name="L1011-100">
+			<Type>SimObject</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageSources\SimObjects\Airplanes\Lockheed_L1011-100\</AssetDir>
+			<OutputDir>SimObjects\Airplanes\Lockheed_L1011-100\</OutputDir>
+		</AssetGroup>
+		<AssetGroup Name="MarketplaceData">
+			<Type>Copy</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageDefinitions\banditsim-aircraft-lockheed-l1011\MarketplaceData\</AssetDir>
+			<OutputDir>MarketplaceData\banditsim-aircraft-lockheed-l1011\</OutputDir>
+		</AssetGroup>
+	</AssetGroups>
+</AssetPackage>
+
