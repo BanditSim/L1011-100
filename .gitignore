@@ -1,0 +1,10 @@
+   
+*.blend
+*.blend[1-9]
+*.bak
+*.psd
+
+
+.References/*
+_PackageInt/*
+
