@@ -1,4 +1,4 @@
 Special Thanks to:
 
 
-- RR RB211 3D Model - ParallelFS 
+ - ParallelFS - RR RB211 3D Model
