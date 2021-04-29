@@ -72,13 +72,13 @@
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.bin",
-      "size": 25670896,
-      "date": 132637593097972067
+      "size": 25692646,
+      "date": 132641623433201011
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.gltf",
-      "size": 95687,
-      "date": 132637593097992016
+      "size": 109412,
+      "date": 132641623433210985
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.xml",
