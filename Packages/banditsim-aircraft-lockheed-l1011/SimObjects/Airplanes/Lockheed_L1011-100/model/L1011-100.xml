@@ -9,11 +9,12 @@
 		<LOD minSize="50" ModelFile="L1011-100.gltf"/>
 	</LODS>
 
-<!-- Animations -->
-
     <Behaviors>
    		<Include ModelBehaviorFile="Asobo\Exterior.xml"/>
 		<Include ModelBehaviorFile="Asobo\Generic\FX.xml"/>
+
+    <!-- Animations -->
+
         <Component ID="ENGINE">
 			<UseTemplate Name="ASOBO_ENGINE_Turbine_Template">
 				<ID>1</ID>
@@ -46,7 +47,4 @@
 			</UseTemplate>
 		</Component>
     </Behaviors>
-
-<!-- Custom Animations -->
-
 </ModelInfo>
