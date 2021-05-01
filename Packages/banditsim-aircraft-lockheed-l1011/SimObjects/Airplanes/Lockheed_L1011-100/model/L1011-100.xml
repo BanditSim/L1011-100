@@ -46,5 +46,36 @@
 				<ANIM_NAME>elevator_percent_key</ANIM_NAME>
 			</UseTemplate>
 		</Component>
+		<Component ID="GEARS">
+			<UseTemplate Name="ASOBO_GEAR_Center_Template">
+				<ANIM_NAME>c_gear</ANIM_NAME>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_GEAR_Center_Tire_Template">
+				<ANIM_NAME>c_tire_anim</ANIM_NAME>
+				<NODE_ID_STILL>WHEELS_C</NODE_ID_STILL>
+				<NODE_ID_BLURRED>C_WHEELS_BLURRED</NODE_ID_BLURRED>
+			</UseTemplate>
+		</Component>
+
+    <!-- Custom Animations -->
+
+		<!--             anim from 100-200             -->
+		<!-- 100 neutral - 125 full left - 150 neutral -->
+		<!--       175 full right - 200 neutral        -->
+		<Animation name="c_wheel" 		guid="06ca0ea2-aaa0-11eb-bcbc-0242ac130002" length="200" type="Sim" typeParam2="c_wheel" typeParam="AutoPlay" />
+		<PartInfo>
+			<Name>c_wheel</Name>
+        	<AnimLength>200</AnimLength>
+			<Animation>
+				<Parameter>
+				<Code>
+				(A:GEAR CENTER STEER ANGLE, grads) 0 &gt; if{ (A:GEAR CENTER STEER ANGLE, grads) 0.5 * } els{ (A:GEAR CENTER STEER ANGLE, grads) 0.5 * 200 + }
+				</Code>
+				</Parameter>
+			</Animation>
+        	<MouseRect>
+            	<TooltipID>TOOLTIPTEXT_STEER_ANGLE</TooltipID>
+        	</MouseRect>
+    	</PartInfo>
     </Behaviors>
 </ModelInfo>
