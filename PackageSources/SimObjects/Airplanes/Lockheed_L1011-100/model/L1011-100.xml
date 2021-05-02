@@ -48,9 +48,19 @@
 		</Component>
 		<Component ID="GEARS">
 			<UseTemplate Name="ASOBO_GEAR_Center_Template">
+				<ID>1</ID>
 				<ANIM_NAME>c_gear</ANIM_NAME>
 			</UseTemplate>
+			<UseTemplate Name="ASOBO_GEAR_Left_Template">
+				<ID>2</ID>
+				<ANIM_NAME>l_gear</ANIM_NAME>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_GEAR_Right_Template">
+				<ID>2</ID>
+				<ANIM_NAME>r_gear</ANIM_NAME>
+			</UseTemplate>
 			<UseTemplate Name="ASOBO_GEAR_Center_Tire_Template">
+				<ID>1</ID>
 				<ANIM_NAME>c_tire_anim</ANIM_NAME>
 				<NODE_ID_STILL>WHEELS_C</NODE_ID_STILL>
 				<NODE_ID_BLURRED>C_WHEELS_BLURRED</NODE_ID_BLURRED>
