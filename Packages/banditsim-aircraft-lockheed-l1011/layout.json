@@ -37,8 +37,8 @@
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/cockpit.cfg",
-      "size": 5161,
-      "date": 132644520779154730
+      "size": 4940,
+      "date": 132645130659548777
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/Cruise.flt",
@@ -72,13 +72,13 @@
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.bin",
-      "size": 27123950,
-      "date": 132644512877157926
+      "size": 28085870,
+      "date": 132658525443484865
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.gltf",
-      "size": 158024,
-      "date": 132644512877163032
+      "size": 177763,
+      "date": 132658525443514783
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.xml",
@@ -154,6 +154,16 @@
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/thumbnail_small.JPG",
       "size": 55831,
       "date": 132641683907881137
+    },
+    {
+      "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/WINDOW.PNG.DDS",
+      "size": 699192,
+      "date": 132658496148344985
+    },
+    {
+      "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/WINDOW.PNG.DDS.json",
+      "size": 102,
+      "date": 132658496148325186
     }
   ]
 }
