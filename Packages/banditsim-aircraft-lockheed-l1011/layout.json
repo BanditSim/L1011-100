@@ -2,8 +2,8 @@
   "content": [
     {
       "path": "ContentInfo/banditsim-aircraft-lockheed-l1011/Thumbnail.jpg",
-      "size": 26472,
-      "date": 132641676416915084
+      "size": 28435,
+      "date": 132659350586152988
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/ai.cfg",
@@ -157,13 +157,13 @@
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/thumbnail.JPG",
-      "size": 261504,
-      "date": 132641683497364410
+      "size": 254590,
+      "date": 132659349074594614
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/thumbnail_small.JPG",
-      "size": 55831,
-      "date": 132641683907881137
+      "size": 49571,
+      "date": 132659349951351056
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/WINDOW.PNG.DDS",
