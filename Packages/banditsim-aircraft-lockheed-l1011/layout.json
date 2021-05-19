@@ -72,13 +72,13 @@
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.bin",
-      "size": 28087970,
-      "date": 132659247591908385
+      "size": 28083710,
+      "date": 132659320766985227
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.gltf",
-      "size": 177540,
-      "date": 132659247591928334
+      "size": 176096,
+      "date": 132659320767005173
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.xml",
@@ -139,6 +139,16 @@
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/taxi.flt",
       "size": 2663,
       "date": 132611438784037276
+    },
+    {
+      "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/TESTAO.PNG.DDS",
+      "size": 196,
+      "date": 132659310929696316
+    },
+    {
+      "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/TESTAO.PNG.DDS.json",
+      "size": 191,
+      "date": 132659310929686326
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/texture.CFG",
