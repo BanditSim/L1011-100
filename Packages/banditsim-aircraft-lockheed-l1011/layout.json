@@ -72,18 +72,18 @@
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.bin",
-      "size": 25651074,
-      "date": 132665979941491042
+      "size": 28060826,
+      "date": 132666007392490479
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.gltf",
-      "size": 129477,
-      "date": 132665979941530913
+      "size": 165481,
+      "date": 132666007392500451
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.xml",
-      "size": 2729,
-      "date": 132664832922898583
+      "size": 2713,
+      "date": 132666000237740607
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100_Interior.bin",
@@ -158,22 +158,22 @@
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_L.PNG.DDS",
       "size": 11184952,
-      "date": 132665979910514332
+      "date": 132666007360186218
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_L.PNG.DDS.json",
       "size": 102,
-      "date": 132665979910434545
+      "date": 132666007360106071
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_R.PNG.DDS",
       "size": 22369776,
-      "date": 132665979926457585
+      "date": 132666007376311689
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_R.PNG.DDS.json",
       "size": 119,
-      "date": 132665979926307989
+      "date": 132666007376112214
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/TESTAO.PNG.DDS",
