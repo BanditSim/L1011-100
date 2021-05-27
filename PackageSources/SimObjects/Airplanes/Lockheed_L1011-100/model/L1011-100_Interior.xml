@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ModelInfo>
+
+	<LODS>
+		<!-- Highest LOD -->
+		<!-- minimum display size in % (should be bounding sphere vertical screen size, sphere will often be slightly larger than you expect) -->
+		<!-- default minSize is 0 -->
+		<LOD minSize="50" ModelFile="L1011-100_Interior.gltf"/>
+	</LODS>
+
+    <Behaviors>
+   		<Include ModelBehaviorFile="Asobo\Common.xml"/>
+
+    <!-- Animations -->
+
+    </Behaviors>
+</ModelInfo>

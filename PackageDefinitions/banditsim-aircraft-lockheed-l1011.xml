@@ -26,14 +26,6 @@
 			<AssetDir>PackageSources\SimObjects\Airplanes\Lockheed_L1011-100\</AssetDir>
 			<OutputDir>SimObjects\Airplanes\Lockheed_L1011-100\</OutputDir>
 		</AssetGroup>
-		<AssetGroup Name="MarketplaceData">
-			<Type>Copy</Type>
-			<Flags>
-				<FSXCompatibility>false</FSXCompatibility>
-			</Flags>
-			<AssetDir>PackageDefinitions\banditsim-aircraft-lockheed-l1011\MarketplaceData\</AssetDir>
-			<OutputDir>MarketplaceData\banditsim-aircraft-lockheed-l1011\</OutputDir>
-		</AssetGroup>
 	</AssetGroups>
 </AssetPackage>
 
