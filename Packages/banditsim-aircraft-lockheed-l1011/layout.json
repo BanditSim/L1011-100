@@ -72,13 +72,13 @@
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.bin",
-      "size": 28078298,
-      "date": 132667772401748274
+      "size": 27421022,
+      "date": 132668019441409469
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.gltf",
-      "size": 162564,
-      "date": 132667772401768220
+      "size": 160924,
+      "date": 132668019441439390
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.xml",
@@ -158,22 +158,32 @@
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_L.PNG.DDS",
       "size": 11184952,
-      "date": 132667772363458193
+      "date": 132668019397368206
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_L.PNG.DDS.json",
       "size": 102,
-      "date": 132667772363348493
+      "date": 132668019397267298
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_R.PNG.DDS",
       "size": 22369776,
-      "date": 132667772383022895
+      "date": 132668019417529783
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_R.PNG.DDS.json",
       "size": 119,
-      "date": 132667772382544182
+      "date": 132668019417360236
+    },
+    {
+      "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_TAIL.PNG.DDS",
+      "size": 11184952,
+      "date": 132668019377762538
+    },
+    {
+      "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_TAIL.PNG.DDS.json",
+      "size": 102,
+      "date": 132668019377682753
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/TESTAO.PNG.DDS",
@@ -229,6 +239,16 @@
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/TEXTURE.SVA/L1011_BODY_R.PNG.DDS.json",
       "size": 119,
       "date": 132664844605481317
+    },
+    {
+      "path": "SimObjects/Airplanes/Lockheed_L1011-100/TEXTURE.SVA/L1011_BODY_TAIL.PNG.DDS",
+      "size": 11184952,
+      "date": 132667931527335301
+    },
+    {
+      "path": "SimObjects/Airplanes/Lockheed_L1011-100/TEXTURE.SVA/L1011_BODY_TAIL.PNG.DDS.json",
+      "size": 102,
+      "date": 132667931527225587
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/TEXTURE.SVA/texture.CFG",
