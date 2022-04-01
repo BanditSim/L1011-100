@@ -9,10 +9,357 @@
 		<LOD minSize="50" ModelFile="L1011-100_Interior.gltf"/>
 	</LODS>
 
-    <Behaviors>
-   		<Include ModelBehaviorFile="Asobo\Common.xml"/>
+	<Animation name="Gauge_EPR_1" 				guid="03e5a862-ee81-46ec-853f-2d87acf9c9ef" length="220" type="Sim" typeparam2="Gauge_EPR_1" 				typeparam="AutoPlay" />
+	<Animation name="Gauge_EPR_2" 				guid="8d3a64b2-f502-43a1-9c93-9c033977f3cc" length="220" type="Sim" typeparam2="Gauge_EPR_2" 				typeparam="AutoPlay" />
+	<Animation name="Gauge_EPR_3" 				guid="ea7c556f-8e7b-493a-bb1f-aeda17d4cfd5" length="220" type="Sim" typeparam2="Gauge_EPR_3" 				typeparam="AutoPlay" />
+	<Animation name="Gauge_N1_1" 				guid="5d0bec21-ef9c-4e50-8ba2-256c71bdf930" length="180" type="Sim" typeparam2="Gauge_N1_1"  				typeparam="AutoPlay" />
+	<Animation name="Gauge_N1_2" 				guid="3e4eca43-90ae-49de-89cd-d687aeee1313" length="180" type="Sim" typeparam2="Gauge_N1_2"  				typeparam="AutoPlay" />
+	<Animation name="Gauge_N1_3" 				guid="96b64e75-cd27-4c72-985c-45ec3e042bc8" length="180" type="Sim" typeparam2="Gauge_N1_3"  				typeparam="AutoPlay" />
+	<Animation name="Gauge_EGT_1" 				guid="b0be93ae-b658-4945-9eef-a836037202c6" length="260" type="Sim" typeparam2="Gauge_EGT_1" 				typeparam="AutoPlay" />
+	<Animation name="Gauge_EGT_2" 				guid="49cd9929-48f0-4fcb-8464-bae23443fbe5" length="260" type="Sim" typeparam2="Gauge_EGT_2" 				typeparam="AutoPlay" />
+	<Animation name="Gauge_EGT_3" 				guid="5053c5ef-919e-48e4-b9da-de9c11d6d6de" length="260" type="Sim" typeparam2="Gauge_EGT_3" 				typeparam="AutoPlay" />
+	<Animation name="Gauge_N3_1" 				guid="faef88cd-786e-4801-985b-c63481d334df" length="180" type="Sim" typeparam2="Gauge_N3_1"  				typeparam="AutoPlay" />
+	<Animation name="Gauge_N3_2" 				guid="831cfee9-6b68-4ec2-af69-fdd3bc41c66b" length="180" type="Sim" typeparam2="Gauge_N3_2"  				typeparam="AutoPlay" />
+	<Animation name="Gauge_N3_3" 				guid="ca0bd190-e06e-46ca-a8a2-1d892378cde4" length="180" type="Sim" typeparam2="Gauge_N3_3"  				typeparam="AutoPlay" />
+	<Animation name="Gauge_FF_1" 				guid="5c9cf40d-6dae-48d3-af4c-48156e348d8e" length="300" type="Sim" typeparam2="Gauge_FF_1"  				typeparam="AutoPlay" />
+	<Animation name="Gauge_FF_2" 				guid="134dacf0-acf0-443c-8db4-a9e67cef3898" length="300" type="Sim" typeparam2="Gauge_FF_2"  				typeparam="AutoPlay" />
+	<Animation name="Gauge_FF_3" 				guid="8cc7244f-fc91-4ff3-a02f-739007b23664" length="300" type="Sim" typeparam2="Gauge_FF_3"  				typeparam="AutoPlay" />
+	<Animation name="Mach.Barber.Pole" 			guid="fa030e41-851c-42d0-b3c7-b18f1a664dce" length="450" type="Sim" typeparam2="Mach.Barber.Pole"  			typeparam="AutoPlay" />
+	<Animation name="Airspeed.Indicated.1" 		guid="997ca35f-43e6-4214-9738-81b6f96bbb56" length="450" type="Sim" typeparam2="Airspeed.Indicated.1"		typeparam="AutoPlay" />
+	<Animation name="horizon_bank" 			    guid="0a908d62-abf5-441c-9d7b-64b494d85eaa" length="450" type="Sim" typeparam2="horizon_bank"  	    		typeparam="AutoPlay" />
+	<Animation name="horizon_pitch" 		    guid="0e38bbcb-a99a-4ee3-a9cf-19f03c02a905" length="450" type="Sim" typeparam2="horizon_pitch"  	    	typeparam="AutoPlay" />
+	<Animation name="clock_hour" 		        guid="2953bda0-58b0-4077-acce-683f665d725c" length="450" type="Sim" typeparam2="clock_hour"  	    	    typeparam="AutoPlay" />
+	<Animation name="clock_minute" 		        guid="4413d289-6178-4b49-a0d7-2bb8dce5ebe9" length="450" type="Sim" typeparam2="clock_minute"  	    	    typeparam="AutoPlay" />
+	<Animation name="clock_second" 		        guid="42a4fb19-fd91-4356-a358-c86c19473958" length="450" type="Sim" typeparam2="clock_second"  	    	    typeparam="AutoPlay" />
+	<Animation name="clock_sw" 		            guid="edf6cf18-5fd0-4e9d-b479-ed14a58f32be" length="450" type="Sim" typeparam2="clock_sw"  	    	        typeparam="AutoPlay" />
+	
+    <!-- Custom Animations -->
+	
+    <!-- Attitude Indicator -->
+	<PartInfo>
+        <Name>horizon_bank</Name>
+        <AnimLength>360</AnimLength>
+        <Animation>
+            <Parameter>
+          		<Code>
+				  (A:PLANE BANK DEGREES, degrees) 180 +
+				</Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>horizon_pitch</Name>
+        <AnimLength>360</AnimLength>
+        <Animation>
+            <Parameter>
+          		<Code>
+				  (A:PLANE PITCH DEGREES, degrees) 2 * 180 +
+				</Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+
+	<!-- Clock -->
+	<PartInfo>
+        <Name>clock_hour</Name>
+        <AnimLength>120</AnimLength>
+        <Animation>
+            <Parameter>
+          		<Code>
+				  (E:LOCAL TIME, hour) 12 % 10 *
+				</Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+    <PartInfo>
+        <Name>clock_minute</Name>
+        <AnimLength>60</AnimLength>
+        <Animation>
+            <Parameter>
+          		<Code>
+				  (E:LOCAL TIME, minutes) flr 60 %
+				</Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+    <PartInfo>
+        <Name>clock_second</Name>
+        <AnimLength>60</AnimLength>
+        <Animation>
+            <Parameter>
+          		<Code>
+				  (E:LOCAL TIME, seconds) flr 60 %
+				</Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+        <PartInfo>
+        <Name>clock_sw</Name>
+        <AnimLength>60</AnimLength>
+        <Animation>
+            <Parameter>
+          		<Code>
+				  
+				</Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+    
+	<!-- Airspeed Indicator -->
+	<PartInfo>
+        <Name>Airspeed.Indicated.1</Name>
+        <AnimLength>450</AnimLength>
+        <Animation>
+            <Parameter>
+          		<Code>
+				  (A:AIRSPEED INDICATED, Knots)
+				</Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>Mach.Barber.Pole</Name>
+        <AnimLength>450</AnimLength>
+        <Animation>
+            <Parameter>
+          		<Code>
+		  			350
+				</Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+<!--
+	<PartInfo>
+        <Name>Mach.Barber.Pole</Name>
+        <AnimLength>450</AnimLength>
+        <Animation>
+            <Parameter>
+          		<Code>
+		  			(A:INDICATED ALTITUDE, feet) 26500 &gt; if{ -0.007267 (A:INDICATED ALTITUDE, feet) 26500 - * 372.529 + s1  }
+				</Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+-->
+	<!-- Main Engine Gauges -->
+	<PartInfo>
+        <Name>Gauge_EPR_1</Name>
+        <AnimLength>220</AnimLength>
+        <Animation>
+            <Parameter>
+          <Code>(A:TURB ENG PRESSURE RATIO:1, Ratio) 100 * </Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>Gauge_EPR_2</Name>
+        <AnimLength>220</AnimLength>
+        <Animation>
+            <Parameter>
+          <Code>(A:TURB ENG PRESSURE RATIO:2, Ratio) 100 * </Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>Gauge_EPR_3</Name>
+        <AnimLength>220</AnimLength>
+        <Animation>
+            <Parameter>
+          <Code>(A:TURB ENG PRESSURE RATIO:3, Ratio) 100 * </Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>Gauge_N1_1</Name>
+        <AnimLength>180</AnimLength>
+        <Animation>
+            <Parameter>
+          <Code>(A:TURB ENG N1:1, Percent) 1.225 * </Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>Gauge_N1_2</Name>
+        <AnimLength>180</AnimLength>
+        <Animation>
+            <Parameter>
+          <Code>(A:TURB ENG N1:2, Percent) 1.225 * </Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>Gauge_N1_3</Name>
+        <AnimLength>180</AnimLength>
+        <Animation>
+            <Parameter>
+          <Code>(A:TURB ENG N1:3, Percent) 1.225 * </Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>Gauge_EGT_1</Name>
+        <AnimLength>260</AnimLength>
+        <Animation>
+            <Parameter>
+          <Code>(A:ENG EXHAUST GAS TEMPERATURE:1, celsius) 5.45 / </Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>Gauge_EGT_2</Name>
+        <AnimLength>260</AnimLength>
+        <Animation>
+            <Parameter>
+          <Code>(A:ENG EXHAUST GAS TEMPERATURE:2, celsius) 5.45 / </Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>Gauge_EGT_3</Name>
+        <AnimLength>260</AnimLength>
+        <Animation>
+            <Parameter>
+          <Code>(A:ENG EXHAUST GAS TEMPERATURE:3, celsius) 5.45 / </Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>Gauge_N3_1</Name>
+        <AnimLength>180</AnimLength>
+        <Animation>
+            <Parameter>
+          <Code>(A:TURB ENG N2:1, Percent) 1.145 * </Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>Gauge_N3_2</Name>
+        <AnimLength>180</AnimLength>
+        <Animation>
+            <Parameter>
+          <Code>(A:TURB ENG N2:2, Percent) 1.145 * </Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>Gauge_N3_3</Name>
+        <AnimLength>180</AnimLength>
+        <Animation>
+            <Parameter>
+          <Code>(A:TURB ENG N2:3, Percent) 1.145 * </Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>Gauge_FF_1</Name>
+        <AnimLength>300</AnimLength>
+        <Animation>
+            <Parameter>
+          <Code>(A:ENG FUEL FLOW PPH:1, Pounds per hour) 8.8 / </Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>Gauge_FF_2</Name>
+        <AnimLength>300</AnimLength>
+        <Animation>
+            <Parameter>
+          <Code>(A:ENG FUEL FLOW PPH:2, Pounds per hour) 8.8 / </Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
+	<PartInfo>
+        <Name>Gauge_FF_3</Name>
+        <AnimLength>300</AnimLength>
+        <Animation>
+            <Parameter>
+          <Code>(A:ENG FUEL FLOW PPH:3, Pounds per hour) 8.8 / </Code>
+            </Parameter>
+        </Animation>
+    </PartInfo>
 
     <!-- Animations -->
+    <Behaviors>
+   		<Include ModelBehaviorFile="Asobo\Common.xml"/>
+	    <Include ModelBehaviorFile="Asobo\Airliner\AirlinerCommon.xml"/>
+		
+    <!-- Animations -->
+
+    <Component ID="AUTOPILOT">
+        <!-- HDG SELECT Button -->
+		<UseTemplate Name="ASOBO_AUTOPILOT_Push_Heading_Template">
+			<NODE_ID>BTN_PUSH_HDG</NODE_ID>
+			<ANIM_NAME>PUSH_HDG</ANIM_NAME>
+			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
+			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
+			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
+            <ANIM_LENGTH>90</ANIM_LENGTH>
+            <TOOLTIPID>Heading Select</TOOLTIPID>
+			<TYPE>L101</TYPE>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_AUTOPILOT_Push_Speed_Template">
+			<NODE_ID>BTN_PUSH_IAS</NODE_ID>
+			<ANIM_NAME>PUSH_IAS</ANIM_NAME>
+			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
+			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
+			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
+			<TOOLTIPID>%((L:AP_SPD_ACTIVE))%{if}TT:COCKPIT.TOOLTIPS.AUTOPILOT_PANEL_SPD_ON%{else}TT:COCKPIT.TOOLTIPS.AUTOPILOT_PANEL_SPD_OFF%{end}</TOOLTIPID>
+            <ANIM_LENGTH>90</ANIM_LENGTH>
+			<TYPE>L101</TYPE>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_AUTOPILOT_Push_Altitude_Template">
+			<NODE_ID>BTN_PUSH_ALT</NODE_ID>
+			<ANIM_NAME>PUSH_ALT</ANIM_NAME>
+			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
+			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
+			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
+            <ANIM_LENGTH>90</ANIM_LENGTH>
+			<TYPE>L101</TYPE>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_AUTOPILOT_Push_VerticalSpeed_Template">
+			<NODE_ID>BTN_PUSH_VS</NODE_ID>
+			<ANIM_NAME>PUSH_VS</ANIM_NAME>
+			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
+			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
+			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>		
+            <ANIM_LENGTH>90</ANIM_LENGTH>
+			<TYPE>L101</TYPE>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_AUTOPILOT_Push_Approach_Template">
+			<NODE_ID>BTN_PUSH_APR</NODE_ID>
+			<ANIM_NAME>PUSH_APR</ANIM_NAME>
+			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
+			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
+			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
+			<DISABLE_GPS_MODE>False</DISABLE_GPS_MODE>
+            <ANIM_LENGTH>90</ANIM_LENGTH>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_AUTOPILOT_Push_Localizer_Template">
+			<NODE_ID>BTN_PUSH_LOC</NODE_ID>
+			<ANIM_NAME>PUSH_LOC</ANIM_NAME>
+			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
+			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
+			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
+            <ANIM_LENGTH>90</ANIM_LENGTH>
+		</UseTemplate>
+        <UseTemplate Name="ASOBO_AUTOPILOT_Push_Navigation_Template">
+			<NODE_ID>BTN_PUSH_NAV</NODE_ID>
+			<ANIM_NAME>PUSH_NAV</ANIM_NAME>
+			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
+			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
+			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
+			<TOOLTIPID>%((A:AUTOPILOT NAV1 LOCK, bool))%{if}TT:COCKPIT.TOOLTIPS.AUTOPILOT_PANEL_LNAV_ON%{else}TT:COCKPIT.TOOLTIPS.AUTOPILOT_PANEL_LNAV_OFF%{end}</TOOLTIPID>
+            <ANIM_LENGTH>90</ANIM_LENGTH>
+			<TYPE>L101</TYPE>
+		</UseTemplate>
+    </Component>
 
     </Behaviors>
 </ModelInfo>
