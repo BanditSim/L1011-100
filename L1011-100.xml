@@ -1,4 +1,5 @@
-<Project Version="2" Name="L1011-100" FolderName="Packages">
+<?xml version="1.0" encoding="utf-8"?>
+<Project Version="2" Name="L1011-100" FolderName="Packages" MetadataFolderName="PackagesMetadata">
 	<OutputDirectory>.</OutputDirectory>
 	<TemporaryOutputDirectory>_PackageInt</TemporaryOutputDirectory>
 	<Packages>

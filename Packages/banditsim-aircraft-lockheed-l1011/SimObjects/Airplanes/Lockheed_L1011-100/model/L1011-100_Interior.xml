@@ -282,82 +282,169 @@
     <Behaviors>
    		<Include ModelBehaviorFile="Asobo\Common.xml"/>
 	    <Include ModelBehaviorFile="Asobo\Airliner\AirlinerCommon.xml"/>
+        <Include ModelBehaviorFile="L1011\Interior\L1011_Interior_Includes.xml"/>
 		
     <!-- Animations -->
-
-    <Component ID="AUTOPILOT">
-        <!-- HDG SELECT Button -->
+    <!-- AP BUTTONS -->
+    <Component ID="AUTOPILOT_PUSH_BUTTONS">
+		<!-- HDG SELECT Button -->
 		<UseTemplate Name="ASOBO_AUTOPILOT_Push_Heading_Template">
 			<NODE_ID>BTN_PUSH_HDG</NODE_ID>
 			<ANIM_NAME>PUSH_HDG</ANIM_NAME>
 			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
-			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<ACTIVE_NODE_ID>BTN_PUSH_HDG_E</ACTIVE_NODE_ID>
 			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
 			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
             <ANIM_LENGTH>90</ANIM_LENGTH>
             <TOOLTIPID>Heading Select</TOOLTIPID>
 			<TYPE>L101</TYPE>
 		</UseTemplate>
+		<!-- IAS SELECT Button -->
 		<UseTemplate Name="ASOBO_AUTOPILOT_Push_Speed_Template">
 			<NODE_ID>BTN_PUSH_IAS</NODE_ID>
 			<ANIM_NAME>PUSH_IAS</ANIM_NAME>
 			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
-			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<ACTIVE_NODE_ID>BTN_PUSH_IAS_E</ACTIVE_NODE_ID>
 			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
 			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
 			<TOOLTIPID>%((L:AP_SPD_ACTIVE))%{if}TT:COCKPIT.TOOLTIPS.AUTOPILOT_PANEL_SPD_ON%{else}TT:COCKPIT.TOOLTIPS.AUTOPILOT_PANEL_SPD_OFF%{end}</TOOLTIPID>
             <ANIM_LENGTH>90</ANIM_LENGTH>
 			<TYPE>L101</TYPE>
 		</UseTemplate>
+		<!-- MACH SELECT Button -->
+		<UseTemplate Name="ASOBO_AUTOPILOT_Push_Speed_Template">
+			<NODE_ID>BTN_PUSH_MACH</NODE_ID>
+			<ANIM_NAME>PUSH_MACH</ANIM_NAME>
+			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
+			<ACTIVE_NODE_ID>BTN_PUSH_MACH_E</ACTIVE_NODE_ID>
+			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
+			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
+			<TOOLTIPID>%((L:AP_SPD_ACTIVE))%{if}TT:COCKPIT.TOOLTIPS.AUTOPILOT_PANEL_SPD_ON%{else}TT:COCKPIT.TOOLTIPS.AUTOPILOT_PANEL_SPD_OFF%{end}</TOOLTIPID>
+            <ANIM_LENGTH>90</ANIM_LENGTH>
+			<TYPE>L101</TYPE>
+		</UseTemplate>
+		<!-- ALT SELECT Button -->
 		<UseTemplate Name="ASOBO_AUTOPILOT_Push_Altitude_Template">
 			<NODE_ID>BTN_PUSH_ALT</NODE_ID>
 			<ANIM_NAME>PUSH_ALT</ANIM_NAME>
 			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
-			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<ACTIVE_NODE_ID>BTN_PUSH_ALT_E</ACTIVE_NODE_ID>
 			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
 			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
             <ANIM_LENGTH>90</ANIM_LENGTH>
 			<TYPE>L101</TYPE>
 		</UseTemplate>
+		<!-- VS SELECT Button -->
 		<UseTemplate Name="ASOBO_AUTOPILOT_Push_VerticalSpeed_Template">
 			<NODE_ID>BTN_PUSH_VS</NODE_ID>
 			<ANIM_NAME>PUSH_VS</ANIM_NAME>
 			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
-			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<ACTIVE_NODE_ID>BTN_PUSH_VS_E</ACTIVE_NODE_ID>
 			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
 			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>		
             <ANIM_LENGTH>90</ANIM_LENGTH>
 			<TYPE>L101</TYPE>
 		</UseTemplate>
+		<!-- APR SELECT Button -->
 		<UseTemplate Name="ASOBO_AUTOPILOT_Push_Approach_Template">
 			<NODE_ID>BTN_PUSH_APR</NODE_ID>
 			<ANIM_NAME>PUSH_APR</ANIM_NAME>
 			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
-			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<ACTIVE_NODE_ID>BTN_PUSH_APR_E</ACTIVE_NODE_ID>
 			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
 			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
 			<DISABLE_GPS_MODE>False</DISABLE_GPS_MODE>
             <ANIM_LENGTH>90</ANIM_LENGTH>
 		</UseTemplate>
+		<!-- LOC SELECT Button -->
 		<UseTemplate Name="ASOBO_AUTOPILOT_Push_Localizer_Template">
 			<NODE_ID>BTN_PUSH_LOC</NODE_ID>
 			<ANIM_NAME>PUSH_LOC</ANIM_NAME>
 			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
-			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<ACTIVE_NODE_ID>BTN_PUSH_LOC_E</ACTIVE_NODE_ID>
 			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
 			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
             <ANIM_LENGTH>90</ANIM_LENGTH>
 		</UseTemplate>
+		<!-- NAV SELECT Button -->
         <UseTemplate Name="ASOBO_AUTOPILOT_Push_Navigation_Template">
 			<NODE_ID>BTN_PUSH_NAV</NODE_ID>
 			<ANIM_NAME>PUSH_NAV</ANIM_NAME>
 			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
-			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<ACTIVE_NODE_ID>BTN_PUSH_NAV_E</ACTIVE_NODE_ID>
 			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
 			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
 			<TOOLTIPID>%((A:AUTOPILOT NAV1 LOCK, bool))%{if}TT:COCKPIT.TOOLTIPS.AUTOPILOT_PANEL_LNAV_ON%{else}TT:COCKPIT.TOOLTIPS.AUTOPILOT_PANEL_LNAV_OFF%{end}</TOOLTIPID>
             <ANIM_LENGTH>90</ANIM_LENGTH>
 			<TYPE>L101</TYPE>
+		</UseTemplate>
+		<!-- V/S WHEEL -->
+		<UseTemplate Name="ASOBO_AUTOPILOT_Knob_VerticalSpeed_Template">
+			<NODE_ID>BTN_KNOB_VS_SELECT</NODE_ID>
+			<ANIM_NAME>KA_VS_SELECT</ANIM_NAME>
+			<UP_DEC_DN_INC>True</UP_DEC_DN_INC>
+			<INTERACTION_AXIS>Y</INTERACTION_AXIS>
+			<TT_ICON>MOVE_AXIS_Y</TT_ICON>		
+		</UseTemplate>
+    </Component>
+    <Component ID="AUTOPILOT_KNOBS">
+		<UseTemplate Name="ASOBO_AUTOPILOT_Knob_Heading_Template">
+			<NODE_ID>BTN_KNOB_HDG</NODE_ID>
+			<ANIM_NAME_KNOB>KA_HDG</ANIM_NAME_KNOB>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_AUTOPILOT_Knob_Altitude_Template">
+			<NODE_ID>BTN_KNOB_ALT_SEL</NODE_ID>
+			<ANIM_NAME_KNOB>KA_ALT_SEL</ANIM_NAME_KNOB>
+            <TYPE>B747</TYPE>
+		</UseTemplate>
+    </Component>
+    <!-- FD SWITCHES -->
+    <Component ID="FLIGHT_DIRECTORS">
+    	<UseTemplate Name="L1011_AUTOPILOT_Push_FlightDirector_Template">
+		    <NODE_ID>SW_FD_1</NODE_ID>
+		    <ANIM_NAME>FD_1_A</ANIM_NAME>
+		    <TOGGLEABLE/>
+		    <NO_INDICATOR>True</NO_INDICATOR>
+		    <NO_TEXT_EMISSIVE>True</NO_TEXT_EMISSIVE>
+		    <ID>1</ID>
+        </UseTemplate>
+    	<UseTemplate Name="L1011_AUTOPILOT_Push_FlightDirector_Template">
+		    <NODE_ID>SW_FD_2</NODE_ID>
+		    <ANIM_NAME>FD_2_B</ANIM_NAME>
+		    <TOGGLEABLE/>
+		    <NO_INDICATOR>True</NO_INDICATOR>
+		    <NO_TEXT_EMISSIVE>True</NO_TEXT_EMISSIVE>
+		    <ID>2</ID>
+        </UseTemplate>
+    </Component>
+    <!-- AP SWITCHES -->
+    <!-- AP 1 -->
+    <Component ID="AUTOPILOT_A_SWITCH">
+		<UseTemplate Name="ASOBO_AUTOPILOT_Push_Autopilot_Template">
+			<AP_COUNT>2</AP_COUNT>
+			<ID>1</ID>
+			<NODE_ID>SW_AP_A</NODE_ID>
+			<ANIM_NAME>AP_A_1</ANIM_NAME>
+			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
+			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
+			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
+			<ALL_AP_ON_APPR>True</ALL_AP_ON_APPR>
+		</UseTemplate>       
+    </Component>
+    <!-- AP 2 -->
+    <Component ID="AUTOPILOT_B_SWITCH">
+		<UseTemplate Name="ASOBO_AUTOPILOT_Push_Autopilot_Template">
+			<AP_COUNT>2</AP_COUNT>
+			<ID>2</ID>
+			<NODE_ID>SW_AP_B</NODE_ID>
+			<ANIM_NAME>AP_B_2</ANIM_NAME>
+			<EMISSIVE_NODE_ID></EMISSIVE_NODE_ID>
+			<ACTIVE_NODE_ID></ACTIVE_NODE_ID>
+			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
+			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
+			<TYPE>ONLY_IF_DISCONNECTED</TYPE>
+			<ALL_AP_ON_APPR>True</ALL_AP_ON_APPR>
 		</UseTemplate>
     </Component>
 

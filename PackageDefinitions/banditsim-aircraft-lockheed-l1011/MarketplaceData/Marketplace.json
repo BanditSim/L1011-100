@@ -3,13 +3,12 @@
     "Neutral": {
       "creator": "BanditSim",
       "title": "L1011-100 Tristar",
-      "description": "",
-      "support-contact": "",
-      "tags": "",
-      "thumbnail_main": "",
-      "thumbnail_secondary": "",
-      "categories": "\/",
-      "media-backgrounds": [],
+      "description": "BanditSim L1011-100",
+      "support-contact": "github.com\/BanditSim\/L1011",
+      "tags": "L1011,AIRLINER,LOCKHEED,TRISTAR",
+      "media-backgrounds": [
+        "MarketplaceBackground.jpg,MarketplaceBackground.jpg"
+      ],
       "blocks": []
     }
   }
