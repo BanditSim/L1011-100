@@ -14,6 +14,7 @@
     <Behaviors>
    		<Include ModelBehaviorFile="Asobo\Exterior.xml"/>
 		<Include ModelBehaviorFile="Asobo\Generic\FX.xml"/>
+		<Include ModelBehaviorFile="L1011\Exterior\L1011_Exterior_Includes.xml"/>
 
     <!-- Custom Animations -->
 <!--
@@ -33,7 +34,7 @@
 
         <Component ID="ENGINE">
 
-			<UseTemplate Name="ASOBO_ENGINE_Turbine_Template">
+			<UseTemplate Name="L1011_ENGINE_Turbine_Template">
 				<ID>1</ID>
 				<ANIM_NODE_ID>N1_1_anim</ANIM_NODE_ID>
 				<ANIM_NAME>N1_1_anim</ANIM_NAME>
@@ -42,7 +43,7 @@
 				<BLURRED_NODE_ID>PROP_BLURRED_LEFT</BLURRED_NODE_ID>
 			</UseTemplate>
 
-			<UseTemplate Name="ASOBO_ENGINE_Turbine_Template">
+			<UseTemplate Name="L1011_ENGINE_Turbine_Template">
 				<ID>3</ID>
 				<ANIM_NODE_ID>N1_3_anim</ANIM_NODE_ID>
 				<ANIM_NAME>N1_3_anim</ANIM_NAME>
