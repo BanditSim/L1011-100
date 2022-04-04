@@ -19,4 +19,4 @@ The original contents of this repository are DUAL LICENSED.
 
 Original textual-form source code in this file is licensed under the GNU General Public License version 3 [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/).
 
-Creative Commons License Artistic Assets (Models, Textures) are licenced under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+Artistic assets included in this work (including but not limited to images, sound banks, 3D models, and textures) are licensed under [Creative Commons CC BY-NC-SA 4.0.](https://creativecommons.org/licenses/by-nc-sa/4.0/)
