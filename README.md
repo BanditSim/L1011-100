@@ -15,4 +15,8 @@ Join our Discord if you wish to help with the development of this aircraft.
 
 ## License
 
-[GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/) is used for this project. 
+The original contents of this repository are DUAL LICENSED.
+
+Original textual-form source code in this file is licensed under the GNU General Public License version 3 [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/).
+
+Artistic assets included in this work (including but not limited to images, sound banks, 3D models, and textures) are licensed under [Creative Commons CC BY-NC-SA 4.0.](https://creativecommons.org/licenses/by-nc-sa/4.0/)
