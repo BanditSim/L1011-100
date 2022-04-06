@@ -2,17 +2,17 @@
 
   <Instrument>
     <Name>L1011_IAS</Name>
-    <Electric>
-		<Simvar name="CIRCUIT ON:21" unit="Boolean"/>
-    </Electric>
 	<AlwaysUpdate>True</AlwaysUpdate>
   </Instrument>
   
   <Instrument>
-    <Name>B747_8_HDG</Name>
-    <Electric>
-		<Simvar name="CIRCUIT ON:21" unit="Boolean"/>
-    </Electric>
+    <Name>L1011_HDG</Name>
+	<AlwaysUpdate>True</AlwaysUpdate>
+  </Instrument>
+
+  <Instrument>
+    <Name>L1011_ALT</Name>
+	<AlwaysUpdate>True</AlwaysUpdate>
   </Instrument>
 
 

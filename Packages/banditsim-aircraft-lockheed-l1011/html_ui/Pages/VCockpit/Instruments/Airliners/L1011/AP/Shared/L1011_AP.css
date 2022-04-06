@@ -68,24 +68,24 @@ html body {
 }
 div {
   position: absolute;
-  left: 0%;
+  left: -35%;
   top: -5%;
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 95%;
   fill: white;
-  letter-spacing: 8px;
+  letter-spacing: 20px;
 }
 
 #value {
   font-family: Digital;
   font-size: 120px;
-  text-align: right;
+  text-align: center;
 }
 
 #mode {
   font-family: Roboto-Light;
   font-size: 70px;
   text-align: left;
-}
+
 
 /*# sourceMappingURL=B747_8_FCU.css.map */
