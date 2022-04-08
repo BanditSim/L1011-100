@@ -113,6 +113,11 @@
 				<ANIM_NAME>door_passenger</ANIM_NAME>
 			</UseTemplate>
 
+			<UseTemplate Name="ASOBO_DOOR_InteractivePoint_Template">
+				<ID>6</ID>
+				<ANIM_NAME>door_frontcargo</ANIM_NAME>
+			</UseTemplate>
+
 		</Component>
     </Behaviors>
 </ModelInfo>
