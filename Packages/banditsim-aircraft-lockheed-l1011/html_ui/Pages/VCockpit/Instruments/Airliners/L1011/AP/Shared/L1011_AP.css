@@ -39,9 +39,7 @@ html body {
   width: 100%;
   height: 100%;
 }
-#Electricity[state=off] {
-  display: none;
-}
+
 @font-face {
   font-family: "Roboto";
   src: url("/Fonts/RobotoMono-Medium.ttf") format("truetype");
@@ -66,19 +64,34 @@ html body {
   font-weight: 900;
   font-style: normal;
 }
+@font-face {
+  font-family: "Spartan-SemiBold";
+  src: url("/Fonts/Spartan-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SpartanMB-SemiBold";
+  src: url("/Fonts/SpartanMB-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-feature-settings: 'tnum';
+  font-style: normal;
+}
 div {
   position: absolute;
-  left: -35%;
+  left: -27%;
   top: -5%;
-  width: 200%;
-  height: 95%;
+  width: 175%;
+  height: 75%;
   fill: white;
   letter-spacing: 20px;
 }
 
 #value {
-  font-family: Digital;
-  font-size: 120px;
+  font-family: SpartanMB-SemiBold;
+  font-size: 88px;
+  font-feature-settings: 'tnum';
+  font-variant-numeric: tabular-nums;
   text-align: center;
 }
 
