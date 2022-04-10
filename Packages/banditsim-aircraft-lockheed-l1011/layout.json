@@ -96,14 +96,24 @@
       "date": 132934131938552795
     },
     {
+      "path": "ModelBehaviorDefs/L1011/generated/L1011_Instruments.xml",
+      "size": 1813,
+      "date": 132940647691397378
+    },
+    {
       "path": "ModelBehaviorDefs/L1011/generated/L1011_Interior_Common.xml",
       "size": 7932,
       "date": 132933840405215052
     },
     {
+      "path": "ModelBehaviorDefs/L1011/generated/subtemplates/L1011_Instruments_Subtemplates.xml",
+      "size": 11863,
+      "date": 132940639459835905
+    },
+    {
       "path": "ModelBehaviorDefs/L1011/Interior/L1011_Interior_Includes.xml",
-      "size": 104,
-      "date": 132933377082958833
+      "size": 169,
+      "date": 132940637410701188
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/ai.cfg",
@@ -197,8 +207,8 @@
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100_Interior.xml",
-      "size": 20938,
-      "date": 132939778571170531
+      "size": 20963,
+      "date": 132940650005430011
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/model.CFG",

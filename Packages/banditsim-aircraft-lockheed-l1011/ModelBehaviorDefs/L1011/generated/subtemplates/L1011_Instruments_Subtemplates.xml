@@ -1,0 +1,279 @@
+<ModelBehaviors>
+	<!-- ############################################################################## -->
+	<!-- ################################# ALTIMETER ################################## -->
+	<!-- ############################################################################## -->
+
+    <Template Name="L1011_INSTRUMENT_Altimeter_SubTemplate">
+    	<Parameters Type="Default">
+    		<BARO_ID>#ID#</BARO_ID>
+    	</Parameters>
+    	<Parameters Type="Default">
+    		<SIMVAR>KOHLSMAN SETTING HG:#BARO_ID#</SIMVAR>
+    		<UNITS>inHg</UNITS>
+    		<ANIM_NAME_STRIP>INSTRUMENT_Altimeter_Strip#SUFFIX_ID#</ANIM_NAME_STRIP>
+    		<NODE_ID_STRIP>INSTRUMENT_Altimeter_Strip#SUFFIX_ID#</NODE_ID_STRIP>
+    		<MIN_VALUE_STRIP>27.9</MIN_VALUE_STRIP>
+    		<MAX_VALUE_STRIP>31.6</MAX_VALUE_STRIP>
+    		<MIN_VALUE_KNOB>28.2</MIN_VALUE_KNOB>
+    		<MAX_VALUE_KNOB>31.3</MAX_VALUE_KNOB>
+    		<PART_ID>INSTRUMENT_Needle_Altimeter</PART_ID>
+    		<NEEDLE_100_FEET>True</NEEDLE_100_FEET>
+    		<NEEDLE_1000_FEET>True</NEEDLE_1000_FEET>
+    		<NEEDLE_10000_FEET>True</NEEDLE_10000_FEET>
+    	</Parameters>
+    	<Parameters Type="Override">
+    		<Condition Check="HIGHLIGHT_NODE_ID">
+    			<HIGHLIGHT_PART_ID>#PART_ID#</HIGHLIGHT_PART_ID>
+    			<PART_ID></PART_ID>
+    		</Condition>
+    	</Parameters>
+    	<EditableTemplateParameters>
+    		<AddParams>
+    			<ANIM_NAME_100_FEET></ANIM_NAME_100_FEET>
+    			<NODE_ID_100_FEET></NODE_ID_100_FEET>
+    			<ANIM_NAME_1000_FEET></ANIM_NAME_1000_FEET>
+    			<NODE_ID_1000_FEET></NODE_ID_1000_FEET>
+    			<ANIM_NAME_10000_FEET></ANIM_NAME_10000_FEET>
+    			<NODE_ID_10000_FEET></NODE_ID_10000_FEET>
+    			<ANIM_NAME_STRIP></ANIM_NAME_STRIP>
+    			<NODE_ID_STRIP></NODE_ID_STRIP>
+    			<KNOB_ANIM_NAME></KNOB_ANIM_NAME>
+    			<KNOB_NODE_ID></KNOB_NODE_ID>
+    			<HIGHLIGHT_NODE_ID/>
+    		</AddParams>
+    		<RemoveParams>
+    			<NODE_ID></NODE_ID>
+    			<ANIM_NAME></ANIM_NAME>
+    			<FEET></FEET>
+    		</RemoveParams>
+    	</EditableTemplateParameters>
+
+    	<Component ID="INSTRUMENT_Altimeter_#ID#">
+    		<Condition Valid="NEEDLE_100_FEET">
+    		<UseTemplate Name="L1011_INSTRUMENT_Needle_Altimeter_Template">
+    			<FEET>100</FEET>
+    			<Condition Check="ANIM_NAME_100_FEET">
+    				<ANIM_NAME>#ANIM_NAME_100_FEET#</ANIM_NAME>
+    			</Condition>
+    			<Condition Check="NODE_ID_100_FEET">
+    				<NODE_ID>#NODE_ID_100_FEET#</NODE_ID>
+    			</Condition>
+    		</UseTemplate>
+    		</Condition>
+    		<Condition Valid="NEEDLE_1000_FEET">
+    		<UseTemplate Name="L1011_INSTRUMENT_Needle_Altimeter_Template">
+    			<FEET>1000</FEET>
+    			<Condition Check="ANIM_NAME_1000_FEET">
+    				<ANIM_NAME>#ANIM_NAME_1000_FEET#</ANIM_NAME>
+    			</Condition>
+    			<Condition Check="NODE_ID_1000_FEET">
+    				<NODE_ID>#NODE_ID_1000_FEET#</NODE_ID>
+    			</Condition>
+    		</UseTemplate>
+    		</Condition>
+    		<Condition Valid="NEEDLE_10000_FEET">
+    		<UseTemplate Name="L1011_INSTRUMENT_Needle_Altimeter_Template">
+    			<FEET>10000</FEET>
+    			<Condition Check="ANIM_NAME_10000_FEET">
+    				<ANIM_NAME>#ANIM_NAME_10000_FEET#</ANIM_NAME>
+    			</Condition>
+    			<Condition Check="NODE_ID_10000_FEET">
+    				<NODE_ID>#NODE_ID_10000_FEET#</NODE_ID>
+    			</Condition>
+    		</UseTemplate>
+    		</Condition>
+    		<Condition Valid="NO_STRIP">
+    			<False>
+    				<UseTemplate Name="L1011_INSTRUMENT_Altimeter_Strip_Template">
+    					<ANIM_NAME>#ANIM_NAME_STRIP#</ANIM_NAME>
+    					<NODE_ID>#NODE_ID_STRIP#</NODE_ID>
+    					<MIN_VALUE>#MIN_VALUE_STRIP#</MIN_VALUE>
+    					<MAX_VALUE>#MAX_VALUE_STRIP#</MAX_VALUE>
+    					<Condition Check="INVERT_STRIP_ANIM">
+    						<True>
+    							<INVERT_ANIM>True</INVERT_ANIM>
+    						</True>
+    					</Condition>
+    				</UseTemplate>
+    			</False>
+    		</Condition>
+    		<Condition Valid="USE_AUTO_CALIBRATED_MIN_MAX"><!-- Knob created by strip template when auto calibrated min max -->
+    			<False>
+    				<UseTemplate Name="L1011_INSTRUMENT_Knob_Altimeter_Template">
+    					<Condition Check="KNOB_ANIM_NAME">
+    						<ANIM_NAME>#KNOB_ANIM_NAME#</ANIM_NAME>
+    					</Condition>
+    					<Condition Check="KNOB_ROTATION_SPEED">
+    						<ROTATION_SPEED>#KNOB_ROTATION_SPEED#</ROTATION_SPEED>
+    					</Condition>
+    					<Condition Check="KNOB_NODE_ID">
+    						<NODE_ID>#KNOB_NODE_ID#</NODE_ID>
+    					</Condition>
+    					<Condition Check="HIGHLIGHT_NODE_ID">
+    						<False>
+    							<PART_ID>INSTRUMENT_Knob_Altimeter</PART_ID>
+    						</False>
+    					</Condition>
+    					<Condition Check="KNOB_HIGHLIGHT_NODE_ID">
+    						<HIGHLIGHT_NODE_ID>#KNOB_HIGHLIGHT_NODE_ID#</HIGHLIGHT_NODE_ID>
+    					</Condition>
+    					<MIN_VALUE>#MIN_VALUE_KNOB#</MIN_VALUE>
+    					<MAX_VALUE>#MAX_VALUE_KNOB#</MAX_VALUE>
+    				</UseTemplate>
+    			</False>
+    		</Condition>
+    		<Condition Check="HIGHLIGHT_NODE_ID">
+    			<UseTemplate Name="ASOBO_GT_Highlight_Template">
+    				<PART_ID>#HIGHLIGHT_PART_ID#</PART_ID>
+    			</UseTemplate>
+    		</Condition>
+    	</Component>
+    </Template>
+	<!-- ############################################################################## -->
+   
+    <Template Name="L1011_INSTRUMENT_Needle_Altimeter_SubTemplate">
+    	<DefaultTemplateParameters>
+    		<NODE_ID>INSTRUMENT_Needle_Altimeter_#FEET##SUFFIX_ID#</NODE_ID>
+    		<ANIM_NAME>INSTRUMENT_Needle_Altimeter_#FEET##SUFFIX_ID#</ANIM_NAME>
+    		<PART_ID>INSTRUMENT_Needle_Altimeter</PART_ID>
+    		<BARO_ID>0</BARO_ID>
+    	</DefaultTemplateParameters>
+    	<EditableTemplateParameters>
+    		<AddParams>
+    			<FEET></FEET>
+    			<ANIM_NAME></ANIM_NAME>
+    			<NODE_ID></NODE_ID>
+    		</AddParams>
+    	</EditableTemplateParameters>
+    
+    	<Component ID="#NODE_ID#" Node="#NODE_ID#">
+    		<UseTemplate Name="ASOBO_GT_Anim_Code">
+    			<!-- TODO : verifier le resultat pour altitude negative -->
+    			<ANIM_CODE>
+    				(A:INDICATED ALTITUDE:#BARO_ID#, feet) 0 &gt;=
+    				 if{ (A:INDICATED ALTITUDE:#BARO_ID#, feet) #FEET# 10 / / 100 % }
+    				els{ (A:INDICATED ALTITUDE:#BARO_ID#, feet) #FEET# 10 / / 100 % 100 + }
+    			</ANIM_CODE>
+    			<Condition Check="HIGHLIGHT_NODE_ID">
+    				<PART_ID/>
+    			</Condition>
+    		</UseTemplate>
+    	</Component>
+    </Template>
+	<!-- ############################################################################## -->
+
+    <Template Name="L1011_INSTRUMENT_Altimeter_Strip_SubTemplate">
+    	<DefaultTemplateParameters>
+    		<NODE_ID>INSTRUMENT_Altimeter_Strip#SUFFIX_ID#</NODE_ID>
+    		<ANIM_NAME>INSTRUMENT_Altimeter_Strip#SUFFIX_ID#</ANIM_NAME>
+    		<SIMVAR>KOHLSMAN SETTING HG</SIMVAR>
+    		<UNITS>inHg</UNITS>
+    		<Condition Valid="USE_AUTO_CALIBRATED_MIN_MAX">
+    			<True>
+    				<REF1_VALUE>28.1</REF1_VALUE><!-- Value read -->
+    				<REF1_ANIM_VALUE>5</REF1_ANIM_VALUE><!-- Anim frame for value read -->
+    				<REF2_VALUE>31.4</REF2_VALUE><!-- Value read -->
+    				<REF2_ANIM_VALUE>95</REF2_ANIM_VALUE><!-- Anim frame for value read -->
+    				<ANIM_STRIP_LENGTH>100</ANIM_STRIP_LENGTH><!-- Frame count -->
+    			</True>
+    			<False>
+    				<MIN_VALUE>27.9</MIN_VALUE>
+    				<MAX_VALUE>31.6</MAX_VALUE>
+    			</False>
+    		</Condition>
+    	</DefaultTemplateParameters>
+    	<OverrideTemplateParameters>
+    		<Condition Valid="USE_AUTO_CALIBRATED_MIN_MAX">
+    			<INC_FACTOR Process="Float">#REF2_VALUE# #REF1_VALUE# - #REF2_ANIM_VALUE# #REF1_ANIM_VALUE# - /</INC_FACTOR>
+    		</Condition>
+    	</OverrideTemplateParameters>
+    	<Component ID="#NODE_ID#">
+    		<OverrideTemplateParameters>
+    			<Condition Valid="USE_AUTO_CALIBRATED_MIN_MAX">
+    				<MIN_VALUE Process="Float">#REF1_VALUE# #INC_FACTOR# #REF1_ANIM_VALUE# * -</MIN_VALUE><!-- check value for 0% of anim -->
+    				<MAX_VALUE Process="Float">#REF2_VALUE# #INC_FACTOR# #ANIM_STRIP_LENGTH# #REF2_ANIM_VALUE# - * +</MAX_VALUE><!-- check value for 100% of anim -->
+    			</Condition>
+    		</OverrideTemplateParameters>
+    		<Condition Valid="USE_AUTO_CALIBRATED_MIN_MAX">
+    			<True>
+    				<UseTemplate Name="ASOBO_GT_Needle_Code">
+    					<OVERRIDE_ANIM_CODE>(A:#SIMVAR#, #UNITS#) #MIN_VALUE# max #MAX_VALUE# min #MIN_VALUE# - #MAX_VALUE# #MIN_VALUE# - / #ANIM_STRIP_LENGTH# *</OVERRIDE_ANIM_CODE>
+    					<ANIM_LENGTH>#ANIM_STRIP_LENGTH#</ANIM_LENGTH>
+    				</UseTemplate>
+    				<UseTemplate Name="L1011_INSTRUMENT_Knob_Altimeter_Template">
+    					<Condition Valid="KNOB_ANIM_NAME">
+    						<True>
+    							<ANIM_NAME>#KNOB_ANIM_NAME#</ANIM_NAME>
+    						</True>
+    						<False>
+    							<ANIM_NAME>INSTRUMENT_Knob_Altimeter#SUFFIX_ID#</ANIM_NAME>
+    						</False>
+    					</Condition>
+    					<Condition Valid="KNOB_ROTATION_SPEED">
+    						<ROTATION_SPEED>#KNOB_ROTATION_SPEED#</ROTATION_SPEED>
+    					</Condition>
+    					<Condition Valid="KNOB_NODE_ID">
+    						<True>
+    							<NODE_ID>#KNOB_NODE_ID#</NODE_ID>
+    						</True>
+    						<False>
+    							<NODE_ID>INSTRUMENT_Knob_Altimeter#SUFFIX_ID#</NODE_ID>
+    						</False>
+    					</Condition>
+    					<Condition Valid="HIGHLIGHT_NODE_ID">
+    						<False>
+    							<PART_ID>INSTRUMENT_Knob_Altimeter</PART_ID>
+    						</False>
+    					</Condition>
+    					<Condition Check="KNOB_HIGHLIGHT_NODE_ID">
+    						<HIGHLIGHT_NODE_ID>#KNOB_HIGHLIGHT_NODE_ID#</HIGHLIGHT_NODE_ID>
+    					</Condition>
+    				</UseTemplate>
+    			</True>
+    			<False>
+    				<UseTemplate Name="ASOBO_GT_Needle_Code">
+    				</UseTemplate>
+    			</False>
+    		</Condition>
+    	</Component>
+    </Template>
+	<!-- ############################################################################## -->
+
+    <Template Name="L1011_INSTRUMENT_Knob_Altimeter_SubTemplate">
+    	<Parameters Type="Default">
+    		<NODE_ID>INSTRUMENT_Knob_Altimeter#SUFFIX_ID#</NODE_ID>
+    		<ANIM_NAME>INSTRUMENT_Knob_Altimeter#SUFFIX_ID#</ANIM_NAME>
+    		<SIMVAR>KOHLSMAN SETTING HG</SIMVAR>
+    		<UNITS>inHg</UNITS>
+    		<MIN_VALUE>28.2</MIN_VALUE>
+    		<MAX_VALUE>31.3</MAX_VALUE>
+    		<BARO_ID>0</BARO_ID>
+    		<INCREMENT>0.01 33.8639 *</INCREMENT> <!-- 10 MB -->
+    		<THRESHOLD_INPUT>0.0001</THRESHOLD_INPUT>
+    		<THRESHOLD_MOUSE>0.003</THRESHOLD_MOUSE>
+    		<REPEAT_ANIM>3</REPEAT_ANIM>
+    		<TOOLTIP_ALTIMETER_TITLE>@TT_Package.INSTRUMENT_KNOB_ALTIMETER_TITLE</TOOLTIP_ALTIMETER_TITLE>
+    	</Parameters>
+    	<Parameters Type="Override">
+    		<TOOLTIP_TITLE>#TOOLTIP_ALTIMETER_TITLE#</TOOLTIP_TITLE>
+    		<TOOLTIP_ENTRY_0>INSTRUMENT_Altimeter_#BARO_ID#</TOOLTIP_ENTRY_0>
+    	</Parameters>
+    	<Parameters Type="Override">
+    		<LOWER_LIMIT Process="Int">#MIN_VALUE# (&gt;L:LOCAL_milliBar_to_inHg, inHg) (L:LOCAL_milliBar_to_inHg, Millibar)</LOWER_LIMIT>
+    		<UPPER_LIMIT Process="Int">#MAX_VALUE# (&gt;L:LOCAL_milliBar_to_inHg, inHg) (L:LOCAL_milliBar_to_inHg, Millibar)</UPPER_LIMIT>
+    	</Parameters>
+    	<Component ID="#NODE_ID#" Node="#NODE_ID#">
+    		<UseInputEvent ID="INSTRUMENT"/>
+    		<UseTemplate Name="ASOBO_GT_Knob_Finite_Code">
+    			<ANIM_CODE>
+    				(A:#SIMVAR#, #UNITS#) #MIN_VALUE# - #MAX_VALUE# #MIN_VALUE# - / 100 * 
+    			</ANIM_CODE>
+    			<CLOCKWISE_CODE_DEFAULT_IM>1 (&gt;B:INSTRUMENT_Altimeter_#BARO_ID#_Inc)</CLOCKWISE_CODE_DEFAULT_IM>
+    			<ANTICLOCKWISE_CODE_DEFAULT_IM>1 (&gt;B:INSTRUMENT_Altimeter_#BARO_ID#_Dec)</ANTICLOCKWISE_CODE_DEFAULT_IM>
+    			<CLOCKWISE_CODE_DRAG_IM>1 (&gt;B:INSTRUMENT_Altimeter_#BARO_ID#_Inc)</CLOCKWISE_CODE_DRAG_IM>
+    			<ANTICLOCKWISE_CODE_DRAG_IM>1 (&gt;B:INSTRUMENT_Altimeter_#BARO_ID#_Dec)</ANTICLOCKWISE_CODE_DRAG_IM>
+    		</UseTemplate>
+    	</Component>
+    </Template>
+
+</ModelBehaviors>

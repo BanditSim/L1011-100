@@ -160,7 +160,7 @@
         <Animation>
             <Parameter>
           		<Code>
-		  			350
+		  			(A:AIRSPEED BARBER POLE, Knots)
 				</Code>
             </Parameter>
         </Animation>
@@ -504,7 +504,7 @@
     </Component>
     <!-- ALTIMETER -->
     <Component ID="ALTIMETER_PRIMARY">
- 		<UseTemplate Name="ASOBO_INSTRUMENT_Altimeter_SubTemplate">
+ 		<UseTemplate Name="ASOBO_INSTRUMENT_Altimeter_Template">
 			<NEEDLE_100_FEET>False</NEEDLE_100_FEET>
 			<NEEDLE_1000_FEET>True</NEEDLE_1000_FEET>
 			<NEEDLE_10000_FEET>False</NEEDLE_10000_FEET>

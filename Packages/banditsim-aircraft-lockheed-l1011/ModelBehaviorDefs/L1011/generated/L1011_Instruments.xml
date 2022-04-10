@@ -1,0 +1,56 @@
+<ModelBehaviors>
+	<Include RelativeFile=".../subtemplates/L1011_Instruments_Subtemplates.xml"/>
+
+	<!-- ############################################################################## -->
+	<!-- ################################ INSTRUMENTS ################################# -->
+	<!-- ############################################################################## -->
+
+	<!-- ################################# ALTIMETER ################################## -->
+	<!--
+	Required parameters:
+		ANIM_NAME
+		UNITS
+		MIN_VALUE
+		MAX_VALUE
+	-->
+	<Template Name="L1011_INSTRUMENT_Altimeter_Template">
+		<Parameters Type="Default">
+			<ID>1</ID>
+		</Parameters>
+		<UseTemplate Name="ASOBO_GT_Helper_Suffix_ID_Appender">
+			<TEMPLATE_TO_CALL>L1011_INSTRUMENT_Altimeter_SubTemplate</TEMPLATE_TO_CALL>
+		</UseTemplate>
+	</Template>
+
+	<Template Name="L1011_INSTRUMENT_Knob_Altimeter_Template">
+		<Parameters Type="Default">
+			<ID>1</ID>
+		</Parameters>
+		<UseTemplate Name="ASOBO_GT_Helper_Suffix_ID_Appender">
+			<TEMPLATE_TO_CALL>L1011_INSTRUMENT_Knob_Altimeter_SubTemplate</TEMPLATE_TO_CALL>
+		</UseTemplate>
+	</Template>
+
+	<!--
+	Required parameters:
+		FEET
+	-->
+	<Template Name="L1011_INSTRUMENT_Needle_Altimeter_Template">
+		<Parameters Type="Default">
+			<ID>1</ID>
+		</Parameters>
+		<UseTemplate Name="ASOBO_GT_Helper_Suffix_ID_Appender">
+			<TEMPLATE_TO_CALL>L1011_INSTRUMENT_Needle_Altimeter_SubTemplate</TEMPLATE_TO_CALL>
+		</UseTemplate>
+	</Template>
+
+	<Template Name="L1011_INSTRUMENT_Altimeter_Strip_Template">
+		<Parameters Type="Default">
+			<ID>1</ID>
+		</Parameters>
+		<UseTemplate Name="ASOBO_GT_Helper_Suffix_ID_Appender">
+			<TEMPLATE_TO_CALL>L1011_INSTRUMENT_Altimeter_Strip_SubTemplate</TEMPLATE_TO_CALL>
+		</UseTemplate>
+	</Template>
+
+</ModelBehaviors>
