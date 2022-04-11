@@ -6,7 +6,8 @@
 		<!-- Highest LOD -->
 		<!-- minimum display size in % (should be bounding sphere vertical screen size, sphere will often be slightly larger than you expect) -->
 		<!-- default minSize is 0 -->
-		<LOD minSize="50" ModelFile="L1011-100_Interior.gltf"/>
+		<LOD minSize="170" ModelFile="L1011-100_Interior_00.gltf"/>
+		<LOD minSize="130" ModelFile="L1011-100_Interior_01.gltf"/>
 	</LODS>
 
 	<Animation name="Gauge_EPR_1" 				guid="03e5a862-ee81-46ec-853f-2d87acf9c9ef" length="220"    type="Sim" typeparam2="Gauge_EPR_1" 				typeparam="AutoPlay" />
@@ -444,14 +445,26 @@
 			<TT_ICON>MOVE_AXIS_Y</TT_ICON>		
 		</UseTemplate>
 		<!-- ATS SWITCH -->
-			<UseTemplate Name="ASOBO_AUTOPILOT_Push_AutoThrottle_Disengage_Template">
-				<NODE_ID>SW_ATS_1</NODE_ID>
-				<ANIM_NAME>SW_ATS_1</ANIM_NAME>
-				<NO_INDICATOR>True</NO_INDICATOR>
-				<NO_TEXT_EMISSIVE>True</NO_TEXT_EMISSIVE>
-				<CLEARS_EICAS_WARNING>True</CLEARS_EICAS_WARNING>
-				<PLANE_PREFIX>B747_8</PLANE_PREFIX>
-			</UseTemplate>
+		<UseTemplate Name="ASOBO_AUTOPILOT_Push_AutoThrottle_Disengage_Template">
+			<NODE_ID>SW_ATS_1</NODE_ID>
+			<ANIM_NAME>SW_ATS_1</ANIM_NAME>
+			<NO_INDICATOR>True</NO_INDICATOR>
+			<NO_TEXT_EMISSIVE>True</NO_TEXT_EMISSIVE>
+			<CLEARS_EICAS_WARNING>True</CLEARS_EICAS_WARNING>
+			<PLANE_PREFIX>B747_8</PLANE_PREFIX>
+		</UseTemplate>
+    </Component>
+    <Component ID="AUTOPILOT_VOR_KNOBS">
+		<!-- VOR1 STATUS KNOB -->
+		<UseTemplate Name="ASOBO_GT_Switch_XStates">
+		    <NODE_ID>KA_VOR1_SELECT</NODE_ID>
+		    <ANIM_NAME>KA_VOR1_SELECT</ANIM_NAME>
+			<NUM_STATES>4</NUM_STATES>
+		    <CODE_POS_0></CODE_POS_0>
+		    <CODE_POS_1></CODE_POS_1>
+		    <CODE_POS_2></CODE_POS_2>
+		    <CODE_POS_3></CODE_POS_3>   
+		</UseTemplate>
     </Component>
     <!-- FD SWITCHES -->
     <Component ID="FLIGHT_DIRECTORS">
