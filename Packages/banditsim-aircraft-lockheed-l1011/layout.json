@@ -182,18 +182,18 @@
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.bin",
-      "size": 32297604,
-      "date": 132941943523902598
+      "size": 34571896,
+      "date": 132943442984583170
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.gltf",
-      "size": 197112,
-      "date": 132941943523922536
+      "size": 209762,
+      "date": 132943442984603124
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100.xml",
-      "size": 3652,
-      "date": 132941575788006669
+      "size": 4503,
+      "date": 132943443348704885
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/model/L1011-100_Interior.xml",
@@ -298,32 +298,32 @@
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_L.PNG.DDS",
       "size": 11184952,
-      "date": 132941943484966547
+      "date": 132943442943008814
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_L.PNG.DDS.json",
       "size": 102,
-      "date": 132941943484876778
+      "date": 132943442942929027
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_R.PNG.DDS",
       "size": 22369776,
-      "date": 132941943501153879
+      "date": 132943442960919414
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_R.PNG.DDS.json",
       "size": 119,
-      "date": 132941943500974355
+      "date": 132943442960719943
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_TAIL.PNG.DDS",
       "size": 11184952,
-      "date": 132941943468534538
+      "date": 132943442925743316
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_BODY_TAIL.PNG.DDS.json",
       "size": 102,
-      "date": 132941943468444775
+      "date": 132943442925663528
     },
     {
       "path": "SimObjects/Airplanes/Lockheed_L1011-100/texture/L1011_COCKPIT_BUTTONLIGHT.PNG.DDS",

@@ -63,6 +63,7 @@
 		</Component>
 
 		<Component ID="GEARS">			
+		    <!-- GEAR ANIMATION -->
 			<UseTemplate Name="ASOBO_GEAR_Center_Template">
 				<ID>1</ID>
 				<ANIM_NAME>c_gear</ANIM_NAME>
@@ -75,10 +76,29 @@
 				<ID>2</ID>
 				<ANIM_NAME>r_gear</ANIM_NAME>
 			</UseTemplate>
+ 		   <!-- WHEEL ROTATION -->
 			<UseTemplate Name="ASOBO_GEAR_Center_Tire_Template">
 				<ANIM_NAME>c_tire_anim</ANIM_NAME>
 				<NODE_ID_STILL>WHEELS_C</NODE_ID_STILL>
 				<NODE_ID_BLURRED>WHEELS_C</NODE_ID_BLURRED>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_GEAR_Left_Tire_Template">
+				<ANIM_NAME>RLF_TIRE_ANIM</ANIM_NAME>
+				<NODE_ID_STILL>WHEEL_RLF</NODE_ID_STILL>
+				<NODE_ID_BLURRED>WHEEL_RLF_B</NODE_ID_BLURRED>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_GEAR_Left_Tire_Template">
+				<ANIM_NAME>RLR_TIRE_ANIM</ANIM_NAME>
+				<NODE_ID_STILL>WHEEL_RLR</NODE_ID_STILL>
+				<NODE_ID_BLURRED>WHEEL_RLR_B</NODE_ID_BLURRED>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_GEAR_Right_Tire_Template">
+				<ANIM_NAME>RRF_TIRE_ANIM</ANIM_NAME>
+				<NODE_ID_STILL>WHEEL_RRF_B</NODE_ID_STILL>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_GEAR_Right_Tire_Template">
+				<ANIM_NAME>RRR_TIRE_ANIM</ANIM_NAME>
+				<NODE_ID_STILL>WHEEL_RRR_B</NODE_ID_STILL>
 			</UseTemplate>
 <!--
 			<UseTemplate Name="ASOBO_GEAR_Steering_Template">
@@ -86,6 +106,7 @@
 				<ANIM_NAME>c_wheel</ANIM_NAME>
 			</UseTemplate>
 -->
+ 		   <!-- WHEEL STEERING -->
 			<UseTemplate Name="ASOBO_GT_Anim">
 				<ANIM_NAME>c_wheel</ANIM_NAME>
 				<ANIM_CODE>(A:GEAR STEER ANGLE:0, degrees) 180 + </ANIM_CODE>
