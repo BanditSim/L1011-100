@@ -323,6 +323,20 @@
         <Include ModelBehaviorFile="L1011\Interior\L1011_Interior_Includes.xml"/>
 		
     <!-- Animations -->
+    <Component ID="CAPTN_INSTRUMENTS">
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>HSI_HEADING_P</ANIM_NAME>
+			<ANIM_CODE>(A:HEADING INDICATOR, degrees) 10 / </ANIM_CODE>
+			<ANIM_LENGTH>36</ANIM_LENGTH>
+			<ANIM_WRAP>True</ANIM_WRAP>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>HSI_CRS_P</ANIM_NAME>
+			<ANIM_CODE>(A:AUTOPILOT HEADING LOCK DIR, degrees) 10 / </ANIM_CODE>
+			<ANIM_LENGTH>36</ANIM_LENGTH>
+			<ANIM_WRAP>True</ANIM_WRAP>
+		</UseTemplate>
+    </Component>
     <!-- AP BUTTONS -->
     <Component ID="AUTOPILOT_PUSH_BUTTONS">
 		<!-- HDG SELECT Button -->
