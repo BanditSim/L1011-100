@@ -51,6 +51,23 @@
 			</UseTemplate>
 		</Component>
 
+        <Component ID="SPOILERS">
+			<UseTemplate Name="ASOBO_HANDLING_Spoilers_Template">
+				<TYPE>SPEEDBRAKES_AND_GROUND</TYPE>
+				<ANIM_NAME_LEFT>SPOILERS_L_ANIM</ANIM_NAME_LEFT>
+				<ANIM_NAME_RIGHT>SPOILERS_R_ANIM</ANIM_NAME_RIGHT>
+				<ANIM_LAG>100</ANIM_LAG>
+				<MAX_VALUE>10</MAX_VALUE>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_HANDLING_Spoilers_Template">
+				<TYPE>SPOILERONS_AND_GROUND</TYPE>
+				<ANIM_NAME_LEFT>SPOILERS_L2_ANIM</ANIM_NAME_LEFT>
+				<ANIM_NAME_RIGHT>SPOILERS_R2_ANIM</ANIM_NAME_RIGHT>
+				<ANIM_LAG>100</ANIM_LAG>
+				<MAX_VALUE>10</MAX_VALUE>
+			</UseTemplate>
+		</Component>
+
         <Component ID="FLAPS">
 			<UseTemplate Name="ASOBO_HANDLING_Flaps_Template">
 				<ANIM_NAME_LEFT>FLAPS_INNER_L</ANIM_NAME_LEFT>
