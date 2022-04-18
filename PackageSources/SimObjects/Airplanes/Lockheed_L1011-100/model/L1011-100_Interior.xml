@@ -323,7 +323,272 @@
         <Include ModelBehaviorFile="L1011\Interior\L1011_Interior_Includes.xml"/>
 		
     <!-- Animations -->
-    <Component ID="CAPTN_INSTRUMENTS">
+    <!-- AFCS MODES CAPTAIN -->
+    <Component ID="CAPTN_INSTRUMENTS_AFCS_MODES">
+	    <!-- 
+		AFCS MODES 1 	
+	    0:	LOC
+	    2:	LOC ARM
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_MODES_1_ANIM_1</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS MODES 2 	
+	    0:	HDG SEL
+	    2:	R NAV
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_MODES_1_ANIM_2</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS MODES 3 	
+	    0:	GS
+	    2:	GS ARM
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_MODES_1_ANIM_3</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS MODES 4 	
+	    0:	VS
+	    2:	ALT
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_MODES_1_ANIM_4</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS MODES 5 	
+	    0:	A/L
+	    2:	A/L ARM
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_MODES_1_ANIM_5</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS MODES 6 	
+	    0:	VOR
+	    2:	VOR ARM
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_MODES_1_ANIM_6</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS MODES 7 	
+	    0:	ALIGN
+	    2:	ALN ARM
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_MODES_1_ANIM_7</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS MODES 8 	
+	    0:	IAS
+	    2:	MACH
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_MODES_1_ANIM_8</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS MODES 9 	
+	    0:	FLARE
+	    2:	FLR ARM
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_MODES_1_ANIM_9</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS MODES 10 	
+	    0:	TURB
+	    2:	ALT ARM
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_MODES_1_ANIM_10</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS MODES 11 	
+	    0:	ROLLOUT
+	    2:	TAKEOFF
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_MODES_1_ANIM_11</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS MODES 12 	
+	    0:	GO ARND
+	    2:	
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_MODES_1_ANIM_12</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+    </Component>
+    <!-- AFCS WARNING CAPTAIN -->
+    <Component ID="CAPTN_INSTRUMENTS_AFCS_WARN">
+	    <!-- 
+		AFCS WARNING 1 	
+	    0:	AP DISC (red)
+		1:	APFDS
+	    2:	NO DUAL (amber)
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_WARN_1_ANIM_1</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS WARNING 2 	
+	    0:	ATS DISC (red)
+		1:	SCS
+	    2:	NO GA (amber)
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_WARN_1_ANIM_2</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS WARNING 3 	
+	    0:	AP LIMIT (red)
+		1:	YAW SAS
+	    2:	NO ALIGN (amber)
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_WARN_1_ANIM_3</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS WARNING 4 	
+	    0:	NO FLARE (amber)
+		1:	CMD DISC
+	    2:	CMD DISC (amber)
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_WARN_1_ANIM_4</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+    </Component>
+    <!-- AFCS STATUS CAPTAIN -->
+    <Component ID="CAPTN_INSTRUMENTS_AFCS_STATUS">
+	    <!-- 
+		AFCS STATUS 1 	
+	    0:	PITCH CWS (amber)
+		1:	PITCH OFF
+	    2:	PITCH CMD (white)
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_STATUS_1_ANIM_1</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS STATUS 2 	
+	    0:	ROLL CWS (amber)
+		1:	ROLL OFF
+	    2:	ROLL CMD (white)
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_STATUS_1_ANIM_2</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		AFCS STATUS 3 	
+	    0:
+		1:	ATS OFF
+	    2:	ATS ON (white)
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>AFCS_STATUS_1_ANIM_3</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+    </Component>
+    <!-- AFCS INSTR COMPARATOR CAPTAIN -->
+    <Component ID="CAPTN_INSTRUMENTS_INSTR_COMPARATOR">
+	    <!-- 
+		INSTR COMPARATOR 1 	
+	    0:	AS MON (amber)
+		1:	
+	    2:	AIRSPEED (amber)
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>INSTR_COMP_1_ANIM_1</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		INSTR COMPARATOR 2 	
+	    0:	ATT MON (amber)
+		1:	
+	    2:	ATTITUDE (amber)
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>INSTR_COMP_1_ANIM_2</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+	    <!-- 
+		INSTR COMPARATOR 3 	
+	    0:	ALT MON (amber)
+		1:	
+	    2:	ALTITUDE (amber)
+		-->
+		<UseTemplate Name="ASOBO_GT_Anim">
+			<ANIM_NAME>INSTR_COMP_1_ANIM_3</ANIM_NAME>
+			<ANIM_CODE>1</ANIM_CODE>
+			<ANIM_LENGTH>2</ANIM_LENGTH>
+			<ANIM_WRAP>False</ANIM_WRAP>
+		</UseTemplate>
+    </Component>
+   <!-- HSI CAPTAIN -->
+    <Component ID="CAPTN_INSTRUMENTS_HSI">
 		<UseTemplate Name="ASOBO_GT_Anim">
 			<ANIM_NAME>HSI_HEADING_P</ANIM_NAME>
 			<ANIM_CODE>(A:HEADING INDICATOR, degrees) 10 / </ANIM_CODE>
@@ -470,6 +735,7 @@
     </Component>
     <Component ID="AUTOPILOT_VOR_KNOBS">
 		<!-- VOR1 STATUS KNOB -->
+		<!--
 		<UseTemplate Name="ASOBO_GT_Switch_XStates">
 		    <NODE_ID>KA_VOR1_SELECT</NODE_ID>
 		    <ANIM_NAME>KA_VOR1_SELECT</ANIM_NAME>
@@ -478,6 +744,14 @@
 		    <CODE_POS_1></CODE_POS_1>
 		    <CODE_POS_2></CODE_POS_2>
 		    <CODE_POS_3></CODE_POS_3>   
+		</UseTemplate>
+		-->
+		<UseTemplate Name="ASOBO_GT_Knob_Finite_Dummy">
+			<KNOB_NAME>KA_VOR1_SELECT</KNOB_NAME>
+			<SWITCH_DIRECTION>Horizontal</SWITCH_DIRECTION>
+			<KNOB_SPEED>4</KNOB_SPEED>
+			<INIT_VALUE>1</INIT_VALUE>
+			<WRAP>False</WRAP>
 		</UseTemplate>
     </Component>
     <!-- FD SWITCHES -->
@@ -512,7 +786,7 @@
 			<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
 			<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
 			<ALL_AP_ON_APPR>True</ALL_AP_ON_APPR>
-		</UseTemplate>       
+		</UseTemplate>     
     </Component>
     <!-- AP 2 -->
     <Component ID="AUTOPILOT_B_SWITCH">

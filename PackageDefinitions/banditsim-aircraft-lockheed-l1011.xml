@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AssetPackage Version="0.0.1">
+<AssetPackage Version="0.0.2">
 	<ItemSettings>
 		<ContentType>AIRCRAFT</ContentType>
 		<Title>L1011-100 Tristar</Title>
@@ -16,7 +16,7 @@
 			<Flags>
 				<FSXCompatibility>false</FSXCompatibility>
 			</Flags>
-			<AssetDir>PackageDefinitions\banditsim-aircraft-lockheed-l1011\ContentInfo\</AssetDir>
+			<AssetDir>PackageDefinitions\banditsim-aircraft-lockheed-l1011\ContentInfo</AssetDir>
 			<OutputDir>ContentInfo\banditsim-aircraft-lockheed-l1011\</OutputDir>
 		</AssetGroup>
 		<AssetGroup Name="L1011-100">
