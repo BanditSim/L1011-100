@@ -16,7 +16,7 @@
 			<Flags>
 				<FSXCompatibility>false</FSXCompatibility>
 			</Flags>
-			<AssetDir>PackageDefinitions\banditsim-aircraft-lockheed-l1011\ContentInfo</AssetDir>
+			<AssetDir>PackageDefinitions\banditsim-aircraft-lockheed-l1011\ContentInfo\</AssetDir>
 			<OutputDir>ContentInfo\banditsim-aircraft-lockheed-l1011\</OutputDir>
 		</AssetGroup>
 		<AssetGroup Name="L1011-100">
@@ -42,6 +42,14 @@
 			</Flags>
 			<AssetDir>PackageSources\ModelBehaviorDefs\</AssetDir>
 			<OutputDir>ModelBehaviorDefs\</OutputDir>
+		</AssetGroup>
+		<AssetGroup Name="effects">
+			<Type>Copy</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageSources\effects\</AssetDir>
+			<OutputDir>effects\</OutputDir>
 		</AssetGroup>
 		<AssetGroup Name="html_ui">
 			<Type>Copy</Type>
