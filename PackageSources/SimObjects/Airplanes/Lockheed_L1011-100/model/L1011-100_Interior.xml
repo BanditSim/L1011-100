@@ -10,58 +10,16 @@
 		<LOD minSize="130" ModelFile="L1011-100_Interior_01.gltf"/>
 	</LODS>
 
-	<Animation name="Mach.Barber.Pole" 			guid="fa030e41-851c-42d0-b3c7-b18f1a664dce" length="450"    type="Sim" typeparam2="Mach.Barber.Pole"  			typeparam="AutoPlay" />
-	<Animation name="Airspeed.Indicated.1" 		guid="997ca35f-43e6-4214-9738-81b6f96bbb56" length="450"    type="Sim" typeparam2="Airspeed.Indicated.1"		typeparam="AutoPlay" />
-	
-    <!-- Custom Animations -->
-
-	<!-- Airspeed Indicator -->
-	<PartInfo>
-        <Name>Airspeed.Indicated.1</Name>
-        <AnimLength>450</AnimLength>
-        <Animation>
-            <Parameter>
-          		<Code>
-				  (A:AIRSPEED INDICATED, Knots)
-				</Code>
-            </Parameter>
-        </Animation>
-    </PartInfo>
-	<PartInfo>
-        <Name>Mach.Barber.Pole</Name>
-        <AnimLength>450</AnimLength>
-        <Animation>
-            <Parameter>
-          		<Code>
-		  			(A:AIRSPEED BARBER POLE, Knots)
-				</Code>
-            </Parameter>
-        </Animation>
-    </PartInfo>
-<!--
-	<PartInfo>
-        <Name>Mach.Barber.Pole</Name>
-        <AnimLength>450</AnimLength>
-        <Animation>
-            <Parameter>
-          		<Code>
-		  			(A:INDICATED ALTITUDE, feet) 26500 &gt; if{ -0.007267 (A:INDICATED ALTITUDE, feet) 26500 - * 372.529 + s1  }
-				</Code>
-            </Parameter>
-        </Animation>
-    </PartInfo>
--->
-
-    <!-- Animations -->
+    <!-- Behaviors -->
     <Behaviors>
    		<Include ModelBehaviorFile="Asobo\Common.xml"/>
 	    <Include ModelBehaviorFile="Asobo\Airliner\AirlinerCommon.xml"/>
         <Include ModelBehaviorFile="L1011\Interior\L1011_Interior_Includes.xml"/>
 		
     <!-- Animations -->
-    <!-- AFCS MODES CAPTAIN -->
     <Component ID="GLARESHEILD_PANEL">
     	<Component ID="INSTRUMENT_PANEL">
+    		<!-- AFCS MODES -->
     		<Component ID="AFCS">
     			<Component ID="CAPTAIN">
     				<Component ID="CAPTN_AFCS_MODES">
@@ -349,17 +307,25 @@
     				<!-- AIRSPEED INDICATOR CAPTAIN -->
     				<Component ID="CAPTN_AIRSPEED">
 						<UseTemplate Name="ASOBO_GT_Anim">
-							<ANIM_NAME>Airspeed.Indicated.1</ANIM_NAME>
+							<ANIM_NAME>AIRSPEED_INDICATED_P</ANIM_NAME>
 							<ANIM_CODE>(A:AIRSPEED INDICATED, Knots) </ANIM_CODE>
 							<ANIM_LENGTH>450</ANIM_LENGTH>
 							<ANIM_WRAP>True</ANIM_WRAP>
 						</UseTemplate>
 						<UseTemplate Name="ASOBO_GT_Anim">
-							<ANIM_NAME>Mach.Barber.Pole</ANIM_NAME>
+							<ANIM_NAME>MACH_BARBER_POLE_P</ANIM_NAME>
 							<ANIM_CODE>(A:AIRSPEED BARBER POLE, Knots) </ANIM_CODE>
 							<ANIM_LENGTH>450</ANIM_LENGTH>
 							<ANIM_WRAP>True</ANIM_WRAP>
 						</UseTemplate>
+						<!--
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>MACH_BARBER_POLE_P</ANIM_NAME>
+							<ANIM_CODE>(A:INDICATED ALTITUDE, feet) 26500 &gt; if{ -0.007267 (A:INDICATED ALTITUDE, feet) 26500 - * 372.529 + s1  } </ANIM_CODE>
+							<ANIM_LENGTH>450</ANIM_LENGTH>
+							<ANIM_WRAP>True</ANIM_WRAP>
+						</UseTemplate>
+						-->
     				</Component>
     				<!-- ALTIMETER CAPTAIN -->
     				<Component ID="CAPTN_ALTIMETER">
@@ -397,7 +363,7 @@
 							<ANIM_WRAP>True</ANIM_WRAP>
 						</UseTemplate>
      				</Component>
-   				<!-- CLOCK CAPTAIN -->
+   					<!-- CLOCK CAPTAIN -->
     				<Component ID="CAPTN_CLOCK">
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>clock_hour</ANIM_NAME>
