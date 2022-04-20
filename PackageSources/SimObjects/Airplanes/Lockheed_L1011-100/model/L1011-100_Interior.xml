@@ -166,7 +166,7 @@
 						-->
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>AFCS_WARN_1_ANIM_1</ANIM_NAME>
-							<ANIM_CODE>1</ANIM_CODE>
+							<ANIM_CODE>(A:AUTOPILOT DISENGAGED, Bool) 1 == if{ 0 } els{ 1 }</ANIM_CODE>
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
@@ -202,7 +202,7 @@
 						-->
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>AFCS_WARN_1_ANIM_4</ANIM_NAME>
-							<ANIM_CODE>1</ANIM_CODE>
+							<ANIM_CODE>(A:AUTOPILOT DISENGAGED, Bool) 1 == if{ 2 } els{ 1 }</ANIM_CODE>
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
@@ -217,7 +217,7 @@
 						-->
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>AFCS_STATUS_1_ANIM_1</ANIM_NAME>
-							<ANIM_CODE>1</ANIM_CODE>
+							<ANIM_CODE>(A:AUTOPILOT MASTER, Bool) 1 == if{ 2 } els{ 1 }</ANIM_CODE>
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
@@ -229,7 +229,7 @@
 						-->
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>AFCS_STATUS_1_ANIM_2</ANIM_NAME>
-							<ANIM_CODE>1</ANIM_CODE>
+							<ANIM_CODE>(A:AUTOPILOT MASTER, Bool) 1 == if{ 2 } els{ 1 }</ANIM_CODE>
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
@@ -241,7 +241,7 @@
 						-->
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>AFCS_STATUS_1_ANIM_3</ANIM_NAME>
-							<ANIM_CODE>1</ANIM_CODE>
+							<ANIM_CODE>(A:AUTOPILOT THROTTLE ARM, Bool) 1 == if{ 2 } els{ 1 }</ANIM_CODE>
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
