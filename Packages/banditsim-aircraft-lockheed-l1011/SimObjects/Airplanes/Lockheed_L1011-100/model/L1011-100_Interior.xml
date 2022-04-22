@@ -713,5 +713,91 @@
     		</Component>
     	</Component>
     </Component>
+    	<Component ID="LIGHTING">
+
+			<UseTemplate Name="ASOBO_LIGHTING_Knob_Potentiometer_Template">
+        	    <NODE_ID>BTN_KNOB_GSMI_CONTROLS_GLARESHIELD_C</NODE_ID>
+        	    <ANIM_NAME>KA_GSMI_CONTROLS_GLARESHIELD_C_ANIM</ANIM_NAME>
+        	    <POTENTIOMETER>15</POTENTIOMETER>
+        	    <TT_DESCRIPTION_ID>@TT_Package.LIGHTING_KNOB_PANEL_ACTION</TT_DESCRIPTION_ID>
+        	    <TOOLTIP_TITLE>@TT_Package.LIGHTING_KNOB_PANEL_TITLE</TOOLTIP_TITLE>
+        	    <TT_ICON>ROTATE</TT_ICON>   
+        	</UseTemplate>
+	
+			<UseTemplate Name="ASOBO_LIGHTING_Knob_Potentiometer_Template">
+        	    <NODE_ID>BTN_KNOB_GSMI_CONTROLS_UTILITY_C</NODE_ID>
+        	    <ANIM_NAME>KA_GSMI_CONTROLS_UTILITY_C_ANIM</ANIM_NAME>
+        	    <POTENTIOMETER>16</POTENTIOMETER>
+        	    <TT_DESCRIPTION_ID>@TT_Package.LIGHTING_KNOB_PANEL_ACTION</TT_DESCRIPTION_ID>
+        	    <TOOLTIP_TITLE>@TT_Package.LIGHTING_KNOB_PANEL_TITLE</TOOLTIP_TITLE>
+        	    <TT_ICON>ROTATE</TT_ICON>   
+        	</UseTemplate>
+	
+			<UseTemplate Name="ASOBO_LIGHTING_Knob_Potentiometer_Template">
+        	    <NODE_ID>BTN_KNOB_GSMI_CONTROLS_UTILITY_FO</NODE_ID>
+        	    <ANIM_NAME>KA_GSMI_CONTROLS_UTILITY_FO_ANIM</ANIM_NAME>
+        	    <POTENTIOMETER>17</POTENTIOMETER>
+        	    <TT_DESCRIPTION_ID>@TT_Package.LIGHTING_KNOB_PANEL_ACTION</TT_DESCRIPTION_ID>
+        	    <TOOLTIP_TITLE>@TT_Package.LIGHTING_KNOB_PANEL_TITLE</TOOLTIP_TITLE>
+        	    <TT_ICON>ROTATE</TT_ICON>   
+        	</UseTemplate>
+	
+			<UseTemplate Name="ASOBO_LIGHTING_Knob_Potentiometer_Template">
+        	    <NODE_ID>BTN_KNOB_GSMI_CONTROLS_INSTR_C</NODE_ID>
+        	    <ANIM_NAME>KA_GSMI_CONTROLS_INSTR_C_ANIM</ANIM_NAME>
+        	    <POTENTIOMETER>18</POTENTIOMETER>
+        	    <TT_DESCRIPTION_ID>@TT_Package.LIGHTING_KNOB_PANEL_ACTION</TT_DESCRIPTION_ID>
+        	    <TOOLTIP_TITLE>@TT_Package.LIGHTING_KNOB_PANEL_TITLE</TOOLTIP_TITLE>
+        	    <TT_ICON>ROTATE</TT_ICON>   
+        	</UseTemplate>
+	
+			<UseTemplate Name="ASOBO_LIGHTING_Knob_Potentiometer_Template">
+        	    <NODE_ID>BTN_KNOB_GSMI_CONTROLS_INSTR_FO</NODE_ID>
+        	    <ANIM_NAME>KA_GSMI_CONTROLS_INSTR_FO_ANIM</ANIM_NAME>
+        	    <POTENTIOMETER>19</POTENTIOMETER>
+        	    <TT_DESCRIPTION_ID>@TT_Package.LIGHTING_KNOB_PANEL_ACTION</TT_DESCRIPTION_ID>
+        	    <TOOLTIP_TITLE>@TT_Package.LIGHTING_KNOB_PANEL_TITLE</TOOLTIP_TITLE>
+        	    <TT_ICON>ROTATE</TT_ICON>   
+        	</UseTemplate>
+	
+			<UseTemplate Name="ASOBO_LIGHTING_Knob_Potentiometer_Template">
+        	    <NODE_ID>BTN_KNOB_GSMI_CONTROLS_FLOOD_C</NODE_ID>
+        	    <ANIM_NAME>KA_GSMI_CONTROLS_FLOOD_C_ANIM</ANIM_NAME>
+        	    <POTENTIOMETER>20</POTENTIOMETER>
+        	    <TT_DESCRIPTION_ID>@TT_Package.LIGHTING_KNOB_PANEL_ACTION</TT_DESCRIPTION_ID>
+        	    <TOOLTIP_TITLE>@TT_Package.LIGHTING_KNOB_PANEL_TITLE</TOOLTIP_TITLE>
+        	    <TT_ICON>ROTATE</TT_ICON>   
+        	</UseTemplate>
+	
+			<UseTemplate Name="ASOBO_LIGHTING_Knob_Potentiometer_Template">
+        	    <NODE_ID>BTN_KNOB_GSMI_CONTROLS_FLOOD_FO</NODE_ID>
+        	    <ANIM_NAME>KA_GSMI_CONTROLS_FLOOD_FO_ANIM</ANIM_NAME>
+        	    <POTENTIOMETER>21</POTENTIOMETER>
+        	    <TT_DESCRIPTION_ID>@TT_Package.LIGHTING_KNOB_PANEL_ACTION</TT_DESCRIPTION_ID>
+        	    <TOOLTIP_TITLE>@TT_Package.LIGHTING_KNOB_PANEL_TITLE</TOOLTIP_TITLE>
+        	    <TT_ICON>ROTATE</TT_ICON>   
+        	</UseTemplate>
+
+        	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        	    <NODE_ID>LIGHTS_AP_PANEL_L</NODE_ID>
+        	    <POTENTIOMETER>18</POTENTIOMETER>
+        	</UseTemplate>
+
+        	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        	    <NODE_ID>LIGHTS_AP_PANEL_R</NODE_ID>
+        	    <POTENTIOMETER>19</POTENTIOMETER>
+        	</UseTemplate>
+
+        	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        	    <NODE_ID>LIGHTS_GLARESHEILD_CONTROLS_L</NODE_ID>
+        	    <POTENTIOMETER>18</POTENTIOMETER>
+        	</UseTemplate>
+
+        	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        	    <NODE_ID>LIGHTS_GLARESHEILD_CONTROLS_R</NODE_ID>
+        	    <POTENTIOMETER>19</POTENTIOMETER>
+        	</UseTemplate>
+
+    	</Component>
     </Behaviors>
 </ModelInfo>

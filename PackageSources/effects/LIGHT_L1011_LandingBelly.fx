@@ -51,6 +51,7 @@ Face=1, 1, 1
 
 [ParticleAttributes.0]
 Blend Mode=2
+Texture=LIGHT_Landing
 Bounce=0.00
 Color Start=255, 255, 255, 1
 Color End=255, 255, 255, 1
@@ -64,14 +65,15 @@ Z Scale Goal=0.00
 Extrude Length=0.00
 Extrude Pitch Max=0.00
 Extrude Heading Max=0.00
+MinProjSize= 0.2
 
 [LightAttributes.0]
 Type=spot
 Size=0.1
-Range=150
-Intensity=350
+Range=250
+Intensity=450
 Softness=0.0
 SpotInner=0
-SpotOuter=21
+SpotOuter=15
 Volumetric=0
 ScatDir=0
