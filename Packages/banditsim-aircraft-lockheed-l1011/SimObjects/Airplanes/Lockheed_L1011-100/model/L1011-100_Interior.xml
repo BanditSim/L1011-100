@@ -23,6 +23,7 @@
     		<Component ID="AFCS">
     			<Component ID="CAPTAIN">
     				<Component ID="CAPTN_AFCS_MODES">
+
 					    <!-- 
 						AFCS MODES 1 	
 					    0:	LOC
@@ -34,6 +35,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS MODES 2 	
 					    0:	HDG SEL
@@ -45,6 +47,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS MODES 3 	
 					    0:	GS
@@ -56,6 +59,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS MODES 4 	
 					    0:	VS
@@ -67,6 +71,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS MODES 5 	
 					    0:	A/L
@@ -78,6 +83,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS MODES 6 	
 					    0:	VOR
@@ -89,6 +95,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS MODES 7 	
 					    0:	ALIGN
@@ -100,6 +107,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS MODES 8 	
 					    0:	IAS
@@ -111,6 +119,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS MODES 9 	
 					    0:	FLARE
@@ -122,6 +131,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS MODES 10 	
 					    0:	TURB
@@ -133,6 +143,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS MODES 11 	
 					    0:	ROLLOUT
@@ -144,6 +155,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS MODES 12 	
 					    0:	GO ARND
@@ -156,8 +168,10 @@
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
     				</Component>
+
     				<!-- AFCS WARNING CAPTAIN -->
     				<Component ID="CAPTN_AFCS_WARN">
+
 					    <!-- 
 						AFCS WARNING 1 	
 						0:	AP DISC (red)
@@ -170,6 +184,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS WARNING 2 	
 						0:	ATS DISC (red)
@@ -182,6 +197,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS WARNING 3 	
 						0:	AP LIMIT (red)
@@ -194,6 +210,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS WARNING 4 	
 						0:	NO FLARE (amber)
@@ -207,8 +224,10 @@
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
     				</Component>
+
     				<!-- AFCS STATUS CAPTAIN -->
     				<Component ID="CAPTN_AFCS_STATUS">
+
 					    <!-- 
 						AFCS STATUS 1 	
 						0:	PITCH CWS (amber)
@@ -221,6 +240,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS STATUS 2 	
 						0:	ROLL CWS (amber)
@@ -233,6 +253,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						AFCS STATUS 3 	
 						0:
@@ -246,8 +267,10 @@
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
     				</Component>
+
     				<!-- AFCS INSTR COMPARATOR CAPTAIN -->
     				<Component ID="CAPTN_INSTR_COMPARATOR">
+
 					    <!-- 
 						INSTR COMPARATOR 1 	
 					    0:	AS MON (amber)
@@ -260,6 +283,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						INSTR COMPARATOR 2 	
 					    0:	ATT MON (amber)
@@ -272,6 +296,7 @@
 							<ANIM_LENGTH>2</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 					    <!-- 
 						INSTR COMPARATOR 3 	
 					    0:	ALT MON (amber)
@@ -285,18 +310,21 @@
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
     				</Component>
+
     			</Component>
     		</Component>
     		<Component ID="INSTRUMENTS">
     			<Component ID="CAPTAIN">
 		   			<!-- HSI CAPTAIN -->
     				<Component ID="CAPTN_HSI">
+
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>HSI_HEADING_P</ANIM_NAME>
 							<ANIM_CODE>(A:HEADING INDICATOR, degrees) 10 / </ANIM_CODE>
 							<ANIM_LENGTH>36</ANIM_LENGTH>
 							<ANIM_WRAP>True</ANIM_WRAP>
 						</UseTemplate>
+
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>HSI_CRS_P</ANIM_NAME>
 							<ANIM_CODE>(A:AUTOPILOT HEADING LOCK DIR, degrees) 10 / </ANIM_CODE>
@@ -304,20 +332,49 @@
 							<ANIM_WRAP>True</ANIM_WRAP>
 						</UseTemplate>
     				</Component>
+
+		   			<!-- VOR/ADF CAPTAIN -->
+    				<Component ID="CAPTN_VORADF">
+
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>VOR_HEADING_P</ANIM_NAME>
+							<ANIM_CODE>(A:HEADING INDICATOR, degrees) 10 / </ANIM_CODE>
+							<ANIM_LENGTH>36</ANIM_LENGTH>
+							<ANIM_WRAP>True</ANIM_WRAP>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>VOR_ADF_NEEDLE_P</ANIM_NAME>
+							<ANIM_CODE>(A:AUTOPILOT HEADING LOCK DIR, degrees) 10 / </ANIM_CODE>
+							<ANIM_LENGTH>36</ANIM_LENGTH>
+							<ANIM_WRAP>True</ANIM_WRAP>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>VOR_VOR_NEEDLE_P</ANIM_NAME>
+							<ANIM_CODE>273</ANIM_CODE>
+							<ANIM_LENGTH>36</ANIM_LENGTH>
+							<ANIM_WRAP>True</ANIM_WRAP>
+						</UseTemplate>
+    				</Component>
+
     				<!-- AIRSPEED INDICATOR CAPTAIN -->
     				<Component ID="CAPTN_AIRSPEED">
+
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>AIRSPEED_INDICATED_P</ANIM_NAME>
 							<ANIM_CODE>(A:AIRSPEED INDICATED, Knots) </ANIM_CODE>
 							<ANIM_LENGTH>450</ANIM_LENGTH>
 							<ANIM_WRAP>True</ANIM_WRAP>
 						</UseTemplate>
+
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>MACH_BARBER_POLE_P</ANIM_NAME>
 							<ANIM_CODE>(A:AIRSPEED BARBER POLE, Knots) </ANIM_CODE>
 							<ANIM_LENGTH>450</ANIM_LENGTH>
 							<ANIM_WRAP>True</ANIM_WRAP>
 						</UseTemplate>
+
 						<!--
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>MACH_BARBER_POLE_P</ANIM_NAME>
@@ -327,8 +384,10 @@
 						</UseTemplate>
 						-->
     				</Component>
+
     				<!-- ALTIMETER CAPTAIN -->
     				<Component ID="CAPTN_ALTIMETER">
+
  						<UseTemplate Name="ASOBO_INSTRUMENT_Altimeter_Template">
 							<NEEDLE_100_FEET>True</NEEDLE_100_FEET>
 							<NEEDLE_1000_FEET>False</NEEDLE_1000_FEET>
@@ -336,6 +395,7 @@
 							<ANIM_NAME_100_FEET>DIAL_ALTIMETER_1_ANIM</ANIM_NAME_100_FEET>
 							<NODE_ID_100_FEET>DIAL_ALTIMETER_1_NEEDLE</NODE_ID_100_FEET>
 						</UseTemplate>
+						
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>DIAL_ALTIMETER_1_ALT_INOP_ANIM</ANIM_NAME>
 							<ANIM_CODE>(A:ELECTRICAL MASTER BATTERY:0, bool) 10 * </ANIM_CODE>
@@ -343,93 +403,113 @@
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
     				</Component>
+
     				<Component ID="CAPTN_HORIZON">
+
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>horizon_bank</ANIM_NAME>
 							<ANIM_CODE>(A:PLANE BANK DEGREES, degrees) 180 + </ANIM_CODE>
 							<ANIM_LENGTH>360</ANIM_LENGTH>
 							<ANIM_WRAP>True</ANIM_WRAP>
 						</UseTemplate>
+
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>horizon_pitch</ANIM_NAME>
 							<ANIM_CODE>(A:PLANE PITCH DEGREES, degrees) 2 * 180 + </ANIM_CODE>
 							<ANIM_LENGTH>360</ANIM_LENGTH>
 							<ANIM_WRAP>True</ANIM_WRAP>
 						</UseTemplate>
+
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>bank_angle_bank</ANIM_NAME>
 							<ANIM_CODE>(A:PLANE BANK DEGREES, degrees) 180 + </ANIM_CODE>
 							<ANIM_LENGTH>360</ANIM_LENGTH>
 							<ANIM_WRAP>True</ANIM_WRAP>
 						</UseTemplate>
+
      				</Component>
    					<!-- CLOCK CAPTAIN -->
     				<Component ID="CAPTN_CLOCK">
+					
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>clock_hour</ANIM_NAME>
 							<ANIM_CODE>(E:LOCAL TIME, hour) 12 % 10 * </ANIM_CODE>
 							<ANIM_LENGTH>120</ANIM_LENGTH>
 							<ANIM_WRAP>True</ANIM_WRAP>
 						</UseTemplate>
+
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>clock_minute</ANIM_NAME>
 							<ANIM_CODE>(E:LOCAL TIME, minutes) flr 60 % </ANIM_CODE>
 							<ANIM_LENGTH>60</ANIM_LENGTH>
 							<ANIM_WRAP>True</ANIM_WRAP>
 						</UseTemplate>
+
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>clock_second</ANIM_NAME>
 							<ANIM_CODE>(E:LOCAL TIME, seconds) flr 60 % </ANIM_CODE>
 							<ANIM_LENGTH>60</ANIM_LENGTH>
 							<ANIM_WRAP>True</ANIM_WRAP>
 						</UseTemplate>
+
     				</Component>
     			</Component>
-    			<Component ID="COPILOT">
+    			
+				<Component ID="COPILOT">
     			</Component>
-    			<Component ID="CENTER">
+    			
+				<Component ID="CENTER">
     				<Component ID="ENGINE_GAUGES">
     					<Component ID="ENGINE_GAUGES_EPR">
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_EPR_1</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG PRESSURE RATIO:1, Ratio) 100 * </ANIM_CODE>
 								<ANIM_LENGTH>220</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_EPR_2</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG PRESSURE RATIO:2, Ratio) 100 * </ANIM_CODE>
 								<ANIM_LENGTH>220</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_EPR_3</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG PRESSURE RATIO:3, Ratio) 100 * </ANIM_CODE>
 								<ANIM_LENGTH>220</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
 						</Component>
     					<Component ID="ENGINE_GAUGES_N1">
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_N1_1</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG N1:1, Percent) 1.225 * </ANIM_CODE>
 								<ANIM_LENGTH>180</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_N1_2</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG N1:2, Percent) 1.225 * </ANIM_CODE>
 								<ANIM_LENGTH>180</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_N1_3</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG N1:3, Percent) 1.225 * </ANIM_CODE>
 								<ANIM_LENGTH>180</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
      					</Component>
     					<Component ID="ENGINE_GAUGES_EGT">
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_EGT_1</ANIM_NAME>
 								<ANIM_CODE>(A:ENG EXHAUST GAS TEMPERATURE:1, celsius) 5.45 / </ANIM_CODE>
@@ -437,81 +517,99 @@
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
     						<UseTemplate Name="ASOBO_GT_Anim">
+							
 								<ANIM_NAME>Gauge_EGT_2</ANIM_NAME>
 								<ANIM_CODE>(A:ENG EXHAUST GAS TEMPERATURE:2, celsius) 5.45 / </ANIM_CODE>
 								<ANIM_LENGTH>260</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
     						<UseTemplate Name="ASOBO_GT_Anim">
+
 								<ANIM_NAME>Gauge_EGT_3</ANIM_NAME>
 								<ANIM_CODE>(A:ENG EXHAUST GAS TEMPERATURE:3, celsius) 5.45 / </ANIM_CODE>
 								<ANIM_LENGTH>260</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
     					</Component>
     					<Component ID="ENGINE_GAUGES_N3">
     						<UseTemplate Name="ASOBO_GT_Anim">
+
 								<ANIM_NAME>Gauge_N3_1</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG N2:1, Percent) 1.145 * </ANIM_CODE>
 								<ANIM_LENGTH>180</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
+
 							</UseTemplate>
     						<UseTemplate Name="ASOBO_GT_Anim">
+
 								<ANIM_NAME>Gauge_N3_2</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG N2:2, Percent) 1.145 * </ANIM_CODE>
 								<ANIM_LENGTH>180</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
+
 							</UseTemplate>
     						<UseTemplate Name="ASOBO_GT_Anim">
+
 								<ANIM_NAME>Gauge_N3_3</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG N2:3, Percent) 1.145 * </ANIM_CODE>
 								<ANIM_LENGTH>180</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
     					</Component>
     					<Component ID="ENGINE_GAUGES_FF">
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_FF_1</ANIM_NAME>
 								<ANIM_CODE>(A:ENG FUEL FLOW PPH:1, Pounds per hour) 8.8 / </ANIM_CODE>
 								<ANIM_LENGTH>300</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_FF_2</ANIM_NAME>
 								<ANIM_CODE>(A:ENG FUEL FLOW PPH:2, Pounds per hour) 8.8 / </ANIM_CODE>
 								<ANIM_LENGTH>300</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_FF_3</ANIM_NAME>
 								<ANIM_CODE>(A:ENG FUEL FLOW PPH:3, Pounds per hour) 8.8 / </ANIM_CODE>
 								<ANIM_LENGTH>300</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
     					</Component>
     				</Component>
     				<!-- Flaps Indicator -->
     				<!-- should be converted to html display -->
     				<Component ID="FLAPS_INDICATOR">
+
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>flaps_gauge_l_anim</ANIM_NAME>
 							<ANIM_CODE>(A:LEADING EDGE FLAPS LEFT INDEX, number) </ANIM_CODE>
 							<ANIM_LENGTH>7</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>flaps_gauge_r_anim</ANIM_NAME>
 							<ANIM_CODE>(A:LEADING EDGE FLAPS RIGHT INDEX, number) </ANIM_CODE>
 							<ANIM_LENGTH>7</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
+
     				</Component>
     			</Component>
     		</Component>
     	</Component>
     	<Component ID="AUTOPILOT_PANEL">
+
     		<!-- AP BUTTONS -->
     		<Component ID="AUTOPILOT_PUSH_BUTTONS">
+
 				<!-- HDG SELECT Button -->
 				<UseTemplate Name="ASOBO_AUTOPILOT_Push_Heading_Template">
 					<NODE_ID>BTN_PUSH_HDG</NODE_ID>
@@ -524,6 +622,7 @@
     		        <TOOLTIPID>Heading Select</TOOLTIPID>
 					<TYPE>L101</TYPE>
 				</UseTemplate>
+
 				<!-- IAS SELECT Button -->
 				<UseTemplate Name="ASOBO_AUTOPILOT_Push_Speed_Template">
 					<NODE_ID>BTN_PUSH_IAS</NODE_ID>
@@ -536,6 +635,7 @@
     		        <ANIM_LENGTH>90</ANIM_LENGTH>
 					<TYPE>L101</TYPE>
 				</UseTemplate>
+
 				<!-- MACH SELECT Button -->
 				<UseTemplate Name="ASOBO_AUTOPILOT_Push_Speed_Template">
 					<NODE_ID>BTN_PUSH_MACH</NODE_ID>
@@ -548,6 +648,7 @@
     		        <ANIM_LENGTH>90</ANIM_LENGTH>
 					<TYPE>L101</TYPE>
 				</UseTemplate>
+
 				<!-- ALT SELECT Button -->
 				<UseTemplate Name="ASOBO_AUTOPILOT_Push_Altitude_Template">
 					<NODE_ID>BTN_PUSH_ALT</NODE_ID>
@@ -559,6 +660,7 @@
     		        <ANIM_LENGTH>90</ANIM_LENGTH>
 					<TYPE>L101</TYPE>
 				</UseTemplate>
+
 				<!-- VS SELECT Button -->
 				<UseTemplate Name="ASOBO_AUTOPILOT_Push_VerticalSpeed_Template">
 					<NODE_ID>BTN_PUSH_VS</NODE_ID>
@@ -570,6 +672,7 @@
     		        <ANIM_LENGTH>90</ANIM_LENGTH>
 					<TYPE>L101</TYPE>
 				</UseTemplate>
+
 				<!-- APR SELECT Button -->
 				<UseTemplate Name="ASOBO_AUTOPILOT_Push_Approach_Template">
 					<NODE_ID>BTN_PUSH_APR</NODE_ID>
@@ -581,6 +684,7 @@
 					<DISABLE_GPS_MODE>False</DISABLE_GPS_MODE>
     		        <ANIM_LENGTH>90</ANIM_LENGTH>
 				</UseTemplate>
+
 				<!-- LOC SELECT Button -->
 				<UseTemplate Name="ASOBO_AUTOPILOT_Push_Localizer_Template">
 					<NODE_ID>BTN_PUSH_LOC</NODE_ID>
@@ -591,6 +695,7 @@
 					<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
     		        <ANIM_LENGTH>90</ANIM_LENGTH>
 				</UseTemplate>
+
 				<!-- NAV SELECT Button -->
     		    <UseTemplate Name="ASOBO_AUTOPILOT_Push_Navigation_Template">
 					<NODE_ID>BTN_PUSH_NAV</NODE_ID>
@@ -603,19 +708,23 @@
     		        <ANIM_LENGTH>90</ANIM_LENGTH>
 					<TYPE>L101</TYPE>
 				</UseTemplate>
+
     		</Component>
     		<Component ID="AUTOPILOT_KNOBS">
+
 				<!-- HEADING SELECTOR KNOB -->
 				<UseTemplate Name="ASOBO_AUTOPILOT_Knob_Heading_Template">
 					<NODE_ID>BTN_KNOB_HDG</NODE_ID>
 					<ANIM_NAME_KNOB>KA_HDG</ANIM_NAME_KNOB>
 				</UseTemplate>
+
 				<!-- ALT SELECTOR KNOB -->
 				<UseTemplate Name="ASOBO_AUTOPILOT_Knob_Altitude_Template">
 					<NODE_ID>BTN_KNOB_ALT_SEL</NODE_ID>
 					<ANIM_NAME_KNOB>KA_ALT_SEL</ANIM_NAME_KNOB>
     		        <TYPE>B747</TYPE>
 				</UseTemplate>
+
 				<!-- SPEED KNOB -->
 				<UseTemplate Name="ASOBO_AUTOPILOT_Knob_SpeedMach_Template">
 					<NODE_ID>BTN_KNOB_IAS</NODE_ID>
@@ -623,6 +732,7 @@
 					<ANIM_NAME_PUSH></ANIM_NAME_PUSH>
 					<TYPE>B747</TYPE>
 				</UseTemplate>
+
 				<!-- V/S WHEEL -->
 				<UseTemplate Name="ASOBO_AUTOPILOT_Knob_VerticalSpeed_Template">
 					<NODE_ID>BTN_KNOB_VS_SELECT</NODE_ID>
@@ -631,6 +741,7 @@
 					<INTERACTION_AXIS>Y</INTERACTION_AXIS>
 					<TT_ICON>MOVE_AXIS_Y</TT_ICON>		
 				</UseTemplate>
+
 				<!-- ATS SWITCH -->
 				<UseTemplate Name="ASOBO_AUTOPILOT_Push_AutoThrottle_Disengage_Template">
 					<NODE_ID>SW_ATS_1</NODE_ID>
@@ -640,8 +751,10 @@
 					<CLEARS_EICAS_WARNING>True</CLEARS_EICAS_WARNING>
 					<PLANE_PREFIX>B747_8</PLANE_PREFIX>
 				</UseTemplate>
+
     		</Component>
     		<Component ID="AUTOPILOT_VOR_KNOBS">
+
 				<!-- VOR1 STATUS KNOB -->
 				<!--
 				<UseTemplate Name="ASOBO_GT_Switch_XStates">
@@ -661,9 +774,11 @@
 					<INIT_VALUE>1</INIT_VALUE>
 					<WRAP>False</WRAP>
 				</UseTemplate>
+
     		</Component>
     		<!-- FD SWITCHES -->
     		<Component ID="FLIGHT_DIRECTORS">
+
     			<UseTemplate Name="L1011_AUTOPILOT_Push_FlightDirector_Template">
 				    <NODE_ID>SW_FD_1</NODE_ID>
 				    <ANIM_NAME>FD_1_A</ANIM_NAME>
@@ -672,6 +787,7 @@
 				    <NO_TEXT_EMISSIVE>True</NO_TEXT_EMISSIVE>
 				    <ID>1</ID>
     		    </UseTemplate>
+
     			<UseTemplate Name="L1011_AUTOPILOT_Push_FlightDirector_Template">
 				    <NODE_ID>SW_FD_2</NODE_ID>
 				    <ANIM_NAME>FD_2_B</ANIM_NAME>
@@ -680,10 +796,12 @@
 				    <NO_TEXT_EMISSIVE>True</NO_TEXT_EMISSIVE>
 				    <ID>2</ID>
     		    </UseTemplate>
+
     		</Component>
     		<!-- AP SWITCHES -->
     		<!-- AP 1 -->
     		<Component ID="AUTOPILOT_A_SWITCH">
+
 				<UseTemplate Name="ASOBO_AUTOPILOT_Push_Autopilot_Template">
 					<AP_COUNT>2</AP_COUNT>
 					<ID>1</ID>
@@ -694,10 +812,12 @@
 					<AUTOPILOT_PUSH_BUTTON_ON>autopilot_largepush_button_on</AUTOPILOT_PUSH_BUTTON_ON>
 					<AUTOPILOT_PUSH_BUTTON_OFF>autopilot_largepush_button_off</AUTOPILOT_PUSH_BUTTON_OFF>
 					<ALL_AP_ON_APPR>True</ALL_AP_ON_APPR>
-				</UseTemplate>     
+				</UseTemplate>   
+
     		</Component>
     		<!-- AP 2 -->
     		<Component ID="AUTOPILOT_B_SWITCH">
+
 				<UseTemplate Name="ASOBO_AUTOPILOT_Push_Autopilot_Template">
 					<AP_COUNT>2</AP_COUNT>
 					<ID>2</ID>
@@ -710,6 +830,7 @@
 					<TYPE>ONLY_IF_DISCONNECTED</TYPE>
 					<ALL_AP_ON_APPR>True</ALL_AP_ON_APPR>
 				</UseTemplate>
+
     		</Component>
     	</Component>
     </Component>
