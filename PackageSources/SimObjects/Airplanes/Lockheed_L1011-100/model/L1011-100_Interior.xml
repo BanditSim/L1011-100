@@ -756,24 +756,55 @@
     		<Component ID="AUTOPILOT_VOR_KNOBS">
 
 				<!-- VOR1 STATUS KNOB -->
+                <Update Once="True">
+                    1 (&gt;L:L1011_VOR_Mode_Select_1)
+                </Update>
 				<!--
-				<UseTemplate Name="ASOBO_GT_Switch_XStates">
+				<UseTemplate Name="ASOBO_GT_Switch_XStates_SubTemplate" Node="KA_VOR1_SELECT">
+					<NUM_STATES>4</NUM_STATES>
 				    <NODE_ID>KA_VOR1_SELECT</NODE_ID>
 				    <ANIM_NAME>KA_VOR1_SELECT</ANIM_NAME>
-					<NUM_STATES>4</NUM_STATES>
-				    <CODE_POS_0></CODE_POS_0>
-				    <CODE_POS_1></CODE_POS_1>
-				    <CODE_POS_2></CODE_POS_2>
-				    <CODE_POS_3></CODE_POS_3>   
+                    <SWITCH_DIRECTION>Horizontal</SWITCH_DIRECTION>
+                    <INIT_VALUE>1</INIT_VALUE>
+                    <ARROW_TYPE>Curved</ARROW_TYPE>
+					<ANIM_LENGTH>3</ANIM_LENGTH>
+                    <ANIMTIP_0> </ANIMTIP_0>
+                    <ANIMTIP_1> </ANIMTIP_1>
+                    <ANIMTIP_2> </ANIMTIP_2>
+				    <CODE_POS_0>
+					    0 (&gt;L:L1011_VOR_Mode_Select_1, Enum) 
+					</CODE_POS_0>
+				    <CODE_POS_1>
+					    1 (&gt;L:L1011_VOR_Mode_Select_1, Enum) 
+					</CODE_POS_1>
+					<CODE_POS_2>
+					    2 (&gt;L:L1011_VOR_Mode_Select_1, Enum) 
+					</CODE_POS_2>
+				    <CODE_POS_3>
+					    3 (&gt;L:L1011_VOR_Mode_Select_1, Enum) 
+					</CODE_POS_3>   
 				</UseTemplate>
-				-->
+
 				<UseTemplate Name="ASOBO_GT_Knob_Finite_Dummy">
 					<KNOB_NAME>KA_VOR1_SELECT</KNOB_NAME>
 					<SWITCH_DIRECTION>Horizontal</SWITCH_DIRECTION>
+					<ANIM_LENGTH>3</ANIM_LENGTH>
 					<KNOB_SPEED>4</KNOB_SPEED>
 					<INIT_VALUE>1</INIT_VALUE>
 					<WRAP>False</WRAP>
 				</UseTemplate>
+				-->
+                <UseTemplate Name="L1011_Anim_Interactions">
+                    <ANIM_TYPE>KNOB</ANIM_TYPE>
+                    <ANIM_TEMPLATE>L1011_AP_VOR_SWITCH_L</ANIM_TEMPLATE>
+                    <NODE_ID>KA_VOR1_SELECT</NODE_ID>
+                    <ANIM_NAME>KA_VOR1_SELECT</ANIM_NAME>
+                    <PART_ID>KA_VOR1_SELECT</PART_ID>
+                    <ANIMTIP_0>1</ANIMTIP_0>
+                    <ANIMTIP_1>2</ANIMTIP_1>
+                    <ANIMTIP_2>3</ANIMTIP_2>
+                    <ANIMTIP_3>4</ANIMTIP_3>
+                </UseTemplate>
 
     		</Component>
     		<!-- FD SWITCHES -->

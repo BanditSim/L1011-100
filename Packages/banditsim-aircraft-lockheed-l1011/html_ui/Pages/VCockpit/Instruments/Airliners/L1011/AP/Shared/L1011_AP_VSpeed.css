@@ -1,0 +1,40 @@
+:root {
+  --bodyHeightScale: 1;
+}
+
+@keyframes TemporaryShow {
+  0%, 100% {
+    visibility: visible;
+  }
+}
+
+@keyframes TemporaryHide {
+  0%, 100% {
+    visibility: hidden;
+  }
+}
+
+@font-face {
+  font-family: "Spartan-SemiBold";
+  src: url("/Fonts/Spartan-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	background: linear-gradient(0deg, #a95f00 50%, #71b0bf 35%);
+	background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+}
+
+h1 {
+	font-family: Spartan-SemiBold;
+	font-size: 88px;
+	font-size: 400%;
+	color: white;
+	padding: 0px;
+	margin: 0px;
+	line-height: 0.8;
+}
+
+/*# sourceMappingURL=B747_8_FCU.css.map */

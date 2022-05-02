@@ -5,6 +5,7 @@
 
 	<WwisePackages>
 		<MainPackage Name="Asobo_B747_8i"/>
+    <AdditionalPackage Name="L1011_100"/>
 	</WwisePackages>
 
   <AcousticParameters>

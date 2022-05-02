@@ -1,4 +1,5 @@
 <ModelBehaviors>
+    <Include RelativeFile="../generated/L1011_Interior_Autopilot.xml"/>
     <Include RelativeFile="../generated/L1011_Interior_Common.xml"/>
     <Include RelativeFile="../generated/L1011_Instruments.xml"/>
 </ModelBehaviors>

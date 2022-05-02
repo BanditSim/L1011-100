@@ -1,0 +1,17 @@
+<ModelBehaviors>
+
+    <Template Name="L1011_AP_VOR_SWITCH_L">
+        <Component ID="#NODE_ID#" Node="#NODE_ID#">
+            <UseTemplate Name="ASOBO_GT_Switch_4States">
+                <WWISE_EVENT>turnknob</WWISE_EVENT>
+                <ANIM_NAME>#NODE_ID#</ANIM_NAME>
+                <SWITCH_DIRECTION>Horizontal</SWITCH_DIRECTION>
+                <ARROW_TYPE>Curved</ARROW_TYPE>
+                <SWITCH_POSITION_TYPE>L</SWITCH_POSITION_TYPE>
+                <SWITCH_POSITION_VAR>L1011_VOR_Mode_Select_1</SWITCH_POSITION_VAR>
+            </UseTemplate>
+        </Component>
+    </Template>
+
+
+</ModelBehaviors>
