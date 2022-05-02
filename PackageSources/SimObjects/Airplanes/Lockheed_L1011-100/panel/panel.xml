@@ -15,6 +15,10 @@
 	<AlwaysUpdate>True</AlwaysUpdate>
   </Instrument>
 
+  <Instrument>
+    <Name>L1011_VSpeed</Name>
+	<AlwaysUpdate>True</AlwaysUpdate>
+  </Instrument>
 
 
 </PlaneHTMLConfig>

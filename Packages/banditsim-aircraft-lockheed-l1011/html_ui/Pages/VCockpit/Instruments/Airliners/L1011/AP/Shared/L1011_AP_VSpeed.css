@@ -31,10 +31,14 @@ h1 {
 	font-family: Spartan-SemiBold;
 	font-size: 88px;
 	font-size: 400%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
 	color: white;
 	padding: 0px;
 	margin: 0px;
 	line-height: 0.8;
+  text-align: center;
 }
 
 /*# sourceMappingURL=B747_8_FCU.css.map */
