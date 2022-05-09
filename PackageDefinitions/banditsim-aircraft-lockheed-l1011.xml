@@ -19,13 +19,13 @@
 			<AssetDir>PackageDefinitions\banditsim-aircraft-lockheed-l1011\ContentInfo\</AssetDir>
 			<OutputDir>ContentInfo\banditsim-aircraft-lockheed-l1011\</OutputDir>
 		</AssetGroup>
-		<AssetGroup Name="L1011-100">
+		<AssetGroup Name="L1011_100">
 			<Type>SimObject</Type>
 			<Flags>
 				<FSXCompatibility>false</FSXCompatibility>
 			</Flags>
-			<AssetDir>PackageSources\SimObjects\Airplanes\Lockheed_L1011-100\</AssetDir>
-			<OutputDir>SimObjects\Airplanes\Lockheed_L1011-100\</OutputDir>
+			<AssetDir>PackageSources\SimObjects\Airplanes\L1011_100\</AssetDir>
+			<OutputDir>SimObjects\Airplanes\L1011_100\</OutputDir>
 		</AssetGroup>
 		<AssetGroup Name="MarketplaceData">
 			<Type>MarketplaceData</Type>

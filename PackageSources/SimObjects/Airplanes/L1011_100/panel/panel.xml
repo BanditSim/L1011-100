@@ -1,0 +1,24 @@
+<PlaneHTMLConfig>
+
+  <Instrument>
+    <Name>L1011_IAS</Name>
+	<AlwaysUpdate>True</AlwaysUpdate>
+  </Instrument>
+  
+  <Instrument>
+    <Name>L1011_HDG</Name>
+	<AlwaysUpdate>True</AlwaysUpdate>
+  </Instrument>
+
+  <Instrument>
+    <Name>L1011_ALT</Name>
+	<AlwaysUpdate>True</AlwaysUpdate>
+  </Instrument>
+
+  <Instrument>
+    <Name>L1011_VSpeed</Name>
+	<AlwaysUpdate>True</AlwaysUpdate>
+  </Instrument>
+
+
+</PlaneHTMLConfig>
