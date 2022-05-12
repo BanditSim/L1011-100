@@ -5,4 +5,36 @@
 	<!-- ################################ INSTRUMENTS ################################# -->
 	<!-- ############################################################################## -->
 
+	<Template Name="L1011_INSTRUMENT_Digits_inHg_Template">
+		<!-- UNUSED ATM -->
+		<Parameters Type="Override">
+			<DIVIDER>10 %</DIVIDER>
+		</Parameters>
+		<Loop>
+			<Setup>
+				<Param>ID</Param>
+				<From>0</From>
+				<Inc>1</Inc>
+				<To>4</To>
+			</Setup>
+			<Do>
+				<Parameters Type="Override" Lifetime="Loop">
+					<ANIM_NAME Process="Param">DIGITS_#ID#_ANIM_NAME</ANIM_NAME>
+					<Condition Check="ID" Match="0">
+						<False>
+							<DIVIDER>10 / #DIVIDER#</DIVIDER>
+						</False>
+					</Condition>
+				</Parameters>
+				<Condition NotEmpty="ANIM_NAME">
+					<UseTemplate Name="ASOBO_GT_Anim_Code">
+						<ANIM_LAG>200</ANIM_LAG>
+						<ANIM_CODE>(A:#SIMVAR#, #UNITS#) 100 * #DIVIDER# int 10 *</ANIM_CODE>
+						<ANIM_WRAP>True</ANIM_WRAP>
+					</UseTemplate>
+				</Condition>
+			</Do>
+		</Loop>
+	</Template>
+
 </ModelBehaviors>
