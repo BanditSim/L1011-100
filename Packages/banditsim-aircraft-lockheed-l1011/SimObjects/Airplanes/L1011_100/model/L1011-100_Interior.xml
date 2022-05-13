@@ -690,6 +690,11 @@
 							<NODE_ID_100_FEET>DIAL_ALTIMETER_1_NEEDLE</NODE_ID_100_FEET>
 						</UseTemplate>
 						
+						<UseTemplate Name="ASOBO_INSTRUMENT_Knob_Altimeter_Template">
+							<ANIM_NAME>KA_ALTIMETER_1</ANIM_NAME>
+							<NODE_ID>BTN_KNOB_ALTIMETER_1</NODE_ID>
+						</UseTemplate>
+
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>DIAL_ALTIMETER_1_ALT_INOP_ANIM</ANIM_NAME>
 							<ANIM_CODE>(A:ELECTRICAL MASTER BATTERY:0, bool) 10 * </ANIM_CODE>
@@ -707,6 +712,7 @@
 									<DIGITS_4_ANIM_NAME>INSTR_ALTIMETER_1_ALT_10000</DIGITS_4_ANIM_NAME>
 								</UseTemplate>
 
+								<!-- TODO: smooth rotation animation -->
 								<UseTemplate Name="L1011_INSTRUMENT_Digits_Altimeter_10s_Template">
 									<SIMVAR>INDICATED ALTITUDE:1</SIMVAR>
 									<UNITS>Feet</UNITS>
@@ -1365,13 +1371,18 @@
         	</UseTemplate>
 
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
-        	    <NODE_ID>LIGHTS_GLARESHEILD_CONTROLS_L</NODE_ID>
+        	    <NODE_ID>LIGHTS_GLARESHIELD_INSTR_L</NODE_ID>
         	    <POTENTIOMETER>18</POTENTIOMETER>
         	</UseTemplate>
 
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
-        	    <NODE_ID>LIGHTS_GLARESHEILD_CONTROLS_R</NODE_ID>
+        	    <NODE_ID>LIGHTS_GLARESHIELD_INSTR_R</NODE_ID>
         	    <POTENTIOMETER>19</POTENTIOMETER>
+        	</UseTemplate>
+
+        	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        	    <NODE_ID>LIGHTS_GLARESHEILD_CONTROLS_L</NODE_ID>
+        	    <POTENTIOMETER>18</POTENTIOMETER>
         	</UseTemplate>
 
     	</Component>
