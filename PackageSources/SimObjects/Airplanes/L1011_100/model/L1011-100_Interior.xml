@@ -851,14 +851,14 @@
 
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>SPI_1_STAB_L</ANIM_NAME>
-							<ANIM_CODE>0</ANIM_CODE>
+							<ANIM_CODE>(A:ELEVATOR TRIM PCT, percent over 100) 5 * 5 + </ANIM_CODE>
 							<ANIM_LENGTH>10</ANIM_LENGTH>
 							<ANIM_WRAP>Flase</ANIM_WRAP>
 						</UseTemplate>
 
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>SPI_1_STAB_R</ANIM_NAME>
-							<ANIM_CODE>0</ANIM_CODE>
+							<ANIM_CODE>(A:ELEVATOR TRIM PCT, percent over 100) 5 * 5 + </ANIM_CODE>
 							<ANIM_LENGTH>10</ANIM_LENGTH>
 							<ANIM_WRAP>Flase</ANIM_WRAP>
 						</UseTemplate>
@@ -1203,6 +1203,80 @@
 				</UseTemplate>
 
     		</Component>
+    		<Component ID="AUTOPILOT_ROTARY_DIGITS">
+
+				<!-- NAV VOR 1 LEFT SIDE -->
+				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+					<SIMVAR>NAV STANDBY FREQUENCY:1</SIMVAR>
+					<UNITS>KHz</UNITS>
+					<DIGITS_1_ANIM_NAME>AP_VOR_1_DIGITS_1</DIGITS_1_ANIM_NAME>
+					<DIGITS_2_ANIM_NAME>AP_VOR_1_DIGITS_10</DIGITS_2_ANIM_NAME>
+					<DIGITS_3_ANIM_NAME>AP_VOR_1_DIGITS_100</DIGITS_3_ANIM_NAME>
+					<DIGITS_4_ANIM_NAME>AP_VOR_1_DIGITS_1000</DIGITS_4_ANIM_NAME>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>AP_VOR_1_DIGITS_10000</ANIM_NAME>
+					<ANIM_CODE>1</ANIM_CODE>
+					<ANIM_LENGTH>10</ANIM_LENGTH>
+					<ANIM_WRAP>True</ANIM_WRAP>
+				</UseTemplate>
+
+				<!-- NAV VOR 2 RIGHT SIDE -->
+				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+					<SIMVAR>NAV STANDBY FREQUENCY:2</SIMVAR>
+					<UNITS>KHz</UNITS>
+					<DIGITS_1_ANIM_NAME>AP_VOR_2_DIGITS_1</DIGITS_1_ANIM_NAME>
+					<DIGITS_2_ANIM_NAME>AP_VOR_2_DIGITS_10</DIGITS_2_ANIM_NAME>
+					<DIGITS_3_ANIM_NAME>AP_VOR_2_DIGITS_100</DIGITS_3_ANIM_NAME>
+					<DIGITS_4_ANIM_NAME>AP_VOR_2_DIGITS_1000</DIGITS_4_ANIM_NAME>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>AP_VOR_2_DIGITS_10000</ANIM_NAME>
+					<ANIM_CODE>1</ANIM_CODE>
+					<ANIM_LENGTH>10</ANIM_LENGTH>
+					<ANIM_WRAP>True</ANIM_WRAP>
+				</UseTemplate>
+
+				<!-- IAS -->
+				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+					<SIMVAR>AUTOPILOT AIRSPEED HOLD VAR</SIMVAR>
+					<UNITS>Knots</UNITS>
+					<DIGITS_0_ANIM_NAME>AP_IAS_1_DIGITS_1</DIGITS_0_ANIM_NAME>
+					<DIGITS_1_ANIM_NAME>AP_IAS_1_DIGITS_10</DIGITS_1_ANIM_NAME>
+					<DIGITS_2_ANIM_NAME>AP_IAS_1_DIGITS_100</DIGITS_2_ANIM_NAME>
+				</UseTemplate>
+
+				<!-- HDG -->
+				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+					<SIMVAR>AUTOPILOT HEADING LOCK DIR</SIMVAR>
+					<UNITS>Degrees</UNITS>
+					<DIGITS_0_ANIM_NAME>AP_HDG_1_DIGITS_1</DIGITS_0_ANIM_NAME>
+					<DIGITS_1_ANIM_NAME>AP_HDG_1_DIGITS_10</DIGITS_1_ANIM_NAME>
+					<DIGITS_2_ANIM_NAME>AP_HDG_1_DIGITS_100</DIGITS_2_ANIM_NAME>
+				</UseTemplate>
+
+				<!-- CRS 1 -->
+				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+					<SIMVAR>NAV OBS:1</SIMVAR>
+					<UNITS>Degrees</UNITS>
+					<DIGITS_0_ANIM_NAME>AP_CRS_1_DIGITS_1</DIGITS_0_ANIM_NAME>
+					<DIGITS_1_ANIM_NAME>AP_CRS_1_DIGITS_10</DIGITS_1_ANIM_NAME>
+					<DIGITS_2_ANIM_NAME>AP_CRS_1_DIGITS_100</DIGITS_2_ANIM_NAME>
+				</UseTemplate>
+
+				<!-- CRS 2 -->
+				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+					<SIMVAR>NAV OBS:2</SIMVAR>
+					<UNITS>Degrees</UNITS>
+					<DIGITS_0_ANIM_NAME>AP_CRS_2_DIGITS_1</DIGITS_0_ANIM_NAME>
+					<DIGITS_1_ANIM_NAME>AP_CRS_2_DIGITS_10</DIGITS_1_ANIM_NAME>
+					<DIGITS_2_ANIM_NAME>AP_CRS_2_DIGITS_100</DIGITS_2_ANIM_NAME>
+				</UseTemplate>
+
+
+    		</Component>
     		<Component ID="AUTOPILOT_VOR_KNOBS">
 
 				<!-- VOR1 STATUS KNOB -->
@@ -1222,12 +1296,22 @@
                     <ANIMTIP_3>4</ANIMTIP_3>
                 </UseTemplate>
 
+				<!-- NAV VOR 1 SELECTOR KNOB -->
                 <UseTemplate Name="ASOBO_NAVCOM_Knob_NAV_Frequency_Template">
                     <ID>1</ID>
-					<NODE_ID_LARGE_KNOB>KNOB_VOR1_SMALL</NODE_ID_LARGE_KNOB>
-					<NODE_ID_SMALL_KNOB>KNOB_VOR1_LARGE</NODE_ID_SMALL_KNOB>
-					<ANIM_NAME_LARGE_KNOB>KA_VOR1_SMALL</ANIM_NAME_LARGE_KNOB>
-					<ANIM_NAME_SMALL_KNOB>KA_VOR1_LARGE</ANIM_NAME_SMALL_KNOB>
+					<NODE_ID_LARGE_KNOB>KNOB_VOR1_LARGE</NODE_ID_LARGE_KNOB>
+					<NODE_ID_SMALL_KNOB>KNOB_VOR1_SMALL</NODE_ID_SMALL_KNOB>
+					<ANIM_NAME_LARGE_KNOB>KA_VOR1_LARGE</ANIM_NAME_LARGE_KNOB>
+					<ANIM_NAME_SMALL_KNOB>KA_VOR1_SMALL</ANIM_NAME_SMALL_KNOB>
+                </UseTemplate>
+
+				<!-- NAV VOR 2 SELECTOR KNOB -->
+                <UseTemplate Name="ASOBO_NAVCOM_Knob_NAV_Frequency_Template">
+                    <ID>2</ID>
+					<NODE_ID_LARGE_KNOB>KNOB_VOR2_LARGE</NODE_ID_LARGE_KNOB>
+					<NODE_ID_SMALL_KNOB>KNOB_VOR2_SMALL</NODE_ID_SMALL_KNOB>
+					<ANIM_NAME_LARGE_KNOB>KA_VOR2_LARGE</ANIM_NAME_LARGE_KNOB>
+					<ANIM_NAME_SMALL_KNOB>KA_VOR2_SMALL</ANIM_NAME_SMALL_KNOB>
                 </UseTemplate>
 
     		</Component>
@@ -1378,6 +1462,212 @@
         	    <NODE_ID>LIGHTS_GLARESHEILD_CONTROLS_L</NODE_ID>
         	    <POTENTIOMETER>18</POTENTIOMETER>
         	</UseTemplate>
+
+			<!-- ROTARY DIGIT DIALS -->
+
+				<!-- AP PANEL DIGIT DIALS -->
+
+				<!-- VOR 1 DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_VOR_1_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_VOR_1_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_VOR_1_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_VOR_1_DIGITS_1000</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_VOR_1_DIGITS_10000</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- VOR 2 DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_VOR_2_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_VOR_2_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_VOR_2_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_VOR_2_DIGITS_1000</NODE_ID>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_VOR_2_DIGITS_10000</NODE_ID>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- IAS DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_IAS_1_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_IAS_1_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_IAS_1_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- HDG DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_HDG_1_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_HDG_1_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_HDG_1_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- CRS 1 DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_CRS_1_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_CRS_1_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_CRS_1_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- CRS 2 DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_CRS_2_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_CRS_2_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_CRS_2_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- GLARESHIELD PANEL DIGIT DIALS -->
+
+				<!-- ALTIMETER 1 DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_1_ALT_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_1_ALT_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_1_ALT_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_1_ALT_1000</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_1_ALT_10000</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- ALTIMETER 1 MB DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_1_MB_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_1_MB_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_1_MB_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_1_MB_1000</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- ALTIMETER 1 INHG DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_1_INHG_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_1_INHG_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_1_INHG_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_1_INHG_1000</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- RADIO ALT CAPTAIN DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_RAD_ALT_1_DH_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_RAD_ALT_1_DH_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_RAD_ALT_1_DH_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
 
     	</Component>
     </Behaviors>
