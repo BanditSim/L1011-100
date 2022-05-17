@@ -794,6 +794,19 @@
 
      				</Component>
 					 
+   					<!-- VERTICAL SPEED INDICATOR CAPTAIN -->
+    				<Component ID="CAPTN_VSI">
+
+						<UseTemplate Name="L1011_INSTRUMENT_Needle_VerticalSpeed_Template">
+							<NODE_ID>VSI_1</NODE_ID>
+							<ANIM_NAME>VSI_1_ANIM</ANIM_NAME>
+							<MAX_VALUE>6000</MAX_VALUE>
+							<ANIM_LENGTH>120</ANIM_LENGTH>
+							<HIGHLIGHT_NODE_ID>VSI_1_NEEDLE</HIGHLIGHT_NODE_ID>
+						</UseTemplate>
+
+     				</Component>
+					 
    					<!-- CLOCK CAPTAIN -->
     				<Component ID="CAPTN_CLOCK">
 					
@@ -1462,6 +1475,43 @@
         	    <NODE_ID>LIGHTS_GLARESHEILD_CONTROLS_L</NODE_ID>
         	    <POTENTIOMETER>18</POTENTIOMETER>
         	</UseTemplate>
+
+			<!-- INSTRUMENTS -->
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FACE_AIRSPEED_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FACE_ALTIMETER_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FACE_VS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FACE_CLOCK_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>VOR_HEADING_P</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>HSI_HEADING_P_OUT</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>HSI_HEADING_P_IN</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
 
 			<!-- ROTARY DIGIT DIALS -->
 

@@ -1,5 +1,5 @@
 <ModelBehaviors>
-	<Include RelativeFile=".../subtemplates/L1011_Instruments_Subtemplates.xml"/>
+	<Include RelativeFile="subtemplates\\L1011_Instruments_Subtemplates.xml"/>
 
 	<!-- ############################################################################## -->
 	<!-- ################################ INSTRUMENTS ################################# -->
@@ -69,5 +69,44 @@
 		</Loop>
 	</Template>
 
+	<Template Name="L1011_INSTRUMENT_Needle_VerticalSpeed_Template">
+		<Parameters Type="Default">
+			<ID>1</ID>
+		</Parameters>
+		<UseTemplate Name="ASOBO_GT_Helper_Suffix_ID_Appender">
+			<TEMPLATE_TO_CALL>L1011_INSTRUMENT_Needle_VerticalSpeed_SubTemplate</TEMPLATE_TO_CALL>
+		</UseTemplate>
+	</Template>
+
+		<Template Name="L1011_INSTRUMENT_Needle_VerticalSpeed_SubTemplate">
+			<DefaultTemplateParameters>
+				<NODE_ID>INSTRUMENT_Needle_VerticalSpeed#SUFFIX_ID#</NODE_ID>
+				<ANIM_NAME>INSTRUMENT_Needle_VerticalSpeed#SUFFIX_ID#</ANIM_NAME>
+				<PART_ID>INSTRUMENT_Needle_VerticalSpeed</PART_ID>
+				<MAX_VALUE>2000</MAX_VALUE>
+			</DefaultTemplateParameters>
+			<OverrideTemplateParameters>
+				<ANIM_SIMVAR_SCALE Process="Float">60 #MAX_VALUE# /</ANIM_SIMVAR_SCALE><!-- Scale MAX_VALUE to [-50, 50] -->
+			</OverrideTemplateParameters>
+
+			<Component ID="INSTRUMENT_VerticalSpeed">
+				<Component ID="#ANIM_NAME#" Node="#NODE_ID#">
+					<UseTemplate Name="ASOBO_GT_Anim_Sim">
+						<ANIM_SIMVAR>VERTICAL SPEED</ANIM_SIMVAR>
+						<ANIM_SIMVAR_UNITS>ft/min</ANIM_SIMVAR_UNITS>
+						<ANIM_SIMVAR_BIAS>60</ANIM_SIMVAR_BIAS><!-- [-50, 50] + 50 => [0, 100] -->
+						<Condition Check="HIGHLIGHT_NODE_ID">
+							<PART_ID/>
+						</Condition>
+					</UseTemplate>
+				</Component>
+
+				<Condition Check="HIGHLIGHT_NODE_ID">
+					<UseTemplate Name="ASOBO_GT_Highlight_Template">
+						<HIGHLIGHT_NODE_ID>Instrument_VerticalSpeed_Highlight</HIGHLIGHT_NODE_ID>
+					</UseTemplate>
+				</Condition>
+			</Component>
+		</Template>
 
 </ModelBehaviors>
