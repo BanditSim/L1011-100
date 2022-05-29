@@ -1065,6 +1065,26 @@
 						</UseTemplate>
 
     				</Component>
+
+    				<!-- CENTER (BACKUP) ARTIFICIAL HORIZON -->
+    				<Component ID="CENTER_HORIZON">
+
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>horizon_bank_backup</ANIM_NAME>
+							<ANIM_CODE>(A:PLANE BANK DEGREES, degrees) 180 + </ANIM_CODE>
+							<ANIM_LENGTH>360</ANIM_LENGTH>
+							<ANIM_WRAP>True</ANIM_WRAP>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>horizon_pitch_backup</ANIM_NAME>
+							<ANIM_CODE>(A:PLANE PITCH DEGREES, degrees) 4 * 180 + </ANIM_CODE>
+							<ANIM_LENGTH>360</ANIM_LENGTH>
+							<ANIM_WRAP>True</ANIM_WRAP>
+						</UseTemplate>
+
+    				</Component>
+
     			</Component>
     		</Component>
     	</Component>
