@@ -1085,6 +1085,303 @@
 
     				</Component>
 
+    				<!-- SYS WARN ANN -->
+    				<Component ID="SYS_WARN_ANNUNCIATOR">
+
+    				<!-- 
+						TODO: all asobo templates to be converted to custom modelbehaviordefs
+						- empty comments contain placeholder templates
+					 -->
+
+    					<!-- OIL PRESS ENG 1 -->
+						<UseTemplate Name="L1011_WARN_Indicator_OilPress_Template">
+							<NODE_ID>WARN_SWA_01</NODE_ID>
+							<ENG>1</ENG>
+						</UseTemplate>
+
+    					<!-- OIL PRESS ENG 2 -->
+            			<UseTemplate Name="L1011_WARN_Indicator_OilPress_Template">
+            			    <NODE_ID>WARN_SWA_02</NODE_ID>
+            			    <ENG>2</ENG>
+            			</UseTemplate>
+
+    					<!-- OIL PRESS ENG 3 -->
+						<UseTemplate Name="L1011_WARN_Indicator_OilPress_Template">
+							<NODE_ID>WARN_SWA_03</NODE_ID>
+							<ENG>3</ENG>
+						</UseTemplate>
+
+    					<!-- NACELLE 1 -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_04</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- NACELLE 2 -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_05</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- NACELLE 3 -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_06</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- TURB OVRHT 1 -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_07</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- TURB OVRHT 2 -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_08</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- TURB OVRHT 3 -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_09</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- SMOKE -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_10</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- ENG 2 FAIL ARMED -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_11</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- LOW BRAKE PRESSURE -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_12</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- RUDDER HYDR LMTR -->
+						<UseTemplate Name="ASOBO_SAFETY_Indicator_HydraulicsPressure_Template">
+							<NODE_ID>WARN_SWA_13</NODE_ID>
+							<ID>1</ID>
+							<PRESSURE_THRESHOLD_PSI>2225</PRESSURE_THRESHOLD_PSI>
+						</UseTemplate>
+
+    					<!-- - -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_14</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- ROLL SPEED BRAKE -->
+						<UseTemplate Name="ASOBO_SAFETY_Indicator_HydraulicsPressure_Template">
+							<NODE_ID>WARN_SWA_15</NODE_ID>
+							<ID>1</ID>
+							<PRESSURE_THRESHOLD_PSI>2420</PRESSURE_THRESHOLD_PSI>
+						</UseTemplate>
+
+    					<!-- WHEEL WELL FIRE -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_16</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- ATT T -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_17</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- FLT CONT PANELS -->
+						<UseTemplate Name="ASOBO_SAFETY_Indicator_HydraulicsPressure_Template">
+							<NODE_ID>WARN_SWA_18</NODE_ID>
+							<ID>1</ID>
+							<PRESSURE_THRESHOLD_PSI>350</PRESSURE_THRESHOLD_PSI>
+						</UseTemplate>
+
+    					<!-- AUTO GND SPLRS INOP -->
+						<UseTemplate Name="ASOBO_SAFETY_Indicator_HydraulicsPressure_Template">
+							<NODE_ID>WARN_SWA_19</NODE_ID>
+							<ID>1</ID>
+							<PRESSURE_THRESHOLD_PSI>2100</PRESSURE_THRESHOLD_PSI>
+						</UseTemplate>
+
+    					<!-- WINDSHR COMPTR -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_20</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- HYDRAULIC SYSTEM / A:HYDRAULIC PRESSURE:#ID# -->
+						<UseTemplate Name="ASOBO_SAFETY_Indicator_HydraulicsPressure_Template">
+							<NODE_ID>WARN_SWA_21</NODE_ID>
+							<ID>1</ID>
+							<PRESSURE_THRESHOLD_PSI>2540</PRESSURE_THRESHOLD_PSI>
+						</UseTemplate>
+
+    					<!-- FUEL SYSTEM -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_22</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- FIRE DET LOOP -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_23</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- AREA/DUCT OVERHEAT -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_24</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- ECS -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_25</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- ENG APU STATUS -->
+						<UseTemplate Name="L1011_WARN_Indicator_Simvar_Template">
+							<NODE_ID>WARN_SWA_26</NODE_ID>
+							<SIMVAR>APU GENERATOR ACTIVE</SIMVAR>
+							<ID>1</ID>
+						</UseTemplate>
+
+    					<!-- ELECTRICAL SYSTEM -->
+						<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+							<NODE_ID>WARN_SWA_27</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- ESS/STBY POWER -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_28</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- FUEL QTY MONITOR -->
+						<UseTemplate Name="ASOBO_SAFETY_Indicator_LowFuel_Template">
+							<NODE_ID>WARN_SWA_29</NODE_ID>
+							<THRESHOLD>2000</THRESHOLD>
+							<SIMVAR_UNIT>liters</SIMVAR_UNIT>
+						</UseTemplate>
+
+    					<!-- ICING -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_30</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- ANTI SKID -->
+						<UseTemplate Name="ASOBO_SAFETY_Indicator_HydraulicsPressure_Template">
+							<NODE_ID>WARN_SWA_31</NODE_ID>
+							<ID>1</ID>
+							<PRESSURE_THRESHOLD_PSI>2500</PRESSURE_THRESHOLD_PSI>
+						</UseTemplate>
+
+    					<!-- BRAKE TEMP -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_32</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- DUAL A/L NOT AVAIL -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_33</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- empty -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_34</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- NAV POSITION -->
+						<UseTemplate Name="L1011_BLANK">
+							<NODE_ID>WARN_SWA_35</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:ELECTRICAL MASTER BATTERY:0, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    					<!-- DOOR OPEN -->
+						<UseTemplate Name="ASOBO_SAFETY_Indicator_Doors_Template">
+							<NODE_ID>WARN_SWA_36</NODE_ID>
+						</UseTemplate>
+
+    				</Component>
+
+    				<!-- SYS WARN ANN -->
+    				<Component ID="ENG_REV_STATUS">
+
+						<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+							<NODE_ID>WARN_ENG1_TRA</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:GENERAL ENG REVERSE THRUST ENGAGED:1, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+							<NODE_ID>WARN_ENG1_REV</NODE_ID>
+							<SEQ_POWERED>(A:GENERAL ENG REVERSE THRUST ENGAGED:1, bool)</SEQ_POWERED>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+							<NODE_ID>WARN_ENG2_TRA</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:GENERAL ENG REVERSE THRUST ENGAGED:2, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+							<NODE_ID>WARN_ENG2_REV</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:GENERAL ENG REVERSE THRUST ENGAGED:2, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+							<NODE_ID>WARN_ENG3_TRA</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:GENERAL ENG REVERSE THRUST ENGAGED:3, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+							<NODE_ID>WARN_ENG3_REV</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:GENERAL ENG REVERSE THRUST ENGAGED:3, bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+
+    				</Component>
+
     			</Component>
     		</Component>
     	</Component>

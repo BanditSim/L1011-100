@@ -6,7 +6,6 @@
 	<!-- ############################################################################## -->
 
 	<Template Name="L1011_INSTRUMENT_Digits_inHg_Template">
-		<!-- UNUSED ATM -->
 		<Parameters Type="Override">
 			<DIVIDER>10 %</DIVIDER>
 		</Parameters>
@@ -38,7 +37,6 @@
 	</Template>
 
 	<Template Name="L1011_INSTRUMENT_Digits_Altimeter_10s_Template">
-		<!-- UNUSED ATM -->
 		<Parameters Type="Override">
 			<DIVIDER>10 %</DIVIDER>
 		</Parameters>
@@ -108,5 +106,31 @@
 				</Condition>
 			</Component>
 		</Template>
+
+	<!-- ############################################################################## -->
+	<!-- ################################## WARN #################################### -->
+	<!-- ############################################################################## -->
+
+
+	<Template Name="L1011_WARN_Indicator_OilPress_Template">
+		<Parameters Type="Default">
+			<NODE_ID>WARN_SWA_01</NODE_ID>
+			<THRESHOLD>25</THRESHOLD>
+			<SIMVAR_UNITS>Psi</SIMVAR_UNITS>
+			<ENG>1</ENG>
+		</Parameters>
+		<UseTemplate Name="ASOBO_SAFETY_Indicator_Caution_Template">
+			<EMISSIVE_CODE>(A:GENERAL ENG OIL PRESSURE:#ENG#, #SIMVAR_UNITS#) #THRESHOLD# &lt;</EMISSIVE_CODE>
+		</UseTemplate>
+	</Template>
+
+	<Template Name="L1011_WARN_Indicator_Simvar_Template">
+		<Parameters Type="Default">
+			<NODE_ID>WARN_SWA_00</NODE_ID>
+		</Parameters>
+		<UseTemplate Name="ASOBO_SAFETY_Indicator_Warning_Template">
+			<EMISSIVE_CODE>(A:#SIMVAR#:#ID#, Bool) 0 &gt;</EMISSIVE_CODE>
+		</UseTemplate>
+	</Template>
 
 </ModelBehaviors>
