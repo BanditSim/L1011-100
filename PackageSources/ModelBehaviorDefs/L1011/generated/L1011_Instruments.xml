@@ -133,4 +133,35 @@
 		</UseTemplate>
 	</Template>
 
+	<Template Name="L1011_WARN_Indicator_Simvar_Inverted_Template">
+		<Parameters Type="Default">
+			<NODE_ID>WARN_SWA_00</NODE_ID>
+		</Parameters>
+		<UseTemplate Name="ASOBO_SAFETY_Indicator_Warning_Template">
+			<EMISSIVE_CODE>(A:#SIMVAR#:#ID#, Bool) 1 -1 * + </EMISSIVE_CODE>
+		</UseTemplate>
+	</Template>
+
+	<Template Name="L1011_WARN_Indicator_Reverser_Transit_Template">
+		<Parameters Type="Default">
+			<NODE_ID>WARN_ENG1_TRA</NODE_ID>
+			<ID>1</ID>
+			<SIMVAR>TURB ENG REVERSE NOZZLE PERCENT</SIMVAR>
+		</Parameters>
+		<UseTemplate Name="ASOBO_SAFETY_Indicator_Warning_Template">
+			<EMISSIVE_CODE>(A:#SIMVAR#:#ID#, percent over 100) 0.0005 &gt;</EMISSIVE_CODE>
+		</UseTemplate>
+	</Template>
+
+	<Template Name="L1011_WARN_Indicator_Reverser_Template">
+		<Parameters Type="Default">
+			<NODE_ID>WARN_ENG1_REV</NODE_ID>
+			<ID>1</ID>
+			<SIMVAR>TURB ENG REVERSE NOZZLE PERCENT</SIMVAR>
+		</Parameters>
+		<UseTemplate Name="ASOBO_SAFETY_Indicator_Warning_Template">
+			<EMISSIVE_CODE>(A:#SIMVAR#:#ID#, percent over 100) 0.9999999 &gt;</EMISSIVE_CODE>
+		</UseTemplate>
+	</Template>
+
 </ModelBehaviors>

@@ -18,6 +18,120 @@
         <Include ModelBehaviorFile="L1011\Interior\L1011_Interior_Includes.xml"/>
 		
     <!-- Animations -->
+    <Component ID="OVERHEAD_PANEL">
+    	<Component ID="LIGHTS_PANEL">
+    		<Component ID="EXT_LIGHTS">
+
+				<!-- 
+
+				-->
+				<UseTemplate Name="ASOBO_LIGHTING_Push_Light_Navigation_Template">
+					<ANIM_NAME>PUSH_EXTLIGHT_POS</ANIM_NAME>
+					<NODE_ID>BTN_PUSH_EXTLIGHT_POS</NODE_ID>
+					<ANIM_LENGTH>90</ANIM_LENGTH>
+				</UseTemplate>
+
+				<UseTemplate Name="L1011_WARN_Indicator_Simvar_Inverted_Template">
+					<NODE_ID>BTN_PUSH_EXTLIGHT_POS_E</NODE_ID>
+					<SIMVAR>LIGHT NAV ON</SIMVAR>
+					<ID>0</ID>
+				</UseTemplate>
+
+				<!-- 
+
+				-->
+				<UseTemplate Name="ASOBO_LIGHTING_Push_Light_Strobe_Template">
+					<ANIM_NAME>PUSH_EXTLIGHT_STROBE</ANIM_NAME>
+					<NODE_ID>BTN_PUSH_EXTLIGHT_STROBE</NODE_ID>
+					<ANIM_LENGTH>90</ANIM_LENGTH>
+				</UseTemplate>
+
+				<UseTemplate Name="L1011_WARN_Indicator_Simvar_Inverted_Template">
+					<NODE_ID>BTN_PUSH_EXTLIGHT_STROBE_E</NODE_ID>
+					<SIMVAR>LIGHT STROBE ON</SIMVAR>
+					<ID>0</ID>
+				</UseTemplate>
+
+				<!-- 
+
+				-->
+				<UseTemplate Name="ASOBO_LIGHTING_Push_Light_Beacon_Template">
+					<ANIM_NAME>PUSH_EXTLIGHT_ANTICOL</ANIM_NAME>
+					<NODE_ID>BTN_PUSH_EXTLIGHT_ANTICOL</NODE_ID>
+					<ANIM_LENGTH>90</ANIM_LENGTH>
+				</UseTemplate>
+
+				<UseTemplate Name="L1011_WARN_Indicator_Simvar_Inverted_Template">
+					<NODE_ID>BTN_PUSH_EXTLIGHT_ANTICOL_E</NODE_ID>
+					<SIMVAR>LIGHT BEACON ON</SIMVAR>
+					<ID>0</ID>
+				</UseTemplate>
+
+				<!-- 
+
+				-->
+				<UseTemplate Name="ASOBO_LIGHTING_Push_Light_Wing_Template">
+					<ANIM_NAME>PUSH_EXTLIGHT_WG</ANIM_NAME>
+					<NODE_ID>BTN_PUSH_EXTLIGHT_WG</NODE_ID>
+					<ANIM_LENGTH>90</ANIM_LENGTH>
+				</UseTemplate>
+
+				<UseTemplate Name="L1011_WARN_Indicator_Simvar_Template">
+					<NODE_ID>BTN_PUSH_EXTLIGHT_WG_E</NODE_ID>
+					<SIMVAR>LIGHT WING ON</SIMVAR>
+					<ID>0</ID>
+				</UseTemplate>
+
+				<!-- 
+
+
+				<UseTemplate Name="ASOBO_LIGHTING_Push_Light_Beacon_Template">
+					<ANIM_NAME>PUSH_EXTLIGHT_WW</ANIM_NAME>
+					<NODE_ID>BTN_PUSH_EXTLIGHT_WW</NODE_ID>
+					<ACTIVE_NODE_ID>BTN_PUSH_EXTLIGHT_WW_E</ACTIVE_NODE_ID>
+					<ANIM_LENGTH>90</ANIM_LENGTH>
+				</UseTemplate>
+				-->
+
+    		</Component>
+    		<Component ID="INT_LIGHTS">
+
+				<!-- 
+
+				-->
+				<UseTemplate Name="ASOBO_AIRLINER_Seatbelts_Template">
+					<ANIM_NAME>PUSH_INTLIGHT_BELTS</ANIM_NAME>
+					<NODE_ID>BTN_PUSH_INTLIGHT_BELTS</NODE_ID>
+					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<INTERACTION_TYPE>Push</INTERACTION_TYPE>
+				</UseTemplate>
+
+				<UseTemplate Name="L1011_WARN_Indicator_Simvar_Inverted_Template">
+					<NODE_ID>BTN_PUSH_INTLIGHT_BELTS_E</NODE_ID>
+					<SIMVAR></SIMVAR>
+					<ID>0</ID>
+				</UseTemplate>
+
+				<!-- 
+
+				-->
+				<UseTemplate Name="ASOBO_AIRLINER_NoSmoking_Template">
+					<ANIM_NAME>PUSH_INTLIGHT_NOSMOKING</ANIM_NAME>
+					<NODE_ID>BTN_PUSH_INTLIGHT_NOSMOKING</NODE_ID>
+					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<INTERACTION_TYPE>Push</INTERACTION_TYPE>
+				</UseTemplate>
+
+				<UseTemplate Name="L1011_WARN_Indicator_Simvar_Inverted_Template">
+					<NODE_ID>BTN_PUSH_INTLIGHT_NOSMOKING_E</NODE_ID>
+					<SIMVAR></SIMVAR>
+					<ID>0</ID>
+				</UseTemplate>
+
+
+    		</Component>
+    	</Component>
+    </Component>
     <Component ID="GLARESHEILD_PANEL">
     	<Component ID="INSTRUMENT_PANEL">
     		<!-- AFCS MODES -->
@@ -792,6 +906,13 @@
 							<ANIM_WRAP>True</ANIM_WRAP>
 						</UseTemplate>
 
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>PFD_1_RWY</ANIM_NAME>
+							<ANIM_CODE>(A:RADIO HEIGHT, Feet) </ANIM_CODE>
+							<ANIM_LENGTH>201</ANIM_LENGTH>
+							<ANIM_WRAP>False</ANIM_WRAP>
+						</UseTemplate>						
+
      				</Component>
 					 
    					<!-- VERTICAL SPEED INDICATOR CAPTAIN -->
@@ -1090,7 +1211,7 @@
 
     				<!-- 
 						TODO: all asobo templates to be converted to custom modelbehaviordefs
-						- empty comments contain placeholder templates
+						- "L1011_BLANK" templates are placeholders
 					 -->
 
     					<!-- OIL PRESS ENG 1 -->
@@ -1342,42 +1463,37 @@
 
     				</Component>
 
-    				<!-- SYS WARN ANN -->
+    				<!-- ENGINE REVERSERS STATUS -->
     				<Component ID="ENG_REV_STATUS">
 
-						<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+						<UseTemplate Name="L1011_WARN_Indicator_Reverser_Transit_Template">
 							<NODE_ID>WARN_ENG1_TRA</NODE_ID>
-							<SIMVAR_LIGHT></SIMVAR_LIGHT>
-							<SIMVAR_LIGHT_ON>(A:GENERAL ENG REVERSE THRUST ENGAGED:1, bool)</SIMVAR_LIGHT_ON>
+							<ID>1</ID>
 						</UseTemplate>
 
-						<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+						<UseTemplate Name="L1011_WARN_Indicator_Reverser_Template">
 							<NODE_ID>WARN_ENG1_REV</NODE_ID>
-							<SEQ_POWERED>(A:GENERAL ENG REVERSE THRUST ENGAGED:1, bool)</SEQ_POWERED>
+							<ID>1</ID>
 						</UseTemplate>
 
-						<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+						<UseTemplate Name="L1011_WARN_Indicator_Reverser_Transit_Template">
 							<NODE_ID>WARN_ENG2_TRA</NODE_ID>
-							<SIMVAR_LIGHT></SIMVAR_LIGHT>
-							<SIMVAR_LIGHT_ON>(A:GENERAL ENG REVERSE THRUST ENGAGED:2, bool)</SIMVAR_LIGHT_ON>
+							<ID>2</ID>
 						</UseTemplate>
 
-						<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+						<UseTemplate Name="L1011_WARN_Indicator_Reverser_Template">
 							<NODE_ID>WARN_ENG2_REV</NODE_ID>
-							<SIMVAR_LIGHT></SIMVAR_LIGHT>
-							<SIMVAR_LIGHT_ON>(A:GENERAL ENG REVERSE THRUST ENGAGED:2, bool)</SIMVAR_LIGHT_ON>
+							<ID>2</ID>
 						</UseTemplate>
 
-						<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+						<UseTemplate Name="L1011_WARN_Indicator_Reverser_Transit_Template">
 							<NODE_ID>WARN_ENG3_TRA</NODE_ID>
-							<SIMVAR_LIGHT></SIMVAR_LIGHT>
-							<SIMVAR_LIGHT_ON>(A:GENERAL ENG REVERSE THRUST ENGAGED:3, bool)</SIMVAR_LIGHT_ON>
+							<ID>3</ID>
 						</UseTemplate>
 
-						<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+						<UseTemplate Name="L1011_WARN_Indicator_Reverser_Template">
 							<NODE_ID>WARN_ENG3_REV</NODE_ID>
-							<SIMVAR_LIGHT></SIMVAR_LIGHT>
-							<SIMVAR_LIGHT_ON>(A:GENERAL ENG REVERSE THRUST ENGAGED:3, bool)</SIMVAR_LIGHT_ON>
+							<ID>3</ID>
 						</UseTemplate>
 
     				</Component>
