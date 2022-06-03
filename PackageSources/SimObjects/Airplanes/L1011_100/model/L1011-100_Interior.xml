@@ -19,6 +19,78 @@
 		
     <!-- Animations -->
     <Component ID="OVERHEAD_PANEL">
+    	<Component ID="OVERHEAD">
+    		<Component ID="COMPASS_L">
+    		</Component>
+    		<Component ID="COMPASS_R">
+    		</Component>
+    		<Component ID="WIPER_L">
+    		</Component>
+    		<Component ID="WIPER_R">
+    		</Component>
+    		<Component ID="ANTISKID">
+    		</Component>
+    		<Component ID="FCES">
+    		</Component>
+    		<Component ID="PFCS">
+    		</Component>
+    		<Component ID="PASSENGER_ADDRESS">
+    		</Component>
+    		<Component ID="CENTER_CONSOLE_FLOOD">
+    		</Component>
+    		<Component ID="MACH_FEEL">
+    		</Component>
+    		<Component ID="CVR">
+    		</Component>
+    		<Component ID="ENGINE_START">
+				<!--
+					Unassigned Animations:
+						PUSH_OVHD_ENGSTART_AIR_1
+						PUSH_OVHD_ENGSTART_AIR_2
+						PUSH_OVHD_ENGSTART_AIR_3
+						PUSH_OVHD_ENGSTART_CONT
+						PUSH_OVHD_ENGSTART_GSR
+				-->
+
+				<UseTemplate Name="ASOBO_ENGINE_Push_Starter_Template">
+					<ANIM_NAME>PUSH_OVHD_ENGSTART_GND_1</ANIM_NAME>
+					<NODE_ID>BTN_OVHD_ENGSTART_GND_1</NODE_ID>
+					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<ID>1</ID>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_ENGINE_Push_Starter_Template">
+					<ANIM_NAME>PUSH_OVHD_ENGSTART_GND_2</ANIM_NAME>
+					<NODE_ID>BTN_OVHD_ENGSTART_GND_2</NODE_ID>
+					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<ID>2</ID>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_ENGINE_Push_Starter_Template">
+					<ANIM_NAME>PUSH_OVHD_ENGSTART_GND_3</ANIM_NAME>
+					<NODE_ID>BTN_OVHD_ENGSTART_GND_3</NODE_ID>
+					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<ID>3</ID>
+				</UseTemplate>
+
+    		</Component>
+    		<Component ID="INSTR_STBY_LIGHT">
+    		</Component>
+    		<Component ID="EVAC_SIGNAL">
+    		</Component>
+    		<Component ID="AIR_DATA_SENSOR_HEAT">
+    		</Component>
+    		<Component ID="WINDSHIELD_HEAT">
+    		</Component>
+    		<Component ID="WING_ANTI_ICE">
+    		</Component>
+    		<Component ID="ENGINE_ANTI_ICE">
+    		</Component>
+    		<Component ID="LIGHTS">
+    		</Component>
+    		<Component ID="MASTER_RADIO">
+    		</Component>
+    	</Component>
     	<Component ID="LIGHTS_PANEL">
     		<Component ID="EXT_LIGHTS">
 
