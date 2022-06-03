@@ -56,6 +56,8 @@
 					<ANIM_NAME>PUSH_OVHD_ENGSTART_GND_1</ANIM_NAME>
 					<NODE_ID>BTN_OVHD_ENGSTART_GND_1</NODE_ID>
 					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 					<ID>1</ID>
 				</UseTemplate>
 
@@ -63,6 +65,8 @@
 					<ANIM_NAME>PUSH_OVHD_ENGSTART_GND_2</ANIM_NAME>
 					<NODE_ID>BTN_OVHD_ENGSTART_GND_2</NODE_ID>
 					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 					<ID>2</ID>
 				</UseTemplate>
 
@@ -70,6 +74,8 @@
 					<ANIM_NAME>PUSH_OVHD_ENGSTART_GND_3</ANIM_NAME>
 					<NODE_ID>BTN_OVHD_ENGSTART_GND_3</NODE_ID>
 					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 					<ID>3</ID>
 				</UseTemplate>
 
@@ -101,6 +107,8 @@
 					<ANIM_NAME>PUSH_EXTLIGHT_POS</ANIM_NAME>
 					<NODE_ID>BTN_PUSH_EXTLIGHT_POS</NODE_ID>
 					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 				</UseTemplate>
 
 				<UseTemplate Name="L1011_WARN_Indicator_Simvar_Inverted_Template">
@@ -116,6 +124,8 @@
 					<ANIM_NAME>PUSH_EXTLIGHT_STROBE</ANIM_NAME>
 					<NODE_ID>BTN_PUSH_EXTLIGHT_STROBE</NODE_ID>
 					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 				</UseTemplate>
 
 				<UseTemplate Name="L1011_WARN_Indicator_Simvar_Inverted_Template">
@@ -131,6 +141,8 @@
 					<ANIM_NAME>PUSH_EXTLIGHT_ANTICOL</ANIM_NAME>
 					<NODE_ID>BTN_PUSH_EXTLIGHT_ANTICOL</NODE_ID>
 					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 				</UseTemplate>
 
 				<UseTemplate Name="L1011_WARN_Indicator_Simvar_Inverted_Template">
@@ -146,6 +158,8 @@
 					<ANIM_NAME>PUSH_EXTLIGHT_WG</ANIM_NAME>
 					<NODE_ID>BTN_PUSH_EXTLIGHT_WG</NODE_ID>
 					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 				</UseTemplate>
 
 				<UseTemplate Name="L1011_WARN_Indicator_Simvar_Template">
@@ -162,6 +176,8 @@
 					<NODE_ID>BTN_PUSH_EXTLIGHT_WW</NODE_ID>
 					<ACTIVE_NODE_ID>BTN_PUSH_EXTLIGHT_WW_E</ACTIVE_NODE_ID>
 					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 				</UseTemplate>
 				-->
 
@@ -176,6 +192,8 @@
 					<NODE_ID>BTN_PUSH_INTLIGHT_BELTS</NODE_ID>
 					<ANIM_LENGTH>90</ANIM_LENGTH>
 					<INTERACTION_TYPE>Push</INTERACTION_TYPE>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 				</UseTemplate>
 
 				<UseTemplate Name="L1011_WARN_Indicator_Simvar_Inverted_Template">
@@ -192,6 +210,8 @@
 					<NODE_ID>BTN_PUSH_INTLIGHT_NOSMOKING</NODE_ID>
 					<ANIM_LENGTH>90</ANIM_LENGTH>
 					<INTERACTION_TYPE>Push</INTERACTION_TYPE>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 				</UseTemplate>
 
 				<UseTemplate Name="L1011_WARN_Indicator_Simvar_Inverted_Template">
