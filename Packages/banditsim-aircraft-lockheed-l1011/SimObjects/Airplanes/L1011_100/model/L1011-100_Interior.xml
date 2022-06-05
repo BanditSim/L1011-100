@@ -183,6 +183,8 @@
 				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Landing_Template">
 					<ANIM_NAME>SWITCH_EXTLIGHT_LANDING_L</ANIM_NAME>
 					<NODE_ID>SW_EXTLIGHT_LANDING_L</NODE_ID>
+					<SIMVAR_INDEX>1</SIMVAR_INDEX>
+					<ID>0</ID>
 					<WWISE_EVENT_1>taxi_light_switch_on</WWISE_EVENT_1>
 					<WWISE_EVENT_2>taxi_light_switch_off</WWISE_EVENT_2>
 				</UseTemplate>
@@ -194,6 +196,8 @@
 				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Landing_Template">
 					<ANIM_NAME>SWITCH_EXTLIGHT_LANDING_R</ANIM_NAME>
 					<NODE_ID>SW_EXTLIGHT_LANDING_R</NODE_ID>
+					<SIMVAR_INDEX>2</SIMVAR_INDEX>
+					<ID>1</ID>
 					<WWISE_EVENT_1>taxi_light_switch_on</WWISE_EVENT_1>
 					<WWISE_EVENT_2>taxi_light_switch_off</WWISE_EVENT_2>
 				</UseTemplate>
@@ -205,6 +209,8 @@
 				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Landing_Template">
 					<ANIM_NAME>SWITCH_EXTLIGHT_LANDING_N</ANIM_NAME>
 					<NODE_ID>SW_EXTLIGHT_LANDING_N</NODE_ID>
+					<SIMVAR_INDEX>3</SIMVAR_INDEX>
+					<ID>2</ID>
 					<WWISE_EVENT_1>taxi_light_switch_on</WWISE_EVENT_1>
 					<WWISE_EVENT_2>taxi_light_switch_off</WWISE_EVENT_2>
 				</UseTemplate>
@@ -216,15 +222,19 @@
 				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Taxi_Template">
 					<ANIM_NAME>SWITCH_EXTLIGHT_TAXI</ANIM_NAME>
 					<NODE_ID>SW_EXTLIGHT_TAXI</NODE_ID>
+					<SIMVAR_INDEX>1</SIMVAR_INDEX>
+					<ID>0</ID>
 				</UseTemplate>
 
 
 				<!-- 
 					RUNWAY TURNOFF
 				-->
-				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Landing_Template">
+				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Taxi_Template">
 					<ANIM_NAME>SWITCH_EXTLIGHT_TURNOFF</ANIM_NAME>
 					<NODE_ID>SW_EXTLIGHT_TURNOFF</NODE_ID>
+					<SIMVAR_INDEX>2</SIMVAR_INDEX>
+					<ID>1</ID>
 					<WWISE_EVENT_1>taxi_light_switch_on</WWISE_EVENT_1>
 					<WWISE_EVENT_2>taxi_light_switch_off</WWISE_EVENT_2>
 				</UseTemplate>
@@ -2235,6 +2245,42 @@
         	    <TT_ICON>ROTATE</TT_ICON>   
         	</UseTemplate>
 
+			<UseTemplate Name="ASOBO_LIGHTING_Knob_Potentiometer_Template">
+        	    <NODE_ID>BTN_KNOB_OVHD_OVHD_PANEL_LIGHTS</NODE_ID>
+        	    <ANIM_NAME>KA_OVHD_OVHD_PANEL_LIGHTS_ANIM</ANIM_NAME>
+        	    <POTENTIOMETER>22</POTENTIOMETER>
+        	    <TT_DESCRIPTION_ID>@TT_Package.LIGHTING_KNOB_PANEL_ACTION</TT_DESCRIPTION_ID>
+        	    <TOOLTIP_TITLE>@TT_Package.LIGHTING_KNOB_PANEL_TITLE</TOOLTIP_TITLE>
+        	    <TT_ICON>ROTATE</TT_ICON>   
+        	</UseTemplate>
+
+			<UseTemplate Name="ASOBO_LIGHTING_Knob_Potentiometer_Template">
+        	    <NODE_ID>BTN_KNOB_OVHD_GEN_INTENSITY_LIGHTS</NODE_ID>
+        	    <ANIM_NAME>KA_OVHD_GEN_INTENSITY_LIGHTS_ANIM</ANIM_NAME>
+        	    <POTENTIOMETER>23</POTENTIOMETER>
+        	    <TT_DESCRIPTION_ID>@TT_Package.LIGHTING_KNOB_PANEL_ACTION</TT_DESCRIPTION_ID>
+        	    <TOOLTIP_TITLE>@TT_Package.LIGHTING_KNOB_PANEL_TITLE</TOOLTIP_TITLE>
+        	    <TT_ICON>ROTATE</TT_ICON>   
+        	</UseTemplate>
+
+			<UseTemplate Name="ASOBO_LIGHTING_Knob_Potentiometer_Template">
+        	    <NODE_ID>BTN_KNOB_OVHD_LIGHTS_INT_PANEL_LIGHTS</NODE_ID>
+        	    <ANIM_NAME>KA_OVHD_LIGHTS_INT_PANEL_LIGHTS_ANIM</ANIM_NAME>
+        	    <POTENTIOMETER>24</POTENTIOMETER>
+        	    <TT_DESCRIPTION_ID>@TT_Package.LIGHTING_KNOB_PANEL_ACTION</TT_DESCRIPTION_ID>
+        	    <TOOLTIP_TITLE>@TT_Package.LIGHTING_KNOB_PANEL_TITLE</TOOLTIP_TITLE>
+        	    <TT_ICON>ROTATE</TT_ICON>   
+        	</UseTemplate>
+
+			<UseTemplate Name="ASOBO_LIGHTING_Knob_Potentiometer_Template">
+        	    <NODE_ID>BTN_KNOB_OVHD_LIGHTS_INT_PANEL_MAG_COMP</NODE_ID>
+        	    <ANIM_NAME>KA_OVHD_LIGHTS_INT_PANEL_MAG_COMP_ANIM</ANIM_NAME>
+        	    <POTENTIOMETER>25</POTENTIOMETER>
+        	    <TT_DESCRIPTION_ID>@TT_Package.LIGHTING_KNOB_PANEL_ACTION</TT_DESCRIPTION_ID>
+        	    <TOOLTIP_TITLE>@TT_Package.LIGHTING_KNOB_PANEL_TITLE</TOOLTIP_TITLE>
+        	    <TT_ICON>ROTATE</TT_ICON>   
+        	</UseTemplate>
+
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         	    <NODE_ID>LIGHTS_AP_PANEL_L</NODE_ID>
         	    <POTENTIOMETER>18</POTENTIOMETER>
@@ -2258,6 +2304,16 @@
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         	    <NODE_ID>LIGHTS_GLARESHEILD_CONTROLS_L</NODE_ID>
         	    <POTENTIOMETER>18</POTENTIOMETER>
+        	</UseTemplate>
+
+        	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        	    <NODE_ID>LIGHTS_OVERHEAD_OVERHEAD_INSTR</NODE_ID>
+        	    <POTENTIOMETER>22</POTENTIOMETER>
+        	</UseTemplate>
+
+        	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        	    <NODE_ID>LIGHTS_OVERHEAD_LIGHTS_INSTR</NODE_ID>
+        	    <POTENTIOMETER>22</POTENTIOMETER>
         	</UseTemplate>
 
 			<!-- INSTRUMENTS -->
