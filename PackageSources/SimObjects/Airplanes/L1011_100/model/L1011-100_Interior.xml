@@ -1276,6 +1276,14 @@
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
 
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>TURB ENG PRESSURE RATIO:1</SIMVAR>
+									<UNITS>Ratio</UNITS>
+									<DIGITS_0_ANIM_NAME>GAUGE_EPR_1_DIGITS_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>GAUGE_EPR_1_DIGITS_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>GAUGE_EPR_1_DIGITS_100</DIGITS_2_ANIM_NAME>
+								</UseTemplate>
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_EPR_2</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG PRESSURE RATIO:2, Ratio) 100 * </ANIM_CODE>
@@ -1283,12 +1291,28 @@
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
 
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>TURB ENG PRESSURE RATIO:2</SIMVAR>
+									<UNITS>Ratio</UNITS>
+									<DIGITS_0_ANIM_NAME>GAUGE_EPR_2_DIGITS_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>GAUGE_EPR_2_DIGITS_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>GAUGE_EPR_2_DIGITS_100</DIGITS_2_ANIM_NAME>
+								</UseTemplate>
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_EPR_3</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG PRESSURE RATIO:3, Ratio) 100 * </ANIM_CODE>
 								<ANIM_LENGTH>220</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>TURB ENG PRESSURE RATIO:3</SIMVAR>
+									<UNITS>Ratio</UNITS>
+									<DIGITS_0_ANIM_NAME>GAUGE_EPR_3_DIGITS_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>GAUGE_EPR_3_DIGITS_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>GAUGE_EPR_3_DIGITS_100</DIGITS_2_ANIM_NAME>
+								</UseTemplate>
 
 						</Component>
     					<Component ID="ENGINE_GAUGES_N1">
@@ -1300,6 +1324,14 @@
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
 
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>TURB ENG N1:1</SIMVAR>
+									<UNITS>Percent</UNITS>
+									<DIGITS_0_ANIM_NAME>GAUGE_N1_1_DIGITS_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>GAUGE_N1_1_DIGITS_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>GAUGE_N1_1_DIGITS_100</DIGITS_2_ANIM_NAME>
+								</UseTemplate>
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_N1_2</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG N1:2, Percent) 1.225 * </ANIM_CODE>
@@ -1307,12 +1339,28 @@
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
 
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>TURB ENG N1:2</SIMVAR>
+									<UNITS>Percent</UNITS>
+									<DIGITS_0_ANIM_NAME>GAUGE_N1_2_DIGITS_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>GAUGE_N1_2_DIGITS_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>GAUGE_N1_2_DIGITS_100</DIGITS_2_ANIM_NAME>
+								</UseTemplate>
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_N1_3</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG N1:3, Percent) 1.225 * </ANIM_CODE>
 								<ANIM_LENGTH>180</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>TURB ENG N1:3</SIMVAR>
+									<UNITS>Percent</UNITS>
+									<DIGITS_0_ANIM_NAME>GAUGE_N1_3_DIGITS_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>GAUGE_N1_3_DIGITS_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>GAUGE_N1_3_DIGITS_100</DIGITS_2_ANIM_NAME>
+								</UseTemplate>
 
      					</Component>
     					<Component ID="ENGINE_GAUGES_EGT">
@@ -1323,46 +1371,92 @@
 								<ANIM_LENGTH>260</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>ENG EXHAUST GAS TEMPERATURE:1</SIMVAR>
+									<UNITS>celsius</UNITS>
+									<DIGITS_0_ANIM_NAME>GAUGE_EGT_1_DIGITS_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>GAUGE_EGT_1_DIGITS_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>GAUGE_EGT_1_DIGITS_100</DIGITS_2_ANIM_NAME>
+								</UseTemplate>
+
     						<UseTemplate Name="ASOBO_GT_Anim">
-							
 								<ANIM_NAME>Gauge_EGT_2</ANIM_NAME>
 								<ANIM_CODE>(A:ENG EXHAUST GAS TEMPERATURE:2, celsius) 5.45 / </ANIM_CODE>
 								<ANIM_LENGTH>260</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
-    						<UseTemplate Name="ASOBO_GT_Anim">
 
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>ENG EXHAUST GAS TEMPERATURE:2</SIMVAR>
+									<UNITS>celsius</UNITS>
+									<DIGITS_0_ANIM_NAME>GAUGE_EGT_2_DIGITS_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>GAUGE_EGT_2_DIGITS_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>GAUGE_EGT_2_DIGITS_100</DIGITS_2_ANIM_NAME>
+								</UseTemplate>
+
+    						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_EGT_3</ANIM_NAME>
 								<ANIM_CODE>(A:ENG EXHAUST GAS TEMPERATURE:3, celsius) 5.45 / </ANIM_CODE>
 								<ANIM_LENGTH>260</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
 
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>ENG EXHAUST GAS TEMPERATURE:3</SIMVAR>
+									<UNITS>celsius</UNITS>
+									<DIGITS_0_ANIM_NAME>GAUGE_EGT_3_DIGITS_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>GAUGE_EGT_3_DIGITS_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>GAUGE_EGT_3_DIGITS_100</DIGITS_2_ANIM_NAME>
+								</UseTemplate>
+
     					</Component>
     					<Component ID="ENGINE_GAUGES_N3">
-    						<UseTemplate Name="ASOBO_GT_Anim">
 
+    						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_N3_1</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG N2:1, Percent) 1.145 * </ANIM_CODE>
 								<ANIM_LENGTH>180</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
-
 							</UseTemplate>
-    						<UseTemplate Name="ASOBO_GT_Anim">
 
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>A:TURB ENG N2:1</SIMVAR>
+									<UNITS>Percent</UNITS>
+									<DIGITS_0_ANIM_NAME>GAUGE_N3_1_DIGITS_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>GAUGE_N3_1_DIGITS_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>GAUGE_N3_1_DIGITS_100</DIGITS_2_ANIM_NAME>
+								</UseTemplate>
+
+    						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_N3_2</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG N2:2, Percent) 1.145 * </ANIM_CODE>
 								<ANIM_LENGTH>180</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
-
 							</UseTemplate>
-    						<UseTemplate Name="ASOBO_GT_Anim">
 
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>A:TURB ENG N2:2</SIMVAR>
+									<UNITS>Percent</UNITS>
+									<DIGITS_0_ANIM_NAME>GAUGE_N3_2_DIGITS_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>GAUGE_N3_2_DIGITS_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>GAUGE_N3_2_DIGITS_100</DIGITS_2_ANIM_NAME>
+								</UseTemplate>
+
+    						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_N3_3</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG N2:3, Percent) 1.145 * </ANIM_CODE>
 								<ANIM_LENGTH>180</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>A:TURB ENG N2:3</SIMVAR>
+									<UNITS>Percent</UNITS>
+									<DIGITS_0_ANIM_NAME>GAUGE_N3_3_DIGITS_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>GAUGE_N3_3_DIGITS_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>GAUGE_N3_3_DIGITS_100</DIGITS_2_ANIM_NAME>
+								</UseTemplate>
 
     					</Component>
     					<Component ID="ENGINE_GAUGES_FF">
@@ -1374,6 +1468,14 @@
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
 
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>ENG FUEL FLOW PPH:1</SIMVAR>
+									<UNITS>Pounds per hour</UNITS>
+									<DIGITS_0_ANIM_NAME>GAUGE_FF_1_DIGITS_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>GAUGE_FF_1_DIGITS_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>GAUGE_FF_1_DIGITS_100</DIGITS_2_ANIM_NAME>
+								</UseTemplate>
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_FF_2</ANIM_NAME>
 								<ANIM_CODE>(A:ENG FUEL FLOW PPH:2, Pounds per hour) 8.8 / </ANIM_CODE>
@@ -1381,12 +1483,28 @@
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
 
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>ENG FUEL FLOW PPH:2</SIMVAR>
+									<UNITS>Pounds per hour</UNITS>
+									<DIGITS_0_ANIM_NAME>GAUGE_FF_2_DIGITS_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>GAUGE_FF_2_DIGITS_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>GAUGE_FF_2_DIGITS_100</DIGITS_2_ANIM_NAME>
+								</UseTemplate>
+
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_FF_3</ANIM_NAME>
 								<ANIM_CODE>(A:ENG FUEL FLOW PPH:3, Pounds per hour) 8.8 / </ANIM_CODE>
 								<ANIM_LENGTH>300</ANIM_LENGTH>
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
+
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>ENG FUEL FLOW PPH:3</SIMVAR>
+									<UNITS>Pounds per hour</UNITS>
+									<DIGITS_0_ANIM_NAME>GAUGE_FF_3_DIGITS_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>GAUGE_FF_3_DIGITS_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>GAUGE_FF_3_DIGITS_100</DIGITS_2_ANIM_NAME>
+								</UseTemplate>
 
     					</Component>
     				</Component>
@@ -2372,6 +2490,252 @@
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>INSTR_RAD_ALT_1_DH_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- ENGINE # 1 GAUGES DIGIT DIALS -->
+
+ 				<!-- EPR # 1 DIGIT DIALS -->
+	       		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EPR_1_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EPR_1_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EPR_1_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+ 				<!-- N1 # 1 DIGIT DIALS -->
+	       		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N1_1_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N1_1_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N1_1_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+ 				<!-- EGT # 1 DIGIT DIALS -->
+	       		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EGT_1_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EGT_1_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EGT_1_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+ 				<!-- N3 # 1 DIGIT DIALS -->
+	       		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N3_1_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N3_1_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N3_1_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+ 				<!-- FF # 1 DIGIT DIALS -->
+	       		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_FF_1_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_FF_1_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_FF_1_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- ENGINE # 2 GAUGES DIGIT DIALS -->
+
+ 				<!-- EPR # 2 DIGIT DIALS -->
+	       		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EPR_2_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EPR_2_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EPR_2_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+ 				<!-- N1 # 2 DIGIT DIALS -->
+	       		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N1_2_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N1_2_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N1_2_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+ 				<!-- EGT # 2 DIGIT DIALS -->
+	       		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EGT_2_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EGT_2_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EGT_2_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+ 				<!-- N3 # 2 DIGIT DIALS -->
+	       		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N3_2_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N3_2_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N3_2_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+ 				<!-- FF # 2 DIGIT DIALS -->
+	       		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_FF_2_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_FF_2_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_FF_2_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- ENGINE # 3 GAUGES DIGIT DIALS -->
+
+ 				<!-- EPR # 3 DIGIT DIALS -->
+	       		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EPR_3_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EPR_3_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EPR_3_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+ 				<!-- N1 # 3 DIGIT DIALS -->
+	       		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N1_3_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N1_3_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N1_3_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+ 				<!-- EGT # 3 DIGIT DIALS -->
+	       		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EGT_3_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EGT_3_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_EGT_3_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+ 				<!-- N3 # 3 DIGIT DIALS -->
+	       		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N3_3_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N3_3_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_N3_3_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+ 				<!-- FF # 3 DIGIT DIALS -->
+	       		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_FF_3_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_FF_3_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAUGE_FF_3_DIGITS_100</NODE_ID>
         		    <POTENTIOMETER>18</POTENTIOMETER>
         		</UseTemplate>
 
