@@ -18,6 +18,83 @@
         <Include ModelBehaviorFile="L1011\Interior\L1011_Interior_Includes.xml"/>
 		
     <!-- Animations -->
+    <Component ID="FE_PANEL">
+
+    	<Component ID="LOWER">
+
+    		<Component ID="ELECTRICAL">
+    		</Component>
+
+    		<Component ID="FUEL">
+    		</Component>
+
+    		<Component ID="ENGINE_STATUS">
+    		</Component>
+
+    		<Component ID="ENGINE_OIL">
+    		</Component>
+
+    		<Component ID="ENGINE_FUEL">
+    		</Component>
+
+    		<Component ID="FUEL_JETESON">
+    		</Component>
+
+    		<Component ID="CLOCK_FE">
+    		</Component>
+
+    		<Component ID="APU_CONTROL">
+
+				<UseTemplate Name="ASOBO_ELECTRICAL_Push_APU_Starter_Template">
+					<ANIM_NAME>PUSH_FE_APU_START</ANIM_NAME>
+					<NODE_ID>BTN_PUSH_FE_APU_START</NODE_ID>
+					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_APU_Bleed_Template">
+					<ANIM_NAME>PUSH_FE_APU_BLEEDAIR</ANIM_NAME>
+					<NODE_ID>BTN_PUSH_FE_APU_BLEEDAIR</NODE_ID>
+					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_ENGINE_Push_Starter_Template">
+					<ANIM_NAME>PUSH_FE_APU_AUTOFIRE</ANIM_NAME>
+					<NODE_ID>BTN_PUSH_FE_APU_AUTOFIRE</NODE_ID>
+					<ANIM_LENGTH>90</ANIM_LENGTH>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_FUEL_Switch_Valve_Template">
+					<ANIM_NAME>SWITCH_FE_APU_MASTER</ANIM_NAME>
+					<NODE_ID>SW_FE_APU_MASTER</NODE_ID>
+					<PART_ID>SW_FE_APU_MASTER</PART_ID>
+					<SEQ1_EMISSIVE_CODE>0</SEQ1_EMISSIVE_CODE>
+					<SEQ2_EMISSIVE_CODE>(A:FUELSYSTEM VALVE SWITCH:8, Bool)</SEQ2_EMISSIVE_CODE>
+					<ON_STATE_CHANGED_EXTERNAL_CODE>(A:FUELSYSTEM VALVE SWITCH:8, Bool) ! if{ (&gt;K:APU_OFF_SWITCH) }</ON_STATE_CHANGED_EXTERNAL_CODE>
+					<WWISE_EVENT_1>master_apu_switch_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>master_apu_switch_off</WWISE_EVENT_2>
+					<NORMALIZED_TIME_1>0.1</NORMALIZED_TIME_1>
+					<NORMALIZED_TIME_2>0.5</NORMALIZED_TIME_2>
+					<ID>8</ID>
+					<IE_VALVE_ID>APU</IE_VALVE_ID>
+					<TT_DESCRIPTION_ID>@TT_Package.ELECTRICAL_SWITCH_APU_MASTER_ACTION_SET</TT_DESCRIPTION_ID>
+					<TOOLTIP_TITLE>@TT_Package.ELECTRICAL_SWITCH_APU_MASTER_TITLE</TOOLTIP_TITLE>
+				</UseTemplate>
+
+    		</Component>
+
+    	</Component>
+
+    	<Component ID="UPPER">
+
+    	</Component>
+    </Component>
+
     <Component ID="OVERHEAD_PANEL">
     	<Component ID="OVERHEAD">
     		<Component ID="COMPASS_L">
@@ -101,7 +178,61 @@
     		<Component ID="EXT_LIGHTS">
 
 				<!-- 
+					LANDING_L
+				-->
+				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Landing_Template">
+					<ANIM_NAME>SWITCH_EXTLIGHT_LANDING_L</ANIM_NAME>
+					<NODE_ID>SW_EXTLIGHT_LANDING_L</NODE_ID>
+				</UseTemplate>
 
+
+				<!-- 
+					LANDING_R
+				-->
+				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Landing_Template">
+					<ANIM_NAME>SWITCH_EXTLIGHT_LANDING_R</ANIM_NAME>
+					<NODE_ID>SW_EXTLIGHT_LANDING_R</NODE_ID>
+				</UseTemplate>
+
+
+				<!-- 
+					LANDING_NOSE
+				-->
+				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Landing_Template">
+					<ANIM_NAME>SWITCH_EXTLIGHT_LANDING_N</ANIM_NAME>
+					<NODE_ID>SW_EXTLIGHT_LANDING_N</NODE_ID>
+				</UseTemplate>
+
+
+				<!-- 
+					TAXI
+				-->
+				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Taxi_Template">
+					<ANIM_NAME>SWITCH_EXTLIGHT_TAXI</ANIM_NAME>
+					<NODE_ID>SW_EXTLIGHT_TAXI</NODE_ID>
+				</UseTemplate>
+
+
+				<!-- 
+					RUNWAY TURNOFF
+				-->
+				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Landing_Template">
+					<ANIM_NAME>SWITCH_EXTLIGHT_TURNOFF</ANIM_NAME>
+					<NODE_ID>SW_EXTLIGHT_TURNOFF</NODE_ID>
+				</UseTemplate>
+
+
+				<!-- 
+					LOGO
+				-->
+				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Logo_Template">
+					<ANIM_NAME>SWITCH_EXTLIGHT_LOGO</ANIM_NAME>
+					<NODE_ID>SW_EXTLIGHT_LOGO</NODE_ID>
+				</UseTemplate>
+
+
+				<!-- 
+					POSITION
 				-->
 				<UseTemplate Name="ASOBO_LIGHTING_Push_Light_Navigation_Template">
 					<ANIM_NAME>PUSH_EXTLIGHT_POS</ANIM_NAME>
@@ -118,7 +249,7 @@
 				</UseTemplate>
 
 				<!-- 
-
+					STROBE
 				-->
 				<UseTemplate Name="ASOBO_LIGHTING_Push_Light_Strobe_Template">
 					<ANIM_NAME>PUSH_EXTLIGHT_STROBE</ANIM_NAME>
@@ -135,7 +266,7 @@
 				</UseTemplate>
 
 				<!-- 
-
+					ANTI COLL
 				-->
 				<UseTemplate Name="ASOBO_LIGHTING_Push_Light_Beacon_Template">
 					<ANIM_NAME>PUSH_EXTLIGHT_ANTICOL</ANIM_NAME>
@@ -152,7 +283,7 @@
 				</UseTemplate>
 
 				<!-- 
-
+					WG FLOOD
 				-->
 				<UseTemplate Name="ASOBO_LIGHTING_Push_Light_Wing_Template">
 					<ANIM_NAME>PUSH_EXTLIGHT_WG</ANIM_NAME>
@@ -169,7 +300,7 @@
 				</UseTemplate>
 
 				<!-- 
-
+					WHL WELL
 
 				<UseTemplate Name="ASOBO_LIGHTING_Push_Light_Beacon_Template">
 					<ANIM_NAME>PUSH_EXTLIGHT_WW</ANIM_NAME>
