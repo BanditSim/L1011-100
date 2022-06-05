@@ -76,8 +76,8 @@
 					<SEQ1_EMISSIVE_CODE>0</SEQ1_EMISSIVE_CODE>
 					<SEQ2_EMISSIVE_CODE>(A:FUELSYSTEM VALVE SWITCH:8, Bool)</SEQ2_EMISSIVE_CODE>
 					<ON_STATE_CHANGED_EXTERNAL_CODE>(A:FUELSYSTEM VALVE SWITCH:8, Bool) ! if{ (&gt;K:APU_OFF_SWITCH) }</ON_STATE_CHANGED_EXTERNAL_CODE>
-					<WWISE_EVENT_1>master_apu_switch_on</WWISE_EVENT_1>
-					<WWISE_EVENT_2>master_apu_switch_off</WWISE_EVENT_2>
+					<WWISE_EVENT_1>taxi_light_switch_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>taxi_light_switch_off</WWISE_EVENT_2>
 					<NORMALIZED_TIME_1>0.1</NORMALIZED_TIME_1>
 					<NORMALIZED_TIME_2>0.5</NORMALIZED_TIME_2>
 					<ID>8</ID>
@@ -183,6 +183,8 @@
 				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Landing_Template">
 					<ANIM_NAME>SWITCH_EXTLIGHT_LANDING_L</ANIM_NAME>
 					<NODE_ID>SW_EXTLIGHT_LANDING_L</NODE_ID>
+					<WWISE_EVENT_1>taxi_light_switch_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>taxi_light_switch_off</WWISE_EVENT_2>
 				</UseTemplate>
 
 
@@ -192,6 +194,8 @@
 				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Landing_Template">
 					<ANIM_NAME>SWITCH_EXTLIGHT_LANDING_R</ANIM_NAME>
 					<NODE_ID>SW_EXTLIGHT_LANDING_R</NODE_ID>
+					<WWISE_EVENT_1>taxi_light_switch_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>taxi_light_switch_off</WWISE_EVENT_2>
 				</UseTemplate>
 
 
@@ -201,6 +205,8 @@
 				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Landing_Template">
 					<ANIM_NAME>SWITCH_EXTLIGHT_LANDING_N</ANIM_NAME>
 					<NODE_ID>SW_EXTLIGHT_LANDING_N</NODE_ID>
+					<WWISE_EVENT_1>taxi_light_switch_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>taxi_light_switch_off</WWISE_EVENT_2>
 				</UseTemplate>
 
 
@@ -219,6 +225,8 @@
 				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Landing_Template">
 					<ANIM_NAME>SWITCH_EXTLIGHT_TURNOFF</ANIM_NAME>
 					<NODE_ID>SW_EXTLIGHT_TURNOFF</NODE_ID>
+					<WWISE_EVENT_1>taxi_light_switch_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>taxi_light_switch_off</WWISE_EVENT_2>
 				</UseTemplate>
 
 
@@ -228,6 +236,8 @@
 				<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Logo_Template">
 					<ANIM_NAME>SWITCH_EXTLIGHT_LOGO</ANIM_NAME>
 					<NODE_ID>SW_EXTLIGHT_LOGO</NODE_ID>
+					<WWISE_EVENT_1>taxi_light_switch_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>taxi_light_switch_off</WWISE_EVENT_2>
 				</UseTemplate>
 
 
