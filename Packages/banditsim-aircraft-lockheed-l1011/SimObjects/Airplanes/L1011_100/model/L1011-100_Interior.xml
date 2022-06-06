@@ -2283,12 +2283,12 @@
 
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         	    <NODE_ID>LIGHTS_AP_PANEL_L</NODE_ID>
-        	    <POTENTIOMETER>18</POTENTIOMETER>
+        	    <POTENTIOMETER>15</POTENTIOMETER>
         	</UseTemplate>
 
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         	    <NODE_ID>LIGHTS_AP_PANEL_R</NODE_ID>
-        	    <POTENTIOMETER>19</POTENTIOMETER>
+        	    <POTENTIOMETER>15</POTENTIOMETER>
         	</UseTemplate>
 
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
@@ -2304,6 +2304,11 @@
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         	    <NODE_ID>LIGHTS_GLARESHEILD_CONTROLS_L</NODE_ID>
         	    <POTENTIOMETER>18</POTENTIOMETER>
+        	</UseTemplate>
+
+        	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        	    <NODE_ID>LIGHTS_GLARESHEILD_CONTROLS_R</NODE_ID>
+        	    <POTENTIOMETER>19</POTENTIOMETER>
         	</UseTemplate>
 
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
@@ -2324,7 +2329,17 @@
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FACE_AIRSPEED_FO</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>FACE_ALTIMETER_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FACE_ALTIMETER_CENTER</NODE_ID>
         		    <POTENTIOMETER>18</POTENTIOMETER>
         		</UseTemplate>
 
@@ -2334,8 +2349,23 @@
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FACE_VS_FO</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GS_ENG_FACE</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>FACE_CLOCK_1</NODE_ID>
         		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FACE_CLOCK_2</NODE_ID>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
@@ -2353,6 +2383,16 @@
         		    <POTENTIOMETER>18</POTENTIOMETER>
         		</UseTemplate>
 
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>HSI_HEADING_FO_OUT</NODE_ID>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>HSI_HEADING_FO_IN</NODE_ID>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		</UseTemplate>
+
 			<!-- ROTARY DIGIT DIALS -->
 
 				<!-- AP PANEL DIGIT DIALS -->
@@ -2360,117 +2400,117 @@
 				<!-- VOR 1 DIGIT DIALS -->
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_VOR_1_DIGITS_1</NODE_ID>
-        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_VOR_1_DIGITS_10</NODE_ID>
-        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_VOR_1_DIGITS_100</NODE_ID>
-        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_VOR_1_DIGITS_1000</NODE_ID>
-        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_VOR_1_DIGITS_10000</NODE_ID>
-        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
 				<!-- VOR 2 DIGIT DIALS -->
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_VOR_2_DIGITS_1</NODE_ID>
-        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_VOR_2_DIGITS_10</NODE_ID>
-        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_VOR_2_DIGITS_100</NODE_ID>
-        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_VOR_2_DIGITS_1000</NODE_ID>
-        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_VOR_2_DIGITS_10000</NODE_ID>
-        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
 				<!-- IAS DIGIT DIALS -->
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_IAS_1_DIGITS_1</NODE_ID>
-        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_IAS_1_DIGITS_10</NODE_ID>
-        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_IAS_1_DIGITS_100</NODE_ID>
-        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
 				<!-- HDG DIGIT DIALS -->
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_HDG_1_DIGITS_1</NODE_ID>
-        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_HDG_1_DIGITS_10</NODE_ID>
-        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_HDG_1_DIGITS_100</NODE_ID>
-        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
 				<!-- CRS 1 DIGIT DIALS -->
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_CRS_1_DIGITS_1</NODE_ID>
-        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_CRS_1_DIGITS_10</NODE_ID>
-        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_CRS_1_DIGITS_100</NODE_ID>
-        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
 				<!-- CRS 2 DIGIT DIALS -->
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_CRS_2_DIGITS_1</NODE_ID>
-        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_CRS_2_DIGITS_10</NODE_ID>
-        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_CRS_2_DIGITS_100</NODE_ID>
-        		    <POTENTIOMETER>19</POTENTIOMETER>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
 				<!-- GLARESHIELD PANEL DIGIT DIALS -->
