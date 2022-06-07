@@ -25,6 +25,135 @@
     		<Component ID="ELECTRICAL">
     		</Component>
 
+				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Battery_Master_Template">
+					<NODE_ID>SW_FE_ELEC_BAT_MASTER</NODE_ID>
+					<ANIM_NAME>SWITCH_FE_ELEC_BAT_MASTER</ANIM_NAME>
+					<SEQ1_NODE_ID>push_ovhd_electrics_battery_seq1</SEQ1_NODE_ID>
+					<SEQ2_NODE_ID>push_ovhd_electrics_battery_seq2</SEQ2_NODE_ID>
+					<COVER_NODE_ID>push_ovhd_electrics_battery_cover</COVER_NODE_ID>
+					<COVER_ANIM_NAME>ovhd_push_electrics_battery_cover</COVER_ANIM_NAME>
+					<WWISE_EVENT_1>taxi_light_switch_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>taxi_light_switch_off</WWISE_EVENT_2>
+					<ID>1</ID>
+					<BATTERY_BUS_ID>16</BATTERY_BUS_ID>
+					<HOT_BATTERY_BUS_ID>17</HOT_BATTERY_BUS_ID>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_ELECTRICAL_Push_ExternalPower_Template">
+					<NODE_ID>BTN_PUSH_FE_ELEC_EXT_PWR</NODE_ID>
+					<ANIM_NAME>PUSH_FE_ELEC_EXT_PWR</ANIM_NAME>
+					<SEQ1_NODE_ID>BTN_PUSH_FE_ELEC_EXT_PWR_AVAIL_E</SEQ1_NODE_ID>
+					<SEQ2_NODE_ID>BTN_PUSH_FE_ELEC_EXT_PWR_ON_E</SEQ2_NODE_ID>
+					<ID>1</ID>
+					<SIMVAR_POWER_SETTING_SEQ1>EXTERNAL POWER AVAILABLE:1</SIMVAR_POWER_SETTING_SEQ1>
+					<SEQ1_CODE_DRIVES_DOWN_STATE>False</SEQ1_CODE_DRIVES_DOWN_STATE>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
+					<ID>0</ID>
+					<NODE_ID>SW_FE_ELEC_EXT_PWR_BUS</NODE_ID>
+					<ANIM_NAME>SWITCH_FE_ELEC_EXT_PWR_BUS</ANIM_NAME>
+					<SEQ1_NODE_ID>SW_FE_ELEC_EXT_PWR_BUS_E</SEQ1_NODE_ID>
+					<SEQ2_NODE_ID>push_ovhd_electrics_battery_seq2</SEQ2_NODE_ID>
+					<COVER_NODE_ID>push_ovhd_electrics_battery_cover</COVER_NODE_ID>
+					<COVER_ANIM_NAME>ovhd_push_electrics_battery_cover</COVER_ANIM_NAME>
+					<WWISE_EVENT_1>taxi_light_switch_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>taxi_light_switch_off</WWISE_EVENT_2>
+					<SOURCE_BUS_ID>18</SOURCE_BUS_ID>
+					<DESTINATION_BUS>1</DESTINATION_BUS>
+				</UseTemplate>
+
+				<!-- NO 1 BUS TO AC TIE BUS ISOLATION -->
+				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
+					<ID>1</ID>
+					<NODE_ID>BTN_PUSH_FE_ELEC_BUS_1_CLOSE</NODE_ID>
+					<ANIM_NAME>PUSH_FE_ELEC_BUS_1_CLOSE</ANIM_NAME>
+					<SEQ1_NODE_ID>BTN_PUSH_FE_ELEC_BUS_1_CLOSE_W</SEQ1_NODE_ID>
+					<SEQ2_NODE_ID>BTN_PUSH_FE_ELEC_BUS_1_CLOSE_B</SEQ2_NODE_ID>
+					<COVER_NODE_ID>push_ovhd_electrics_battery_cover</COVER_NODE_ID>
+					<COVER_ANIM_NAME>ovhd_push_electrics_battery_cover</COVER_ANIM_NAME>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+					<SOURCE_BUS_ID>2</SOURCE_BUS_ID>
+					<DESTINATION_BUS>1</DESTINATION_BUS>
+				</UseTemplate>
+
+				<!-- NO 2 BUS TO AC TIE BUS ISOLATION -->
+				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
+					<ID>2</ID>
+					<NODE_ID>BTN_PUSH_FE_ELEC_BUS_2_CLOSE</NODE_ID>
+					<ANIM_NAME>PUSH_FE_ELEC_BUS_2_CLOSE</ANIM_NAME>
+					<SEQ1_NODE_ID>BTN_PUSH_FE_ELEC_BUS_2_CLOSE_W</SEQ1_NODE_ID>
+					<SEQ2_NODE_ID>BTN_PUSH_FE_ELEC_BUS_2_CLOSE_B</SEQ2_NODE_ID>
+					<COVER_NODE_ID>push_ovhd_electrics_battery_cover</COVER_NODE_ID>
+					<COVER_ANIM_NAME>ovhd_push_electrics_battery_cover</COVER_ANIM_NAME>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+					<SOURCE_BUS_ID>3</SOURCE_BUS_ID>
+					<DESTINATION_BUS>1</DESTINATION_BUS>
+				</UseTemplate>
+
+				<!-- NO 1 BUS TO AC TIE BUS ISOLATION -->
+				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
+					<ID>3</ID>
+					<NODE_ID>BTN_PUSH_FE_ELEC_BUS_3_CLOSE</NODE_ID>
+					<ANIM_NAME>PUSH_FE_ELEC_BUS_3_CLOSE</ANIM_NAME>
+					<SEQ1_NODE_ID>BTN_PUSH_FE_ELEC_BUS_3_CLOSE_W</SEQ1_NODE_ID>
+					<SEQ2_NODE_ID>BTN_PUSH_FE_ELEC_BUS_3_CLOSE_B</SEQ2_NODE_ID>
+					<COVER_NODE_ID>push_ovhd_electrics_battery_cover</COVER_NODE_ID>
+					<COVER_ANIM_NAME>ovhd_push_electrics_battery_cover</COVER_ANIM_NAME>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+					<SOURCE_BUS_ID>4</SOURCE_BUS_ID>
+					<DESTINATION_BUS>1</DESTINATION_BUS>
+				</UseTemplate>
+
+				<!-- DC BUS ISOLATION -->
+				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
+					<ID>4</ID>
+					<NODE_ID>BTN_PUSH_FE_ELEC_DC_BUS_ISO</NODE_ID>
+					<ANIM_NAME>PUSH_FE_ELEC_DC_BUS_ISO</ANIM_NAME>
+					<SEQ1_NODE_ID></SEQ1_NODE_ID>
+					<SEQ2_NODE_ID>BTN_PUSH_FE_ELEC_DC_BUS_ISO_E</SEQ2_NODE_ID>
+					<COVER_NODE_ID>push_ovhd_electrics_battery_cover</COVER_NODE_ID>
+					<COVER_ANIM_NAME>ovhd_push_electrics_battery_cover</COVER_ANIM_NAME>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+					<SOURCE_BUS_ID>10</SOURCE_BUS_ID>
+					<DESTINATION_BUS>9</DESTINATION_BUS>
+				</UseTemplate>
+
+				<!-- STBY PWR -->
+				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
+					<ID>5</ID>
+					<NODE_ID>BTN_PUSH_FE_ELEC_STBY_PWR</NODE_ID>
+					<ANIM_NAME>PUSH_FE_ELEC_STBY_POWER</ANIM_NAME>
+					<SEQ1_NODE_ID>BTN_PUSH_FE_ELEC_STBY_PWR_E</SEQ1_NODE_ID>
+					<SEQ2_NODE_ID></SEQ2_NODE_ID>
+					<COVER_NODE_ID>push_ovhd_electrics_battery_cover</COVER_NODE_ID>
+					<COVER_ANIM_NAME>ovhd_push_electrics_battery_cover</COVER_ANIM_NAME>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+					<SOURCE_BUS_ID>19</SOURCE_BUS_ID>
+					<DESTINATION_BUS>16</DESTINATION_BUS>
+				</UseTemplate>
+
+				<!-- AC TO DC STBY BUS -->
+				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
+					<ID>6</ID>
+					<NODE_ID>BTN_PUSH_FE_ELEC_AC_DC_STBY_BUS</NODE_ID>
+					<ANIM_NAME>PUSH_FE_ELEC_AC_DC_STBY_BUS</ANIM_NAME>
+					<SEQ1_NODE_ID>BTN_PUSH_FE_ELEC_AC_DC_STBY_BUS_E</SEQ1_NODE_ID>
+					<SEQ2_NODE_ID></SEQ2_NODE_ID>
+					<COVER_NODE_ID>push_ovhd_electrics_battery_cover</COVER_NODE_ID>
+					<COVER_ANIM_NAME>ovhd_push_electrics_battery_cover</COVER_ANIM_NAME>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+					<SOURCE_BUS_ID>12</SOURCE_BUS_ID>
+					<DESTINATION_BUS>11</DESTINATION_BUS>
+				</UseTemplate>
+
+
     		<Component ID="FUEL">
     		</Component>
 
@@ -1072,7 +1201,7 @@
 
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>DIAL_ALTIMETER_1_ALT_INOP_ANIM</ANIM_NAME>
-							<ANIM_CODE>(A:ELECTRICAL MASTER BATTERY:0, bool) 10 * </ANIM_CODE>
+							<ANIM_CODE>(A:ELECTRICAL MASTER BATTERY:1, bool) 10 * </ANIM_CODE>
 							<ANIM_LENGTH>10</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
@@ -2294,11 +2423,13 @@
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         	    <NODE_ID>LIGHTS_GLARESHIELD_INSTR_L</NODE_ID>
         	    <POTENTIOMETER>18</POTENTIOMETER>
+                <EMISSIVE_CODE>1 (>A:BUS LOOKUP INDEX, Number) (A:CIRCUIT CONNECTION ON:1, Bool)</EMISSIVE_CODE>
         	</UseTemplate>
 
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         	    <NODE_ID>LIGHTS_GLARESHIELD_INSTR_R</NODE_ID>
         	    <POTENTIOMETER>19</POTENTIOMETER>
+                <EMISSIVE_CODE>(A:ELECTRICAL MASTER BATTERY:1, Bool)</EMISSIVE_CODE>
         	</UseTemplate>
 
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
@@ -2330,7 +2461,7 @@
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>FACE_AIRSPEED_FO</NODE_ID>
-        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
@@ -2350,7 +2481,7 @@
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>FACE_VS_FO</NODE_ID>
-        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		    <POTENTIOMETER>19</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
