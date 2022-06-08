@@ -25,6 +25,7 @@
     		<Component ID="ELECTRICAL">
     		</Component>
 
+				<!-- MASTER BAT SWITCH -->
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Battery_Master_Template">
 					<NODE_ID>SW_FE_ELEC_BAT_MASTER</NODE_ID>
 					<ANIM_NAME>SWITCH_FE_ELEC_BAT_MASTER</ANIM_NAME>
@@ -39,6 +40,7 @@
 					<HOT_BATTERY_BUS_ID>17</HOT_BATTERY_BUS_ID>
 				</UseTemplate>
 
+				<!-- EXT PWR CONNECT PUSH BUTTON -->
 				<UseTemplate Name="ASOBO_ELECTRICAL_Push_ExternalPower_Template">
 					<NODE_ID>BTN_PUSH_FE_ELEC_EXT_PWR</NODE_ID>
 					<ANIM_NAME>PUSH_FE_ELEC_EXT_PWR</ANIM_NAME>
@@ -46,11 +48,13 @@
 					<SEQ2_NODE_ID>BTN_PUSH_FE_ELEC_EXT_PWR_ON_E</SEQ2_NODE_ID>
 					<ID>1</ID>
 					<SIMVAR_POWER_SETTING_SEQ1>EXTERNAL POWER AVAILABLE:1</SIMVAR_POWER_SETTING_SEQ1>
+					<SIMVAR_POWER_SETTING_SEQ2>EXTERNAL POWER ON:1</SIMVAR_POWER_SETTING_SEQ2>
 					<SEQ1_CODE_DRIVES_DOWN_STATE>False</SEQ1_CODE_DRIVES_DOWN_STATE>
 				</UseTemplate>
 
+				<!-- EXT PWR BUS CONNECT SWITCH -->
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
-					<ID>0</ID>
+					<ID>10</ID>
 					<NODE_ID>SW_FE_ELEC_EXT_PWR_BUS</NODE_ID>
 					<ANIM_NAME>SWITCH_FE_ELEC_EXT_PWR_BUS</ANIM_NAME>
 					<SEQ1_NODE_ID>SW_FE_ELEC_EXT_PWR_BUS_E</SEQ1_NODE_ID>
@@ -68,45 +72,49 @@
 					<ID>1</ID>
 					<NODE_ID>BTN_PUSH_FE_ELEC_BUS_1_CLOSE</NODE_ID>
 					<ANIM_NAME>PUSH_FE_ELEC_BUS_1_CLOSE</ANIM_NAME>
-					<SEQ1_NODE_ID>BTN_PUSH_FE_ELEC_BUS_1_CLOSE_W</SEQ1_NODE_ID>
-					<SEQ2_NODE_ID>BTN_PUSH_FE_ELEC_BUS_1_CLOSE_B</SEQ2_NODE_ID>
-					<COVER_NODE_ID>push_ovhd_electrics_battery_cover</COVER_NODE_ID>
-					<COVER_ANIM_NAME>ovhd_push_electrics_battery_cover</COVER_ANIM_NAME>
 					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
 					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 					<SOURCE_BUS_ID>2</SOURCE_BUS_ID>
 					<DESTINATION_BUS>1</DESTINATION_BUS>
 				</UseTemplate>
 
+        			<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        			    <NODE_ID>BTN_PUSH_FE_ELEC_BUS_1_CLOSE_W</NODE_ID>
+            		    <EMISSIVE_CODE>2 (>A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:1, Bool)</EMISSIVE_CODE>
+        			</UseTemplate>
+
+
 				<!-- NO 2 BUS TO AC TIE BUS ISOLATION -->
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
 					<ID>2</ID>
 					<NODE_ID>BTN_PUSH_FE_ELEC_BUS_2_CLOSE</NODE_ID>
 					<ANIM_NAME>PUSH_FE_ELEC_BUS_2_CLOSE</ANIM_NAME>
-					<SEQ1_NODE_ID>BTN_PUSH_FE_ELEC_BUS_2_CLOSE_W</SEQ1_NODE_ID>
-					<SEQ2_NODE_ID>BTN_PUSH_FE_ELEC_BUS_2_CLOSE_B</SEQ2_NODE_ID>
-					<COVER_NODE_ID>push_ovhd_electrics_battery_cover</COVER_NODE_ID>
-					<COVER_ANIM_NAME>ovhd_push_electrics_battery_cover</COVER_ANIM_NAME>
 					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
 					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 					<SOURCE_BUS_ID>3</SOURCE_BUS_ID>
 					<DESTINATION_BUS>1</DESTINATION_BUS>
 				</UseTemplate>
 
+        			<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        			    <NODE_ID>BTN_PUSH_FE_ELEC_BUS_2_CLOSE_W</NODE_ID>
+            		    <EMISSIVE_CODE>3 (>A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:1, Bool)</EMISSIVE_CODE>
+        			</UseTemplate>
+
 				<!-- NO 1 BUS TO AC TIE BUS ISOLATION -->
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
 					<ID>3</ID>
 					<NODE_ID>BTN_PUSH_FE_ELEC_BUS_3_CLOSE</NODE_ID>
 					<ANIM_NAME>PUSH_FE_ELEC_BUS_3_CLOSE</ANIM_NAME>
-					<SEQ1_NODE_ID>BTN_PUSH_FE_ELEC_BUS_3_CLOSE_W</SEQ1_NODE_ID>
-					<SEQ2_NODE_ID>BTN_PUSH_FE_ELEC_BUS_3_CLOSE_B</SEQ2_NODE_ID>
-					<COVER_NODE_ID>push_ovhd_electrics_battery_cover</COVER_NODE_ID>
-					<COVER_ANIM_NAME>ovhd_push_electrics_battery_cover</COVER_ANIM_NAME>
 					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
 					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 					<SOURCE_BUS_ID>4</SOURCE_BUS_ID>
 					<DESTINATION_BUS>1</DESTINATION_BUS>
 				</UseTemplate>
+
+        			<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        			    <NODE_ID>BTN_PUSH_FE_ELEC_BUS_3_CLOSE_W</NODE_ID>
+            		    <EMISSIVE_CODE>4 (>A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:1, Bool)</EMISSIVE_CODE>
+        			</UseTemplate>
 
 				<!-- DC BUS ISOLATION -->
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
@@ -123,11 +131,16 @@
 					<DESTINATION_BUS>9</DESTINATION_BUS>
 				</UseTemplate>
 
+        			<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        			    <NODE_ID>BTN_PUSH_FE_ELEC_DC_BUS_ISO_E</NODE_ID>
+            		    <EMISSIVE_CODE>10 (>A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:9, Bool) 1 -1 * + </EMISSIVE_CODE>
+        			</UseTemplate>
+
 				<!-- STBY PWR -->
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
 					<ID>5</ID>
 					<NODE_ID>BTN_PUSH_FE_ELEC_STBY_PWR</NODE_ID>
-					<ANIM_NAME>PUSH_FE_ELEC_STBY_POWER</ANIM_NAME>
+					<ANIM_NAME>PUSH_FE_ELEC_STBY_PWR</ANIM_NAME>
 					<SEQ1_NODE_ID>BTN_PUSH_FE_ELEC_STBY_PWR_E</SEQ1_NODE_ID>
 					<SEQ2_NODE_ID></SEQ2_NODE_ID>
 					<COVER_NODE_ID>push_ovhd_electrics_battery_cover</COVER_NODE_ID>
@@ -137,6 +150,11 @@
 					<SOURCE_BUS_ID>19</SOURCE_BUS_ID>
 					<DESTINATION_BUS>16</DESTINATION_BUS>
 				</UseTemplate>
+
+        			<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        			    <NODE_ID>BTN_PUSH_FE_ELEC_STBY_PWR_W</NODE_ID>
+            		    <EMISSIVE_CODE>19 (>A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:16, Bool)</EMISSIVE_CODE>
+        			</UseTemplate>
 
 				<!-- AC TO DC STBY BUS -->
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
