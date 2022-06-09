@@ -118,6 +118,19 @@
     	<Component ID="LOWER">
 
     		<Component ID="ELECTRICAL">
+				<!-- UNASSIGNED ANIMATIONS
+				PUSH_FE_ELEC_BUS_*_TRIP
+				PUSH_FE_ELEC_GEN_BREAK_BUS_*_TRIP
+				PUSH_FE_ELEC_GEN_BREAK_BUS_APU_TRIP
+				PUSH_FE_ELEC_GEN_F_BUS_*_CLOSE	
+				PUSH_FE_ELEC_GEN_F_BUS_*_TRIP	
+				PUSH_FE_ELEC_GEN_F_BUS_APU_CLOSE	
+				PUSH_FE_ELEC_GEN_F_BUS_APU_TRIP	
+
+				_CLOSE_* : Emissive Suffix _W
+				_TRIP_* : Emissive Suffix _E
+				 -->
+
 
 				<!-- MASTER BAT SWITCH -->
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Battery_Master_Template">
