@@ -18,12 +18,106 @@
         <Include ModelBehaviorFile="L1011\Interior\L1011_Interior_Includes.xml"/>
 		
     <!-- Animations -->
+    <Component ID="CENTER_PEDESTAL">
+
+    	<Component ID="THROTTLE_PEDESTAL">
+
+    		<Component ID="FUEL_IGNITION">
+				<!--
+				<UseTemplate Name="ASOBO_ENGINE_Switch_Starter_Template">
+					<NODE_ID>SW_CEN_FUEL_IGN_1</NODE_ID>
+					<ANIM_NAME>SWITCH_CEN_FUEL_IGN_1</ANIM_NAME>
+					<TYPE>2Values_StarterIgnition</TYPE>
+					<IGNITION_ACTIVE_TYPE>1</IGNITION_ACTIVE_TYPE>
+					<ID>1</ID>
+					<ANIM_EVENT_EFFECT_NAME>CAM_ENGINE01</ANIM_EVENT_EFFECT_NAME>
+					<NORMALIZED_TIME>0.5</NORMALIZED_TIME>
+					<DIRECTION>Forward</DIRECTION>
+					<FORCE_FULL_ANIM>True</FORCE_FULL_ANIM>
+					<ANIM_TIME_IN_SEC>0.5</ANIM_TIME_IN_SEC>
+					<INVERT_ANIM>True</INVERT_ANIM>
+					<ANIMTIP_0>TT:COCKPIT.TOOLTIPS.STARTER_1_SET_OFF</ANIMTIP_0>
+					<ANIMTIP_1>TT:COCKPIT.TOOLTIPS.STARTER_1_SET_ON</ANIMTIP_1>
+					<TT_ICON>MOVE_Y</TT_ICON>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_ENGINE_Switch_Starter_Template">
+					<NODE_ID>SW_CEN_FUEL_IGN_2</NODE_ID>
+					<ANIM_NAME>SWITCH_CEN_FUEL_IGN_2</ANIM_NAME>
+					<TYPE>2Values_StarterIgnition</TYPE>
+					<IGNITION_ACTIVE_TYPE>1</IGNITION_ACTIVE_TYPE>
+					<ID>2</ID>
+					<ANIM_EVENT_EFFECT_NAME>CAM_ENGINE01</ANIM_EVENT_EFFECT_NAME>
+					<NORMALIZED_TIME>0.5</NORMALIZED_TIME>
+					<DIRECTION>Forward</DIRECTION>
+					<FORCE_FULL_ANIM>True</FORCE_FULL_ANIM>
+					<ANIM_TIME_IN_SEC>0.5</ANIM_TIME_IN_SEC>
+					<INVERT_ANIM>True</INVERT_ANIM>
+					<ANIMTIP_0>TT:COCKPIT.TOOLTIPS.STARTER_1_SET_OFF</ANIMTIP_0>
+					<ANIMTIP_1>TT:COCKPIT.TOOLTIPS.STARTER_1_SET_ON</ANIMTIP_1>
+					<TT_ICON>MOVE_Y</TT_ICON>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_ENGINE_Switch_Starter_Template">
+					<NODE_ID>SW_CEN_FUEL_IGN_3</NODE_ID>
+					<ANIM_NAME>SWITCH_CEN_FUEL_IGN_3</ANIM_NAME>
+					<TYPE>2Values_StarterIgnition</TYPE>
+					<IGNITION_ACTIVE_TYPE>1</IGNITION_ACTIVE_TYPE>
+					<ID>3</ID>
+					<ANIM_EVENT_EFFECT_NAME>CAM_ENGINE01</ANIM_EVENT_EFFECT_NAME>
+					<NORMALIZED_TIME>0.5</NORMALIZED_TIME>
+					<DIRECTION>Forward</DIRECTION>
+					<FORCE_FULL_ANIM>True</FORCE_FULL_ANIM>
+					<ANIM_TIME_IN_SEC>0.5</ANIM_TIME_IN_SEC>
+					<INVERT_ANIM>True</INVERT_ANIM>
+					<ANIMTIP_0>TT:COCKPIT.TOOLTIPS.STARTER_1_SET_OFF</ANIMTIP_0>
+					<ANIMTIP_1>TT:COCKPIT.TOOLTIPS.STARTER_1_SET_ON</ANIMTIP_1>
+					<TT_ICON>MOVE_Y</TT_ICON>
+				</UseTemplate>
+				-->
+
+				<UseTemplate Name="ASOBO_FUEL_Switch_Valve_Template">
+					<NODE_ID>SW_CEN_FUEL_IGN_1</NODE_ID>
+					<ANIM_NAME>SWITCH_CEN_FUEL_IGN_1</ANIM_NAME>
+					<ID>5</ID>
+					<TT_DESCRIPTION_ID>@TT_Package.FUEL_SWITCH_VALVE_4ENG_ACTION</TT_DESCRIPTION_ID>
+					<TT_DESCRIPTION_INDEX>1</TT_DESCRIPTION_INDEX>	
+					<TOOLTIP_TITLE>@TT_Package.FUEL_SWITCH_VALVE_ENG_TITLE</TOOLTIP_TITLE>
+					<IE_VALVE_ID>Flow_Ctrl_1</IE_VALVE_ID>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_FUEL_Switch_Valve_Template">
+					<NODE_ID>SW_CEN_FUEL_IGN_2</NODE_ID>
+					<ANIM_NAME>SWITCH_CEN_FUEL_IGN_2</ANIM_NAME>
+					<TT_DESCRIPTION_ID>@TT_Package.FUEL_SWITCH_VALVE_4ENG_ACTION</TT_DESCRIPTION_ID>
+					<TT_DESCRIPTION_INDEX>2</TT_DESCRIPTION_INDEX>	
+					<TOOLTIP_TITLE>@TT_Package.FUEL_SWITCH_VALVE_ENG_TITLE</TOOLTIP_TITLE>
+					<ID>6</ID>
+					<IE_VALVE_ID>Flow_Ctrl_2</IE_VALVE_ID>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_FUEL_Switch_Valve_Template">
+					<NODE_ID>SW_CEN_FUEL_IGN_3</NODE_ID>
+					<ANIM_NAME>SWITCH_CEN_FUEL_IGN_3</ANIM_NAME>
+					<ID>7</ID>
+					<TT_DESCRIPTION_ID>@TT_Package.FUEL_SWITCH_VALVE_4ENG_ACTION</TT_DESCRIPTION_ID>
+					<TT_DESCRIPTION_INDEX>3</TT_DESCRIPTION_INDEX>	
+					<TOOLTIP_TITLE>@TT_Package.FUEL_SWITCH_VALVE_ENG_TITLE</TOOLTIP_TITLE>
+					<IE_VALVE_ID>Flow_Ctrl_3</IE_VALVE_ID>
+				</UseTemplate>
+
+
+			</Component>
+
+		</Component>
+
+	</Component>
+
     <Component ID="FE_PANEL">
 
     	<Component ID="LOWER">
 
     		<Component ID="ELECTRICAL">
-    		</Component>
 
 				<!-- MASTER BAT SWITCH -->
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Battery_Master_Template">
@@ -67,6 +161,76 @@
 					<DESTINATION_BUS>1</DESTINATION_BUS>
 				</UseTemplate>
 
+				<!-- APU TO AC TIE BUS ISOLATION -->
+				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
+					<ID>11</ID>
+					<NODE_ID>BTN_PUSH_FE_ELEC_GEN_BREAK_BUS_APU_CLOSE</NODE_ID>
+					<ANIM_NAME>PUSH_FE_ELEC_GEN_BREAK_BUS_APU_CLOSE</ANIM_NAME>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+					<SOURCE_BUS_ID>20</SOURCE_BUS_ID>
+					<DESTINATION_BUS>1</DESTINATION_BUS>
+				</UseTemplate>
+
+					<UseTemplate Name="L1011_ELECTRICAL_Indicator_Connection_Active_Template">
+						<NODE_ID>BTN_PUSH_FE_ELEC_GEN_BREAK_BUS_APU_CLOSE_W</NODE_ID>
+						<SOURCE_BUS_ID>20</SOURCE_BUS_ID>
+						<DESTINATION_BUS>1</DESTINATION_BUS>
+					</UseTemplate>
+
+				<!-- NO 1 ENG GEN TO AC BUS 1 -->
+				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
+					<ID>7</ID>
+					<NODE_ID>BTN_PUSH_FE_ELEC_GEN_BREAK_BUS_1_CLOSE</NODE_ID>
+					<ANIM_NAME>PUSH_FE_ELEC_GEN_BREAK_BUS_1_CLOSE</ANIM_NAME>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+					<SOURCE_BUS_ID>21</SOURCE_BUS_ID>
+					<DESTINATION_BUS>2</DESTINATION_BUS>
+				</UseTemplate>
+
+					<UseTemplate Name="L1011_ELECTRICAL_Indicator_Connection_Active_Template">
+						<NODE_ID>BTN_PUSH_FE_ELEC_GEN_BREAK_BUS_1_CLOSE_W</NODE_ID>
+						<SOURCE_BUS_ID>21</SOURCE_BUS_ID>
+						<DESTINATION_BUS>2</DESTINATION_BUS>
+					</UseTemplate>
+
+				<!-- NO 2 ENG GEN TO AC BUS 2 -->
+				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
+					<ID>8</ID>
+					<NODE_ID>BTN_PUSH_FE_ELEC_GEN_BREAK_BUS_2_CLOSE</NODE_ID>
+					<ANIM_NAME>PUSH_FE_ELEC_GEN_BREAK_BUS_2_CLOSE</ANIM_NAME>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+					<SOURCE_BUS_ID>22</SOURCE_BUS_ID>
+					<DESTINATION_BUS>3</DESTINATION_BUS>
+				</UseTemplate>
+
+					<UseTemplate Name="L1011_ELECTRICAL_Indicator_Connection_Active_Template">
+						<NODE_ID>BTN_PUSH_FE_ELEC_GEN_BREAK_BUS_2_CLOSE_W</NODE_ID>
+						<SOURCE_BUS_ID>22</SOURCE_BUS_ID>
+						<DESTINATION_BUS>3</DESTINATION_BUS>
+					</UseTemplate>
+
+
+				<!-- NO 3 ENG GEN TO AC BUS 3 -->
+				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
+					<ID>9</ID>
+					<NODE_ID>BTN_PUSH_FE_ELEC_GEN_BREAK_BUS_3_CLOSE</NODE_ID>
+					<ANIM_NAME>PUSH_FE_ELEC_GEN_BREAK_BUS_3_CLOSE</ANIM_NAME>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+					<SOURCE_BUS_ID>23</SOURCE_BUS_ID>
+					<DESTINATION_BUS>4</DESTINATION_BUS>
+				</UseTemplate>
+
+					<UseTemplate Name="L1011_ELECTRICAL_Indicator_Connection_Active_Template">
+						<NODE_ID>BTN_PUSH_FE_ELEC_GEN_BREAK_BUS_3_CLOSE_W</NODE_ID>
+						<SOURCE_BUS_ID>23</SOURCE_BUS_ID>
+						<DESTINATION_BUS>4</DESTINATION_BUS>
+					</UseTemplate>
+
+
 				<!-- NO 1 BUS TO AC TIE BUS ISOLATION -->
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
 					<ID>1</ID>
@@ -78,10 +242,11 @@
 					<DESTINATION_BUS>1</DESTINATION_BUS>
 				</UseTemplate>
 
-        			<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
-        			    <NODE_ID>BTN_PUSH_FE_ELEC_BUS_1_CLOSE_W</NODE_ID>
-            		    <EMISSIVE_CODE>2 (>A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:1, Bool)</EMISSIVE_CODE>
-        			</UseTemplate>
+					<UseTemplate Name="L1011_ELECTRICAL_Indicator_Connection_Active_Template">
+						<NODE_ID>BTN_PUSH_FE_ELEC_BUS_1_CLOSE_W</NODE_ID>
+						<SOURCE_BUS_ID>2</SOURCE_BUS_ID>
+						<DESTINATION_BUS>1</DESTINATION_BUS>
+					</UseTemplate>
 
 
 				<!-- NO 2 BUS TO AC TIE BUS ISOLATION -->
@@ -95,10 +260,12 @@
 					<DESTINATION_BUS>1</DESTINATION_BUS>
 				</UseTemplate>
 
-        			<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
-        			    <NODE_ID>BTN_PUSH_FE_ELEC_BUS_2_CLOSE_W</NODE_ID>
-            		    <EMISSIVE_CODE>3 (>A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:1, Bool)</EMISSIVE_CODE>
-        			</UseTemplate>
+					<UseTemplate Name="L1011_ELECTRICAL_Indicator_Connection_Active_Template">
+						<NODE_ID>BTN_PUSH_FE_ELEC_BUS_2_CLOSE_W</NODE_ID>
+						<SOURCE_BUS_ID>3</SOURCE_BUS_ID>
+						<DESTINATION_BUS>1</DESTINATION_BUS>
+					</UseTemplate>
+
 
 				<!-- NO 1 BUS TO AC TIE BUS ISOLATION -->
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
@@ -111,10 +278,12 @@
 					<DESTINATION_BUS>1</DESTINATION_BUS>
 				</UseTemplate>
 
-        			<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
-        			    <NODE_ID>BTN_PUSH_FE_ELEC_BUS_3_CLOSE_W</NODE_ID>
-            		    <EMISSIVE_CODE>4 (>A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:1, Bool)</EMISSIVE_CODE>
-        			</UseTemplate>
+					<UseTemplate Name="L1011_ELECTRICAL_Indicator_Connection_Active_Template">
+						<NODE_ID>BTN_PUSH_FE_ELEC_BUS_3_CLOSE_W</NODE_ID>
+						<SOURCE_BUS_ID>4</SOURCE_BUS_ID>
+						<DESTINATION_BUS>1</DESTINATION_BUS>
+					</UseTemplate>
+
 
 				<!-- DC BUS ISOLATION -->
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
@@ -131,10 +300,12 @@
 					<DESTINATION_BUS>9</DESTINATION_BUS>
 				</UseTemplate>
 
-        			<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
-        			    <NODE_ID>BTN_PUSH_FE_ELEC_DC_BUS_ISO_E</NODE_ID>
-            		    <EMISSIVE_CODE>10 (>A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:9, Bool) 1 -1 * + </EMISSIVE_CODE>
-        			</UseTemplate>
+					<UseTemplate Name="L1011_ELECTRICAL_Indicator_Connection_Inverse_Active_Template">
+						<NODE_ID>BTN_PUSH_FE_ELEC_DC_BUS_ISO_E</NODE_ID>
+						<SOURCE_BUS_ID>10</SOURCE_BUS_ID>
+						<DESTINATION_BUS>9</DESTINATION_BUS>
+					</UseTemplate>
+
 
 				<!-- STBY PWR -->
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
@@ -151,12 +322,15 @@
 					<DESTINATION_BUS>16</DESTINATION_BUS>
 				</UseTemplate>
 
-        			<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
-        			    <NODE_ID>BTN_PUSH_FE_ELEC_STBY_PWR_W</NODE_ID>
-            		    <EMISSIVE_CODE>19 (>A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:16, Bool)</EMISSIVE_CODE>
-        			</UseTemplate>
+					<UseTemplate Name="L1011_ELECTRICAL_Indicator_Connection_Active_Template">
+						<NODE_ID>BTN_PUSH_FE_ELEC_STBY_PWR_W</NODE_ID>
+						<SOURCE_BUS_ID>19</SOURCE_BUS_ID>
+						<DESTINATION_BUS>16</DESTINATION_BUS>
+					</UseTemplate>
+
 
 				<!-- AC TO DC STBY BUS -->
+				<!--
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Connection_Template">
 					<ID>6</ID>
 					<NODE_ID>BTN_PUSH_FE_ELEC_AC_DC_STBY_BUS</NODE_ID>
@@ -170,7 +344,9 @@
 					<SOURCE_BUS_ID>12</SOURCE_BUS_ID>
 					<DESTINATION_BUS>11</DESTINATION_BUS>
 				</UseTemplate>
+				-->
 
+    		</Component>
 
     		<Component ID="FUEL">
     		</Component>
@@ -274,14 +450,11 @@
 						PUSH_OVHD_ENGSTART_AIR_3
 						PUSH_OVHD_ENGSTART_CONT
 						PUSH_OVHD_ENGSTART_GSR
-				-->
 
 				<UseTemplate Name="ASOBO_ENGINE_Push_Starter_Template">
 					<ANIM_NAME>PUSH_OVHD_ENGSTART_GND_1</ANIM_NAME>
 					<NODE_ID>BTN_OVHD_ENGSTART_GND_1</NODE_ID>
 					<ANIM_LENGTH>90</ANIM_LENGTH>
-					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
-					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 					<ID>1</ID>
 				</UseTemplate>
 
@@ -302,6 +475,63 @@
 					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 					<ID>3</ID>
 				</UseTemplate>
+				-->
+
+
+				<UseTemplate Name="ASOBO_ENGINE_Switch_Starter_Template">
+					<NODE_ID>BTN_OVHD_ENGSTART_GND_1</NODE_ID>
+					<ANIM_NAME>PUSH_OVHD_ENGSTART_GND_1</ANIM_NAME>
+					<TYPE>2Values_StarterIgnition</TYPE>
+					<IGNITION_ACTIVE_TYPE>1</IGNITION_ACTIVE_TYPE>
+					<ID>1</ID>
+					<ANIM_EVENT_EFFECT_NAME>CAM_ENGINE01</ANIM_EVENT_EFFECT_NAME>
+					<NORMALIZED_TIME>0.5</NORMALIZED_TIME>
+					<DIRECTION>Forward</DIRECTION>
+					<FORCE_FULL_ANIM>True</FORCE_FULL_ANIM>
+					<ANIM_TIME_IN_SEC>0.5</ANIM_TIME_IN_SEC>
+					<INVERT_ANIM>True</INVERT_ANIM>
+					<ANIMTIP_0>TT:COCKPIT.TOOLTIPS.STARTER_1_SET_OFF</ANIMTIP_0>
+					<ANIMTIP_1>TT:COCKPIT.TOOLTIPS.STARTER_1_SET_ON</ANIMTIP_1>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_ENGINE_Switch_Starter_Template">
+					<NODE_ID>BTN_OVHD_ENGSTART_GND_2</NODE_ID>
+					<ANIM_NAME>PUSH_OVHD_ENGSTART_GND_2</ANIM_NAME>
+					<TYPE>2Values_StarterIgnition</TYPE>
+					<IGNITION_ACTIVE_TYPE>1</IGNITION_ACTIVE_TYPE>
+					<ID>2</ID>
+					<ANIM_EVENT_EFFECT_NAME>CAM_ENGINE01</ANIM_EVENT_EFFECT_NAME>
+					<NORMALIZED_TIME>0.5</NORMALIZED_TIME>
+					<DIRECTION>Forward</DIRECTION>
+					<FORCE_FULL_ANIM>True</FORCE_FULL_ANIM>
+					<ANIM_TIME_IN_SEC>0.5</ANIM_TIME_IN_SEC>
+					<INVERT_ANIM>True</INVERT_ANIM>
+					<ANIMTIP_0>TT:COCKPIT.TOOLTIPS.STARTER_1_SET_OFF</ANIMTIP_0>
+					<ANIMTIP_1>TT:COCKPIT.TOOLTIPS.STARTER_1_SET_ON</ANIMTIP_1>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_ENGINE_Switch_Starter_Template">
+					<NODE_ID>BTN_OVHD_ENGSTART_GND_3</NODE_ID>
+					<ANIM_NAME>PUSH_OVHD_ENGSTART_GND_3</ANIM_NAME>
+					<TYPE>2Values_StarterIgnition</TYPE>
+					<IGNITION_ACTIVE_TYPE>1</IGNITION_ACTIVE_TYPE>
+					<ID>3</ID>
+					<ANIM_EVENT_EFFECT_NAME>CAM_ENGINE01</ANIM_EVENT_EFFECT_NAME>
+					<NORMALIZED_TIME>0.5</NORMALIZED_TIME>
+					<DIRECTION>Forward</DIRECTION>
+					<FORCE_FULL_ANIM>True</FORCE_FULL_ANIM>
+					<ANIM_TIME_IN_SEC>0.5</ANIM_TIME_IN_SEC>
+					<INVERT_ANIM>True</INVERT_ANIM>
+					<ANIMTIP_0>TT:COCKPIT.TOOLTIPS.STARTER_1_SET_OFF</ANIMTIP_0>
+					<ANIMTIP_1>TT:COCKPIT.TOOLTIPS.STARTER_1_SET_ON</ANIMTIP_1>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+				</UseTemplate>
+
 
     		</Component>
     		<Component ID="INSTR_STBY_LIGHT">

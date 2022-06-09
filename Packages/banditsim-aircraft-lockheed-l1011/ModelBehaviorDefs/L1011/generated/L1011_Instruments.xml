@@ -1,9 +1,44 @@
 <ModelBehaviors>
 	<Include RelativeFile="subtemplates\\L1011_Instruments_Subtemplates.xml"/>
 
+
+	<!-- ############################################################################## -->
+	<!-- ################################ ELECTRICAL ################################## -->
+	<!-- ############################################################################## -->
+
+
+	<Template Name="L1011_ELECTRICAL_Indicator_Connection_Active_Template">
+		<Parameters Type="Default">
+			<NODE_ID>BTN_PUSH_FE_ELEC_BUS_1_CLOSE_W</NODE_ID>
+		</Parameters>
+		<UseTemplate Name="ASOBO_SAFETY_Indicator_Warning_Template">
+			<EMISSIVE_CODE>#SOURCE_BUS_ID# (>A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:#DESTINATION_BUS#, Bool)</EMISSIVE_CODE>
+		</UseTemplate>
+	</Template>
+
+	<Template Name="L1011_ELECTRICAL_Indicator_Connection_Inverse_Active_Template">
+		<Parameters Type="Default">
+			<NODE_ID>BTN_PUSH_FE_ELEC_DC_BUS_ISO_E</NODE_ID>
+		</Parameters>
+		<UseTemplate Name="ASOBO_SAFETY_Indicator_Warning_Template">
+			<EMISSIVE_CODE>#SOURCE_BUS_ID# (>A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:#DESTINATION_BUS#, Bool) 1 -1 * + </EMISSIVE_CODE>
+		</UseTemplate>
+	</Template>
+
+	<Template Name="L1011_ELECTRICAL_Alternator_Connection_Active_Template">
+		<Parameters Type="Default">
+			<NODE_ID>BTN_PUSH_FE_ELEC_GEN_BREAK_BUS_1_CLOSE</NODE_ID>
+		</Parameters>
+		<UseTemplate Name="ASOBO_SAFETY_Indicator_Warning_Template">
+			<EMISSIVE_CODE>#SOURCE_BUS_ID# (>A:BUS LOOKUP INDEX, Number) (A:ALTERNATOR CONNECTION ON:#DESTINATION_ALTERNATOR#, Bool)</EMISSIVE_CODE>
+		</UseTemplate>
+	</Template>
+
+
 	<!-- ############################################################################## -->
 	<!-- ################################ INSTRUMENTS ################################# -->
 	<!-- ############################################################################## -->
+
 
 	<Template Name="L1011_INSTRUMENT_Digits_inHg_Template">
 		<Parameters Type="Override">
@@ -163,5 +198,6 @@
 			<EMISSIVE_CODE>(A:#SIMVAR#:#ID#, percent over 100) 0.9999999 &gt;</EMISSIVE_CODE>
 		</UseTemplate>
 	</Template>
+
 
 </ModelBehaviors>
