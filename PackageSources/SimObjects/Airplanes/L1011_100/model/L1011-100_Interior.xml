@@ -118,6 +118,7 @@
     	<Component ID="LOWER">
 
     		<Component ID="ELECTRICAL">
+			
 				<!-- UNASSIGNED ANIMATIONS
 				PUSH_FE_ELEC_BUS_*_TRIP
 				PUSH_FE_ELEC_GEN_BREAK_BUS_*_TRIP
@@ -146,7 +147,8 @@
 				</UseTemplate>
 
 				<!-- EXT PWR CONNECT PUSH BUTTON -->
-				<UseTemplate Name="ASOBO_ELECTRICAL_Push_ExternalPower_Template">
+				<UseTemplate Name="L1011_ELECTRICAL_ExternalPower_Template">
+					<INTERACTION_TYPE>PUSH</INTERACTION_TYPE>
 					<NODE_ID>BTN_PUSH_FE_ELEC_EXT_PWR</NODE_ID>
 					<ANIM_NAME>PUSH_FE_ELEC_EXT_PWR</ANIM_NAME>
 					<SEQ1_NODE_ID>BTN_PUSH_FE_ELEC_EXT_PWR_AVAIL_E</SEQ1_NODE_ID>
@@ -361,6 +363,31 @@
     		</Component>
 
     		<Component ID="FUEL">
+				<!-- UNASSIGNED ANIMATIONS
+				PUSH_FE_FUEL_2L
+				PUSH_FE_FUEL_2R
+				PUSH_FE_FUEL_2L_PUMP_L
+				PUSH_FE_FUEL_2L_PUMP_R
+				PUSH_FE_FUEL_1_PUMP_L
+				PUSH_FE_FUEL_1_PUMP_R
+				PUSH_FE_FUEL_3_PUMP_L
+				PUSH_FE_FUEL_3_PUMP_R
+				PUSH_FE_FUEL_2R_PUMP_L
+				PUSH_FE_FUEL_2R_PUMP_R
+				PUSH_FE_FUEL_XFEED_L
+				PUSH_FE_FUEL_XFEED_C
+				PUSH_FE_FUEL_XFEED_R
+				PUSH_FE_FUEL_ENG1_TANK_VALVE
+				PUSH_FE_FUEL_ENG2_TANK_VALVE
+				PUSH_FE_FUEL_ENG3_TANK_VALVE
+				PUSH_FE_FUEL_APU_SHUTOFF
+				PUSH_FE_FUEL_USED_RESET
+				PUSH_FE_FUEL_REFUEL_PWR
+
+				White Bar : Emissive Suffix _W
+				Emissive text : Emissive Suffix _E
+				 -->
+
     		</Component>
 
     		<Component ID="ENGINE_STATUS">
@@ -380,6 +407,14 @@
 
     		<Component ID="APU_CONTROL">
 
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAUGE_APU_N1</ANIM_NAME>
+					<ANIM_CODE>(A:APU PCT RPM:1, Percent) </ANIM_CODE>
+					<ANIM_LENGTH>120</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+				</UseTemplate>
+
+
 				<UseTemplate Name="ASOBO_ELECTRICAL_Push_APU_Starter_Template">
 					<ANIM_NAME>PUSH_FE_APU_START</ANIM_NAME>
 					<NODE_ID>BTN_PUSH_FE_APU_START</NODE_ID>
@@ -395,6 +430,12 @@
 					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
 					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
 				</UseTemplate>
+
+					<UseTemplate Name="L1011_WARN_Indicator_Simvar_Template">
+						<NODE_ID>BTN_PUSH_FE_APU_BLEEDAIR_E</NODE_ID>
+						<SIMVAR>BLEED AIR APU</SIMVAR>
+						<ID>1</ID>
+					</UseTemplate>
 
 				<UseTemplate Name="ASOBO_ENGINE_Push_Starter_Template">
 					<ANIM_NAME>PUSH_FE_APU_AUTOFIRE</ANIM_NAME>

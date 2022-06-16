@@ -1,6 +1,14 @@
+<!-- 
+Copyright (c) 2021 FlyByWire Simulations
+Licensed under GPLv3
+https://github.com/flybywiresim/a32nx/
+-->
+
 <ModelBehaviors>
+
 	<!-- TURBINE ######################################################## -->
 	<!-- Animate a turbine with different mesh depending on RPM (ID is used to identify which engine to look for) -->
+
 	<Template Name="L1011_ENGINE_Turbine_Template">
 		<DefaultTemplateParameters>
 			<ID>1</ID>
@@ -54,7 +62,20 @@
 			</UseTemplate>
 		</Component>
 	</Template>
+
+	<!-- TURBINE::Utils -->
+	<Template Name="L1011_ENGINE_Turbine_Rotation_Template">
+		<UseTemplate Name="ASOBO_GT_Anim">
+            <!-- 3900 is the rated 100% N1 of the RB211-22B & -524B, times 6 is from RPM to deg/s, times 0.01 because percentages -->
+			<ANIM_CODE>0.01 3 3900 (A:TURB ENG N1:#ID#, Percent) (A:ANIMATION DELTA TIME, seconds) * * * *</ANIM_CODE>
+			<ANIM_LENGTH>360</ANIM_LENGTH>
+			<ANIM_WRAP>1</ANIM_WRAP>
+			<ANIM_DELTA>1</ANIM_DELTA>
+		</UseTemplate>
+	</Template>
+
 	<!-- Animate a turbine thrust reverser (ID is used to identify which engine to look for) -->
+
 	<Template Name="L1011_ENGINE_Turbine_ReverseThrust_Template">
 		<DefaultTemplateParameters>
 			<ID>1</ID>
@@ -62,6 +83,7 @@
 		<UseTemplate Name="L1011_ENGINE_Turbine_ReverseThrust_SubTemplate">
 		</UseTemplate>
 	</Template>
+
 	<Template Name="L1011_ENGINE_Turbine_ReverseThrust_SubTemplate">
 		<DefaultTemplateParameters>
 			<ANIM_NAME>ENGINE_Turbine_ReverseThrust_#ID#</ANIM_NAME>
@@ -69,15 +91,6 @@
 		<UseTemplate Name="ASOBO_GT_Anim">
 			<ANIM_CODE>(A:GENERAL ENG REVERSE THRUST ENGAGED:#ID#, bool) (A:GENERAL ENG THROTTLE LEVER POSITION:#ID#, Percent) 0 &lt; or 100 *</ANIM_CODE> 
 			<ANIM_LAG>75</ANIM_LAG>
-		</UseTemplate>
-	</Template>
-	<!-- TURBINE::Utils -->
-	<Template Name="L1011_ENGINE_Turbine_Rotation_Template">
-		<UseTemplate Name="ASOBO_GT_Anim">
-			<ANIM_CODE>(A:GENERAL ENG RPM:#ID#, degrees per second) (A:ANIMATION DELTA TIME, seconds) * 2 /</ANIM_CODE>
-			<ANIM_LENGTH>360</ANIM_LENGTH>
-			<ANIM_WRAP>1</ANIM_WRAP>
-			<ANIM_DELTA>1</ANIM_DELTA>
 		</UseTemplate>
 	</Template>
 

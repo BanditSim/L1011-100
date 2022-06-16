@@ -35,6 +35,66 @@
 	</Template>
 
 
+	<Template Name="L1011_ELECTRICAL_ExternalPower_Template">
+		<Parameters Type="Default">
+			<PART_ID>BTN_PUSH_FE_ELEC_EXT_PWR</PART_ID>
+			<ANIM_NAME>PUSH_FE_ELEC_EXT_PWR</ANIM_NAME>
+			<NODE_ID>BTN_PUSH_FE_ELEC_EXT_PWR</NODE_ID>
+			<POST_CLICK_CODE></POST_CLICK_CODE>
+			<EXTPWR_ID>#ID#</EXTPWR_ID>
+			<TOOLTIP_EXTPWR_TITLE>@TT_Package.ELECTRICAL_SWITCH_EXTERNAL_POWER_TITLE</TOOLTIP_EXTPWR_TITLE>
+		</Parameters>
+		<Parameters Type="Override">
+			<TOOLTIP_TITLE>#TOOLTIP_EXTPWR_TITLE#</TOOLTIP_TITLE>
+			<Switch Param="INTERACTION_TYPE">
+				<Case Value="PUSH">
+					<LEFT_SINGLE_CODE>(&gt;B:ELECTRICAL_ExternalPower_#EXTPWR_ID#_Toggle)</LEFT_SINGLE_CODE>
+					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+					<NORMALIZED_TIME_1>0.1</NORMALIZED_TIME_1>
+					<NORMALIZED_TIME_2>0.5</NORMALIZED_TIME_2>
+					<Switch Param="TYPE">
+						<Case Value="AIRBUS">
+							<SEQ1_EMISSIVE_CODE>(A:EXTERNAL POWER AVAILABLE:#ID#, Bool) (A:EXTERNAL POWER ON:#ID#, Bool) ! and</SEQ1_EMISSIVE_CODE>
+							<SEQ2_EMISSIVE_CODE>(A:EXTERNAL POWER AVAILABLE:#ID#, Bool) (A:EXTERNAL POWER ON:#ID#, Bool) and</SEQ2_EMISSIVE_CODE>
+						</Case>
+						<Case Value="BOEING">
+							<ON_STATE_CHANGED>
+								#POST_CLICK_CODE# 
+								(A:EXTERNAL POWER AVAILABLE:#ID#, Bool) (A:EXTERNAL POWER ON:#ID#, Bool) and if{
+									(A:EXTERNAL POWER ON:#ID#, Bool) if{ #ID# 0 (&gt;K:2:APU_GENERATOR_SWITCH_SET) } 
+								}
+							</ON_STATE_CHANGED>
+							<DOWN_STATE_CODE>(B:ELECTRICAL_ExternalPower_#EXTPWR_ID#)</DOWN_STATE_CODE>
+							<Switch Param="VARIANT">
+								<Case Value="747">
+									<SEQ1_EMISSIVE_CODE>(A:EXTERNAL POWER AVAILABLE:#ID#, Bool) (B:ELECTRICAL_ExternalPower_#EXTPWR_ID#) ! and</SEQ1_EMISSIVE_CODE>
+									<SEQ2_EMISSIVE_CODE>(A:EXTERNAL POWER AVAILABLE:#ID#, Bool) (B:ELECTRICAL_ExternalPower_#EXTPWR_ID#) and</SEQ2_EMISSIVE_CODE>
+								</Case>
+								<Default>
+									<SEQ1_EMISSIVE_CODE>(A:EXTERNAL POWER AVAILABLE:#ID#, Bool) (B:ELECTRICAL_ExternalPower_#EXTPWR_ID#) and</SEQ1_EMISSIVE_CODE>
+									<SEQ2_EMISSIVE_CODE>(A:EXTERNAL POWER AVAILABLE:#ID#, Bool) (B:ELECTRICAL_ExternalPower_#EXTPWR_ID#) ! and</SEQ2_EMISSIVE_CODE>
+								</Default>
+							</Switch>
+						</Case>
+					</Switch>
+				</Case>
+			</Switch>
+		</Parameters>
+		
+		<Switch Param="INTERACTION_TYPE">
+			<Case Value="PUSH">
+				<UseTemplate Name="ASOBO_GT_Push_Button_Airliner">
+					<INPUT_EVENT_ID>ELECTRICAL</INPUT_EVENT_ID>
+					<Condition Valid="SWAP_SEQ_CONDITION">
+						<SEQ1_EMISSIVE_CODE>#SEQ2_EMISSIVE_CODE#</SEQ1_EMISSIVE_CODE>
+						<SEQ2_EMISSIVE_CODE>#SEQ1_EMISSIVE_CODE#</SEQ2_EMISSIVE_CODE>
+					</Condition>
+				</UseTemplate>
+			</Case>
+		</Switch>
+	</Template>	
+
 	<!-- ############################################################################## -->
 	<!-- ################################ INSTRUMENTS ################################# -->
 	<!-- ############################################################################## -->
