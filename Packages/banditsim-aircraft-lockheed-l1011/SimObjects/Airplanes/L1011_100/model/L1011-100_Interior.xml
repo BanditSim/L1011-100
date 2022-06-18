@@ -391,9 +391,17 @@
     		</Component>
 
     		<Component ID="ENGINE_STATUS">
+				<!-- UNASSIGNED ANIMATIONS # NODE # EMISSIVE SUFFIX
+				PUSH_FE_ENGINE_STATUS_TEST # BTN_PUSH_FE_ENGINE_STATUS_TEST
+				PUSH_FE_ENGINE_STATUS_PICKUP_A # BTN_PUSH_FE_ENGINE_STATUS_PICKUP_A # _E
+				PUSH_FE_ENGINE_STATUS_PICKUP_B # BTN_PUSH_FE_ENGINE_STATUS_PICKUP_B # _E
+				 -->
     		</Component>
 
     		<Component ID="ENGINE_OIL">
+				<!-- UNASSIGNED ANIMATIONS # NODE # EMISSIVE SUFFIX
+				PUSH_FE_ENGINE_OIL_TEST # BTN_PUSH_FE_ENGINE_OIL_TEST # _E
+				 -->
     		</Component>
 
     		<Component ID="ENGINE_FUEL">
@@ -403,9 +411,38 @@
     		</Component>
 
     		<Component ID="CLOCK_FE">
+				<!-- UNASSIGNED ANIMATIONS # NODE # EMISSIVE SUFFIX
+				FE_CLOCK_SW
+				 -->
+
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>FE_CLOCK_HR</ANIM_NAME>
+							<ANIM_CODE>(E:LOCAL TIME, hour) 12 % 10 * </ANIM_CODE>
+							<ANIM_LENGTH>120</ANIM_LENGTH>
+							<ANIM_WRAP>True</ANIM_WRAP>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>FE_CLOCK_MIN</ANIM_NAME>
+							<ANIM_CODE>(E:LOCAL TIME, minutes) flr 60 % </ANIM_CODE>
+							<ANIM_LENGTH>60</ANIM_LENGTH>
+							<ANIM_WRAP>True</ANIM_WRAP>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>FE_CLOCK_SEC</ANIM_NAME>
+							<ANIM_CODE>(E:LOCAL TIME, seconds) flr 60 % </ANIM_CODE>
+							<ANIM_LENGTH>60</ANIM_LENGTH>
+							<ANIM_WRAP>True</ANIM_WRAP>
+						</UseTemplate>
+
     		</Component>
 
     		<Component ID="APU_CONTROL">
+				<!-- UNASSIGNED ANIMATIONS # NODE
+				PUSH_FE_APU_STOP # BTN_PUSH_FE_APU_STOP
+				 -->
+
 
     			<UseTemplate Name="ASOBO_GT_Anim">
 					<ANIM_NAME>GAUGE_APU_N1</ANIM_NAME>
