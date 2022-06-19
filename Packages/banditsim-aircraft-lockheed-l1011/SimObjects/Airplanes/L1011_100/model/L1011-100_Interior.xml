@@ -366,20 +366,6 @@
 				<!-- UNASSIGNED ANIMATIONS
 				PUSH_FE_FUEL_2L
 				PUSH_FE_FUEL_2R
-				PUSH_FE_FUEL_2L_PUMP_L
-				PUSH_FE_FUEL_2L_PUMP_R
-				PUSH_FE_FUEL_1_PUMP_L
-				PUSH_FE_FUEL_1_PUMP_R
-				PUSH_FE_FUEL_3_PUMP_L
-				PUSH_FE_FUEL_3_PUMP_R
-				PUSH_FE_FUEL_2R_PUMP_L
-				PUSH_FE_FUEL_2R_PUMP_R
-				PUSH_FE_FUEL_XFEED_L
-				PUSH_FE_FUEL_XFEED_C
-				PUSH_FE_FUEL_XFEED_R
-				PUSH_FE_FUEL_ENG1_TANK_VALVE
-				PUSH_FE_FUEL_ENG2_TANK_VALVE
-				PUSH_FE_FUEL_ENG3_TANK_VALVE
 				PUSH_FE_FUEL_APU_SHUTOFF
 				PUSH_FE_FUEL_USED_RESET
 				PUSH_FE_FUEL_REFUEL_PWR
@@ -393,6 +379,9 @@
 				</DefaultTemplateParameters>
 
 
+				<!-- 
+					TANK 2L PUMP
+				-->
 				<UseTemplate Name="ASOBO_FUEL_Push_Pump_Template">
 					<NODE_ID>BTN_PUSH_FE_FUEL_2L_PUMP_L</NODE_ID>
 					<ANIM_NAME>PUSH_FE_FUEL_2L_PUMP_L</ANIM_NAME>
@@ -418,6 +407,9 @@
 						<ID>2</ID>
 					</UseTemplate>
 
+				<!-- 
+					TANK 1 PUMP
+				-->
 				<UseTemplate Name="ASOBO_FUEL_Push_Pump_Template">
 					<NODE_ID>BTN_PUSH_FE_FUEL_1_PUMP_L</NODE_ID>
 					<ANIM_NAME>PUSH_FE_FUEL_1_PUMP_L</ANIM_NAME>
@@ -442,6 +434,9 @@
 						<ID>4</ID>
 					</UseTemplate>
 
+				<!-- 
+					TANK 3 PUMP
+				-->
 				<UseTemplate Name="ASOBO_FUEL_Push_Pump_Template">
 					<NODE_ID>BTN_PUSH_FE_FUEL_3_PUMP_L</NODE_ID>
 					<ANIM_NAME>PUSH_FE_FUEL_3_PUMP_L</ANIM_NAME>
@@ -466,6 +461,9 @@
 						<ID>6</ID>
 					</UseTemplate>
 
+				<!-- 
+					TANK 2R PUMP
+				-->
 				<UseTemplate Name="ASOBO_FUEL_Push_Pump_Template">
 					<NODE_ID>BTN_PUSH_FE_FUEL_2R_PUMP_L</NODE_ID>
 					<ANIM_NAME>PUSH_FE_FUEL_2R_PUMP_L</ANIM_NAME>
@@ -493,6 +491,55 @@
 					</UseTemplate>
 
 
+				<!-- 
+					CROSSFEED L VALVE
+				-->
+				<UseTemplate Name="ASOBO_FUEL_Push_Valve_Template">
+					<NODE_ID>BTN_PUSH_FE_FUEL_XFEED_L</NODE_ID>
+					<ANIM_NAME>PUSH_FE_FUEL_XFEED_L</ANIM_NAME>
+					<ID>1</ID>
+				</UseTemplate>
+
+					<UseTemplate Name="L1011_WARN_Indicator_Simvar_Template">
+						<NODE_ID>BTN_PUSH_FE_FUEL_XFEED_L_W</NODE_ID>
+						<SIMVAR>FUELSYSTEM VALVE OPEN</SIMVAR>
+						<ID>1</ID>
+					</UseTemplate>
+
+				<!-- 
+					CROSSFEED C VALVE
+				-->
+				<UseTemplate Name="ASOBO_FUEL_Push_Valve_Template">
+					<NODE_ID>BTN_PUSH_FE_FUEL_XFEED_C</NODE_ID>
+					<ANIM_NAME>PUSH_FE_FUEL_XFEED_C</ANIM_NAME>
+					<ID>2</ID>
+				</UseTemplate>
+
+					<UseTemplate Name="L1011_WARN_Indicator_Simvar_Template">
+						<NODE_ID>BTN_PUSH_FE_FUEL_XFEED_C_W</NODE_ID>
+						<SIMVAR>FUELSYSTEM VALVE OPEN</SIMVAR>
+						<ID>2</ID>
+					</UseTemplate>
+
+				<!-- 
+					CROSSFEED R VALVE
+				-->
+				<UseTemplate Name="ASOBO_FUEL_Push_Valve_Template">
+					<NODE_ID>BTN_PUSH_FE_FUEL_XFEED_R</NODE_ID>
+					<ANIM_NAME>PUSH_FE_FUEL_XFEED_R</ANIM_NAME>
+					<ID>3</ID>
+				</UseTemplate>
+
+					<UseTemplate Name="L1011_WARN_Indicator_Simvar_Template">
+						<NODE_ID>BTN_PUSH_FE_FUEL_XFEED_R_W</NODE_ID>
+						<SIMVAR>FUELSYSTEM VALVE OPEN</SIMVAR>
+						<ID>3</ID>
+					</UseTemplate>
+
+
+				<!-- 
+					ENG 1 TANK VALVE
+				-->
 				<UseTemplate Name="ASOBO_FUEL_Push_Valve_Template">
 					<NODE_ID>BTN_PUSH_FE_FUEL_ENG1_TANK_VALVE</NODE_ID>
 					<ANIM_NAME>PUSH_FE_FUEL_ENG1_TANK_VALVE</ANIM_NAME>
@@ -507,7 +554,9 @@
 						<ID>4</ID>
 					</UseTemplate>
 
-
+				<!-- 
+					ENG 2 TANK VALVE
+				-->
 				<UseTemplate Name="ASOBO_FUEL_Push_Valve_Template">
 					<NODE_ID>BTN_PUSH_FE_FUEL_ENG2_TANK_VALVE</NODE_ID>
 					<ANIM_NAME>PUSH_FE_FUEL_ENG2_TANK_VALVE</ANIM_NAME>
@@ -522,6 +571,9 @@
 						<ID>5</ID>
 					</UseTemplate>
 
+				<!-- 
+					ENG 3 TANK VALVE
+				-->
 				<UseTemplate Name="ASOBO_FUEL_Push_Valve_Template">
 					<NODE_ID>BTN_PUSH_FE_FUEL_ENG3_TANK_VALVE</NODE_ID>
 					<ANIM_NAME>PUSH_FE_FUEL_ENG3_TANK_VALVE</ANIM_NAME>
@@ -535,9 +587,6 @@
 						<SIMVAR>FUELSYSTEM VALVE OPEN</SIMVAR>
 						<ID>6</ID>
 					</UseTemplate>
-
-
-
 
     		</Component>
 
