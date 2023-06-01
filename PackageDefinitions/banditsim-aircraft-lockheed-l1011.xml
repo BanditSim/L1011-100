@@ -10,6 +10,10 @@
 		<VisibleInStore>true</VisibleInStore>
 		<CanBeReferenced>true</CanBeReferenced>
 	</Flags>
+	<MarketplaceData>
+		<AssetDir>PackageDefinitions\banditsim-aircraft-lockheed-l1011\MarketplaceData\</AssetDir>
+		<OutputDir>MarketplaceData\banditsim-aircraft-lockheed-l1011\</OutputDir>
+	</MarketplaceData>
 	<AssetGroups>
 		<AssetGroup Name="ContentInfo">
 			<Type>Copy</Type>
@@ -26,14 +30,6 @@
 			</Flags>
 			<AssetDir>PackageSources\SimObjects\Airplanes\L1011_100\</AssetDir>
 			<OutputDir>SimObjects\Airplanes\L1011_100\</OutputDir>
-		</AssetGroup>
-		<AssetGroup Name="MarketplaceData">
-			<Type>MarketplaceData</Type>
-			<Flags>
-				<FSXCompatibility>false</FSXCompatibility>
-			</Flags>
-			<AssetDir>PackageDefinitions\banditsim-aircraft-lockheed-l1011\MarketplaceData\</AssetDir>
-			<OutputDir>MarketplaceData\banditsim-aircraft-lockheed-l1011\</OutputDir>
 		</AssetGroup>
 		<AssetGroup Name="ModelBehaviorDefs">
 			<Type>Copy</Type>

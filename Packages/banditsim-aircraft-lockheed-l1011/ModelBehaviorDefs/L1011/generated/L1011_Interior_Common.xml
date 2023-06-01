@@ -177,4 +177,71 @@
         </UseTemplate>
     </Template>
 
+    <Template Name="L1011_MULTI_SELECTOR_3States_Template">
+        <Component ID="#NODE_ID#" Node="#NODE_ID#">
+            <UseTemplate Name="ASOBO_GT_Switch_3States">
+                <WWISE_EVENT>autopilot_push_button_on</WWISE_EVENT>
+                <ANIM_NAME>#ANIM_NAME#</ANIM_NAME>
+                <SWITCH_DIRECTION>Horizontal</SWITCH_DIRECTION>
+                <ARROW_TYPE>Curved</ARROW_TYPE>
+                <SWITCH_POSITION_TYPE>L</SWITCH_POSITION_TYPE>
+                <SWITCH_POSITION_VAR>#POSITION_VAR#</SWITCH_POSITION_VAR>
+            </UseTemplate>
+        </Component>
+    </Template>
+
+    <Template Name="L1011_MULTI_SELECTOR_4States_Template">
+        <Component ID="#NODE_ID#" Node="#NODE_ID#">
+            <UseTemplate Name="ASOBO_GT_Switch_4States">
+                <WWISE_EVENT>autopilot_push_button_on</WWISE_EVENT>
+                <ANIM_NAME>#ANIM_NAME#</ANIM_NAME>
+                <SWITCH_DIRECTION>Horizontal</SWITCH_DIRECTION>
+                <ARROW_TYPE>Curved</ARROW_TYPE>
+                <SWITCH_POSITION_TYPE>L</SWITCH_POSITION_TYPE>
+                <SWITCH_POSITION_VAR>#POSITION_VAR#</SWITCH_POSITION_VAR>
+            </UseTemplate>
+        </Component>
+    </Template>
+
+    <Template Name="L1011_MULTI_SELECTOR_5States_Template">
+        <Component ID="#NODE_ID#" Node="#NODE_ID#">
+            <UseTemplate Name="ASOBO_GT_Switch_5States">
+                <WWISE_EVENT>autopilot_push_button_on</WWISE_EVENT>
+                <ANIM_NAME>#ANIM_NAME#</ANIM_NAME>
+                <SWITCH_DIRECTION>Horizontal</SWITCH_DIRECTION>
+                <ARROW_TYPE>Curved</ARROW_TYPE>
+                <SWITCH_POSITION_TYPE>L</SWITCH_POSITION_TYPE>
+                <SWITCH_POSITION_VAR>#POSITION_VAR#</SWITCH_POSITION_VAR>
+            </UseTemplate>
+        </Component>
+    </Template>
+
+    <Template Name="L1011_MULTI_SELECTOR_6States_Template">
+        <Component ID="#NODE_ID#" Node="#NODE_ID#">
+            <UseTemplate Name="ASOBO_GT_Switch_6States">
+                <WWISE_EVENT>autopilot_push_button_on</WWISE_EVENT>
+                <ANIM_NAME>#ANIM_NAME#</ANIM_NAME>
+                <SWITCH_DIRECTION>Horizontal</SWITCH_DIRECTION>
+                <ARROW_TYPE>Curved</ARROW_TYPE>
+                <SWITCH_POSITION_TYPE>L</SWITCH_POSITION_TYPE>
+                <SWITCH_POSITION_VAR>#POSITION_VAR#</SWITCH_POSITION_VAR>
+            </UseTemplate>
+        </Component>
+    </Template>
+
+    <Template Name="L1011_MULTI_SELECTOR_7States_Template">
+        <Component ID="#NODE_ID#" Node="#NODE_ID#">
+            <UseTemplate Name="ASOBO_GT_Switch_7States">
+                <WWISE_EVENT>autopilot_push_button_on</WWISE_EVENT>
+                <ANIM_NAME>#ANIM_NAME#</ANIM_NAME>
+                <SWITCH_DIRECTION>Horizontal</SWITCH_DIRECTION>
+                <ARROW_TYPE>Curved</ARROW_TYPE>
+                <SWITCH_POSITION_TYPE>L</SWITCH_POSITION_TYPE>
+                <SWITCH_POSITION_VAR>#POSITION_VAR#</SWITCH_POSITION_VAR>
+            </UseTemplate>
+        </Component>
+    </Template>
+
+
+
 </ModelBehaviors>

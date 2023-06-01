@@ -18,6 +18,99 @@
         <Include ModelBehaviorFile="L1011\Interior\L1011_Interior_Includes.xml"/>
 		
     <!-- Animations -->
+	<Component ID="FLIGHT_CONTROLS">
+		<!--
+		<UseTemplate Name="ASOBO_HANDLING_RudderPedals_Template">
+			<RUDDERPEDALS_TYPE>MIXED</RUDDERPEDALS_TYPE>
+			<NODE_ID_L_RUDDER>HANDLING_RudderPedals_l</NODE_ID_L_RUDDER>
+			<NODE_ID_R_RUDDER>HANDLING_RudderPedals_r</NODE_ID_R_RUDDER>
+			<NODE_ID_L_BRAKE_1>HANDLING_RudderPedals_Brake_1_1</NODE_ID_L_BRAKE_1>
+			<NODE_ID_L_BRAKE_2>HANDLING_RudderPedals_Brake_2_1</NODE_ID_L_BRAKE_2>
+			<NODE_ID_R_BRAKE_1>HANDLING_RudderPedals_Brake_1_2</NODE_ID_R_BRAKE_1>
+			<NODE_ID_R_BRAKE_2>HANDLING_RudderPedals_Brake_2_2</NODE_ID_R_BRAKE_2>
+			<DONT_BRAKE_ON_PARKINGBRAKE>True</DONT_BRAKE_ON_PARKINGBRAKE>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_HANDLING_Yoke_Hideable_Template">
+			<ID>1</ID>
+			<NODE_ID>COCKPIT_pylon_yoke_pilot</NODE_ID>
+			<YOKE_HIDER_NODE_ID>yoke_base_ring_01</YOKE_HIDER_NODE_ID>
+			<YOKE_NODE_ID>COCKPIT_yoke_pilot</YOKE_NODE_ID>
+			<ANIM_NAME_YOKE_X>yoke_lever_stick_l_r</ANIM_NAME_YOKE_X>
+			<ANIM_NAME_YOKE_Y>yoke_lever_stick_fore_aft</ANIM_NAME_YOKE_Y>
+			<AP_CAN_DRIVE_ANIMATION>True</AP_CAN_DRIVE_ANIMATION>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_HANDLING_Yoke_Hider_Template">
+			<ID>1</ID>
+			<NODE_ID>HANDLING_Yoke_1_Hider_Pylon</NODE_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_HANDLING_Yoke_Hider_Template">
+			<ID>1</ID>
+			<NODE_ID>HANDLING_Yoke_1_Hider_Yoke</NODE_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_HANDLING_Yoke_Hideable_Template">
+			<ID>2</ID>
+			<NODE_ID>COCKPIT_pylon_yoke_copilot</NODE_ID>
+			<YOKE_HIDER_NODE_ID>yoke_base_ring_02</YOKE_HIDER_NODE_ID>
+			<YOKE_NODE_ID>COCKPIT_yoke_copilot</YOKE_NODE_ID>
+			<ONLY_HIDEABLE>True</ONLY_HIDEABLE>
+			<AP_CAN_DRIVE_ANIMATION>True</AP_CAN_DRIVE_ANIMATION>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_HANDLING_Yoke_Hider_Template">
+			<ID>2</ID>
+			<NODE_ID>COCKPIT_pylon_yoke_copilot</NODE_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_HANDLING_Switch_ElevatorTrim_Template">
+			<ID>1</ID>
+			<NODE_ID>HANDLING_YOKE_Switch_ElevatorTrim</NODE_ID>
+			<ANIM_NAME>HANDLING_YOKE_Switch_ElevatorTrim</ANIM_NAME> 
+			<TT_ICON>MOVE_Y</TT_ICON>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_HANDLING_Switch_ElevatorTrim_Template">
+			<ID>2</ID>
+			<NODE_ID>switch_yoke_trim_01_copilot</NODE_ID>
+			<ANIM_NAME>yoke_switch_trim_01_copilot</ANIM_NAME> 
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_HANDLING_Push_AP_Trim_Disc_Template">
+			<NODE_ID>btn_yoke_autopilot_disengage_pilot</NODE_ID>
+			<ANIM_NAME>yoke_push_autopilot_disengage_pilot</ANIM_NAME>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_HANDLING_Push_AP_Trim_Disc_Template">
+			<NODE_ID>btn_yoke_autopilot_disengage_pilot001</NODE_ID>
+			<ANIM_NAME>yoke_push_autopilot_disengage_copilot</ANIM_NAME>
+		</UseTemplate>
+		
+		<UseTemplate Name="ASOBO_HANDLING_Steering_Tiller_Template">
+			<NODE_ID>tiller_l</NODE_ID>
+			<ANIM_NAME>tiller_l</ANIM_NAME>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_HANDLING_Steering_Tiller_Template">
+			<NODE_ID>tiller_r</NODE_ID>
+			<ANIM_NAME>tiller_r</ANIM_NAME>
+		</UseTemplate>
+		-->
+
+		<UseTemplate Name="ASOBO_HANDLING_Yoke_Hideable_Template">
+			<ID>1</ID>
+			<NODE_ID>HANDLING_Yoke_1_Lever_Handles</NODE_ID>
+			<YOKE_HIDER_NODE_ID>HANDLING_Yoke_1_Center</YOKE_HIDER_NODE_ID>
+			<YOKE_NODE_ID>HANDLING_Yoke_1_Lever_Stick</YOKE_NODE_ID>
+			<ANIM_NAME_YOKE_X>HANDLING_Yoke_1_Steering</ANIM_NAME_YOKE_X>
+			<ANIM_NAME_YOKE_Y>HANDLING_Yoke_1</ANIM_NAME_YOKE_Y>
+			<AP_CAN_DRIVE_ANIMATION>True</AP_CAN_DRIVE_ANIMATION>
+		</UseTemplate>
+
+		<UseTemplate Name="ASOBO_HANDLING_Yoke_Hideable_Template">
+			<ID>2</ID>
+			<NODE_ID>HANDLING_Yoke_2_Lever_Handles</NODE_ID>
+			<YOKE_HIDER_NODE_ID>HANDLING_Yoke_2_Center</YOKE_HIDER_NODE_ID>
+			<YOKE_NODE_ID>HANDLING_Yoke_1_Lever_Stick</YOKE_NODE_ID>
+			<ANIM_NAME_YOKE_X>HANDLING_Yoke_2_Steering</ANIM_NAME_YOKE_X>
+			<ANIM_NAME_YOKE_Y>HANDLING_Yoke_1</ANIM_NAME_YOKE_Y>
+			<AP_CAN_DRIVE_ANIMATION>True</AP_CAN_DRIVE_ANIMATION>
+		</UseTemplate>
+
+	</Component>
+
     <Component ID="CENTER_PEDESTAL">
 
     	<Component ID="THROTTLE_PEDESTAL">
@@ -76,6 +169,56 @@
 				</UseTemplate>
 				-->
 
+				<!-- THROTTLE 1 -->
+				<UseTemplate Name="ASOBO_ENGINE_Lever_Throttle_Template">
+					<TT_DESCRIPTION_ID>@TT_Package.ENGINE_THROTTLE_ACTION</TT_DESCRIPTION_ID>
+					<TT_DESCRIPTION_INDEX>1</TT_DESCRIPTION_INDEX>
+					<ID>1</ID>
+					<NODE_ID>THROTTLE_ENG1_MAIN_HANDLE</NODE_ID>
+					<ANIM_NAME>THROTTLE_ENG1_MAIN_ANIM</ANIM_NAME>
+					<NODE_ID_REVERSER>THROTTLE_ENG1_REV_HANDLE</NODE_ID_REVERSER>
+					<ANIM_NAME_REVERSER>THROTTLE_ENG1_REV_ANIM</ANIM_NAME_REVERSER>
+					<DRAG_SPEED>0.5</DRAG_SPEED>
+					<LEVER_TYPE>BOEING</LEVER_TYPE>
+					<TOOLTIPID>TT:COCKPIT.TOOLTIPS.ENG1_THROTTLE_CONTROL</TOOLTIPID>
+					<INVERT_IM_DRAG_INPUT_SCALAR>True</INVERT_IM_DRAG_INPUT_SCALAR>
+					<REVERSER_INVERT_IM_DRAG_INPUT_SCALAR>True</REVERSER_INVERT_IM_DRAG_INPUT_SCALAR>
+				</UseTemplate>
+
+				<!-- THROTTLE 2 -->
+				<UseTemplate Name="ASOBO_ENGINE_Lever_Throttle_Template">
+					<TT_DESCRIPTION_ID>@TT_Package.ENGINE_THROTTLE_ACTION</TT_DESCRIPTION_ID>
+					<TT_DESCRIPTION_INDEX>2</TT_DESCRIPTION_INDEX>
+					<ID>2</ID>
+					<NODE_ID>THROTTLE_ENG2_MAIN_HANDLE</NODE_ID>
+					<ANIM_NAME>THROTTLE_ENG2_MAIN_ANIM</ANIM_NAME>
+					<NODE_ID_REVERSER>THROTTLE_ENG2_REV_HANDLE</NODE_ID_REVERSER>
+					<ANIM_NAME_REVERSER>THROTTLE_ENG2_REV_ANIM</ANIM_NAME_REVERSER>
+					<DRAG_SPEED>0.5</DRAG_SPEED>
+					<LEVER_TYPE>BOEING</LEVER_TYPE>
+					<TOOLTIPID>TT:COCKPIT.TOOLTIPS.ENG1_THROTTLE_CONTROL</TOOLTIPID>
+					<INVERT_IM_DRAG_INPUT_SCALAR>True</INVERT_IM_DRAG_INPUT_SCALAR>
+					<REVERSER_INVERT_IM_DRAG_INPUT_SCALAR>True</REVERSER_INVERT_IM_DRAG_INPUT_SCALAR>
+				</UseTemplate>
+
+				<!-- THROTTLE 3 -->
+				<UseTemplate Name="ASOBO_ENGINE_Lever_Throttle_Template">
+					<TT_DESCRIPTION_ID>@TT_Package.ENGINE_THROTTLE_ACTION</TT_DESCRIPTION_ID>
+					<TT_DESCRIPTION_INDEX>3</TT_DESCRIPTION_INDEX>
+					<ID>3</ID>
+					<NODE_ID>THROTTLE_ENG3_MAIN_HANDLE</NODE_ID>
+					<ANIM_NAME>THROTTLE_ENG3_MAIN_ANIM</ANIM_NAME>
+					<NODE_ID_REVERSER>THROTTLE_ENG3_REV_HANDLE</NODE_ID_REVERSER>
+					<ANIM_NAME_REVERSER>THROTTLE_ENG3_REV_ANIM</ANIM_NAME_REVERSER>
+					<DRAG_SPEED>0.5</DRAG_SPEED>
+					<LEVER_TYPE>BOEING</LEVER_TYPE>
+					<TOOLTIPID>TT:COCKPIT.TOOLTIPS.ENG1_THROTTLE_CONTROL</TOOLTIPID>
+					<INVERT_IM_DRAG_INPUT_SCALAR>True</INVERT_IM_DRAG_INPUT_SCALAR>
+					<REVERSER_INVERT_IM_DRAG_INPUT_SCALAR>True</REVERSER_INVERT_IM_DRAG_INPUT_SCALAR>
+				</UseTemplate>
+
+
+				<!-- ENG 1 FUEL CUTOFF SW -->
 				<UseTemplate Name="ASOBO_FUEL_Switch_Valve_Template">
 					<NODE_ID>SW_CEN_FUEL_IGN_1</NODE_ID>
 					<ANIM_NAME>SWITCH_CEN_FUEL_IGN_1</ANIM_NAME>
@@ -86,6 +229,7 @@
 					<IE_VALVE_ID>Flow_Ctrl_1</IE_VALVE_ID>
 				</UseTemplate>
 
+				<!-- ENG 2 FUEL CUTOFF SW -->
 				<UseTemplate Name="ASOBO_FUEL_Switch_Valve_Template">
 					<NODE_ID>SW_CEN_FUEL_IGN_2</NODE_ID>
 					<ANIM_NAME>SWITCH_CEN_FUEL_IGN_2</ANIM_NAME>
@@ -96,6 +240,7 @@
 					<IE_VALVE_ID>Flow_Ctrl_2</IE_VALVE_ID>
 				</UseTemplate>
 
+				<!-- ENG 3 FUEL CUTOFF SW -->
 				<UseTemplate Name="ASOBO_FUEL_Switch_Valve_Template">
 					<NODE_ID>SW_CEN_FUEL_IGN_3</NODE_ID>
 					<ANIM_NAME>SWITCH_CEN_FUEL_IGN_3</ANIM_NAME>
@@ -104,6 +249,72 @@
 					<TT_DESCRIPTION_INDEX>3</TT_DESCRIPTION_INDEX>	
 					<TOOLTIP_TITLE>@TT_Package.FUEL_SWITCH_VALVE_ENG_TITLE</TOOLTIP_TITLE>
 					<IE_VALVE_ID>Flow_Ctrl_3</IE_VALVE_ID>
+				</UseTemplate>
+
+
+				<UseTemplate Name="ASOBO_LANDING_GEAR_Switch_ParkingBrake_Template">
+					<NODE_ID>PARKING_BRAKE_HANDLE_KNOB</NODE_ID>
+					<ANIM_NAME>PARKING_BRAKE_HANDLE</ANIM_NAME>
+				</UseTemplate>
+
+
+			</Component>
+
+		</Component>
+
+    	<Component ID="LOWER_CENTER_PEDESTAL">
+
+	    	<Component ID="VHF_TUNER_L">
+
+				<!-- VHF 1 LEFT SIDE -->
+				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+					<SIMVAR>COM ACTIVE FREQUENCY:1</SIMVAR>
+					<UNITS>KHz</UNITS>
+					<DIGITS_1_ANIM_NAME>COMM_VHF_1_L_DIGITS_1</DIGITS_1_ANIM_NAME>
+					<DIGITS_2_ANIM_NAME>COMM_VHF_1_L_DIGITS_10</DIGITS_2_ANIM_NAME>
+					<DIGITS_3_ANIM_NAME>COMM_VHF_1_L_DIGITS_100</DIGITS_3_ANIM_NAME>
+					<DIGITS_4_ANIM_NAME>COMM_VHF_1_L_DIGITS_1000</DIGITS_4_ANIM_NAME>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>COMM_VHF_1_L_DIGITS_10000</ANIM_NAME>
+					<ANIM_CODE>1</ANIM_CODE>
+					<ANIM_LENGTH>10</ANIM_LENGTH>
+					<ANIM_WRAP>True</ANIM_WRAP>
+				</UseTemplate>
+
+
+				<!-- VHF 1 RIGHT SIDE -->
+				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+					<SIMVAR>COM STANDBY FREQUENCY:1</SIMVAR>
+					<UNITS>KHz</UNITS>
+					<DIGITS_1_ANIM_NAME>COMM_VHF_1_R_DIGITS_1</DIGITS_1_ANIM_NAME>
+					<DIGITS_2_ANIM_NAME>COMM_VHF_1_R_DIGITS_10</DIGITS_2_ANIM_NAME>
+					<DIGITS_3_ANIM_NAME>COMM_VHF_1_R_DIGITS_100</DIGITS_3_ANIM_NAME>
+					<DIGITS_4_ANIM_NAME>COMM_VHF_1_R_DIGITS_1000</DIGITS_4_ANIM_NAME>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>COMM_VHF_1_R_DIGITS_10000</ANIM_NAME>
+					<ANIM_CODE>1</ANIM_CODE>
+					<ANIM_LENGTH>10</ANIM_LENGTH>
+					<ANIM_WRAP>True</ANIM_WRAP>
+				</UseTemplate>
+
+				<!-- COM 1 R SELECTOR KNOB -->
+                <UseTemplate Name="ASOBO_NAVCOM_Knob_COM_Frequency_Template">
+                    <ID>1</ID>
+					<NODE_ID_LARGE_KNOB>KNOB_VHF_1_R_LARGE</NODE_ID_LARGE_KNOB>
+					<NODE_ID_SMALL_KNOB>KNOB_VHF_1_R_SMALL</NODE_ID_SMALL_KNOB>
+					<ANIM_NAME_LARGE_KNOB>KA_VHF_1_R_LARGE</ANIM_NAME_LARGE_KNOB>
+					<ANIM_NAME_SMALL_KNOB>KA_VHF_1_R_SMALL</ANIM_NAME_SMALL_KNOB>
+                </UseTemplate>
+
+				<!-- COM 1 SWAP -->
+				<UseTemplate Name="ASOBO_NAVCOM_Push_COM_Swap_Template">
+                    <ID>1</ID>
+					<NODE_ID>SW_COMM_VHF_1</NODE_ID>
+					<ANIM_NAME>SWITCH_COMM_VHF_1</ANIM_NAME>
 				</UseTemplate>
 
 
@@ -132,6 +343,94 @@
 				_TRIP_* : Emissive Suffix _E
 				 -->
 
+
+				<!-- 
+					GAUGES
+				-->
+
+				<!-- IDG OIL TEMP ENG 1 -->
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_FE_ELEC_IDG_1</ANIM_NAME>
+					<ANIM_CODE>(A:ENG OIL TEMPERATURE:1, celsius) </ANIM_CODE>
+					<ANIM_LENGTH>180</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+				<!-- IDG OIL TEMP ENG 2 -->
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_FE_ELEC_IDG_2</ANIM_NAME>
+					<ANIM_CODE>(A:ENG OIL TEMPERATURE:2, celsius) </ANIM_CODE>
+					<ANIM_LENGTH>180</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+				<!-- IDG OIL TEMP ENG 3 -->
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_FE_ELEC_IDG_3</ANIM_NAME>
+					<ANIM_CODE>(A:ENG OIL TEMPERATURE:3, celsius) </ANIM_CODE>
+					<ANIM_LENGTH>180</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+				<!-- FREQ -->
+
+				<!-- AC VOLTS -->
+
+				<!-- DC VOLTS -->
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_FE_ELEC_DC_V</ANIM_NAME>
+					<ANIM_CODE>(A:ELECTRICAL MAIN BUS VOLTAGE:9, volts) </ANIM_CODE>
+					<ANIM_LENGTH>40</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+				<!-- DC AMPS -->
+
+				<!-- TODO: INCORRECT KVAR SIMVARS -->
+				<!-- KW KVAR APU -->
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_FE_ELEC_KW_APU</ANIM_NAME>
+					<ANIM_CODE>(A:ELECTRICAL GENALT LOAD:4, percent) 20 + </ANIM_CODE>
+					<ANIM_LENGTH>140</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+				<!-- KW KVAR 1 -->
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_FE_ELEC_KW_1</ANIM_NAME>
+					<ANIM_CODE>(A:ELECTRICAL GENALT LOAD:1, percent) 20 + </ANIM_CODE>
+					<ANIM_LENGTH>140</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+				<!-- KW KVAR 2 -->
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_FE_ELEC_KW_2</ANIM_NAME>
+					<ANIM_CODE>(A:ELECTRICAL GENALT LOAD:2, percent) 20 + </ANIM_CODE>
+					<ANIM_LENGTH>140</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+				<!-- KW KVAR 3 -->
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_FE_ELEC_KW_3</ANIM_NAME>
+					<ANIM_CODE>(A:ELECTRICAL GENALT LOAD:3, percent) 20 + </ANIM_CODE>
+					<ANIM_LENGTH>140</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+
+				<!-- 
+					SWITCHES
+				-->
 
 				<!-- MASTER BAT SWITCH -->
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Battery_Master_Template">
@@ -360,6 +659,70 @@
 				</UseTemplate>
 				-->
 
+				<!-- 		KNOBS			 -->
+
+				<!-- ELEC SELECTOR -->
+                <Update Once="True">
+                    1 (&gt;L:L1011_FE_ELEC_SELECTOR)
+                </Update>
+
+                <UseTemplate Name="L1011_Anim_Interactions">
+                    <ANIM_TYPE>KNOB</ANIM_TYPE>
+                    <ANIM_TEMPLATE>L1011_MULTI_SELECTOR_6States_Template</ANIM_TEMPLATE>
+                    <NODE_ID>KNOB_MULTI_ELEC_SELECTOR</NODE_ID>
+                    <ANIM_NAME>KA_MULTI_ELEC_SELECTOR</ANIM_NAME>
+                    <PART_ID>KNOB_MULTI_ELEC_SELECTOR</PART_ID>
+					<POSITION_VAR>L1011_FE_ELEC_SELECTOR</POSITION_VAR>
+                    <ANIMTIP_0>INVERTER</ANIMTIP_0>
+                    <ANIMTIP_1>ESS 1</ANIMTIP_1>
+                    <ANIMTIP_2>ESS 2</ANIMTIP_2>
+                    <ANIMTIP_3>ESS 3</ANIMTIP_3>
+                    <ANIMTIP_4>APU</ANIMTIP_4>
+                    <ANIMTIP_5>EXTERNAL POWER</ANIMTIP_5>
+                </UseTemplate>
+
+				<!-- ELEC BUS VOLTS -->
+                <Update Once="True">
+                    4 (&gt;L:L1011_FE_ELEC_BUS_VOLTS)
+                </Update>
+
+                <UseTemplate Name="L1011_Anim_Interactions">
+                    <ANIM_TYPE>KNOB</ANIM_TYPE>
+                    <ANIM_TEMPLATE>L1011_MULTI_SELECTOR_6States_Template</ANIM_TEMPLATE>
+                    <NODE_ID>KNOB_MULTI_ELEC_BUS_VOLTS</NODE_ID>
+                    <ANIM_NAME>KA_MULTI_ELEC_BUS_VOLTS</ANIM_NAME>
+                    <PART_ID>KNOB_MULTI_ELEC_BUS_VOLTS</PART_ID>
+					<POSITION_VAR>L1011_FE_ELEC_BUS_VOLTS</POSITION_VAR>
+                    <ANIMTIP_0>GENERATOR ENG 1</ANIMTIP_0>
+                    <ANIMTIP_1>GENERATOR ENG 2</ANIMTIP_1>
+                    <ANIMTIP_2>GENERATOR ENG 3</ANIMTIP_2>
+                    <ANIMTIP_3>ESS</ANIMTIP_3>
+                    <ANIMTIP_4>BATTERY</ANIMTIP_4>
+                    <ANIMTIP_5>STANDBY DC BUS</ANIMTIP_5>
+                </UseTemplate>
+
+				<!-- ELEC BUS VOLTS -->
+                <Update Once="True">
+                    0 (&gt;L:L1011_FE_ELEC_MAN_AUTO)
+                </Update>
+
+                <UseTemplate Name="L1011_Anim_Interactions">
+                    <ANIM_TYPE>KNOB</ANIM_TYPE>
+                    <ANIM_TEMPLATE>L1011_MULTI_SELECTOR_7States_Template</ANIM_TEMPLATE>
+                    <NODE_ID>KNOB_MULTI_ELEC_MAN_AUTO</NODE_ID>
+                    <ANIM_NAME>KA_MULTI_ELEC_MAN_AUTO</ANIM_NAME>
+                    <PART_ID>KNOB_MULTI_ELEC_MAN_AUTO</PART_ID>
+					<POSITION_VAR>L1011_FE_ELEC_MAN_AUTO</POSITION_VAR>
+                    <ANIMTIP_0>1</ANIMTIP_0>
+                    <ANIMTIP_1>2</ANIMTIP_1>
+                    <ANIMTIP_2>3</ANIMTIP_2>
+                    <ANIMTIP_3>4</ANIMTIP_3>
+                    <ANIMTIP_4>5</ANIMTIP_4>
+                    <ANIMTIP_5>6</ANIMTIP_5>
+                    <ANIMTIP_6>7</ANIMTIP_6>
+                </UseTemplate>
+
+
     		</Component>
 
     		<Component ID="FUEL">
@@ -378,6 +741,74 @@
 					<TYPE>BOEING</TYPE>
 				</DefaultTemplateParameters>
 
+
+				<!-- 
+					GAUGES
+				-->
+
+				<!-- 
+				<UseTemplate Name="ASOBO_INSTRUMENT_Needle_Fuel_Quantity_Template">
+					<NODE_ID>NEEDLE_FUEL_QTY_2L</NODE_ID>
+					<ANIM_NAME>GAU_FUEL_QTY_2L</ANIM_NAME>
+					<SIMVAR_UNIT>LBS</SIMVAR_UNIT>
+					<TANK_ID_1>Tank2L_Outbd</TANK_ID_1>
+					<TANK_ID_2>Tank2L_Inbd</TANK_ID_2>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_INSTRUMENT_Needle_Fuel_Quantity_Template">
+					<NODE_ID>NEEDLE_FUEL_QTY_1</NODE_ID>
+					<ANIM_NAME>GAU_FUEL_QTY_1</ANIM_NAME>
+					<SIMVAR_UNIT>LBS</SIMVAR_UNIT>
+					<TANK_ID_1>3</TANK_ID_1>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_INSTRUMENT_Needle_Fuel_Quantity_Template">
+					<NODE_ID>NEEDLE_FUEL_QTY_3</NODE_ID>
+					<ANIM_NAME>GAU_FUEL_QTY_3</ANIM_NAME>
+					<SIMVAR_UNIT>LBS</SIMVAR_UNIT>
+					<TANK_ID_1>4</TANK_ID_1>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_INSTRUMENT_Needle_Fuel_Quantity_Template">
+					<NODE_ID>NEEDLE_FUEL_QTY_2R</NODE_ID>
+					<ANIM_NAME>GAU_FUEL_QTY_2R</ANIM_NAME>
+					<SIMVAR_UNIT>LBS</SIMVAR_UNIT>
+					<TANK_ID_1>Tank2R_Outbd</TANK_ID_1>
+					<TANK_ID_2>Tank2R_Inbd</TANK_ID_2>
+				</UseTemplate>
+				-->
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_FUEL_QTY_2L</ANIM_NAME>
+					<ANIM_CODE>(A:FUELSYSTEM TANK QUANTITY:1, lbs) (A:FUELSYSTEM TANK QUANTITY:2, lbs) + </ANIM_CODE>
+					<ANIM_LENGTH>50</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_FUEL_QTY_1</ANIM_NAME>
+					<ANIM_CODE>(A:FUELSYSTEM TANK QUANTITY:3, lbs) </ANIM_CODE>
+					<ANIM_LENGTH>50</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_FUEL_QTY_3</ANIM_NAME>
+					<ANIM_CODE>(A:FUELSYSTEM TANK QUANTITY:4, lbs) </ANIM_CODE>
+					<ANIM_LENGTH>50</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_FUEL_QTY_2R</ANIM_NAME>
+					<ANIM_CODE>(A:FUELSYSTEM TANK QUANTITY:5, lbs) (A:FUELSYSTEM TANK QUANTITY:6, lbs) + </ANIM_CODE>
+					<ANIM_LENGTH>50</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
 
 				<!-- 
 					TANK 2L PUMP
@@ -588,6 +1019,27 @@
 						<ID>6</ID>
 					</UseTemplate>
 
+
+				<!-- 		KNOBS			 -->
+
+				<!-- FUEL TANK TEMPERATURE SELECTOR -->
+                <Update Once="True">
+                    1 (&gt;L:L1011_FE_FUEL_TEMP_SELECTOR)
+                </Update>
+
+                <UseTemplate Name="L1011_Anim_Interactions">
+                    <ANIM_TYPE>KNOB</ANIM_TYPE>
+                    <ANIM_TEMPLATE>L1011_MULTI_SELECTOR_4States_Template</ANIM_TEMPLATE>
+                    <NODE_ID>KNOB_MULTI_FUEL_TEMP_SELECTOR</NODE_ID>
+                    <ANIM_NAME>KA_MULTI_FUEL_TEMP_SELECTOR</ANIM_NAME>
+                    <PART_ID>KNOB_MULTI_FUEL_TEMP_SELECTOR</PART_ID>
+					<POSITION_VAR>L1011_FE_FUEL_TEMP_SELECTOR</POSITION_VAR>
+                    <ANIMTIP_0>TANK</ANIMTIP_0>
+                    <ANIMTIP_1>ENG 1</ANIMTIP_1>
+                    <ANIMTIP_2>ENG 2</ANIMTIP_2>
+                    <ANIMTIP_3>ENG 3</ANIMTIP_3>
+                </UseTemplate>
+
     		</Component>
 
     		<Component ID="ENGINE_STATUS">
@@ -596,12 +1048,148 @@
 				PUSH_FE_ENGINE_STATUS_PICKUP_A # BTN_PUSH_FE_ENGINE_STATUS_PICKUP_A # _E
 				PUSH_FE_ENGINE_STATUS_PICKUP_B # BTN_PUSH_FE_ENGINE_STATUS_PICKUP_B # _E
 				 -->
+
+				<!-- 
+					VIBRATION GAUGES
+				-->
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_ENGINE_STATUS_VIB_1</ANIM_NAME>
+					<ANIM_CODE>(A:ENG VIBRATION:1, number) </ANIM_CODE>
+					<ANIM_LENGTH>5</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_ENGINE_STATUS_VIB_2</ANIM_NAME>
+					<ANIM_CODE>(A:ENG VIBRATION:2, number) </ANIM_CODE>
+					<ANIM_LENGTH>5</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_ENGINE_STATUS_VIB_3</ANIM_NAME>
+					<ANIM_CODE>(A:ENG VIBRATION:3, number) </ANIM_CODE>
+					<ANIM_LENGTH>5</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+				<!-- 		KNOBS			 -->
+
+				<!-- ENGINE STATUS SELECTOR -->
+                <Update Once="True">
+                    0 (&gt;L:L1011_FE_ENGINE_STATUS_SELECTOR)
+                </Update>
+
+                <UseTemplate Name="L1011_Anim_Interactions">
+                    <ANIM_TYPE>KNOB</ANIM_TYPE>
+                    <ANIM_TEMPLATE>L1011_MULTI_SELECTOR_4States_Template</ANIM_TEMPLATE>
+                    <NODE_ID>KNOB_MULTI_ENGINE_STATUS</NODE_ID>
+                    <ANIM_NAME>KA_MULTI_ENGINE_STATUS</ANIM_NAME>
+                    <PART_ID>KNOB_MULTI_ENGINE_STATUS</PART_ID>
+					<POSITION_VAR>L1011_FE_ENGINE_STATUS_SELECTOR</POSITION_VAR>
+                    <ANIMTIP_0>NORM</ANIMTIP_0>
+                    <ANIMTIP_1>LOW</ANIMTIP_1>
+                    <ANIMTIP_2>MED</ANIMTIP_2>
+                    <ANIMTIP_3>HIGH</ANIMTIP_3>
+                </UseTemplate>
+
+
     		</Component>
 
     		<Component ID="ENGINE_OIL">
 				<!-- UNASSIGNED ANIMATIONS # NODE # EMISSIVE SUFFIX
 				PUSH_FE_ENGINE_OIL_TEST # BTN_PUSH_FE_ENGINE_OIL_TEST # _E
 				 -->
+
+			
+				<!-- 
+					OIL QUANTITY GAUGES
+				-->
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_ENGINE_OIL_QTY1</ANIM_NAME>
+					<ANIM_CODE>(A:ENG OIL QUANTITY:1, quarts) 100 / </ANIM_CODE>
+					<ANIM_LENGTH>20</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_ENGINE_OIL_QTY2</ANIM_NAME>
+					<ANIM_CODE>(A:ENG OIL QUANTITY:2, quarts) 100 / </ANIM_CODE>
+					<ANIM_LENGTH>20</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_ENGINE_OIL_QTY3</ANIM_NAME>
+					<ANIM_CODE>(A:ENG OIL QUANTITY:3, quarts) 100 / </ANIM_CODE>
+					<ANIM_LENGTH>20</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+				<!-- 
+					OIL TEMPERATURE GAUGES
+				-->
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_ENGINE_OIL_TEMP1</ANIM_NAME>
+					<ANIM_CODE>(A:ENG OIL TEMPERATURE:1, celsius) 100 + </ANIM_CODE>
+					<ANIM_LENGTH>275</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_ENGINE_OIL_TEMP2</ANIM_NAME>
+					<ANIM_CODE>(A:ENG OIL TEMPERATURE:2, celsius) 100 + </ANIM_CODE>
+					<ANIM_LENGTH>275</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_ENGINE_OIL_TEMP3</ANIM_NAME>
+					<ANIM_CODE>(A:ENG OIL TEMPERATURE:3, celsius) 100 + </ANIM_CODE>
+					<ANIM_LENGTH>275</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+				<!-- 
+					OIL PRESSURE GAUGES
+				-->
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_ENGINE_OIL_PRES1</ANIM_NAME>
+					<ANIM_CODE>(A:ENG OIL PRESSURE:1, psi) </ANIM_CODE>
+					<ANIM_LENGTH>100</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_ENGINE_OIL_PRES2</ANIM_NAME>
+					<ANIM_CODE>(A:ENG OIL PRESSURE:2, psi) </ANIM_CODE>
+					<ANIM_LENGTH>100</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
+    			<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>GAU_ENGINE_OIL_PRES3</ANIM_NAME>
+					<ANIM_CODE>(A:ENG OIL PRESSURE:3, psi) </ANIM_CODE>
+					<ANIM_LENGTH>100</ANIM_LENGTH>
+					<ANIM_WRAP>False</ANIM_WRAP>
+					<ANIM_LAG>100</ANIM_LAG>
+				</UseTemplate>
+
     		</Component>
 
     		<Component ID="ENGINE_FUEL">
@@ -610,31 +1198,69 @@
     		<Component ID="FUEL_JETESON">
     		</Component>
 
+    		<Component ID="FE_LIGHTS_PANEL">
+
+				<UseTemplate Name="ASOBO_LIGHTING_Knob_Potentiometer_Template">
+        		    <NODE_ID>BTN_KNOB_FE_LIGHTS_INSTR_LIGHTS</NODE_ID>
+        		    <ANIM_NAME>KA_FE_LIGHTS_INSTR_LIGHTS_ANIM</ANIM_NAME>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		    <TT_DESCRIPTION_ID>@TT_Package.LIGHTING_KNOB_PANEL_ACTION</TT_DESCRIPTION_ID>
+        		    <TOOLTIP_TITLE>@TT_Package.LIGHTING_KNOB_PANEL_TITLE</TOOLTIP_TITLE>
+        		    <TT_ICON>ROTATE</TT_ICON>   
+        		</UseTemplate>
+
+    		</Component>
+
     		<Component ID="CLOCK_FE">
 				<!-- UNASSIGNED ANIMATIONS # NODE # EMISSIVE SUFFIX
 				FE_CLOCK_SW
 				 -->
 
-						<UseTemplate Name="ASOBO_GT_Anim">
-							<ANIM_NAME>FE_CLOCK_HR</ANIM_NAME>
-							<ANIM_CODE>(E:LOCAL TIME, hour) 12 % 10 * </ANIM_CODE>
-							<ANIM_LENGTH>120</ANIM_LENGTH>
-							<ANIM_WRAP>True</ANIM_WRAP>
-						</UseTemplate>
+					<!-- 
+						CLOCK HANDS
+					-->
+					<UseTemplate Name="ASOBO_GT_Anim">
+						<ANIM_NAME>FE_CLOCK_HR</ANIM_NAME>
+						<ANIM_CODE>(E:LOCAL TIME, hour) 12 % 10 * </ANIM_CODE>
+						<ANIM_LENGTH>120</ANIM_LENGTH>
+						<ANIM_WRAP>True</ANIM_WRAP>
+					</UseTemplate>
 
-						<UseTemplate Name="ASOBO_GT_Anim">
-							<ANIM_NAME>FE_CLOCK_MIN</ANIM_NAME>
-							<ANIM_CODE>(E:LOCAL TIME, minutes) flr 60 % </ANIM_CODE>
-							<ANIM_LENGTH>60</ANIM_LENGTH>
-							<ANIM_WRAP>True</ANIM_WRAP>
-						</UseTemplate>
+					<UseTemplate Name="ASOBO_GT_Anim">
+						<ANIM_NAME>FE_CLOCK_MIN</ANIM_NAME>
+						<ANIM_CODE>(E:LOCAL TIME, minutes) flr 60 % </ANIM_CODE>
+						<ANIM_LENGTH>60</ANIM_LENGTH>
+						<ANIM_WRAP>True</ANIM_WRAP>
+					</UseTemplate>
 
-						<UseTemplate Name="ASOBO_GT_Anim">
-							<ANIM_NAME>FE_CLOCK_SEC</ANIM_NAME>
-							<ANIM_CODE>(E:LOCAL TIME, seconds) flr 60 % </ANIM_CODE>
-							<ANIM_LENGTH>60</ANIM_LENGTH>
-							<ANIM_WRAP>True</ANIM_WRAP>
-						</UseTemplate>
+					<UseTemplate Name="ASOBO_GT_Anim">
+						<ANIM_NAME>FE_CLOCK_SEC</ANIM_NAME>
+						<ANIM_CODE>(E:LOCAL TIME, seconds) flr 60 % </ANIM_CODE>
+						<ANIM_LENGTH>60</ANIM_LENGTH>
+						<ANIM_WRAP>True</ANIM_WRAP>
+					</UseTemplate>
+
+
+					<!-- 
+						MOVIES SWITCH (GUARDED)
+					-->	
+
+                	<Update Once="True">
+                	    0 (&gt;L:L1011_FE_CLOCK_MOV_Toggle)
+                	</Update>
+
+					<UseTemplate Name="ASOBO_GT_Switch_Covered">
+						<SWITCH_NODE_ID>BTN_PUSH_FE_CLOCK_MOV</SWITCH_NODE_ID>
+						<SWITCH_ANIM_NAME>PUSH_FE_CLOCK_MOV</SWITCH_ANIM_NAME>
+						<COVER_NODE_ID>BTN_PUSH_FE_CLOCK_MOV_GUARD</COVER_NODE_ID>
+						<COVER_ANIM_NAME>PUSH_FE_CLOCK_MOV_GUARD</COVER_ANIM_NAME>
+						<WWISE_COVER_EVENT_OPEN>cover_open</WWISE_COVER_EVENT_OPEN>
+						<WWISE_COVER_EVENT_CLOSE>cover_close</WWISE_COVER_EVENT_CLOSE>
+						<!-- <SWITCH_ANIM_CODE>(L:L1011_FE_CLOCK_MOV, Bool) 100 *</SWITCH_ANIM_CODE> -->
+						<TOGGLE_STATE>(&gt;L:L1011_FE_CLOCK_MOV_Toggle)</TOGGLE_STATE>
+					</UseTemplate>
+
+				
 
     		</Component>
 
@@ -651,6 +1277,14 @@
 					<ANIM_WRAP>False</ANIM_WRAP>
 				</UseTemplate>
 
+					<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+						<SIMVAR>APU PCT RPM:1</SIMVAR>
+						<UNITS>Percent</UNITS>
+						<DIGITS_0_ANIM_NAME>GAUGE_N1_APU_DIGITS_1</DIGITS_0_ANIM_NAME>
+						<DIGITS_1_ANIM_NAME>GAUGE_N1_APU_DIGITS_10</DIGITS_1_ANIM_NAME>
+						<DIGITS_2_ANIM_NAME>GAUGE_N1_APU_DIGITS_100</DIGITS_2_ANIM_NAME>
+					</UseTemplate>
+
 
 				<UseTemplate Name="ASOBO_ELECTRICAL_Push_APU_Starter_Template">
 					<ANIM_NAME>PUSH_FE_APU_START</ANIM_NAME>
@@ -658,6 +1292,13 @@
 					<ANIM_LENGTH>90</ANIM_LENGTH>
 					<WWISE_EVENT_1>autopilot_push_button_on</WWISE_EVENT_1>
 					<WWISE_EVENT_2>autopilot_push_button_off</WWISE_EVENT_2>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_GT_Push_Button_Airliner">
+					<ANIM_NAME>PUSH_FE_APU_STOP</ANIM_NAME>
+					<NODE_ID>BTN_PUSH_FE_APU_STOP</NODE_ID>
+					<INPUT_EVENT_ID>ELECTRICAL</INPUT_EVENT_ID>
+					<ANIM_CODE>(&gt;K:APU_OFF_SWITCH)</ANIM_CODE>
 				</UseTemplate>
 
 				<UseTemplate Name="ASOBO_ELECTRICAL_Switch_APU_Bleed_Template">
@@ -698,6 +1339,26 @@
 					<TT_DESCRIPTION_ID>@TT_Package.ELECTRICAL_SWITCH_APU_MASTER_ACTION_SET</TT_DESCRIPTION_ID>
 					<TOOLTIP_TITLE>@TT_Package.ELECTRICAL_SWITCH_APU_MASTER_TITLE</TOOLTIP_TITLE>
 				</UseTemplate>
+
+				<!-- 		KNOBS			 -->
+
+				<!-- APU MODE SELECTOR -->
+                <Update Once="True">
+                    1 (&gt;L:L1011_FE_APU_MODE_SELECTOR)
+                </Update>
+
+                <UseTemplate Name="L1011_Anim_Interactions">
+                    <ANIM_TYPE>KNOB</ANIM_TYPE>
+                    <ANIM_TEMPLATE>L1011_MULTI_SELECTOR_3States_Template</ANIM_TEMPLATE>
+                    <NODE_ID>KNOB_MULTI_APU_MODE</NODE_ID>
+                    <ANIM_NAME>KA_MULTI_APU_MODE</ANIM_NAME>
+                    <PART_ID>KNOB_MULTI_APU_MODE</PART_ID>
+					<POSITION_VAR>L1011_FE_APU_MODE_SELECTOR</POSITION_VAR>
+                    <ANIMTIP_0>NORM</ANIMTIP_0>
+                    <ANIMTIP_1>LOW</ANIMTIP_1>
+                    <ANIMTIP_2>MED</ANIMTIP_2>
+                    <ANIMTIP_3>HIGH</ANIMTIP_3>
+                </UseTemplate>
 
     		</Component>
 
@@ -1635,6 +2296,7 @@
     			<Component ID="CAPTAIN">
 		   			<!-- HSI CAPTAIN -->
     				<Component ID="CAPTN_HSI">
+		    			<Component ID="HSI_COMPASS">
 
 						<UseTemplate Name="ASOBO_GT_Anim">
 							<ANIM_NAME>HSI_HEADING_P</ANIM_NAME>
@@ -1644,11 +2306,72 @@
 						</UseTemplate>
 
 						<UseTemplate Name="ASOBO_GT_Anim">
-							<ANIM_NAME>HSI_CRS_P</ANIM_NAME>
+							<ANIM_NAME>HSI_HDG_P</ANIM_NAME>
 							<ANIM_CODE>(A:AUTOPILOT HEADING LOCK DIR, degrees) 10 / </ANIM_CODE>
 							<ANIM_LENGTH>36</ANIM_LENGTH>
 							<ANIM_WRAP>True</ANIM_WRAP>
 						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>HSI_CRS_P</ANIM_NAME>
+							<ANIM_CODE>(A:NAV OBS:1, degrees) 10 / </ANIM_CODE>
+							<ANIM_LENGTH>36</ANIM_LENGTH>
+							<ANIM_WRAP>True</ANIM_WRAP>
+						</UseTemplate>
+
+    					</Component>
+
+		    			<Component ID="DIGITS_HSI_HDG">
+							<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+								<SIMVAR>HEADING INDICATOR</SIMVAR>
+								<UNITS>degrees</UNITS>
+								<DIGITS_0_ANIM_NAME>HSI_1_HDG_1_DIGITS_1</DIGITS_0_ANIM_NAME>
+								<DIGITS_1_ANIM_NAME>HSI_1_HDG_1_DIGITS_10</DIGITS_1_ANIM_NAME>
+								<DIGITS_2_ANIM_NAME>HSI_1_HDG_1_DIGITS_100</DIGITS_2_ANIM_NAME>
+							</UseTemplate>
+    					</Component>
+
+		    			<Component ID="DIGITS_HSI_CRS">
+							<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+								<SIMVAR>NAV OBS:1</SIMVAR>
+								<UNITS>degrees</UNITS>
+								<DIGITS_0_ANIM_NAME>HSI_1_CRS_1_DIGITS_1</DIGITS_0_ANIM_NAME>
+								<DIGITS_1_ANIM_NAME>HSI_1_CRS_1_DIGITS_10</DIGITS_1_ANIM_NAME>
+								<DIGITS_2_ANIM_NAME>HSI_1_CRS_1_DIGITS_100</DIGITS_2_ANIM_NAME>
+							</UseTemplate>
+    					</Component>
+
+		    			<Component ID="DIGITS_HSI_DIST">
+							<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+								<SIMVAR>NAV_VOR_DISTANCE</SIMVAR>
+								<UNITS>Nm</UNITS>
+								<DIGITS_0_ANIM_NAME>HSI_1_DIST_1_DIGITS_1</DIGITS_0_ANIM_NAME>
+								<DIGITS_1_ANIM_NAME>HSI_1_DIST_1_DIGITS_10</DIGITS_1_ANIM_NAME>
+								<DIGITS_2_ANIM_NAME>HSI_1_DIST_1_DIGITS_100</DIGITS_2_ANIM_NAME>
+								<DIGITS_3_ANIM_NAME>HSI_1_DIST_1_DIGITS_1000</DIGITS_3_ANIM_NAME>
+							</UseTemplate>
+    					</Component>
+
+		    			<Component ID="DIGITS_HSI_TIME">
+							<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+								<SIMVAR></SIMVAR>
+								<UNITS>degrees</UNITS>
+								<DIGITS_0_ANIM_NAME>HSI_1_TIME_1_DIGITS_1</DIGITS_0_ANIM_NAME>
+								<DIGITS_1_ANIM_NAME>HSI_1_TIME_1_DIGITS_10</DIGITS_1_ANIM_NAME>
+								<DIGITS_2_ANIM_NAME>HSI_1_TIME_1_DIGITS_100</DIGITS_2_ANIM_NAME>
+							</UseTemplate>
+    					</Component>
+
+		    			<Component ID="DIGITS_HSI_GNDSPD">
+							<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+								<SIMVAR>GPS GROUND SPEED</SIMVAR>
+								<UNITS>Knots</UNITS>
+								<DIGITS_0_ANIM_NAME>HSI_1_GNDSPD_1_DIGITS_1</DIGITS_0_ANIM_NAME>
+								<DIGITS_1_ANIM_NAME>HSI_1_GNDSPD_1_DIGITS_10</DIGITS_1_ANIM_NAME>
+								<DIGITS_2_ANIM_NAME>HSI_1_GNDSPD_1_DIGITS_100</DIGITS_2_ANIM_NAME>
+							</UseTemplate>
+    					</Component>
+
     				</Component>
 
 		   			<!-- VOR/ADF CAPTAIN -->
@@ -2234,6 +2957,29 @@
 
     				</Component>
 
+
+    				<Component ID="LANDING_GEAR">
+
+    					<!-- GEAR L, R & C WARNING LIGHTS -->
+						<UseTemplate Name="ASOBO_LANDING_GEAR_Light_Left_Template">
+							<NODE_ID>WARN_GEAR_L</NODE_ID>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_LANDING_GEAR_Light_Right_Template">
+							<NODE_ID>WARN_GEAR_R</NODE_ID>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_LANDING_GEAR_Light_Center_Template">
+							<NODE_ID>WARN_GEAR_C</NODE_ID>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_LANDING_GEAR_Light_Transit_Template">
+							<NODE_ID>GEAR_LIGHTS_TRANS_E</NODE_ID>
+						</UseTemplate>
+
+    				</Component>
+
+
     				<!-- SYS WARN ANN -->
     				<Component ID="SYS_WARN_ANNUNCIATOR">
 
@@ -2642,6 +3388,12 @@
 					<ANIM_NAME_KNOB>KA_HDG</ANIM_NAME_KNOB>
 				</UseTemplate>
 
+				<!-- CRS 1 KNOB -->
+				<UseTemplate Name="ASOBO_AUTOPILOT_Knob_Course_Template">
+					<NODE_ID>BTN_KNOB_CRS1</NODE_ID>
+					<ANIM_NAME_KNOB>KA_CRS1</ANIM_NAME_KNOB>
+				</UseTemplate>
+
 				<!-- ALT SELECTOR KNOB -->
 				<UseTemplate Name="ASOBO_AUTOPILOT_Knob_Altitude_Template">
 					<NODE_ID>BTN_KNOB_ALT_SEL</NODE_ID>
@@ -2961,13 +3713,13 @@
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         	    <NODE_ID>LIGHTS_GLARESHIELD_INSTR_L</NODE_ID>
         	    <POTENTIOMETER>18</POTENTIOMETER>
-                <EMISSIVE_CODE>1 (>A:BUS LOOKUP INDEX, Number) (A:CIRCUIT CONNECTION ON:1, Bool)</EMISSIVE_CODE>
+                <!-- <EMISSIVE_CODE>1 (>A:BUS LOOKUP INDEX, Number) (A:CIRCUIT CONNECTION ON:1, Bool)</EMISSIVE_CODE> -->
         	</UseTemplate>
 
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         	    <NODE_ID>LIGHTS_GLARESHIELD_INSTR_R</NODE_ID>
         	    <POTENTIOMETER>19</POTENTIOMETER>
-                <EMISSIVE_CODE>(A:ELECTRICAL MASTER BATTERY:1, Bool)</EMISSIVE_CODE>
+                <!-- <EMISSIVE_CODE>(A:ELECTRICAL MASTER BATTERY:1, Bool)</EMISSIVE_CODE> -->
         	</UseTemplate>
 
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
@@ -3513,6 +4265,13 @@
         		    <NODE_ID>GAUGE_FF_3_DIGITS_100</NODE_ID>
         		    <POTENTIOMETER>18</POTENTIOMETER>
         		</UseTemplate>
+
+			<!-- FE LIGHTING -->
+
+        	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        	    <NODE_ID>LIGHTS_FE_INSTR</NODE_ID>
+        	    <POTENTIOMETER>40</POTENTIOMETER>
+        	</UseTemplate>
 
     	</Component>
     </Behaviors>
