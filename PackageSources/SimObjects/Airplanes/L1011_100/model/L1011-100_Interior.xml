@@ -115,7 +115,7 @@
 
     	<Component ID="THROTTLE_PEDESTAL">
 
-    		<Component ID="FUEL_IGNITION">
+    		<Component ID="THROTTLES">
 				<!--
 				<UseTemplate Name="ASOBO_ENGINE_Switch_Starter_Template">
 					<NODE_ID>SW_CEN_FUEL_IGN_1</NODE_ID>
@@ -226,7 +226,7 @@
 					<TT_DESCRIPTION_ID>@TT_Package.FUEL_SWITCH_VALVE_4ENG_ACTION</TT_DESCRIPTION_ID>
 					<TT_DESCRIPTION_INDEX>1</TT_DESCRIPTION_INDEX>	
 					<TOOLTIP_TITLE>@TT_Package.FUEL_SWITCH_VALVE_ENG_TITLE</TOOLTIP_TITLE>
-					<IE_VALVE_ID>Flow_Ctrl_1</IE_VALVE_ID>
+					<IE_VALVE_ID>Eng1CutoffValve</IE_VALVE_ID>
 				</UseTemplate>
 
 				<!-- ENG 2 FUEL CUTOFF SW -->
@@ -237,7 +237,7 @@
 					<TT_DESCRIPTION_INDEX>2</TT_DESCRIPTION_INDEX>	
 					<TOOLTIP_TITLE>@TT_Package.FUEL_SWITCH_VALVE_ENG_TITLE</TOOLTIP_TITLE>
 					<ID>9</ID>
-					<IE_VALVE_ID>Flow_Ctrl_2</IE_VALVE_ID>
+					<IE_VALVE_ID>Eng2CutoffValve</IE_VALVE_ID>
 				</UseTemplate>
 
 				<!-- ENG 3 FUEL CUTOFF SW -->
@@ -248,13 +248,26 @@
 					<TT_DESCRIPTION_ID>@TT_Package.FUEL_SWITCH_VALVE_4ENG_ACTION</TT_DESCRIPTION_ID>
 					<TT_DESCRIPTION_INDEX>3</TT_DESCRIPTION_INDEX>	
 					<TOOLTIP_TITLE>@TT_Package.FUEL_SWITCH_VALVE_ENG_TITLE</TOOLTIP_TITLE>
-					<IE_VALVE_ID>Flow_Ctrl_3</IE_VALVE_ID>
+					<IE_VALVE_ID>Eng3CutoffValve</IE_VALVE_ID>
 				</UseTemplate>
 
-
+				<!-- PARKING BRAKE HANDLE -->
 				<UseTemplate Name="ASOBO_LANDING_GEAR_Switch_ParkingBrake_Template">
 					<NODE_ID>PARKING_BRAKE_HANDLE_KNOB</NODE_ID>
 					<ANIM_NAME>PARKING_BRAKE_HANDLE</ANIM_NAME>
+				</UseTemplate>
+
+    			<!-- PARKING BRAKE LIGHT -->
+				<UseTemplate Name="L1011_WARN_Indicator_Simvar_Template">
+					<NODE_ID>PRK_BRK_LIGHT_L_E</NODE_ID>
+					<SIMVAR>BRAKE PARKING POSITION</SIMVAR>
+					<ID>0</ID>
+				</UseTemplate>
+
+				<UseTemplate Name="L1011_WARN_Indicator_Simvar_Template">
+					<NODE_ID>PRK_BRK_LIGHT_R_E</NODE_ID>
+					<SIMVAR>BRAKE PARKING POSITION</SIMVAR>
+					<ID>0</ID>
 				</UseTemplate>
 
 
@@ -264,7 +277,7 @@
 
     	<Component ID="LOWER_CENTER_PEDESTAL">
 
-	    	<Component ID="VHF_TUNER_L">
+	    	<Component ID="VHF_TUNER_1">
 
 				<!-- VHF 1 LEFT SIDE -->
 				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
@@ -317,6 +330,190 @@
 					<ANIM_NAME>SWITCH_COMM_VHF_1</ANIM_NAME>
 				</UseTemplate>
 
+
+			</Component>
+
+	    	<Component ID="VHF_TUNER_2">
+
+				<!-- VHF 2 LEFT SIDE -->
+				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+					<SIMVAR>COM ACTIVE FREQUENCY:2</SIMVAR>
+					<UNITS>KHz</UNITS>
+					<DIGITS_1_ANIM_NAME>COMM_VHF_2_L_DIGITS_1</DIGITS_1_ANIM_NAME>
+					<DIGITS_2_ANIM_NAME>COMM_VHF_2_L_DIGITS_10</DIGITS_2_ANIM_NAME>
+					<DIGITS_3_ANIM_NAME>COMM_VHF_2_L_DIGITS_100</DIGITS_3_ANIM_NAME>
+					<DIGITS_4_ANIM_NAME>COMM_VHF_2_L_DIGITS_1000</DIGITS_4_ANIM_NAME>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>COMM_VHF_2_L_DIGITS_10000</ANIM_NAME>
+					<ANIM_CODE>1</ANIM_CODE>
+					<ANIM_LENGTH>10</ANIM_LENGTH>
+					<ANIM_WRAP>True</ANIM_WRAP>
+				</UseTemplate>
+
+
+				<!-- VHF 2 RIGHT SIDE -->
+				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+					<SIMVAR>COM STANDBY FREQUENCY:2</SIMVAR>
+					<UNITS>KHz</UNITS>
+					<DIGITS_1_ANIM_NAME>COMM_VHF_2_R_DIGITS_1</DIGITS_1_ANIM_NAME>
+					<DIGITS_2_ANIM_NAME>COMM_VHF_2_R_DIGITS_10</DIGITS_2_ANIM_NAME>
+					<DIGITS_3_ANIM_NAME>COMM_VHF_2_R_DIGITS_100</DIGITS_3_ANIM_NAME>
+					<DIGITS_4_ANIM_NAME>COMM_VHF_2_R_DIGITS_1000</DIGITS_4_ANIM_NAME>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>COMM_VHF_2_R_DIGITS_10000</ANIM_NAME>
+					<ANIM_CODE>1</ANIM_CODE>
+					<ANIM_LENGTH>10</ANIM_LENGTH>
+					<ANIM_WRAP>True</ANIM_WRAP>
+				</UseTemplate>
+
+				<!-- COM 2 R SELECTOR KNOB -->
+                <UseTemplate Name="ASOBO_NAVCOM_Knob_COM_Frequency_Template">
+                    <ID>2</ID>
+					<NODE_ID_LARGE_KNOB>KNOB_VHF_2_R_LARGE</NODE_ID_LARGE_KNOB>
+					<NODE_ID_SMALL_KNOB>KNOB_VHF_2_R_SMALL</NODE_ID_SMALL_KNOB>
+					<ANIM_NAME_LARGE_KNOB>KA_VHF_2_R_LARGE</ANIM_NAME_LARGE_KNOB>
+					<ANIM_NAME_SMALL_KNOB>KA_VHF_2_R_SMALL</ANIM_NAME_SMALL_KNOB>
+                </UseTemplate>
+
+				<!-- COM 2 SWAP -->
+				<UseTemplate Name="ASOBO_NAVCOM_Push_COM_Swap_Template">
+                    <ID>2</ID>
+					<NODE_ID>SW_COMM_VHF_2</NODE_ID>
+					<ANIM_NAME>SWITCH_COMM_VHF_2</ANIM_NAME>
+				</UseTemplate>
+
+
+			</Component>
+
+	    	<Component ID="VHF_TUNER_3">
+
+				<!-- VHF 3 LEFT SIDE -->
+				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+					<SIMVAR>COM ACTIVE FREQUENCY:3</SIMVAR>
+					<UNITS>KHz</UNITS>
+					<DIGITS_1_ANIM_NAME>COMM_VHF_3_L_DIGITS_1</DIGITS_1_ANIM_NAME>
+					<DIGITS_2_ANIM_NAME>COMM_VHF_3_L_DIGITS_10</DIGITS_2_ANIM_NAME>
+					<DIGITS_3_ANIM_NAME>COMM_VHF_3_L_DIGITS_100</DIGITS_3_ANIM_NAME>
+					<DIGITS_4_ANIM_NAME>COMM_VHF_3_L_DIGITS_1000</DIGITS_4_ANIM_NAME>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>COMM_VHF_3_L_DIGITS_10000</ANIM_NAME>
+					<ANIM_CODE>1</ANIM_CODE>
+					<ANIM_LENGTH>10</ANIM_LENGTH>
+					<ANIM_WRAP>True</ANIM_WRAP>
+				</UseTemplate>
+
+
+				<!-- VHF 3 RIGHT SIDE -->
+				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+					<SIMVAR>COM STANDBY FREQUENCY:3</SIMVAR>
+					<UNITS>KHz</UNITS>
+					<DIGITS_1_ANIM_NAME>COMM_VHF_3_R_DIGITS_1</DIGITS_1_ANIM_NAME>
+					<DIGITS_2_ANIM_NAME>COMM_VHF_3_R_DIGITS_10</DIGITS_2_ANIM_NAME>
+					<DIGITS_3_ANIM_NAME>COMM_VHF_3_R_DIGITS_100</DIGITS_3_ANIM_NAME>
+					<DIGITS_4_ANIM_NAME>COMM_VHF_3_R_DIGITS_1000</DIGITS_4_ANIM_NAME>
+				</UseTemplate>
+
+				<UseTemplate Name="ASOBO_GT_Anim">
+					<ANIM_NAME>COMM_VHF_3_R_DIGITS_10000</ANIM_NAME>
+					<ANIM_CODE>1</ANIM_CODE>
+					<ANIM_LENGTH>10</ANIM_LENGTH>
+					<ANIM_WRAP>True</ANIM_WRAP>
+				</UseTemplate>
+
+				<!-- COM 3 R SELECTOR KNOB -->
+                <UseTemplate Name="ASOBO_NAVCOM_Knob_COM_Frequency_Template">
+                    <ID>3</ID>
+					<NODE_ID_LARGE_KNOB>KNOB_VHF_3_R_LARGE</NODE_ID_LARGE_KNOB>
+					<NODE_ID_SMALL_KNOB>KNOB_VHF_3_R_SMALL</NODE_ID_SMALL_KNOB>
+					<ANIM_NAME_LARGE_KNOB>KA_VHF_3_R_LARGE</ANIM_NAME_LARGE_KNOB>
+					<ANIM_NAME_SMALL_KNOB>KA_VHF_3_R_SMALL</ANIM_NAME_SMALL_KNOB>
+                </UseTemplate>
+
+				<!-- COM 3 SWAP -->
+				<UseTemplate Name="ASOBO_NAVCOM_Push_COM_Swap_Template">
+                    <ID>3</ID>
+					<NODE_ID>SW_COMM_VHF_3</NODE_ID>
+					<ANIM_NAME>SWITCH_COMM_VHF_3</ANIM_NAME>
+				</UseTemplate>
+
+
+			</Component>
+
+	    	<Component ID="ADF_TUNER">
+
+				<!-- ADF 1 DIGITS -->
+				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+					<SIMVAR>ADF ACTIVE FREQUENCY:1</SIMVAR>
+					<UNITS>KHz</UNITS>
+					<DIGITS_0_ANIM_NAME>COMM_ADF_1_DIGITS_1</DIGITS_0_ANIM_NAME>
+					<DIGITS_1_ANIM_NAME>COMM_ADF_1_DIGITS_10</DIGITS_1_ANIM_NAME>
+					<DIGITS_2_ANIM_NAME>COMM_ADF_1_DIGITS_100</DIGITS_2_ANIM_NAME>
+					<DIGITS_3_ANIM_NAME>COMM_ADF_1_DIGITS_1000</DIGITS_3_ANIM_NAME>
+				</UseTemplate>
+
+				<!-- ADF 2 DIGITS -->
+				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+					<SIMVAR>ADF ACTIVE FREQUENCY:2</SIMVAR>
+					<UNITS>KHz</UNITS>
+					<DIGITS_0_ANIM_NAME>COMM_ADF_2_DIGITS_1</DIGITS_0_ANIM_NAME>
+					<DIGITS_1_ANIM_NAME>COMM_ADF_2_DIGITS_10</DIGITS_1_ANIM_NAME>
+					<DIGITS_2_ANIM_NAME>COMM_ADF_2_DIGITS_100</DIGITS_2_ANIM_NAME>
+					<DIGITS_3_ANIM_NAME>COMM_ADF_2_DIGITS_1000</DIGITS_3_ANIM_NAME>
+				</UseTemplate>
+
+			</Component>
+
+	    	<Component ID="TRANSPONDER">
+
+				<!-- TRANSPONDER SCREEN -->
+				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+					<SIMVAR>TRANSPONDER CODE:1</SIMVAR>
+					<UNITS>Bool</UNITS>
+					<DIGITS_0_ANIM_NAME>COMM_TSPDR_DIGITS_1</DIGITS_0_ANIM_NAME>
+					<DIGITS_1_ANIM_NAME>COMM_TSPDR_DIGITS_10</DIGITS_1_ANIM_NAME>
+					<DIGITS_2_ANIM_NAME>COMM_TSPDR_DIGITS_100</DIGITS_2_ANIM_NAME>
+					<DIGITS_3_ANIM_NAME>COMM_TSPDR_DIGITS_1000</DIGITS_3_ANIM_NAME>
+				</UseTemplate>
+
+				<!-- TRANSPONDER KNOBS -->
+				<UseTemplate Name="ASOBO_Transponder_Knob_Value_Template">
+                    <ID>1</ID>
+					<DIGIT>1</DIGIT>
+					<DIGITID>THOUSANDS</DIGITID>
+					<NODE_ID>KNOB_TSPDR_L_LARGE</NODE_ID>
+					<ANIM_NAME>KA_TSPDR_L_LARGE</ANIM_NAME>
+				</UseTemplate>
+				<UseTemplate Name="ASOBO_Transponder_Knob_Value_Template">
+                    <ID>2</ID>
+					<DIGIT>2</DIGIT>
+					<DIGITID>HUNDREDS</DIGITID>
+					<NODE_ID>KNOB_TSPDR_L_SMALL</NODE_ID>
+					<ANIM_NAME>KA_TSPDR_L_SMALL</ANIM_NAME>
+				</UseTemplate>
+				<UseTemplate Name="ASOBO_Transponder_Knob_Value_Template">
+                    <ID>3</ID>
+					<DIGIT>3</DIGIT>
+					<DIGITID>TENS</DIGITID>
+					<NODE_ID>KNOB_TSPDR_R_LARGE</NODE_ID>
+					<ANIM_NAME>KA_TSPDR_R_LARGE</ANIM_NAME>
+				</UseTemplate>
+				<UseTemplate Name="ASOBO_Transponder_Knob_Value_Template">
+                    <ID>4</ID>
+					<DIGIT>4</DIGIT>
+					<DIGITID>ONES</DIGITID>
+					<NODE_ID>KNOB_TSPDR_R_SMALL</NODE_ID>
+					<ANIM_NAME>KA_TSPDR_R_SMALL</ANIM_NAME>
+				</UseTemplate>
+
+			</Component>
+
+	    	<Component ID="EACS_CONTROL_UNIT">
 
 			</Component>
 
@@ -3433,7 +3630,7 @@
 
 				<!-- NAV VOR 1 LEFT SIDE -->
 				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
-					<SIMVAR>NAV STANDBY FREQUENCY:1</SIMVAR>
+					<SIMVAR>NAV ACTIVE FREQUENCY:1</SIMVAR>
 					<UNITS>KHz</UNITS>
 					<DIGITS_1_ANIM_NAME>AP_VOR_1_DIGITS_1</DIGITS_1_ANIM_NAME>
 					<DIGITS_2_ANIM_NAME>AP_VOR_1_DIGITS_10</DIGITS_2_ANIM_NAME>
@@ -3450,7 +3647,7 @@
 
 				<!-- NAV VOR 2 RIGHT SIDE -->
 				<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
-					<SIMVAR>NAV STANDBY FREQUENCY:2</SIMVAR>
+					<SIMVAR>NAV ACTIVE FREQUENCY:2</SIMVAR>
 					<UNITS>KHz</UNITS>
 					<DIGITS_1_ANIM_NAME>AP_VOR_2_DIGITS_1</DIGITS_1_ANIM_NAME>
 					<DIGITS_2_ANIM_NAME>AP_VOR_2_DIGITS_10</DIGITS_2_ANIM_NAME>
