@@ -1587,6 +1587,8 @@
 						PUSH_OVHD_ANTISKID_R_2
 						PUSH_OVHD_ANTISKID_R_3
 						PUSH_OVHD_ANTISKID_R_4
+
+						FOR OBJECT NAME REPLACE "PUSH_" WITH "BTN_"
 				 -->
 
     		</Component>
@@ -1607,6 +1609,8 @@
 						PUSH_OVHD_FCES_STALL_2
 						PUSH_OVHD_FCES_YAW_1
 						PUSH_OVHD_FCES_YAW_2
+
+						FOR OBJECT NAME REPLACE "PUSH_" WITH "BTN_"
 				 -->
 
     		</Component>
@@ -1633,6 +1637,8 @@
 						PUSH_OVHD_PCFS_STAB_B
 						PUSH_OVHD_PCFS_STAB_C
 						PUSH_OVHD_PCFS_STAB_D
+
+						FOR OBJECT NAME REPLACE "PUSH_" WITH "BTN_"
 				 -->
 
     		</Component>
@@ -1747,6 +1753,8 @@
 						PUSH_OVHD_ADSH_2
 						PUSH_OVHD_ADSH_3
 						PUSH_OVHD_ADSH_4
+
+						FOR OBJECT NAME REPLACE "PUSH_" WITH "BTN_"
 				 -->
 
     		</Component>
@@ -1760,6 +1768,8 @@
 						PUSH_OVHD_WINDHEAT_RF
 						PUSH_OVHD_WINDHEAT_LR
 						PUSH_OVHD_WINDHEAT_RR
+
+						FOR OBJECT NAME REPLACE "PUSH_" WITH "BTN_"
 				 -->
 
     		</Component>
@@ -1770,6 +1780,8 @@
 						PUSH_OVHD_WINGAA_L_MAN
 						PUSH_OVHD_WINGAA_R_AUTO
 						PUSH_OVHD_WINGAA_R_MAN
+
+						FOR OBJECT NAME REPLACE "PUSH_" WITH "BTN_"
 				 -->
 
     		</Component>
@@ -1779,6 +1791,8 @@
 						PUSH_OVHD_ENGAA_1
 						PUSH_OVHD_ENGAA_2
 						PUSH_OVHD_ENGAA_3
+
+						FOR OBJECT NAME REPLACE "PUSH_" WITH "BTN_"
 				 -->
 
     		</Component>
