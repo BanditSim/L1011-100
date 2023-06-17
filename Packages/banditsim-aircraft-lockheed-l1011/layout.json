@@ -233,7 +233,7 @@
     {
       "path": "SimObjects/Airplanes/L1011_100/engines.cfg",
       "size": 7417,
-      "date": 133310445686441747
+      "date": 133311336103070972
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/Final.flt",
@@ -242,8 +242,8 @@
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/flight_model.cfg",
-      "size": 21347,
-      "date": 133310455171487930
+      "size": 21335,
+      "date": 133311338371221416
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/gameplay.cfg",
@@ -272,18 +272,18 @@
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/model/L1011-100_Interior.xml",
-      "size": 164318,
-      "date": 133310426125510500
+      "size": 164464,
+      "date": 133314867924688655
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/model/L1011-100_Interior_00.bin",
-      "size": 39766632,
-      "date": 133311195183039575
+      "size": 40942608,
+      "date": 133314868418977211
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/model/L1011-100_Interior_00.gltf",
-      "size": 2749570,
-      "date": 133311195183169663
+      "size": 3157380,
+      "date": 133314868419132482
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/model/L1011-100_Interior_01.bin",
@@ -343,7 +343,7 @@
     {
       "path": "SimObjects/Airplanes/L1011_100/systems.cfg",
       "size": 22825,
-      "date": 133310445686416746
+      "date": 133311336103045914
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/target_performance.cfg",
@@ -358,72 +358,72 @@
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/CIRCUIT_BREAKER.PNG.DDS",
       "size": 6992,
-      "date": 133311194560384969
+      "date": 133314867922355886
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/CIRCUIT_BREAKER.PNG.DDS.json",
       "size": 102,
-      "date": 133311194560384969
+      "date": 133314867922355886
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/COCKPIT_WOOD.PNG.DDS",
       "size": 5592560,
-      "date": 133311194560374931
+      "date": 133314867922350882
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/COCKPIT_WOOD.PNG.DDS.json",
       "size": 119,
-      "date": 133311194560374931
+      "date": 133314867922350882
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/COCKPIT_WOOD_N.PNG.DDS",
       "size": 5592560,
-      "date": 133311194560354942
+      "date": 133314867922325892
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/COCKPIT_WOOD_N.PNG.DDS.json",
       "size": 177,
-      "date": 133311194560354942
+      "date": 133314867922325892
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/DETAIL_GAU.PNG.DDS",
       "size": 22369776,
-      "date": 133311194560415014
+      "date": 133314867922390939
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/DETAIL_GAU.PNG.DDS.json",
       "size": 119,
-      "date": 133311194560415014
+      "date": 133314867922390939
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/DETAIL_GAU_E.PNG.DDS",
       "size": 11184952,
-      "date": 133311194560405010
+      "date": 133314867922380929
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/DETAIL_GAU_E.PNG.DDS.json",
       "size": 102,
-      "date": 133311194560405010
+      "date": 133314867922380929
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/DETAIL_HOR.PNG.DDS",
       "size": 699192,
-      "date": 133311194560460013
+      "date": 133314867922420925
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/DETAIL_HOR.PNG.DDS.json",
       "size": 102,
-      "date": 133311194560460013
+      "date": 133314867922420925
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/DETAIL_HOR_2.PNG.DDS",
       "size": 699192,
-      "date": 133311194560460013
+      "date": 133314867922425946
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/DETAIL_HOR_2.PNG.DDS.json",
       "size": 102,
-      "date": 133311194560460013
+      "date": 133314867922425946
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_BODY_L.PNG.DDS",
@@ -458,112 +458,112 @@
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_BUTTONLIGHT.PNG.DDS",
       "size": 174904,
-      "date": 133311194560465010
+      "date": 133314867922425946
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_BUTTONLIGHT.PNG.DDS.json",
       "size": 102,
-      "date": 133311194560465010
+      "date": 133314867922425946
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_DECALSTEXT.PNG.DDS",
       "size": 22369776,
-      "date": 133311194560400044
+      "date": 133314867922370952
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_DECALSTEXT.PNG.DDS.json",
       "size": 119,
-      "date": 133311194560400044
+      "date": 133314867922370952
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_DECALSTEXT_AFCS.PNG.DDS",
       "size": 22369776,
-      "date": 133311194560455018
+      "date": 133314867922420925
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_DECALSTEXT_AFCS.PNG.DDS.json",
       "size": 119,
-      "date": 133311194560455018
+      "date": 133314867922420925
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_DECALSTEXT_E.PNG.DDS",
       "size": 22369776,
-      "date": 133311194560390008
+      "date": 133314867922360887
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_DECALSTEXT_E.PNG.DDS.json",
       "size": 119,
-      "date": 133311194560390008
+      "date": 133314867922360887
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_FE_DECALSTEXT.PNG.DDS",
       "size": 22369776,
-      "date": 133311194560445025
+      "date": 133314867922405932
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_FE_DECALSTEXT.PNG.DDS.json",
       "size": 119,
-      "date": 133311194560445025
+      "date": 133314867922405932
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_FE_DECALSTEXT_E.PNG.DDS",
       "size": 22369776,
-      "date": 133311194560440019
+      "date": 133314867922400886
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_FE_DECALSTEXT_E.PNG.DDS.json",
       "size": 119,
-      "date": 133311194560440019
+      "date": 133314867922400886
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_INSTRUMENTS_TEXT-1.PNG.DDS",
       "size": 4369248,
-      "date": 133311194560455018
+      "date": 133314867922415913
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_INSTRUMENTS_TEXT-1.PNG.DDS.json",
       "size": 102,
-      "date": 133311194560455018
+      "date": 133314867922415913
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_INSTRUMENTS_TEXT.PNG.DDS",
       "size": 4369248,
-      "date": 133311194560435025
+      "date": 133314867922395930
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_INSTRUMENTS_TEXT.PNG.DDS.json",
       "size": 102,
-      "date": 133311194560435025
+      "date": 133314867922395930
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_INSTRUMENTS_TEXT_E-1.PNG.DDS",
       "size": 4369248,
-      "date": 133311194560450017
+      "date": 133314867922410881
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_INSTRUMENTS_TEXT_E-1.PNG.DDS.json",
       "size": 102,
-      "date": 133311194560450017
+      "date": 133314867922410881
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_INSTRUMENTS_TEXT_E.PNG.DDS",
       "size": 4369248,
-      "date": 133311194560430012
+      "date": 133314867922395930
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_INSTRUMENTS_TEXT_E.PNG.DDS.json",
       "size": 102,
-      "date": 133311194560430012
+      "date": 133314867922395930
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_LABELS.PNG.DDS",
       "size": 5592560,
-      "date": 133311194560465010
+      "date": 133314867922430909
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_LABELS.PNG.DDS.json",
       "size": 119,
-      "date": 133311194560465010
+      "date": 133314867922430909
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/texture.CFG",
@@ -572,33 +572,33 @@
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/thumbnail.JPG",
-      "size": 60422,
-      "date": 132668718522384444
+      "size": 58134,
+      "date": 133312872153992743
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/thumbnail_small.JPG",
-      "size": 15225,
-      "date": 132668718522783375
+      "size": 14206,
+      "date": 133312872499150577
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/WARN_LIGHTS.PNG.DDS",
       "size": 22369776,
-      "date": 133311194560425016
+      "date": 133314867922375929
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/WARN_LIGHTS.PNG.DDS.json",
       "size": 119,
-      "date": 133311194560425016
+      "date": 133314867922375929
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/WARN_LIGHTS_E.PNG.DDS",
       "size": 22369776,
-      "date": 133311194560420007
+      "date": 133314867922370952
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/WARN_LIGHTS_E.PNG.DDS.json",
       "size": 119,
-      "date": 133311194560420007
+      "date": 133314867922370952
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture.psa/L1011_BODY_L.PNG.DDS",

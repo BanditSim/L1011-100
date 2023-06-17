@@ -1579,6 +1579,14 @@
     		<Component ID="ANTISKID">
     		</Component>
     		<Component ID="FCES">
+				<!-- 
+					UNASSIGNED ANIMATIONS
+						PUSH_
+
+						White Bar : Emissive Suffix _W
+						Emissive text : Emissive Suffix _E
+				 -->
+
     		</Component>
     		<Component ID="PFCS">
     		</Component>

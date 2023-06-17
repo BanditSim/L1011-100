@@ -1577,10 +1577,64 @@
     		<Component ID="WIPER_R">
     		</Component>
     		<Component ID="ANTISKID">
+				<!-- 
+					UNASSIGNED ANIMATIONS
+						PUSH_OVHD_ANTISKID_L_1
+						PUSH_OVHD_ANTISKID_L_2
+						PUSH_OVHD_ANTISKID_L_3
+						PUSH_OVHD_ANTISKID_L_4
+						PUSH_OVHD_ANTISKID_R_1
+						PUSH_OVHD_ANTISKID_R_2
+						PUSH_OVHD_ANTISKID_R_3
+						PUSH_OVHD_ANTISKID_R_4
+				 -->
+
     		</Component>
     		<Component ID="FCES">
+				<!-- 
+					UNASSIGNED ANIMATIONS
+						PUSH_OVHD_FCES_ATS_1
+						PUSH_OVHD_FCES_ATS_2
+						PUSH_OVHD_FCES_DLC_1
+						PUSH_OVHD_FCES_DLC_2
+						PUSH_OVHD_FCES_MACH_1
+						PUSH_OVHD_FCES_MACH_2
+						PUSH_OVHD_FCES_PITCH_1
+						PUSH_OVHD_FCES_PITCH_2
+						PUSH_OVHD_FCES_ROLL_1
+						PUSH_OVHD_FCES_ROLL_2
+						PUSH_OVHD_FCES_STALL_1
+						PUSH_OVHD_FCES_STALL_2
+						PUSH_OVHD_FCES_YAW_1
+						PUSH_OVHD_FCES_YAW_2
+				 -->
+
     		</Component>
     		<Component ID="PFCS">
+				<!-- 
+					UNASSIGNED ANIMATIONS
+						PUSH_OVHD_PCFS_L_I
+						PUSH_OVHD_PCFS_L_O
+						PUSH_OVHD_PCFS_R_I
+						PUSH_OVHD_PCFS_R_O
+						PUSH_OVHD_PCFS_PITCH_1
+						PUSH_OVHD_PCFS_PITCH_2
+						PUSH_OVHD_PCFS_ROLL_1
+						PUSH_OVHD_PCFS_ROLL_2
+						PUSH_OVHD_PCFS_RUDDER
+						PUSH_OVHD_PCFS_RUDDER_GUARD
+						PUSH_OVHD_PCFS_SPOILER_1
+						PUSH_OVHD_PCFS_SPOILER_2
+						PUSH_OVHD_PCFS_SPOILER_3
+						PUSH_OVHD_PCFS_SPOILER_4
+						PUSH_OVHD_PCFS_SPOILER_5
+						PUSH_OVHD_PCFS_SPOILER_6
+						PUSH_OVHD_PCFS_STAB_A
+						PUSH_OVHD_PCFS_STAB_B
+						PUSH_OVHD_PCFS_STAB_C
+						PUSH_OVHD_PCFS_STAB_D
+				 -->
+
     		</Component>
     		<Component ID="PASSENGER_ADDRESS">
     		</Component>
@@ -1687,12 +1741,46 @@
     		<Component ID="EVAC_SIGNAL">
     		</Component>
     		<Component ID="AIR_DATA_SENSOR_HEAT">
+				<!-- 
+					UNASSIGNED ANIMATIONS
+						PUSH_OVHD_ADSH_1
+						PUSH_OVHD_ADSH_2
+						PUSH_OVHD_ADSH_3
+						PUSH_OVHD_ADSH_4
+				 -->
+
     		</Component>
     		<Component ID="WINDSHIELD_HEAT">
+				<!-- 
+					UNASSIGNED ANIMATIONS
+						PUSH_OVHD_WINDHEAT_1
+						PUSH_OVHD_WINDHEAT_2
+						PUSH_OVHD_WINDHEAT_3
+						PUSH_OVHD_WINDHEAT_LF
+						PUSH_OVHD_WINDHEAT_RF
+						PUSH_OVHD_WINDHEAT_LR
+						PUSH_OVHD_WINDHEAT_RR
+				 -->
+
     		</Component>
     		<Component ID="WING_ANTI_ICE">
+				<!-- 
+					UNASSIGNED ANIMATIONS
+						PUSH_OVHD_WINGAA_L_AUTO
+						PUSH_OVHD_WINGAA_L_MAN
+						PUSH_OVHD_WINGAA_R_AUTO
+						PUSH_OVHD_WINGAA_R_MAN
+				 -->
+
     		</Component>
     		<Component ID="ENGINE_ANTI_ICE">
+				<!-- 
+					UNASSIGNED ANIMATIONS
+						PUSH_OVHD_ENGAA_1
+						PUSH_OVHD_ENGAA_2
+						PUSH_OVHD_ENGAA_3
+				 -->
+
     		</Component>
     		<Component ID="LIGHTS">
     		</Component>
