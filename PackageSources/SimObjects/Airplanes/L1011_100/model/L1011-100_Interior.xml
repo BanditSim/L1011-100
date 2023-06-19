@@ -1625,8 +1625,8 @@
 						PUSH_OVHD_PCFS_PITCH_2
 						PUSH_OVHD_PCFS_ROLL_1
 						PUSH_OVHD_PCFS_ROLL_2
-						PUSH_OVHD_PCFS_RUDDER
-						PUSH_OVHD_PCFS_RUDDER_GUARD
+						*PUSH_OVHD_PCFS_RUDDER
+						*PUSH_OVHD_PCFS_RUDDER_GUARD
 						PUSH_OVHD_PCFS_SPOILER_1
 						PUSH_OVHD_PCFS_SPOILER_2
 						PUSH_OVHD_PCFS_SPOILER_3
@@ -1640,6 +1640,25 @@
 
 						FOR OBJECT NAME REPLACE "PUSH_" WITH "BTN_"
 				 -->
+
+					<!-- 
+						PFCS RUDDER (GUARDED)
+					-->	
+
+                	<Update Once="True">
+                	    0 (&gt;L:L1011_OVHD_PFCS_RUDDER_Toggle)
+                	</Update>
+
+					<UseTemplate Name="ASOBO_GT_Switch_Covered">
+						<SWITCH_NODE_ID>BTN_PUSH_OVHD_PCFS_RUDDER</SWITCH_NODE_ID>
+						<SWITCH_ANIM_NAME>PUSH_OVHD_PCFS_RUDDER</SWITCH_ANIM_NAME>
+						<COVER_NODE_ID>BTN_PUSH_OVHD_PCFS_RUDDER_GUARD</COVER_NODE_ID>
+						<COVER_ANIM_NAME>PUSH_OVHD_PCFS_RUDDER_GUARD</COVER_ANIM_NAME>
+						<WWISE_COVER_EVENT_OPEN>cover_open</WWISE_COVER_EVENT_OPEN>
+						<WWISE_COVER_EVENT_CLOSE>cover_close</WWISE_COVER_EVENT_CLOSE>
+						<!-- <SWITCH_ANIM_CODE>(L:L1011_OVHD_PCFS_RUDDER, Bool) 100 *</SWITCH_ANIM_CODE> -->
+						<TOGGLE_STATE>(&gt;L:L1011_OVHD_PCFS_RUDDER_Toggle)</TOGGLE_STATE>
+					</UseTemplate>
 
     		</Component>
     		<Component ID="PASSENGER_ADDRESS">
@@ -3999,6 +4018,24 @@
         	    <TT_ICON>ROTATE</TT_ICON>   
         	</UseTemplate>
 
+			<UseTemplate Name="ASOBO_LIGHTING_Knob_Potentiometer_Template">
+        	    <NODE_ID>BTN_KNOB_CPED_CONSOLE_LIGHTS</NODE_ID>
+        	    <ANIM_NAME>KA_CPED_CONSOLE_LIGHTS_ANIM</ANIM_NAME>
+        	    <POTENTIOMETER>26</POTENTIOMETER>
+        	    <TT_DESCRIPTION_ID>@TT_Package.LIGHTING_KNOB_PANEL_ACTION</TT_DESCRIPTION_ID>
+        	    <TOOLTIP_TITLE>@TT_Package.LIGHTING_KNOB_PANEL_TITLE</TOOLTIP_TITLE>
+        	    <TT_ICON>ROTATE</TT_ICON>   
+        	</UseTemplate>
+
+			<UseTemplate Name="ASOBO_LIGHTING_Knob_Potentiometer_Template">
+        	    <NODE_ID>BTN_KNOB_CPED_ENG_INSTR_LIGHTS</NODE_ID>
+        	    <ANIM_NAME>KA_CPED_ENG_INSTR_LIGHTS_ANIM</ANIM_NAME>
+        	    <POTENTIOMETER>27</POTENTIOMETER>
+        	    <TT_DESCRIPTION_ID>@TT_Package.LIGHTING_KNOB_PANEL_ACTION</TT_DESCRIPTION_ID>
+        	    <TOOLTIP_TITLE>@TT_Package.LIGHTING_KNOB_PANEL_TITLE</TOOLTIP_TITLE>
+        	    <TT_ICON>ROTATE</TT_ICON>   
+        	</UseTemplate>
+
         	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         	    <NODE_ID>LIGHTS_AP_PANEL_L</NODE_ID>
         	    <POTENTIOMETER>15</POTENTIOMETER>
@@ -4230,6 +4267,22 @@
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>AP_CRS_2_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- ALT SELECT DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_ALT_1_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_ALT_1_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>15</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>AP_ALT_1_DIGITS_100</NODE_ID>
         		    <POTENTIOMETER>15</POTENTIOMETER>
         		</UseTemplate>
 
@@ -4563,6 +4616,284 @@
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>GAUGE_FF_3_DIGITS_100</NODE_ID>
         		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+			<!-- LOWER PEDESTAL -->
+
+        	<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        	    <NODE_ID>LIGHTS_LOWER_PED_INSTR</NODE_ID>
+        	    <POTENTIOMETER>26</POTENTIOMETER>
+        	</UseTemplate>
+
+				<!-- VHF COMM 1 L DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_1_L_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_1_L_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_1_L_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_1_L_DIGITS_1000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_1_L_DIGITS_10000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- VHF COMM 1 R DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_1_R_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_1_R_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_1_R_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_1_R_DIGITS_1000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_1_R_DIGITS_10000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- VHF COMM 2 L DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_2_L_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_2_L_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_2_L_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_2_L_DIGITS_1000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_2_L_DIGITS_10000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- VHF COMM 2 R DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_2_R_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_2_R_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_2_R_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_2_R_DIGITS_1000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_2_R_DIGITS_10000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- VHF COMM 3 L DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_3_L_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_3_L_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_3_L_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_3_L_DIGITS_1000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_3_L_DIGITS_10000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- VHF COMM 3 R DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_3_R_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_3_R_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_3_R_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_3_R_DIGITS_1000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_VHF_3_R_DIGITS_10000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- HF 1 DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_HF_L_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_HF_L_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_HF_L_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_HF_L_DIGITS_1000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_HF_L_DIGITS_10000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- HF 2 DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_HF_R_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_HF_R_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_HF_R_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_HF_R_DIGITS_1000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_HF_R_DIGITS_10000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- ADF 1 DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_ADF_1_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_ADF_1_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_ADF_1_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_ADF_1_DIGITS_1000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- ADF 2 DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_ADF_2_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_ADF_2_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_ADF_2_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_ADF_2_DIGITS_1000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- XPDR DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_TSPDR_DIGITS_1</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_TSPDR_DIGITS_10</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_TSPDR_DIGITS_100</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>COMM_TSPDR_DIGITS_1000</NODE_ID>
+        		    <POTENTIOMETER>26</POTENTIOMETER>
         		</UseTemplate>
 
 			<!-- FE LIGHTING -->
