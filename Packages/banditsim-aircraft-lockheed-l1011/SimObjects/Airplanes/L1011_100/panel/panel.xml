@@ -19,6 +19,18 @@
     <Name>L1011_VSpeed</Name>
 	<AlwaysUpdate>True</AlwaysUpdate>
   </Instrument>
-
+<!--
+  <Instrument>
+    <Name>L1011_FMC</Name>
+	<AlwaysUpdate>True</AlwaysUpdate>
+  </Instrument>
+-->
+  <Instrument>
+    <Name>L1011_FMC</Name>
+    <Electric>
+		<Simvar name="CIRCUIT ON:27" unit="Boolean"/>
+    </Electric>
+	<AlwaysUpdate>True</AlwaysUpdate>
+  </Instrument>
 
 </PlaneHTMLConfig>

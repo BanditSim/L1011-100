@@ -1406,6 +1406,15 @@
         		    <TT_ICON>ROTATE</TT_ICON>   
         		</UseTemplate>
 
+				<UseTemplate Name="ASOBO_LIGHTING_Knob_Potentiometer_Template">
+        		    <NODE_ID>BTN_KNOB_FE_LIGHTS_FLOOD_LIGHTS</NODE_ID>
+        		    <ANIM_NAME>KA_FE_LIGHTS_FLOOD_LIGHTS_ANIM</ANIM_NAME>
+        		    <POTENTIOMETER>41</POTENTIOMETER>
+        		    <TT_DESCRIPTION_ID>@TT_Package.LIGHTING_KNOB_PANEL_ACTION</TT_DESCRIPTION_ID>
+        		    <TOOLTIP_TITLE>@TT_Package.LIGHTING_KNOB_PANEL_TITLE</TOOLTIP_TITLE>
+        		    <TT_ICON>ROTATE</TT_ICON>   
+        		</UseTemplate>
+
     		</Component>
 
     		<Component ID="CLOCK_FE">
@@ -4148,6 +4157,184 @@
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>HSI_HEADING_FO_IN</NODE_ID>
         		    <POTENTIOMETER>19</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- FE INSTRUMENTS -->
+
+				<!-- ELEC FE INSTRUMENTS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAU_FE_ELEC_KW_APU_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAU_FE_ELEC_KW_1_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAU_FE_ELEC_KW_2_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAU_FE_ELEC_KW_3_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAU_FE_ELEC_DC_A_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAU_FE_ELEC_DC_V_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAU_FE_ELEC_AC_V_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAU_FE_ELEC_FREQ_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAU_FE_ELEC_IDG_1_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAU_FE_ELEC_IDG_2_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAU_FE_ELEC_IDG_3_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>NEEDLE_FE_ELEC_IDG_1</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>NEEDLE_FE_ELEC_IDG_2</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>NEEDLE_FE_ELEC_IDG_3</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- FUEL FE INSTRUMENTS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FUEL_QTY_2L_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FUEL_QTY_1_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FUEL_QTY_3_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FUEL_QTY_2R_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FUEL_TEMP1_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- ENG STATUS FE INSTRUMENTS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>ENGINE_STATUS_VIB_1_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>ENGINE_STATUS_VIB_2_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>ENGINE_STATUS_VIB_3_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- ENG OIL FE INSTRUMENTS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>ENGINE_STATUS_OIL_QTY1_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>ENGINE_STATUS_OIL_QTY2_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>ENGINE_STATUS_OIL_QTY3_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>ENGINE_STATUS_OIL_TEMP1_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>ENGINE_STATUS_OIL_TEMP2_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>ENGINE_STATUS_OIL_TEMP3_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAU_FE_ENGINE_STATUS_OIL_PRES1_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAU_FE_ENGINE_STATUS_OIL_PRES2_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>GAU_FE_ENGINE_STATUS_OIL_PRES3_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- CLOCK FE INSTRUMENTS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FACE_CLOCK_FE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- APU FE INSTRUMENTS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>APU_N1_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>APU_EGT_FACE</NODE_ID>
+        		    <POTENTIOMETER>40</POTENTIOMETER>
         		</UseTemplate>
 
 			<!-- ROTARY DIGIT DIALS -->
