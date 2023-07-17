@@ -26,7 +26,7 @@
   </Instrument>
 -->
   <Instrument>
-    <Name>L1011_FMC</Name>
+    <Name>L1011_CDU</Name>
     <Electric>
 		<Simvar name="CIRCUIT ON:27" unit="Boolean"/>
     </Electric>

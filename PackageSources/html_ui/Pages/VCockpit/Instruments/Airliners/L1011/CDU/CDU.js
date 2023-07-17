@@ -83543,7 +83543,7 @@ class B748TCAS extends BoeingTCAS {
 /**
  * A common instrument for the B747-8i displays.
  */
-class WTB748FsInstrument {
+class L1011FsInstrument {
     /**
      * Constructor.
      * @param instrument This instrument's parent BaseInstrument.
@@ -84492,7 +84492,7 @@ class B748HoldPage extends BoeingHoldPage {
 class B748IdentPage extends BoeingIdentPage {
     /** @inheritdoc */
     getAircraftModel() {
-        return '747-8I';
+        return 'L1011-385';
     }
     /** @inheritdoc */
     getNavDataDisplayContent() {
@@ -84508,7 +84508,7 @@ class B748IdentPage extends BoeingIdentPage {
     }
     /** @inheritdoc */
     getEngineDisplayContent() {
-        return 'GENX-2B67/P';
+        return 'RB211-22B';
     }
     /** @inheritdoc */
     getOpProgramDisplayTitle() {
@@ -85862,7 +85862,7 @@ class B748Cdu extends DisplayComponent {
  * A Boeing 747-8i CDU instrument.
  * Primary Flight Display showing the basic flight instruments.
  */
-class WTB748CduInstrument extends WTB748FsInstrument {
+class L1011CduInstrument extends L1011FsInstrument {
     /**
      * Constructor.
      * @param instrument This instrument's parent BaseInstrument.
@@ -86064,20 +86064,20 @@ class WTB748CduInstrument extends WTB748FsInstrument {
 
 /// <reference types="@microsoft/msfs-types/js/common" />
 /**
- * A Boeing 747-8i CDU BaseInstrument.
+ * A Lockheed L1011 CDU BaseInstrument.
  */
-class WTB748_CDU extends FsBaseInstrument {
+class L1011_CDU extends FsBaseInstrument {
     /** @inheritdoc */
     get isInteractive() {
         return true; // Enabling touch for all instruments for development.
     }
     /** @inheritdoc */
     constructInstrument() {
-        return new WTB748CduInstrument(this, new AvionicsConfig(this, this.xmlConfig));
+        return new L1011CduInstrument(this, new AvionicsConfig(this, this.xmlConfig));
     }
     /** @inheritdoc */
     get templateID() {
-        return 'WTB748_CDU';
+        return 'L1011_CDU';
     }
     /** @inheritdoc */
     onPowerOn() {
@@ -86090,4 +86090,4 @@ class WTB748_CDU extends FsBaseInstrument {
         this.fsInstrument.onPowerOff();
     }
 }
-registerInstrument('wtb748-cdu', WTB748_CDU);
+registerInstrument('l1011-cdu', L1011_CDU);

@@ -164,7 +164,7 @@ wtb748-mfd {
 }
 
 .fmc-row {
-  /* border: solid 0px red; */
+  /* border: solid 1px red; */
   vertical-align: middle;
   height: 30px;
   line-height: 30px;
@@ -269,4 +269,4 @@ div.fmc-letter.s-text {
   font-style: normal;
 }
 
-wtb748-cdu {}
+l1011-cdu {}

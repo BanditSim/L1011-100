@@ -137,13 +137,18 @@
     },
     {
       "path": "html_ui/Pages/VCockpit/Instruments/Airliners/L1011/CDU/CDU.css",
-      "size": 4930,
-      "date": 133320399413282091
+      "size": 4929,
+      "date": 133340938798906135
     },
     {
       "path": "html_ui/Pages/VCockpit/Instruments/Airliners/L1011/CDU/CDU.js",
-      "size": 4258574,
-      "date": 133320399418691974
+      "size": 4259288,
+      "date": 133340918218534401
+    },
+    {
+      "path": "html_ui/Pages/VCockpit/Instruments/Airliners/L1011/CDU/L1011_CDU.html",
+      "size": 500,
+      "date": 133340904572249169
     },
     {
       "path": "html_ui/Pages/VCockpit/Instruments/Airliners/L1011/CDU/WTB748_CDU.html",
@@ -492,13 +497,13 @@
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/panel/panel.cfg",
-      "size": 1086,
-      "date": 133340908476629253
+      "size": 1083,
+      "date": 133340921983461024
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/panel/panel.xml",
       "size": 727,
-      "date": 133340908516830549
+      "date": 133340910167994928
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/runway.FLT",
