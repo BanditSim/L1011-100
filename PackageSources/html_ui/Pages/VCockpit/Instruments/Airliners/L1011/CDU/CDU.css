@@ -164,7 +164,7 @@ wtb748-mfd {
 }
 
 .fmc-row {
-  /* border: solid 1px red; */
+  /* border: solid 0px red; */
   vertical-align: middle;
   height: 30px;
   line-height: 30px;
@@ -190,14 +190,14 @@ div.fmc-letter.d-text {
   font-size: 5.8vw;
   padding-top: 1px;
   paint-order: fill stroke;
-  -webkit-text-stroke: 0.04em black;
+  -webkit-text-stroke: 0.01em black;
 }
 
 .s-text>div.fmc-letter,
 .d-text>div.fmc-letter.s-text,
 div.fmc-letter.s-text {
-  font-size: 4.3vw;
-  padding-top: 3px;
+  font-size: 5.8vw;
+  padding-top: 1px;
   paint-order: fill stroke;
   -webkit-text-stroke: 0.01em black;
 }
@@ -268,5 +268,3 @@ div.fmc-letter.s-text {
   font-weight: normal;
   font-style: normal;
 }
-
-l1011-cdu {}

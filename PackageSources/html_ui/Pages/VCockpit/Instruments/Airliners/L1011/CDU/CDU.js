@@ -54486,19 +54486,19 @@ class BoeingIdentPage extends BoeingFmcPage {
     render() {
         return [
             [
-                ['', '', 'IDENT  '],
-                [' MODEL', this.getEngineDisplayTitle()],
-                [this.getAircraftModel(), this.getEngineDisplayContent()],
-                [' NAV DATA', this.getActiveDateDisplayTitle()],
-                ['WT10407001', this.NavDbActiveDateField],
+                ['RTE DATA', 'SV 7704'],
+                ['PGM', '1612987-115'],
                 [''],
-                ['', this.NavDbInactivateDateField],
-                [this.getOpProgramDisplayTitle()],
-                [this.getOpProgramDisplayContent()],
-                ['', 'DRAG/FF '],
-                ['', '+1.1/-3.5', ''],
-                ['--------------------------------------'],
-                [this.IndexLink, this.PosInitLink],
+                ['GMT', '23:48    '],
+                [''],
+                [''],
+                [''],
+                [''],
+                [''],
+                [''],
+                [''],
+                [''],
+                ['GMT  >', '', ''],
             ],
         ];
     }
@@ -85809,7 +85809,7 @@ class B748Cdu extends DisplayComponent {
         this.fmcScreen.addPageRoute('/nav-data', B748RefNavDataPage);
         this.fmcScreen.addPageRoute('/maint', B748MaintPage);
         this.fmcScreen.addPageRoute('/des-forecast', B748DescentForecastPage);
-        this.fmcScreen.navigateTo('/ident');
+        this.fmcScreen.navigateTo('/ident'); //START TODO:
         this.fmcScreen.onPrefixedEvent('page_init_ref').handle(() => {
             var _a, _b, _c, _d;
             if (this.isOnGround.get()) {
