@@ -125,13 +125,13 @@
 
 			<Component ID="FMC_1">
 				<UseTemplate Name="L1011_CDU">
-					<TYPE>747</TYPE>
+					<TYPE>L1011</TYPE>
 					<NODE_ID_SCREEN>FMS_1_CRT</NODE_ID_SCREEN>
 					<CIRCUIT_ID>27</CIRCUIT_ID>
 					<ID>1</ID>
 
 					<SEQ1_SUFFIX>_decal</SEQ1_SUFFIX>
-					
+					<!--
 					<NODE_ID_INIT>btn_CDU1_INIT</NODE_ID_INIT>
 					<ANIM_NAME_INIT>cdu1_push_INIT</ANIM_NAME_INIT>
 					<NODE_ID_RTE>btn_CDU1_RTE</NODE_ID_RTE>
@@ -174,7 +174,7 @@
 					<ANIM_NAME_CLR>cdu1_push_CLR</ANIM_NAME_CLR>
 					<NODE_ID_DIV>btn_CDU1_DIVIDE</NODE_ID_DIV>
 					<ANIM_NAME_DIV>cdu1_push_DIV</ANIM_NAME_DIV>
-
+					-->
 					<NODE_ID_L1>FMS_1_L1</NODE_ID_L1>
 					<ANIM_NAME_L1>FMS_1_Anim_L1</ANIM_NAME_L1>
 					<NODE_ID_L2>FMS_1_L2</NODE_ID_L2>
@@ -187,7 +187,7 @@
 					<ANIM_NAME_L5>FMS_1_Anim_L5</ANIM_NAME_L5>
 					<NODE_ID_L6>FMS_1_L6</NODE_ID_L6>
 					<ANIM_NAME_L6>FMS_1_Anim_L6</ANIM_NAME_L6>
-
+					<!--
 					<NODE_ID_R1>btn_CDU1_R_1</NODE_ID_R1>
 					<ANIM_NAME_R1>cdu1_push_R1</ANIM_NAME_R1>
 					<NODE_ID_R2>btn_CDU1_R_2</NODE_ID_R2>
@@ -253,13 +253,13 @@
 					<ANIM_NAME_Y>cdu1_push_Y</ANIM_NAME_Y>
 					<NODE_ID_Z>btn_CDU1_Z</NODE_ID_Z>
 					<ANIM_NAME_Z>cdu1_push_Z</ANIM_NAME_Z>
-
+					-->
 					<NODE_ID_0>FMS_1_Alphanumeric_0</NODE_ID_0>
 					<ANIM_NAME_0>FMS_1_Alphanumeric_Anim_0</ANIM_NAME_0>
 					<NODE_ID_1>FMS_1_Alphanumeric_1</NODE_ID_1>
 					<ANIM_NAME_1>FMS_1_Alphanumeric_Anim_1</ANIM_NAME_1>
 					<NODE_ID_2>FMS_1_Alphanumeric_2</NODE_ID_2>
-					<ANIM_NAME_2>FMS_1_Alphanumeric_Anim_</ANIM_NAME_2>
+					<ANIM_NAME_2>FMS_1_Alphanumeric_Anim_2</ANIM_NAME_2>
 					<NODE_ID_3>FMS_1_Alphanumeric_3</NODE_ID_3>
 					<ANIM_NAME_3>FMS_1_Alphanumeric_Anim_3</ANIM_NAME_3>
 					<NODE_ID_4>FMS_1_Alphanumeric_4</NODE_ID_4>
@@ -274,7 +274,7 @@
 					<ANIM_NAME_8>FMS_1_Alphanumeric_Anim_8</ANIM_NAME_8>
 					<NODE_ID_9>FMS_1_Alphanumeric_9</NODE_ID_9>
 					<ANIM_NAME_9>FMS_1_Alphanumeric_Anim_9</ANIM_NAME_9>
-
+					<!--
 					<NODE_ID_DOT>btn_CDU1_DOT</NODE_ID_DOT>
 					<ANIM_NAME_DOT>cdu1_push_DOT</ANIM_NAME_DOT>
 					<NODE_ID_PLUSMINUS>btn_CDU1_OPE</NODE_ID_PLUSMINUS>
@@ -284,7 +284,7 @@
 					<NODE_ID_FAIL>CDU1_FAIL_decal</NODE_ID_FAIL>
 					<NODE_ID_DSPL>CDU1_DSPY_decal</NODE_ID_DSPL>
 					<NODE_ID_EMISSIVE_EXEC>CDU_EXEC_Active_1</NODE_ID_EMISSIVE_EXEC>
-
+					-->
 				</UseTemplate>
 			</Component>
 		</Component>
