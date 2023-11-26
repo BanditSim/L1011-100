@@ -12,6 +12,13 @@ Welcome to the GitHub repository for the L1011 Project for Microsoft Flight Simu
 This project started in as an experiment in creating an Aircraft for MSFS, with the goal of creating a working classic airliner for the sim.
 Join our Discord if you wish to help with the development of this aircraft.
 
+## L1011
+
+```
+Model       L1011-100
+Engine      RB211-22B
+FMC         ARMA FMS
+```
 
 ## License
 
