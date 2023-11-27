@@ -3572,6 +3572,20 @@
 
     				<Component ID="LANDING_GEAR">
 
+						<!-- LANDING GEAR LEVER -->
+						<UseTemplate Name="ASOBO_LANDING_GEAR_Lever_Gear_Template">
+							<ANIM_NAME>LDG_GEAR_LVR</ANIM_NAME>
+							<NODE_ID>LDG_GEAR_LVR_HANDLE</NODE_ID>
+							<NO_GEARUP_ON_GROUND/>
+							<ALWAYS_USE_ANIM_LAG>True</ALWAYS_USE_ANIM_LAG>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_LANDING_GEAR_Lever_Gear_Template">
+							<ANIM_NAME>LDG_GEAR_LVR_LOCK</ANIM_NAME>
+							<NO_GEARUP_ON_GROUND/>
+							<ALWAYS_USE_ANIM_LAG>True</ALWAYS_USE_ANIM_LAG>
+						</UseTemplate>
+
     					<!-- GEAR L, R & C WARNING LIGHTS -->
 						<UseTemplate Name="ASOBO_LANDING_GEAR_Light_Left_Template">
 							<NODE_ID>WARN_GEAR_L</NODE_ID>
