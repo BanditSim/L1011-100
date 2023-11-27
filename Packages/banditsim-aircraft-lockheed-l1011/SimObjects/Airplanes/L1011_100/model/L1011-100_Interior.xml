@@ -3580,11 +3580,13 @@
 							<ALWAYS_USE_ANIM_LAG>True</ALWAYS_USE_ANIM_LAG>
 						</UseTemplate>
 
+						<!-- TODO: CHECK ACCURACY OF LOCK VS IRL BEHAVIOUR
 						<UseTemplate Name="ASOBO_LANDING_GEAR_Lever_Gear_Template">
 							<ANIM_NAME>LDG_GEAR_LVR_LOCK</ANIM_NAME>
 							<NO_GEARUP_ON_GROUND/>
 							<ALWAYS_USE_ANIM_LAG>True</ALWAYS_USE_ANIM_LAG>
 						</UseTemplate>
+						-->
 
     					<!-- GEAR L, R & C WARNING LIGHTS -->
 						<UseTemplate Name="ASOBO_LANDING_GEAR_Light_Left_Template">
