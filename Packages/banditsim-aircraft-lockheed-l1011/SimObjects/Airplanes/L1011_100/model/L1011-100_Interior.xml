@@ -3103,7 +3103,7 @@
 							<ANIM_NAME_RIGHT>SPI_1_AILERON_R</ANIM_NAME_RIGHT>
 						</UseTemplate>
 
-						<UseTemplate Name="ASOBO_HANDLING_Spoilers_Template">
+						<UseTemplate Name="ASOBO_DEPRECATED_Spoilers_Template">
 							<TYPE>SPEEDBRAKES_AND_GROUND</TYPE>
 							<ANIM_NAME_LEFT>SPI_1_SPOILER_L_INNER</ANIM_NAME_LEFT>
 							<ANIM_NAME_RIGHT>SPI_1_SPOILER_R_INNER</ANIM_NAME_RIGHT>
@@ -3111,8 +3111,8 @@
 							<MAX_VALUE>10</MAX_VALUE>
 						</UseTemplate>
 						
-						<UseTemplate Name="ASOBO_HANDLING_Spoilers_Template">
-							<TYPE>SPOILERONS_AND_GROUND</TYPE>
+						<UseTemplate Name="ASOBO_DEPRECATED_Spoilers_Template">
+							<!-- <TYPE>SPOILERONS_AND_GROUND</TYPE> -->
 							<ANIM_NAME_LEFT>SPI_1_SPOILER_L_OUTER</ANIM_NAME_LEFT>
 							<ANIM_NAME_RIGHT>SPI_1_SPOILER_R_OUTER</ANIM_NAME_RIGHT>
 							<ANIM_LAG>100</ANIM_LAG>
@@ -3163,12 +3163,12 @@
 							<NEEDLE_100_FEET>True</NEEDLE_100_FEET>
 							<NEEDLE_1000_FEET>False</NEEDLE_1000_FEET>
 							<NEEDLE_10000_FEET>False</NEEDLE_10000_FEET>
-							<ANIM_NAME_100_FEET>DIAL_ALTIMETER_2_ANIM</ANIM_NAME_100_FEET>
-							<NODE_ID_100_FEET>DIAL_ALTIMETER_2_NEEDLE</NODE_ID_100_FEET>
+							<ANIM_NAME_100_FEET>DIAL_ALTIMETER_3_ANIM</ANIM_NAME_100_FEET>
+							<NODE_ID_100_FEET>DIAL_ALTIMETER_3_NEEDLE</NODE_ID_100_FEET>
 						</UseTemplate>
 						
 						<UseTemplate Name="ASOBO_GT_Anim">
-							<ANIM_NAME>DIAL_ALTIMETER_2_ALT_INOP_ANIM</ANIM_NAME>
+							<ANIM_NAME>DIAL_ALTIMETER_3_ALT_INOP_ANIM</ANIM_NAME>
 							<ANIM_CODE>(A:ELECTRICAL MASTER BATTERY:0, bool) 10 * </ANIM_CODE>
 							<ANIM_LENGTH>10</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
@@ -3181,7 +3181,7 @@
 				<Component ID="CENTER">
     				<Component ID="ENGINE_GAUGES">
     					<Component ID="ENGINE_GAUGES_EPR">
-
+							<!-- EPR 1 -->
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_EPR_1</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG PRESSURE RATIO:1, Ratio) 100 * </ANIM_CODE>
@@ -3189,14 +3189,22 @@
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
 
-								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
-									<SIMVAR>TURB ENG PRESSURE RATIO:1</SIMVAR>
-									<UNITS>Ratio</UNITS>
-									<DIGITS_0_ANIM_NAME>GAUGE_EPR_1_DIGITS_1</DIGITS_0_ANIM_NAME>
-									<DIGITS_1_ANIM_NAME>GAUGE_EPR_1_DIGITS_10</DIGITS_1_ANIM_NAME>
-									<DIGITS_2_ANIM_NAME>GAUGE_EPR_1_DIGITS_100</DIGITS_2_ANIM_NAME>
-								</UseTemplate>
+							<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+								<SIMVAR>TURB ENG PRESSURE RATIO:1</SIMVAR>
+								<UNITS>Ratio</UNITS>
+								<DIGITS_0_ANIM_NAME>GAUGE_EPR_1_DIGITS_1</DIGITS_0_ANIM_NAME>
+								<DIGITS_1_ANIM_NAME>GAUGE_EPR_1_DIGITS_10</DIGITS_1_ANIM_NAME>
+								<DIGITS_2_ANIM_NAME>GAUGE_EPR_1_DIGITS_100</DIGITS_2_ANIM_NAME>
+							</UseTemplate>
 
+							<UseTemplate Name="ASOBO_GT_Anim">
+								<ANIM_NAME>Gauge_EPR_1_SETTING</ANIM_NAME>
+								<ANIM_CODE>150</ANIM_CODE>	<!-- TODO: Connect to Simvar & Create Knob Animation for NODE:KNOB_GAUGE_EPR_1 / ANIM:BTN_KNOB_KNOB_GAUGE_EPR_1 -->
+								<ANIM_LENGTH>230</ANIM_LENGTH>
+								<ANIM_WRAP>False</ANIM_WRAP>
+							</UseTemplate>
+
+							<!-- EPR 2 -->
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_EPR_2</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG PRESSURE RATIO:2, Ratio) 100 * </ANIM_CODE>
@@ -3204,14 +3212,22 @@
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
 
-								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
-									<SIMVAR>TURB ENG PRESSURE RATIO:2</SIMVAR>
-									<UNITS>Ratio</UNITS>
-									<DIGITS_0_ANIM_NAME>GAUGE_EPR_2_DIGITS_1</DIGITS_0_ANIM_NAME>
-									<DIGITS_1_ANIM_NAME>GAUGE_EPR_2_DIGITS_10</DIGITS_1_ANIM_NAME>
-									<DIGITS_2_ANIM_NAME>GAUGE_EPR_2_DIGITS_100</DIGITS_2_ANIM_NAME>
-								</UseTemplate>
+							<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+								<SIMVAR>TURB ENG PRESSURE RATIO:2</SIMVAR>
+								<UNITS>Ratio</UNITS>
+								<DIGITS_0_ANIM_NAME>GAUGE_EPR_2_DIGITS_1</DIGITS_0_ANIM_NAME>
+								<DIGITS_1_ANIM_NAME>GAUGE_EPR_2_DIGITS_10</DIGITS_1_ANIM_NAME>
+								<DIGITS_2_ANIM_NAME>GAUGE_EPR_2_DIGITS_100</DIGITS_2_ANIM_NAME>
+							</UseTemplate>
 
+							<UseTemplate Name="ASOBO_GT_Anim">
+								<ANIM_NAME>Gauge_EPR_2_SETTING</ANIM_NAME>
+								<ANIM_CODE>150</ANIM_CODE>	<!-- TODO: Connect to Simvar & Create Knob Animation for NODE:KNOB_GAUGE_EPR_2 / ANIM:BTN_KNOB_KNOB_GAUGE_EPR_2 -->
+								<ANIM_LENGTH>230</ANIM_LENGTH>
+								<ANIM_WRAP>False</ANIM_WRAP>
+							</UseTemplate>
+
+							<!-- EPR 3 -->
     						<UseTemplate Name="ASOBO_GT_Anim">
 								<ANIM_NAME>Gauge_EPR_3</ANIM_NAME>
 								<ANIM_CODE>(A:TURB ENG PRESSURE RATIO:3, Ratio) 100 * </ANIM_CODE>
@@ -3219,13 +3235,20 @@
 								<ANIM_WRAP>False</ANIM_WRAP>
 							</UseTemplate>
 
-								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
-									<SIMVAR>TURB ENG PRESSURE RATIO:3</SIMVAR>
-									<UNITS>Ratio</UNITS>
-									<DIGITS_0_ANIM_NAME>GAUGE_EPR_3_DIGITS_1</DIGITS_0_ANIM_NAME>
-									<DIGITS_1_ANIM_NAME>GAUGE_EPR_3_DIGITS_10</DIGITS_1_ANIM_NAME>
-									<DIGITS_2_ANIM_NAME>GAUGE_EPR_3_DIGITS_100</DIGITS_2_ANIM_NAME>
-								</UseTemplate>
+							<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+								<SIMVAR>TURB ENG PRESSURE RATIO:3</SIMVAR>
+								<UNITS>Ratio</UNITS>
+								<DIGITS_0_ANIM_NAME>GAUGE_EPR_3_DIGITS_1</DIGITS_0_ANIM_NAME>
+								<DIGITS_1_ANIM_NAME>GAUGE_EPR_3_DIGITS_10</DIGITS_1_ANIM_NAME>
+								<DIGITS_2_ANIM_NAME>GAUGE_EPR_3_DIGITS_100</DIGITS_2_ANIM_NAME>
+							</UseTemplate>
+
+							<UseTemplate Name="ASOBO_GT_Anim">
+								<ANIM_NAME>Gauge_EPR_3_SETTING</ANIM_NAME>
+								<ANIM_CODE>150</ANIM_CODE>	<!-- TODO: Connect to Simvar & Create Knob Animation for NODE:KNOB_GAUGE_EPR_3 / ANIM:BTN_KNOB_KNOB_GAUGE_EPR_3 -->
+								<ANIM_LENGTH>230</ANIM_LENGTH>
+								<ANIM_WRAP>False</ANIM_WRAP>
+							</UseTemplate>
 
 						</Component>
     					<Component ID="ENGINE_GAUGES_N1">
@@ -3422,18 +3445,31 @@
     					</Component>
     				</Component>
     				<!-- Flaps Indicator -->
-    				<!-- should be converted to html display -->
     				<Component ID="FLAPS_INDICATOR">
 
 						<UseTemplate Name="ASOBO_GT_Anim">
-							<ANIM_NAME>flaps_gauge_l_anim</ANIM_NAME>
+							<ANIM_NAME>FLAPS_POSITION_L</ANIM_NAME>
 							<ANIM_CODE>(A:LEADING EDGE FLAPS LEFT INDEX, number) </ANIM_CODE>
 							<ANIM_LENGTH>7</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
 						</UseTemplate>
 
 						<UseTemplate Name="ASOBO_GT_Anim">
-							<ANIM_NAME>flaps_gauge_r_anim</ANIM_NAME>
+							<ANIM_NAME>FLAPS_POSITION_R</ANIM_NAME>
+							<ANIM_CODE>(A:LEADING EDGE FLAPS RIGHT INDEX, number) </ANIM_CODE>
+							<ANIM_LENGTH>7</ANIM_LENGTH>
+							<ANIM_WRAP>False</ANIM_WRAP>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>FLAPS_POSITION_L_2</ANIM_NAME>
+							<ANIM_CODE>(A:LEADING EDGE FLAPS LEFT INDEX, number) </ANIM_CODE>
+							<ANIM_LENGTH>7</ANIM_LENGTH>
+							<ANIM_WRAP>False</ANIM_WRAP>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>FLAPS_POSITION_R_2</ANIM_NAME>
 							<ANIM_CODE>(A:LEADING EDGE FLAPS RIGHT INDEX, number) </ANIM_CODE>
 							<ANIM_LENGTH>7</ANIM_LENGTH>
 							<ANIM_WRAP>False</ANIM_WRAP>
@@ -3461,6 +3497,79 @@
     				</Component>
 
 
+    				<!-- ALTIMETER CENTER -->
+    				<Component ID="CENTER_ALTIMETER">
+
+ 						<UseTemplate Name="ASOBO_INSTRUMENT_Altimeter_Template">
+							<NEEDLE_100_FEET>True</NEEDLE_100_FEET>
+							<NEEDLE_1000_FEET>False</NEEDLE_1000_FEET>
+							<NEEDLE_10000_FEET>False</NEEDLE_10000_FEET>
+							<ANIM_NAME_100_FEET>DIAL_ALTIMETER_2_ANIM</ANIM_NAME_100_FEET>
+							<NODE_ID_100_FEET>DIAL_ALTIMETER_2_NEEDLE</NODE_ID_100_FEET>
+							<ID>2</ID>
+						</UseTemplate>
+						
+						<UseTemplate Name="ASOBO_INSTRUMENT_Knob_Altimeter_Template">
+							<ANIM_NAME>KA_ALTIMETER_2</ANIM_NAME>
+							<NODE_ID>BTN_KNOB_ALTIMETER_2</NODE_ID>
+							<ID>2</ID>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>DIAL_ALTIMETER_2_ALT_INOP_ANIM</ANIM_NAME>
+							<ANIM_CODE>(A:ELECTRICAL MASTER BATTERY:1, bool) 10 * </ANIM_CODE>
+							<ANIM_LENGTH>10</ANIM_LENGTH>
+							<ANIM_WRAP>False</ANIM_WRAP>
+						</UseTemplate>
+
+		    				<Component ID="CENTER_DIGITS_ALTITUDE">
+
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>INDICATED ALTITUDE:2</SIMVAR>
+									<UNITS>Feet</UNITS>
+									<DIGITS_2_ANIM_NAME>INSTR_ALTIMETER_2_ALT_100</DIGITS_2_ANIM_NAME>
+									<DIGITS_3_ANIM_NAME>INSTR_ALTIMETER_2_ALT_1000</DIGITS_3_ANIM_NAME>
+									<DIGITS_4_ANIM_NAME>INSTR_ALTIMETER_2_ALT_10000</DIGITS_4_ANIM_NAME>
+								</UseTemplate>
+
+								<!-- TODO: smooth rotation animation -->
+								<UseTemplate Name="L1011_INSTRUMENT_Digits_ALTIMETER_10s_Template">
+									<SIMVAR>INDICATED ALTITUDE:2</SIMVAR>
+									<UNITS>Feet</UNITS>
+									<DIGITS_0_ANIM_NAME>INSTR_ALTIMETER_2_ALT_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>INSTR_ALTIMETER_2_ALT_10</DIGITS_1_ANIM_NAME>
+								</UseTemplate>
+
+    						</Component>
+
+		    				<Component ID="CENTER_DIGITS_MB">
+
+								<UseTemplate Name="ASOBO_INSTRUMENT_Digits_Template">
+									<SIMVAR>KOHLSMAN SETTING MB:2</SIMVAR>
+									<UNITS>Millibars</UNITS>
+									<DIGITS_0_ANIM_NAME>INSTR_ALTIMETER_2_MB_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>INSTR_ALTIMETER_2_MB_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>INSTR_ALTIMETER_2_MB_100</DIGITS_2_ANIM_NAME>
+									<DIGITS_3_ANIM_NAME>INSTR_ALTIMETER_2_MB_1000</DIGITS_3_ANIM_NAME>
+								</UseTemplate>
+
+    						</Component>
+
+		    				<Component ID="CENTER_DIGITS_INHG">
+
+								<UseTemplate Name="L1011_INSTRUMENT_Digits_inHg_Template">
+									<SIMVAR>KOHLSMAN SETTING HG:2</SIMVAR>
+									<UNITS>inHg</UNITS>
+									<DIGITS_0_ANIM_NAME>INSTR_ALTIMETER_2_INHG_1</DIGITS_0_ANIM_NAME>
+									<DIGITS_1_ANIM_NAME>INSTR_ALTIMETER_2_INHG_10</DIGITS_1_ANIM_NAME>
+									<DIGITS_2_ANIM_NAME>INSTR_ALTIMETER_2_INHG_100</DIGITS_2_ANIM_NAME>
+									<DIGITS_3_ANIM_NAME>INSTR_ALTIMETER_2_INHG_1000</DIGITS_3_ANIM_NAME>
+								</UseTemplate>
+
+    						</Component>
+
+    				</Component>
+
     				<Component ID="LANDING_GEAR">
 
     					<!-- GEAR L, R & C WARNING LIGHTS -->
@@ -3478,6 +3587,37 @@
 
 						<UseTemplate Name="ASOBO_LANDING_GEAR_Light_Transit_Template">
 							<NODE_ID>GEAR_LIGHTS_TRANS_E</NODE_ID>
+						</UseTemplate>
+
+    				</Component>
+
+
+    				<Component ID="BRAKE_PRESSURE">
+						<!--
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>INSTR_BRAKE_PRESS_L</ANIM_NAME>
+							<ANIM_CODE>(A:BRAKE LEFT POSITION, position) 40 *</ANIM_CODE>
+							<ANIM_LENGTH>40</ANIM_LENGTH>
+							<ANIM_LAG>100</ANIM_LAG>
+							<ANIM_WRAP>FALSE</ANIM_WRAP>
+						</UseTemplate>
+						TODO: CHECK IRL BEHAVIOUR
+						-->	
+
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>INSTR_BRAKE_PRESS_L</ANIM_NAME>
+							<ANIM_CODE>(A:BRAKE DEPENDENT HYDRAULIC PRESSURE, psi) 100 /</ANIM_CODE>
+							<ANIM_LENGTH>40</ANIM_LENGTH>
+							<ANIM_LAG>100</ANIM_LAG>
+							<ANIM_WRAP>FALSE</ANIM_WRAP>
+						</UseTemplate>
+
+						<UseTemplate Name="ASOBO_GT_Anim">
+							<ANIM_NAME>INSTR_BRAKE_PRESS_R</ANIM_NAME>
+							<ANIM_CODE>(A:BRAKE DEPENDENT HYDRAULIC PRESSURE, psi) 100 /</ANIM_CODE>
+							<ANIM_LENGTH>40</ANIM_LENGTH>
+							<ANIM_LAG>100</ANIM_LAG>
+							<ANIM_WRAP>FALSE</ANIM_WRAP>
 						</UseTemplate>
 
     				</Component>
@@ -4281,6 +4421,11 @@
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FACE_ALTIMETER_2</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>FACE_ALTIMETER_CENTER</NODE_ID>
         		    <POTENTIOMETER>18</POTENTIOMETER>
         		</UseTemplate>
@@ -4719,6 +4864,74 @@
         		    <POTENTIOMETER>18</POTENTIOMETER>
         		</UseTemplate>
 
+				<!-- ALTIMETER 2 DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_2_ALT_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_2_ALT_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_2_ALT_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_2_ALT_1000</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_2_ALT_10000</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- ALTIMETER 2 MB DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_2_MB_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_2_MB_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_2_MB_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_2_MB_1000</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+				<!-- ALTIMETER 2 INHG DIGIT DIALS -->
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_2_INHG_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_2_INHG_10</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_2_INHG_100</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+
+        		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>INSTR_ALTIMETER_2_INHG_1000</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
+        		</UseTemplate>
+				
 				<!-- RADIO ALT CAPTAIN DIGIT DIALS -->
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>INSTR_RAD_ALT_1_DH_1</NODE_ID>

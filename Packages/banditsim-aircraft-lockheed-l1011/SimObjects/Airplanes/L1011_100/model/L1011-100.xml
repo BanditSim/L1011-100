@@ -56,13 +56,15 @@
 		</Component>
 
         <Component ID="SPOILERS">
-			<UseTemplate Name="ASOBO_HANDLING_Spoilers_Template">
+			<!-- INNER-->
+			<UseTemplate Name="ASOBO_DEPRECATED_Spoilers_Template">
 				<TYPE>SPEEDBRAKES_AND_GROUND</TYPE>
 				<ANIM_NAME_LEFT>SPOILERS_L_ANIM</ANIM_NAME_LEFT>
 				<ANIM_NAME_RIGHT>SPOILERS_R_ANIM</ANIM_NAME_RIGHT>
 				<ANIM_LAG>100</ANIM_LAG>
 				<MAX_VALUE>10</MAX_VALUE>
 			</UseTemplate>
+			<!-- OUTER -->
 			<UseTemplate Name="ASOBO_HANDLING_Spoilers_Template">
 				<TYPE>SPOILERONS_AND_GROUND</TYPE>
 				<ANIM_NAME_LEFT>SPOILERS_L2_ANIM</ANIM_NAME_LEFT>
