@@ -3933,6 +3933,16 @@
 
     			</Component>
     		</Component>
+	    	<Component ID="BUTTONS_AND_SW">
+
+				<!-- UNASSIGNED ANIMATIONS
+				PUSH_MAXND_RESET 		/ NODE: BTN_PUSH_MAXND_RESET
+				SWITCH_BRAKE_SYS_SEL 	/ NODE: SW_BRAKE_SYS_SEL
+
+				EM : Emissive Suffix _E
+				 -->
+
+    		</Component>
     	</Component>
     	<Component ID="AUTOPILOT_PANEL">
 
