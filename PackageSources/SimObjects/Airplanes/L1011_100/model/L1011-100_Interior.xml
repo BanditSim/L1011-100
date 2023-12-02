@@ -2947,6 +2947,43 @@
 						-->
     				</Component>
 
+					<!-- OMI CAPTAIN -->
+					<Component ID="CAPTN_OMI">
+						<!--
+						<UseTemplate Name="ASOBO_AUDIO_Indicator_O_Component"/>
+							<NODE_ID>OMI_CPTN_O</NODE_ID>
+						</UseTemplate>
+						
+						<DefaultTemplateParameters>
+							<FAILURE>(A:CIRCUIT GENERAL PANEL ON, Bool)</FAILURE>
+						</DefaultTemplateParameters>
+
+						<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+							<NODE_ID>OMI_CPTN_I</NODE_ID>
+							<SIMVAR_LIGHT></SIMVAR_LIGHT>
+							<SIMVAR_LIGHT_ON>(A:INNER MARKER, Bool)</SIMVAR_LIGHT_ON>
+						</UseTemplate>
+						-->
+						<UseTemplate Name="L1011_WARN_Indicator_Simvar_Template">
+							<NODE_ID>OMI_CPTN_O</NODE_ID>
+							<SIMVAR>(A:OUTER MARKER, Bool)</SIMVAR>
+							<ID>1</ID>
+						</UseTemplate>
+
+						<UseTemplate Name="L1011_WARN_Indicator_Simvar_Template">
+							<NODE_ID>OMI_CPTN_M</NODE_ID>
+							<SIMVAR>(A:MIDDLE MARKER, Bool)</SIMVAR>
+							<ID>1</ID>
+						</UseTemplate>
+
+						<UseTemplate Name="L1011_WARN_Indicator_Simvar_Template">
+							<NODE_ID>OMI_CPTN_I</NODE_ID>
+							<SIMVAR>(A:INNER MARKER, Bool)</SIMVAR>
+							<ID>1</ID>
+						</UseTemplate>
+
+					</Component>
+
     				<!-- ALTIMETER CAPTAIN -->
     				<Component ID="CAPTN_ALTIMETER">
 
@@ -4464,6 +4501,11 @@
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
         		    <NODE_ID>FACE_VS_FO</NODE_ID>
         		    <POTENTIOMETER>19</POTENTIOMETER>
+        		</UseTemplate>
+
+				<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
+        		    <NODE_ID>FACE_SPI_1</NODE_ID>
+        		    <POTENTIOMETER>18</POTENTIOMETER>
         		</UseTemplate>
 
         		<UseTemplate Name="ASOBO_LIGHTING_Panel_Emissive_Template">
