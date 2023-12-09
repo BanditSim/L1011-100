@@ -678,12 +678,12 @@
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_BODY_WING.PNG.DDS",
       "size": 11184952,
-      "date": 133465281760235673
+      "date": 133465818384815147
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_BODY_WING.PNG.DDS.json",
       "size": 102,
-      "date": 133465281760235673
+      "date": 133465818384815147
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/L1011_COCKPIT_BUTTONLIGHT.PNG.DDS",
@@ -812,8 +812,8 @@
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/thumbnail.JPG",
-      "size": 58134,
-      "date": 133312872153992743
+      "size": 56920,
+      "date": 133465430119670314
     },
     {
       "path": "SimObjects/Airplanes/L1011_100/texture/thumbnail_small.JPG",
