@@ -1,4 +1,5 @@
-![image](https://user-images.githubusercontent.com/20840437/120086778-946d3f80-c0ea-11eb-9435-4483f3c2ba14.png)
+![image2](https://github.com/BanditSim/L1011-100/assets/20840437/c2652139-9db8-41b8-93ea-878b93270297)
+
 
 # BanditSim - L1011
 [![Discord](https://img.shields.io/discord/833308459579605012?color=6A7EC2&label=&logo=discord&logoColor=ffffff)](https://discord.gg/NXeENnrRu9)
